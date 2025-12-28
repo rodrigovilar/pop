@@ -1,0 +1,11 @@
+{
+  "month": "2021-10",
+  "currency": "USD",
+  "entryDate": "2021-10-01",
+  "entryPrice": 39615.92,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 8.013596609736014,
+  "regime": "LATERAL"
+}

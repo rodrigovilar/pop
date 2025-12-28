@@ -1,0 +1,11 @@
+{
+  "month": "2021-08",
+  "currency": "USD",
+  "entryDate": "2021-08-01",
+  "entryPrice": 35885.56,
+  "daysPositive": 18,
+  "daysNegative": 12,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 0.6858935330278784,
+  "regime": "LATERAL"
+}

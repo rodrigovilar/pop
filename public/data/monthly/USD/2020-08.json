@@ -1,0 +1,11 @@
+{
+  "month": "2020-08",
+  "currency": "USD",
+  "entryDate": "2020-08-01",
+  "entryPrice": 10042.51,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -28.481269125944774,
+  "regime": "BEAR"
+}

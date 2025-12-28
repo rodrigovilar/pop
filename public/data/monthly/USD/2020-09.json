@@ -1,0 +1,11 @@
+{
+  "month": "2020-09",
+  "currency": "USD",
+  "entryDate": "2020-09-01",
+  "entryPrice": 10417.16,
+  "daysPositive": 26,
+  "daysNegative": 3,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 3.7306410449180496,
+  "regime": "LATERAL"
+}

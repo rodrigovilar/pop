@@ -1,0 +1,11 @@
+{
+  "month": "2025-02",
+  "currency": "USD",
+  "entryDate": "2025-02-01",
+  "entryPrice": 78407304.36,
+  "daysPositive": 25,
+  "daysNegative": 2,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": -1.9730600400548186,
+  "regime": "LATERAL"
+}
