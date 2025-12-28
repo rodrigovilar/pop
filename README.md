@@ -24,10 +24,16 @@ This is an **educational tool** to demonstrate that Bitcoin investing requires:
 
 ### 📊 Data & Analytics
 - **72 months** of historical data (2020-2025)
-- **DCA simulator** with drawdown tracking
+- **Interactive DCA simulator** with real-time results
+- **Drawdown tracking**: Days in discomfort and longest streaks
 - **Regime classification**: BULL/BEAR/LATERAL
 - **Multi-currency**: USD, EUR, BRL, and 17 more
 - **Real data**: CoinGecko API integration
+
+### 🎮 Interactive Pages
+- **Overview**: Manifesto + Recent months visualization
+- **DCA Simulation**: Interactive form with comprehensive results
+- **About**: Educational purpose and philosophy
 
 ### ⚡ Performance
 - **Progressive loading**: Manifest → Current → Previous → Recent → Background
@@ -148,11 +154,20 @@ Tests:       87 passed (87)
 
 ## 🎨 Components
 
+### Pages
+- **Overview**: Manifesto + Recent months with regime visualization
+- **DCASimulation**: Interactive simulator with results and insights
+- **About**: Purpose, principles, and philosophy
+
+### UI Components
+- **Navigation**: Tab-based navigation between pages
 - **Manifesto**: Educational philosophy display
 - **MonthOverview**: Visual day distribution (positive/negative/lateral)
-- **LoadingState**: Progressive loading feedback
-- **useData**: React hook for data loading
-- **I18nContext**: Language management
+- **LoadingState**: Progressive loading feedback with phase tracking
+
+### Hooks & Context
+- **useData**: React hook for progressive data loading
+- **I18nContext**: Language management with lazy loading
 
 ## 🗂️ Project Structure
 
