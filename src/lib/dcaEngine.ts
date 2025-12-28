@@ -85,7 +85,7 @@ export function simulateDCA(
   // Add subsequent months
   // Parse start date to get year and month
   const [startYear, startMonthNum] = actualStartDate.split('-').map(Number);
-  const [endYear, endMonthNum, endDay] = sorted[sorted.length - 1].date.split('-').map(Number);
+  const [endYear, endMonthNum] = sorted[sorted.length - 1].date.split('-').map(Number);
 
   let year = startYear;
   let monthNum = startMonthNum + 1; // Next month
@@ -130,9 +130,6 @@ export function simulateDCA(
     totalBTC += btcAmount;
   }
 
-  // Calculate current cost basis
-  const costBasis = totalInvested / totalBTC;
-
   // Calculate current value (at last available price)
   const currentPrice = sorted[sorted.length - 1].price;
   const currentValue = totalBTC * currentPrice;
@@ -163,7 +160,6 @@ export function simulateDCA(
     }
 
     if (btcSoFar > 0) {
-      const basisAtThisTime = investedSoFar / btcSoFar;
       const valueAtThisTime = btcSoFar * price;
 
       if (valueAtThisTime < investedSoFar) {
