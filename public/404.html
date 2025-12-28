@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PoP - Proof of Patience</title>
+    <script>
+      // GitHub Pages SPA redirect workaround
+      // Store the redirect URL and reload at root
+      sessionStorage.setItem('redirect', location.href);
+      location.replace(location.origin + location.pathname.split('/').slice(0, -1).join('/') + '/');
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>

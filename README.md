@@ -200,11 +200,43 @@ pop/
 
 ## 🚢 Deployment
 
-Static-only app, deploy anywhere:
+### GitHub Pages (Automated - Recommended)
 
-- **Vercel**: `vercel`
+This project is configured for automatic deployment to GitHub Pages via GitHub Actions.
+
+**Quick Start:**
+
+```bash
+# 1. Create a GitHub repository named "pop"
+# 2. Push your code
+git remote add origin https://github.com/YOUR_USERNAME/pop.git
+git branch -M main
+git push -u origin main
+
+# 3. Enable GitHub Pages
+# Go to Settings → Pages → Source: GitHub Actions
+
+# 4. Access your site
+# https://YOUR_USERNAME.github.io/pop/
+```
+
+The workflow automatically:
+- ✅ Runs all tests
+- ✅ Type checks
+- ✅ Builds production bundle
+- ✅ Deploys to GitHub Pages
+
+**Important:** Update the base path in `.github/workflows/deploy.yml` if your repo has a different name:
+```yaml
+VITE_BASE_PATH: '/your-repo-name/'
+```
+
+📖 **Full deployment guide:** See [DEPLOY.md](./DEPLOY.md) for detailed instructions, custom domains, and alternative platforms.
+
+### Alternative Platforms
+
+- **Vercel**: `vercel` (instant deployment)
 - **Netlify**: Drag & drop `dist/`
-- **GitHub Pages**: Push `dist/` to gh-pages
 - **Cloudflare Pages**: Connect repo
 
 ## 🧪 Testing Philosophy
