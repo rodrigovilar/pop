@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { I18nProvider } from './contexts/I18nContext';
-import { Manifesto } from './components/Manifesto';
-import { MonthOverview } from './components/MonthOverview';
+import { Navigation } from './components/Navigation';
+import { Overview } from './components/Overview';
+import { DCASimulation } from './components/DCASimulation';
+import { About } from './components/About';
 import { LoadingState } from './components/LoadingState';
 import { useData } from './hooks/useData';
 
 function AppContent() {
+  const [currentPage, setCurrentPage] = useState('overview');
   const { monthlyData, isLoading, progress, error } = useData({
     currency: 'USD',
     autoLoad: true,
@@ -23,22 +27,26 @@ function AppContent() {
     );
   }
 
-  if (isLoading || monthlyData.size === 0) {
-    return <LoadingState progress={progress} />;
-  }
+  const renderPage = () => {
+    if (isLoading || monthlyData.size === 0) {
+      return <LoadingState progress={progress} />;
+    }
 
-  // Get recent months (latest 3)
-  const months = Array.from(monthlyData.values())
-    .sort((a, b) => b.month.localeCompare(a.month))
-    .slice(0, 3);
+    switch (currentPage) {
+      case 'overview':
+        return <Overview monthlyData={monthlyData} />;
+      case 'dca':
+        return <DCASimulation monthlyData={monthlyData} currency="USD" />;
+      case 'about':
+        return <About />;
+      default:
+        return <Overview monthlyData={monthlyData} />;
+    }
+  };
 
   return (
-    <div style={{
-      maxWidth: '900px',
-      margin: '0 auto',
-      padding: '2rem 1rem',
-    }}>
-      <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <header style={{ textAlign: 'center', padding: '2rem 1rem 1rem' }}>
         <h1 style={{
           fontSize: '2.5rem',
           fontWeight: 'bold',
@@ -58,32 +66,11 @@ function AppContent() {
         </p>
       </header>
 
-      <Manifesto />
+      <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
 
-      <section style={{ marginTop: '3rem' }}>
-        <h2 style={{
-          fontSize: '1.5rem',
-          marginBottom: '1.5rem',
-          color: '#333',
-        }}>
-          Recent Months
-        </h2>
-
-        {months.map((data) => (
-          <MonthOverview key={data.month} data={data} />
-        ))}
-
-        {monthlyData.size > 3 && (
-          <p style={{
-            textAlign: 'center',
-            color: '#888',
-            fontSize: '0.875rem',
-            marginTop: '1rem',
-          }}>
-            Loaded {monthlyData.size} months of historical data
-          </p>
-        )}
-      </section>
+      <main style={{ flex: 1 }}>
+        {renderPage()}
+      </main>
 
       <footer style={{
         marginTop: '4rem',
@@ -92,6 +79,7 @@ function AppContent() {
         textAlign: 'center',
         color: '#888',
         fontSize: '0.875rem',
+        padding: '2rem 1rem',
       }}>
         <p>
           PoP is an educational tool. Not financial advice.

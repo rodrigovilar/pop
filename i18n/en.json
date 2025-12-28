@@ -44,6 +44,10 @@
     "startDate": "Start Date",
     "monthlyAmount": "Monthly Amount",
     "simulate": "Simulate",
+    "errors": {
+      "selectDate": "Please select a start date",
+      "invalidAmount": "Please enter a valid monthly amount"
+    },
     "results": {
       "totalInvested": "Total Invested",
       "totalBTC": "Total BTC",
