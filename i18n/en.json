@@ -1,0 +1,96 @@
+{
+  "app": {
+    "title": "PoP - Proof of Patience",
+    "tagline": "Bitcoin rewards few days — but demands presence in all of them."
+  },
+  "manifesto": {
+    "line1": "Bitcoin rewards few days —",
+    "line2": "but demands presence in all of them.",
+    "line3": "",
+    "line4": "Most of the time there is discomfort.",
+    "line5": "Few moments justify the sacrifice.",
+    "line6": "",
+    "line7": "There are no shortcuts.",
+    "line8": "Only discipline, time, and conviction."
+  },
+  "navigation": {
+    "overview": "Overview",
+    "dca": "DCA Simulation",
+    "keyDays": "Key Days",
+    "about": "About"
+  },
+  "settings": {
+    "language": "Language",
+    "currency": "Currency"
+  },
+  "overview": {
+    "title": "The Reality of Bitcoin",
+    "subtitle": "Understanding time, discipline, and patience",
+    "daysPositive": "Days Positive",
+    "daysNegative": "Days Negative",
+    "daysLateral": "Days Lateral",
+    "currentMonth": "Current Month",
+    "regime": "Regime",
+    "regimes": {
+      "BULL": "Bull",
+      "BEAR": "Bear",
+      "LATERAL": "Lateral",
+      "N/A": "N/A"
+    }
+  },
+  "dca": {
+    "title": "DCA Simulation",
+    "subtitle": "Simulate your Bitcoin discipline journey",
+    "startDate": "Start Date",
+    "monthlyAmount": "Monthly Amount",
+    "simulate": "Simulate",
+    "results": {
+      "totalInvested": "Total Invested",
+      "totalBTC": "Total BTC",
+      "currentValue": "Current Value",
+      "pnl": "P&L",
+      "daysInDrawdown": "Days in Drawdown",
+      "longestStreak": "Longest Negative Streak"
+    },
+    "insights": {
+      "drawdownTitle": "Time in Discomfort",
+      "drawdownText": "You spent {days} days below your cost basis. This is normal.",
+      "disciplineTitle": "Discipline Over Timing",
+      "disciplineText": "Your longest negative streak was {days} days. Patience is the game."
+    }
+  },
+  "keyDays": {
+    "title": "Few Days Matter",
+    "subtitle": "A small number of days explain most appreciation",
+    "top10": "Top 10 Days",
+    "top50": "Top 50 Days",
+    "top100": "Top 100 Days",
+    "contribution": "{percent}% of total appreciation",
+    "insight": "Missing these few days would invalidate years of waiting."
+  },
+  "about": {
+    "title": "About PoP",
+    "purpose": "Purpose",
+    "purposeText": "This is an educational tool to demonstrate that Bitcoin investing requires sacrifice, discipline, and low time preference. It is NOT a trading tool, price predictor, or profit optimizer.",
+    "principles": "Principles",
+    "principle1": "No price predictions",
+    "principle2": "No trading signals",
+    "principle3": "No profit promises",
+    "principle4": "Only education",
+    "philosophy": "Philosophy",
+    "philosophyText": "Bitcoin teaches behavior, not profit. Most of the experience is drawdown, lateralization, and discomfort. A small number of days explain most appreciation, and these days are unpredictable."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "month": "Month",
+    "year": "Year",
+    "day": "Day",
+    "days": "days",
+    "price": "Price",
+    "change": "Change",
+    "from": "from",
+    "to": "to"
+  }
+}
