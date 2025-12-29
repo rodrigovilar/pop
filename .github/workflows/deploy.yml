@@ -34,6 +34,11 @@ jobs:
       - name: Run tests
         run: npm test -- --run
 
+      - name: Generate data from CoinGecko
+        run: npm run generate:data
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+
       - name: Build
         run: npm run build
         env:

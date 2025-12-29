@@ -24,7 +24,23 @@ git remote -v
 git push -u origin main
 ```
 
-### 3. Enable GitHub Pages
+### 3. Configure CoinGecko API Key (Required)
+
+The app needs real Bitcoin price data from CoinGecko.
+
+1. **Get your FREE API key:**
+   - Go to https://www.coingecko.com/en/developers/dashboard
+   - Create account (free)
+   - Copy your "Demo API Key" (starts with `cg-demo-`)
+
+2. **Add to GitHub Secrets:**
+   - Go to your repo: https://github.com/YOUR_USERNAME/pop/settings/secrets/actions
+   - Click **"New repository secret"**
+   - Name: `COINGECKO_API_KEY`
+   - Secret: Paste your key (e.g., `cg-demo-xxxxx`)
+   - Click **"Add secret"**
+
+### 4. Enable GitHub Pages
 
 1. Go to your repository on GitHub
 2. Click **Settings** (top right)
@@ -33,11 +49,12 @@ git push -u origin main
 5. Click **Save**
 
 That's it! GitHub Actions will automatically:
+- Fetch real Bitcoin data from CoinGecko (20 currencies!)
 - Build your project
 - Run all tests
 - Deploy to GitHub Pages
 
-### 4. Access Your Site
+### 5. Access Your Site
 
 Your site will be live at:
 ```
