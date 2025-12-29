@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { I18nProvider } from './contexts/I18nContext';
 import { Navigation } from './components/Navigation';
+import { Settings } from './components/Settings';
 import { Overview } from './components/Overview';
 import { DCASimulation } from './components/DCASimulation';
 import { About } from './components/About';
 import { LoadingState } from './components/LoadingState';
 import { useData } from './hooks/useData';
+import type { Currency } from './types';
 
 function AppContent() {
   const [currentPage, setCurrentPage] = useState('overview');
+  const [currency, setCurrency] = useState<Currency>('USD');
   const { monthlyData, isLoading, progress, error } = useData({
-    currency: 'USD',
+    currency,
     autoLoad: true,
   });
 
@@ -36,7 +39,7 @@ function AppContent() {
       case 'overview':
         return <Overview monthlyData={monthlyData} />;
       case 'dca':
-        return <DCASimulation monthlyData={monthlyData} currency="USD" />;
+        return <DCASimulation monthlyData={monthlyData} currency={currency} />;
       case 'about':
         return <About />;
       default:
@@ -66,6 +69,7 @@ function AppContent() {
         </p>
       </header>
 
+      <Settings currency={currency} onCurrencyChange={setCurrency} />
       <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
 
       <main style={{ flex: 1 }}>

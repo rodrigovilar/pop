@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Manifesto } from './Manifesto';
 import { MonthOverview } from './MonthOverview';
+import { useI18n } from '../contexts/I18nContext';
 import type { MonthlyData } from '../types';
 
 interface OverviewProps {
@@ -7,10 +9,23 @@ interface OverviewProps {
 }
 
 export function Overview({ monthlyData }: OverviewProps) {
-  // Get recent months (latest 3)
-  const months = Array.from(monthlyData.values())
-    .sort((a, b) => b.month.localeCompare(a.month))
-    .slice(0, 3);
+  const { t } = useI18n();
+  const [visibleCount, setVisibleCount] = useState(12); // Show 12 months initially
+
+  // Get all months sorted by date (newest first)
+  const allMonths = Array.from(monthlyData.values())
+    .sort((a, b) => b.month.localeCompare(a.month));
+
+  const visibleMonths = allMonths.slice(0, visibleCount);
+  const hasMore = visibleCount < allMonths.length;
+
+  const loadMore = () => {
+    setVisibleCount(prev => Math.min(prev + 12, allMonths.length));
+  };
+
+  const showAll = () => {
+    setVisibleCount(allMonths.length);
+  };
 
   return (
     <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem 1rem' }}>
@@ -22,23 +37,77 @@ export function Overview({ monthlyData }: OverviewProps) {
           marginBottom: '1.5rem',
           color: '#333',
         }}>
-          Recent Months
+          {t('overview.recentMonths')}
         </h2>
 
-        {months.map((data) => (
+        {visibleMonths.map((data) => (
           <MonthOverview key={data.month} data={data} />
         ))}
 
-        {monthlyData.size > 3 && (
-          <p style={{
-            textAlign: 'center',
-            color: '#888',
-            fontSize: '0.875rem',
-            marginTop: '1rem',
+        {hasMore && (
+          <div style={{
+            display: 'flex',
+            gap: '1rem',
+            justifyContent: 'center',
+            marginTop: '2rem',
           }}>
-            Loaded {monthlyData.size} months of historical data
-          </p>
+            <button
+              onClick={loadMore}
+              style={{
+                padding: '0.75rem 1.5rem',
+                fontSize: '0.875rem',
+                fontWeight: '500',
+                color: '#f97316',
+                backgroundColor: 'white',
+                border: '2px solid #f97316',
+                borderRadius: '0.375rem',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#fff7ed';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'white';
+              }}
+            >
+              {t('overview.loadMore')} (12 {t('overview.months')})
+            </button>
+            <button
+              onClick={showAll}
+              style={{
+                padding: '0.75rem 1.5rem',
+                fontSize: '0.875rem',
+                fontWeight: '500',
+                color: 'white',
+                backgroundColor: '#f97316',
+                border: '2px solid #f97316',
+                borderRadius: '0.375rem',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#ea580c';
+                e.currentTarget.style.borderColor = '#ea580c';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#f97316';
+                e.currentTarget.style.borderColor = '#f97316';
+              }}
+            >
+              {t('overview.showAll')} ({allMonths.length} {t('overview.months')})
+            </button>
+          </div>
         )}
+
+        <p style={{
+          textAlign: 'center',
+          color: '#888',
+          fontSize: '0.875rem',
+          marginTop: '1.5rem',
+        }}>
+          {t('overview.showing')} {visibleMonths.length} {t('overview.of')} {allMonths.length} {t('overview.months')}
+        </p>
       </section>
     </div>
   );

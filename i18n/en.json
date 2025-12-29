@@ -30,6 +30,12 @@
     "daysNegative": "Days Negative",
     "daysLateral": "Days Lateral",
     "currentMonth": "Current Month",
+    "recentMonths": "Recent Months",
+    "loadMore": "Load More",
+    "showAll": "Show All",
+    "showing": "Showing",
+    "of": "of",
+    "months": "months",
     "regime": "Regime",
     "regimes": {
       "BULL": "Bull",
