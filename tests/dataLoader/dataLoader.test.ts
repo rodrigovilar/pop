@@ -3,7 +3,7 @@ import { DataLoader } from '../../src/lib/dataLoader';
 import type { Manifest, MonthlyData } from '../../src/types';
 
 // Mock fetch
-global.fetch = vi.fn();
+global.fetch = vi.fn() as typeof global.fetch;
 
 // Mock cacheManager
 vi.mock('../../src/lib/cacheManager', () => ({
@@ -37,8 +37,8 @@ describe('Data Loader', () => {
         generatedAt: '2024-01-01T00:00:00Z',
       };
 
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockResolvedValue({
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockResolvedValue({
         ok: true,
         json: async () => mockManifest,
       });
@@ -64,7 +64,7 @@ describe('Data Loader', () => {
         generatedAt: '2024-01-01T00:00:00Z',
       };
 
-      (cacheManager.get as any).mockReturnValue(mockManifest);
+      vi.mocked(cacheManager.get).mockReturnValue(mockManifest);
 
       const loader = new DataLoader({ currency: 'USD' });
       const result = await loader.loadManifest();
@@ -74,8 +74,8 @@ describe('Data Loader', () => {
     });
 
     it('should throw error if manifest fetch fails', async () => {
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockResolvedValue({
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockResolvedValue({
         ok: false,
         status: 404,
       });
@@ -100,8 +100,8 @@ describe('Data Loader', () => {
         regime: 'BULL',
       };
 
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockResolvedValue({
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockResolvedValue({
         ok: true,
         json: async () => mockData,
       });
@@ -126,7 +126,7 @@ describe('Data Loader', () => {
         regime: 'BULL',
       };
 
-      (cacheManager.get as any).mockReturnValue(mockData);
+      vi.mocked(cacheManager.get).mockReturnValue(mockData);
 
       const loader = new DataLoader({ currency: 'USD' });
       const result = await loader.loadMonth('2024-01', 'USD');
@@ -136,8 +136,8 @@ describe('Data Loader', () => {
     });
 
     it('should throw error if month fetch fails', async () => {
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockResolvedValue({
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockResolvedValue({
         ok: false,
         status: 404,
       });
@@ -162,8 +162,8 @@ describe('Data Loader', () => {
         regime: 'N/A',
       };
 
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockResolvedValue({
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockResolvedValue({
         ok: true,
         json: async () => mockData,
       });
@@ -190,8 +190,8 @@ describe('Data Loader', () => {
         regime: 'N/A',
       };
 
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockResolvedValue({
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockResolvedValue({
         ok: true,
         json: async () => mockData,
       });
@@ -232,8 +232,8 @@ describe('Data Loader', () => {
         regime: 'N/A',
       };
 
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockImplementation((url: string) => {
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockImplementation((url: string) => {
         if (url.includes('manifest')) {
           return Promise.resolve({
             ok: true,
@@ -246,7 +246,7 @@ describe('Data Loader', () => {
         });
       });
 
-      const progressUpdates: any[] = [];
+      const progressUpdates: LoadingProgress[] = [];
       const loader = new DataLoader({
         currency: 'USD',
         onProgress: (progress) => progressUpdates.push(progress),
@@ -286,8 +286,8 @@ describe('Data Loader', () => {
         regime: 'N/A',
       };
 
-      (cacheManager.get as any).mockReturnValue(null);
-      (global.fetch as any).mockImplementation((url: string) => {
+      vi.mocked(cacheManager.get).mockReturnValue(null);
+      vi.mocked(global.fetch).mockImplementation((url: string) => {
         if (url.includes('manifest')) {
           return Promise.resolve({
             ok: true,

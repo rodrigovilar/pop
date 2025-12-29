@@ -11,6 +11,7 @@ describe('I18n System', () => {
     });
 
     // Mock translations
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Accessing private property for testing
     (i18n as any).loadedTranslations.set('en', {
       app: {
         title: 'PoP - Proof of Patience',
@@ -20,6 +21,7 @@ describe('I18n System', () => {
       count: 'You have {count} items',
     });
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Accessing private property for testing
     (i18n as any).loadedTranslations.set('pt-BR', {
       app: {
         title: 'PoP - Prova de Paciência',
@@ -44,7 +46,8 @@ describe('I18n System', () => {
       const originalWarn = console.warn;
       console.warn = () => {};
 
-      i18n.setLanguage('xyz' as any);
+      // @ts-expect-error -- Testing invalid language fallback
+      i18n.setLanguage('xyz');
       expect(i18n.getLanguage()).toBe('en');
 
       console.warn = originalWarn;

@@ -31,6 +31,7 @@ export function generateMockBitcoinData(
   const pricePoints: CoinGeckoPricePoint[] = [];
 
   let currentPrice = basePrice;
+  // eslint-disable-next-line prefer-const -- Date object is mutated, not reassigned
   let currentDate = new Date(start);
 
   // Simulate different market phases

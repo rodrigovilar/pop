@@ -27,7 +27,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     };
 
     loadInitialLanguage();
-  }, []);
+  }, [language]);
 
   const setLanguage = useCallback(async (lang: Language) => {
     setIsLoading(true);
@@ -39,19 +39,19 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
 
   const t = useCallback((key: string, params?: Record<string, string | number>) => {
     return i18n.t(key, params);
-  }, [language]); // Re-create when language changes
+  }, []); // i18n is a singleton with internal state
 
   const formatNumber = useCallback((value: number, options?: Intl.NumberFormatOptions) => {
     return i18n.formatNumber(value, options);
-  }, [language]);
+  }, []);
 
   const formatCurrency = useCallback((value: number, currency: string) => {
     return i18n.formatCurrency(value, currency);
-  }, [language]);
+  }, []);
 
   const formatDate = useCallback((date: Date | string, options?: Intl.DateTimeFormatOptions) => {
     return i18n.formatDate(date, options);
-  }, [language]);
+  }, []);
 
   const value: I18nContextValue = {
     language,
@@ -66,6 +66,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
 
+// eslint-disable-next-line react-refresh/only-export-components -- Exporting hook alongside provider is common pattern
 export function useI18n() {
   const context = useContext(I18nContext);
   if (!context) {

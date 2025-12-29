@@ -91,7 +91,7 @@ export class CacheManager {
       localStorage.setItem(fullKey, JSON.stringify(entry));
 
       return entry.data;
-    } catch (error) {
+    } catch {
       // Invalid JSON - remove corrupted entry
       localStorage.removeItem(fullKey);
       return null;
@@ -168,7 +168,7 @@ export class CacheManager {
     const items: Array<{
       key: string;
       fullKey: string;
-      entry: CacheEntry<any>;
+      entry: CacheEntry<unknown>;
     }> = [];
 
     // Collect all cache entries
@@ -190,7 +190,7 @@ export class CacheManager {
       if (!raw) continue;
 
       try {
-        const entry: CacheEntry<any> = JSON.parse(raw);
+        const entry: CacheEntry<unknown> = JSON.parse(raw);
         items.push({ key, fullKey, entry });
       } catch {
         // Invalid JSON - remove it

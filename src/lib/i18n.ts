@@ -119,11 +119,11 @@ export class I18n {
 
     // Navigate nested keys
     const keys = key.split('.');
-    let value: any = translations;
+    let value: unknown = translations;
 
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {
-        value = value[k];
+        value = (value as Record<string, unknown>)[k];
       } else {
         // Key not found, try fallback
         if (language !== this.config.fallbackLanguage) {

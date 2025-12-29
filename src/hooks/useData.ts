@@ -2,7 +2,7 @@
  * React hook for progressive data loading
  */
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { DataLoader, type LoadingProgress } from '../lib/dataLoader';
 import type { Manifest, MonthlyData, Currency } from '../types';
 
@@ -29,7 +29,7 @@ export function useData(options: UseDataOptions): UseDataResult {
   const [progress, setProgress] = useState<LoadingProgress | null>(null);
   const [error, setError] = useState<Error | null>(null);
 
-  const load = async () => {
+  const load = useCallback(async () => {
     setIsLoading(true);
     setError(null);
 
@@ -49,13 +49,13 @@ export function useData(options: UseDataOptions): UseDataResult {
       setIsLoading(false);
       setProgress(null);
     }
-  };
+  }, [currency]);
 
   useEffect(() => {
     if (autoLoad) {
       load();
     }
-  }, [currency, autoLoad]);
+  }, [autoLoad, load]);
 
   return {
     manifest,
