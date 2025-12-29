@@ -2,10 +2,10 @@
   "month": "2022-04",
   "currency": "USD",
   "entryDate": "2022-04-01",
-  "entryPrice": 695081.88,
-  "daysPositive": 29,
-  "daysNegative": 0,
+  "entryPrice": 46299.75,
+  "daysPositive": 2,
+  "daysNegative": 27,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": 73.7328915755522,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": 4.21189385995061,
+  "regime": "LATERAL"
 }

@@ -5,7 +5,7 @@
  * This is NOT real historical data.
  */
 
-import type { CoinGeckoPricePoint } from './coinGeckoClient';
+import type { PricePoint } from './cryptoCompareClient';
 
 /**
  * Generate mock Bitcoin price data
@@ -25,10 +25,10 @@ export function generateMockBitcoinData(
   startDate: string = '2020-01-01',
   endDate: string = new Date().toISOString().split('T')[0],
   basePrice: number = 7000
-): CoinGeckoPricePoint[] {
+): PricePoint[] {
   const start = new Date(startDate);
   const end = new Date(endDate);
-  const pricePoints: CoinGeckoPricePoint[] = [];
+  const pricePoints: PricePoint[] = [];
 
   let currentPrice = basePrice;
   // eslint-disable-next-line prefer-const -- Date object is mutated, not reassigned
@@ -92,7 +92,7 @@ export function getMockDataForCurrency(
   currency: string,
   startDate?: string,
   endDate?: string
-): CoinGeckoPricePoint[] {
+): PricePoint[] {
   // Currency multipliers (approximate)
   const multipliers: Record<string, number> = {
     usd: 1,

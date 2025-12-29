@@ -1,0 +1,11 @@
+{
+  "month": "2011-08",
+  "currency": "USD",
+  "entryDate": "2011-08-01",
+  "entryPrice": 13.09,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -15.000000000000002,
+  "regime": "BEAR"
+}

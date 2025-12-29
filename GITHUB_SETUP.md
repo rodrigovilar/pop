@@ -24,20 +24,26 @@ git remote -v
 git push -u origin main
 ```
 
-### 3. Configure CoinGecko API Key (Required)
+### 3. Configure CryptoCompare API Key (Optional)
 
-The app needs real Bitcoin price data from CoinGecko.
+The app uses **CryptoCompare API** which works **without an API key**.
+
+**No configuration needed!** The GitHub Actions workflow will fetch real Bitcoin data automatically.
+
+#### Optional: Add API Key for Higher Rate Limits
+
+If you want higher rate limits, you can optionally add a free CryptoCompare API key:
 
 1. **Get your FREE API key:**
-   - Go to https://www.coingecko.com/en/developers/dashboard
+   - Go to https://www.cryptocompare.com/cryptopian/api-keys
    - Create account (free)
-   - Copy your "Demo API Key" (starts with `cg-demo-`)
+   - Copy your API key
 
 2. **Add to GitHub Secrets:**
    - Go to your repo: https://github.com/YOUR_USERNAME/pop/settings/secrets/actions
    - Click **"New repository secret"**
-   - Name: `COINGECKO_API_KEY`
-   - Secret: Paste your key (e.g., `cg-demo-xxxxx`)
+   - Name: `CRYPTOCOMPARE_API_KEY`
+   - Secret: Paste your key
    - Click **"Add secret"**
 
 ### 4. Enable GitHub Pages
@@ -49,7 +55,7 @@ The app needs real Bitcoin price data from CoinGecko.
 5. Click **Save**
 
 That's it! GitHub Actions will automatically:
-- Fetch real Bitcoin data from CoinGecko (20 currencies!)
+- Fetch real Bitcoin data from CryptoCompare (20 currencies, completely free!)
 - Build your project
 - Run all tests
 - Deploy to GitHub Pages
@@ -228,7 +234,7 @@ After successful deployment:
 ## 🎉 Success Checklist
 
 - [x] Code built successfully locally
-- [x] All 87 tests passing
+- [x] All 85 tests passing
 - [ ] Created GitHub repository
 - [ ] Pushed code to GitHub
 - [ ] Enabled GitHub Pages

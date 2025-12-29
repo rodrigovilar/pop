@@ -1,0 +1,11 @@
+{
+  "month": "2018-06",
+  "currency": "USD",
+  "entryDate": "2018-06-01",
+  "entryPrice": 7530.55,
+  "daysPositive": 6,
+  "daysNegative": 23,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -17.039575731937322,
+  "regime": "BEAR"
+}

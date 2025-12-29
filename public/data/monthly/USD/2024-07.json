@@ -2,10 +2,10 @@
   "month": "2024-07",
   "currency": "USD",
   "entryDate": "2024-07-01",
-  "entryPrice": 60565639.63,
-  "daysPositive": 30,
-  "daysNegative": 0,
+  "entryPrice": 62841.27,
+  "daysPositive": 17,
+  "daysNegative": 13,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": 35.97550762146749,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": -7.206459977318919,
+  "regime": "LATERAL"
 }

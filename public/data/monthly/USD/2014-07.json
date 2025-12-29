@@ -1,0 +1,11 @@
+{
+  "month": "2014-07",
+  "currency": "USD",
+  "entryDate": "2014-07-01",
+  "entryPrice": 643.19,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -1.015712768740656,
+  "regime": "LATERAL"
+}

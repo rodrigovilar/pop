@@ -1,0 +1,11 @@
+{
+  "month": "2019-09",
+  "currency": "USD",
+  "entryDate": "2019-09-01",
+  "entryPrice": 9768.36,
+  "daysPositive": 21,
+  "daysNegative": 8,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -6.161795771096249,
+  "regime": "LATERAL"
+}

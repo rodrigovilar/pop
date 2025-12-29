@@ -2,10 +2,10 @@
   "month": "2020-04",
   "currency": "USD",
   "entryDate": "2020-04-01",
-  "entryPrice": 32434.23,
-  "daysPositive": 25,
-  "daysNegative": 4,
+  "entryPrice": 6663.63,
+  "daysPositive": 28,
+  "daysNegative": 1,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": 67.10698913817427,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": -22.057155021767652,
+  "regime": "BEAR"
 }

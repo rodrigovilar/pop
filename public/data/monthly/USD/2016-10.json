@@ -1,0 +1,11 @@
+{
+  "month": "2016-10",
+  "currency": "USD",
+  "entryDate": "2016-10-01",
+  "entryPrice": 613.41,
+  "daysPositive": 25,
+  "daysNegative": 5,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 7.241385338904519,
+  "regime": "LATERAL"
+}

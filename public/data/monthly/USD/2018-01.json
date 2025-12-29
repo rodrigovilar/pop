@@ -1,0 +1,11 @@
+{
+  "month": "2018-01",
+  "currency": "USD",
+  "entryDate": "2018-01-01",
+  "entryPrice": 13444.88,
+  "daysPositive": 13,
+  "daysNegative": 17,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 23.785086180784003,
+  "regime": "BULL"
+}

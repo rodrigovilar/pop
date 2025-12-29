@@ -2,10 +2,10 @@
   "month": "2025-07",
   "currency": "USD",
   "entryDate": "2025-07-01",
-  "entryPrice": 1213285520.51,
+  "entryPrice": 105724.18,
   "daysPositive": 30,
   "daysNegative": 0,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": 155.1834714777946,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": 0.020803731691832198,
+  "regime": "LATERAL"
 }

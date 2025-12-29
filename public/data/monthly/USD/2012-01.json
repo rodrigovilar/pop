@@ -1,0 +1,11 @@
+{
+  "month": "2012-01",
+  "currency": "USD",
+  "entryDate": "2012-01-01",
+  "entryPrice": 5.268,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 72.15686274509802,
+  "regime": "BULL"
+}

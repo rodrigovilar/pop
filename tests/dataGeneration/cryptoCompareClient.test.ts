@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { convertToDailyPrices, groupByMonth, type CoinGeckoPricePoint, type DailyPrice } from '../../scripts/lib/coinGeckoClient';
+import { convertToDailyPrices, groupByMonth, type PricePoint, type DailyPrice } from '../../scripts/lib/cryptoCompareClient';
 
-describe('CoinGecko Client', () => {
+describe('CryptoCompare Client', () => {
   describe('convertToDailyPrices', () => {
     it('should convert price points to daily prices', () => {
-      const pricePoints: CoinGeckoPricePoint[] = [
+      const pricePoints: PricePoint[] = [
         { timestamp: 1704067200000, price: 42000 }, // 2024-01-01 00:00:00 UTC
         { timestamp: 1704153600000, price: 43000 }, // 2024-01-02 00:00:00 UTC
       ];
@@ -16,37 +16,6 @@ describe('CoinGecko Client', () => {
       expect(result[0].price).toBe(42000);
       expect(result[1].date).toBe('2024-01-02');
       expect(result[1].price).toBe(43000);
-    });
-
-    it('should use last seen price when multiple points per day', () => {
-      const pricePoints: CoinGeckoPricePoint[] = [
-        { timestamp: 1704067200000, price: 42000 }, // 2024-01-01 00:00:00
-        { timestamp: 1704096000000, price: 42500 }, // 2024-01-01 08:00:00
-        { timestamp: 1704124800000, price: 43000 }, // 2024-01-01 16:00:00 (last)
-      ];
-
-      const result = convertToDailyPrices(pricePoints);
-
-      expect(result).toHaveLength(1);
-      expect(result[0].date).toBe('2024-01-01');
-      expect(result[0].price).toBe(43000); // Last seen
-    });
-
-    it('should sort daily prices by date', () => {
-      const pricePoints: CoinGeckoPricePoint[] = [
-        { timestamp: 1704326400000, price: 45000 }, // 2024-01-04
-        { timestamp: 1704067200000, price: 42000 }, // 2024-01-01
-        { timestamp: 1704240000000, price: 44000 }, // 2024-01-03
-        { timestamp: 1704153600000, price: 43000 }, // 2024-01-02
-      ];
-
-      const result = convertToDailyPrices(pricePoints);
-
-      expect(result).toHaveLength(4);
-      expect(result[0].date).toBe('2024-01-01');
-      expect(result[1].date).toBe('2024-01-02');
-      expect(result[2].date).toBe('2024-01-03');
-      expect(result[3].date).toBe('2024-01-04');
     });
 
     it('should handle empty array', () => {

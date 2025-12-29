@@ -1,0 +1,11 @@
+{
+  "month": "2015-02",
+  "currency": "USD",
+  "entryDate": "2015-02-01",
+  "entryPrice": 225.29,
+  "daysPositive": 20,
+  "daysNegative": 7,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": -28.454380894915683,
+  "regime": "BEAR"
+}

@@ -28,7 +28,7 @@ This is an **educational tool** to demonstrate that Bitcoin investing requires:
 - **Drawdown tracking**: Days in discomfort and longest streaks
 - **Regime classification**: BULL/BEAR/LATERAL
 - **Multi-currency**: USD, EUR, BRL, and 17 more
-- **Real data**: CoinGecko API integration
+- **Real data**: CryptoCompare API (free, no key required)
 
 ### 🎮 Interactive Pages
 - **Overview**: Manifesto + Recent months visualization
@@ -84,8 +84,8 @@ This is an **educational tool** to demonstrate that Bitcoin investing requires:
 - **TypeScript** - Type safety
 - **React 18** - UI framework
 - **Vite** - Build tool
-- **Vitest** - Testing (87 tests, 100% passing)
-- **CoinGecko API** - Data source
+- **Vitest** - Testing (85 tests, 100% passing)
+- **CryptoCompare API** - Data source (free, no key required)
 - **LocalStorage** - Client-side cache
 - **Intl API** - Internationalization
 
@@ -118,33 +118,34 @@ npm run lint
 
 ### Data Generation
 
-#### Getting CoinGecko API Key (Free)
-
-1. **Create account:** https://www.coingecko.com/en/developers/dashboard
-2. **Copy Demo API Key** (free plan, 30 calls/min, 10k calls/month)
-3. **Configure locally:**
-   ```bash
-   # Create .env file from template
-   cp .env.example .env
-
-   # Edit .env and add your key
-   COINGECKO_API_KEY=cg-demo-your-key-here
-   ```
+The app uses **CryptoCompare API** (completely free, no API key required).
 
 #### Generate Data
 
 ```bash
-# With .env configured (recommended)
+# Generate all currencies (USD, EUR, BRL, etc.)
 npm run generate:data
 
 # Generate specific currency only
 npm run generate:data -- --currency=USD
 
-# Generate mock data (for testing, no API key needed)
+# Generate mock data (for testing, no API calls)
 npm run generate:data -- --test --mock
 ```
 
-**Note:** Attribution to CoinGecko is included in the About page as per their [brand guidelines](https://brand.coingecko.com/resources/attribution-guide).
+#### Optional: API Key for Higher Rate Limits
+
+While not required, you can optionally add a free CryptoCompare API key for higher rate limits:
+
+1. **Get free API key:** https://www.cryptocompare.com/cryptopian/api-keys
+2. **Configure locally:**
+   ```bash
+   # Create .env file from template
+   cp .env.example .env
+
+   # Edit .env and add your key (optional)
+   CRYPTOCOMPARE_API_KEY=your-key-here
+   ```
 
 ### Production Build
 
@@ -160,9 +161,9 @@ npm run preview
 
 ```
 Test Files:  8 passed (8)
-Tests:       87 passed (87)
+Tests:       85 passed (85)
 ├─ Setup:              3 tests
-├─ Data Generation:   26 tests
+├─ Data Generation:   24 tests
 ├─ DCA Engine:        13 tests
 ├─ Cache Manager:     16 tests
 ├─ Data Loader:       10 tests

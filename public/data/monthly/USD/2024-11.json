@@ -2,10 +2,10 @@
   "month": "2024-11",
   "currency": "USD",
   "entryDate": "2024-11-01",
-  "entryPrice": 258976858.3,
-  "daysPositive": 1,
-  "daysNegative": 28,
+  "entryPrice": 69473.41,
+  "daysPositive": 25,
+  "daysNegative": 4,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": -33.461943195927155,
-  "regime": "BEAR"
+  "pctChangeVsPrevMonthStart": 14.28416093025736,
+  "regime": "BULL"
 }

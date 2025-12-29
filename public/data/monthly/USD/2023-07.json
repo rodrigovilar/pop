@@ -2,10 +2,10 @@
   "month": "2023-07",
   "currency": "USD",
   "entryDate": "2023-07-01",
-  "entryPrice": 14211208.53,
-  "daysPositive": 0,
-  "daysNegative": 30,
+  "entryPrice": 30590.76,
+  "daysPositive": 5,
+  "daysNegative": 25,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": -48.109161408373595,
-  "regime": "BEAR"
+  "pctChangeVsPrevMonthStart": 14.035144616754133,
+  "regime": "BULL"
 }

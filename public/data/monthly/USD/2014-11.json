@@ -1,0 +1,11 @@
+{
+  "month": "2014-11",
+  "currency": "USD",
+  "entryDate": "2014-11-01",
+  "entryPrice": 325.43,
+  "daysPositive": 27,
+  "daysNegative": 2,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -14.995820708389921,
+  "regime": "BEAR"
+}

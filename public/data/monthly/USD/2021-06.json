@@ -2,10 +2,10 @@
   "month": "2021-06",
   "currency": "USD",
   "entryDate": "2021-06-01",
-  "entryPrice": 50481.1,
-  "daysPositive": 1,
-  "daysNegative": 28,
+  "entryPrice": 36683.51,
+  "daysPositive": 10,
+  "daysNegative": 19,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": -42.01622912922633,
+  "pctChangeVsPrevMonthStart": -36.581075446085585,
   "regime": "BEAR"
 }

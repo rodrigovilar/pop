@@ -1,0 +1,11 @@
+{
+  "month": "2014-05",
+  "currency": "USD",
+  "entryDate": "2014-05-01",
+  "entryPrice": 460.13,
+  "daysPositive": 12,
+  "daysNegative": 18,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -0.7163663825655396,
+  "regime": "LATERAL"
+}

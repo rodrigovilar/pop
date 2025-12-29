@@ -16,7 +16,7 @@
 import 'dotenv/config';
 import * as fs from 'fs/promises';
 import * as path from 'path';
-import { fetchBitcoinHistory, convertToDailyPrices, groupByMonth } from './lib/coinGeckoClient';
+import { fetchAllBitcoinHistory, convertToDailyPrices, groupByMonth } from './lib/cryptoCompareClient';
 import { getMockDataForCurrency } from './lib/mockData';
 import { processMonth } from './lib/monthProcessor';
 import { calculateRegime } from './lib/regimeCalculator';
@@ -55,8 +55,8 @@ async function generateCurrencyData(currency: Currency, options: GenerationOptio
     console.log(`  Using mock data...`);
     pricePoints = getMockDataForCurrency(currency.toLowerCase());
   } else {
-    console.log(`  Fetching from CoinGecko...`);
-    pricePoints = await fetchBitcoinHistory(currency.toLowerCase(), 'max', options.apiKey);
+    console.log(`  Fetching from CryptoCompare...`);
+    pricePoints = await fetchAllBitcoinHistory(currency, options.apiKey);
   }
   console.log(`  Received ${pricePoints.length} data points`);
 
@@ -159,7 +159,7 @@ async function main() {
   const options: GenerationOptions = {
     testMode: args.includes('--test'),
     useMockData: args.includes('--mock'),
-    apiKey: process.env.COINGECKO_API_KEY,
+    apiKey: process.env.CRYPTOCOMPARE_API_KEY, // Optional, works without key
   };
 
   // Parse currency argument
@@ -174,7 +174,10 @@ async function main() {
   console.log('🚀 PoP Data Generation Script');
   console.log(`📅 Mode: ${options.testMode ? 'TEST (USD only)' : 'FULL'}`);
   console.log(`💱 Currencies: ${currencies.join(', ')}`);
-  console.log(`📊 Data source: ${options.useMockData ? 'MOCK' : 'CoinGecko API'}`);
+  console.log(`📊 Data source: ${options.useMockData ? 'MOCK' : 'CryptoCompare API (FREE)'}`);
+  if (options.apiKey) {
+    console.log(`🔑 API Key: LOADED (${options.apiKey.substring(0, 10)}...)`);
+  }
 
   try {
     // Create directories

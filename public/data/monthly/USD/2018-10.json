@@ -1,0 +1,11 @@
+{
+  "month": "2018-10",
+  "currency": "USD",
+  "entryDate": "2018-10-01",
+  "entryPrice": 6594.98,
+  "daysPositive": 5,
+  "daysNegative": 25,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -8.4470518334245,
+  "regime": "LATERAL"
+}

@@ -2,10 +2,10 @@
   "month": "2022-08",
   "currency": "USD",
   "entryDate": "2022-08-01",
-  "entryPrice": 4642859.06,
-  "daysPositive": 1,
-  "daysNegative": 29,
+  "entryPrice": 23271.57,
+  "daysPositive": 10,
+  "daysNegative": 20,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": -23.08966334447438,
-  "regime": "BEAR"
+  "pctChangeVsPrevMonthStart": 20.895480518023213,
+  "regime": "BULL"
 }

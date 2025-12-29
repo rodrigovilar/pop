@@ -1,0 +1,11 @@
+{
+  "month": "2012-06",
+  "currency": "USD",
+  "entryDate": "2012-06-01",
+  "entryPrice": 5.275,
+  "daysPositive": 26,
+  "daysNegative": 3,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 5.500000000000007,
+  "regime": "LATERAL"
+}

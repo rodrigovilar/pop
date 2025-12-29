@@ -2,10 +2,10 @@
   "month": "2022-11",
   "currency": "USD",
   "entryDate": "2022-11-01",
-  "entryPrice": 1496550.16,
-  "daysPositive": 17,
-  "daysNegative": 12,
+  "entryPrice": 20480.27,
+  "daysPositive": 4,
+  "daysNegative": 25,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": -17.184060239507414,
-  "regime": "BEAR"
+  "pctChangeVsPrevMonthStart": 6.038689113988024,
+  "regime": "LATERAL"
 }

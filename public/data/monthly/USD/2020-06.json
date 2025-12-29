@@ -2,10 +2,10 @@
   "month": "2020-06",
   "currency": "USD",
   "entryDate": "2020-06-01",
-  "entryPrice": 24735.11,
+  "entryPrice": 10211.23,
   "daysPositive": 0,
   "daysNegative": 29,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": -38.58438061375619,
-  "regime": "BEAR"
+  "pctChangeVsPrevMonthStart": 15.653994962125314,
+  "regime": "BULL"
 }

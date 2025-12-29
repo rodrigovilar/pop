@@ -1,0 +1,11 @@
+{
+  "month": "2019-10",
+  "currency": "USD",
+  "entryDate": "2019-10-01",
+  "entryPrice": 8326.64,
+  "daysPositive": 11,
+  "daysNegative": 19,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -14.759079313211235,
+  "regime": "BEAR"
+}
