@@ -82,7 +82,8 @@
     "principle3": "No profit promises",
     "principle4": "Only education",
     "philosophy": "Philosophy",
-    "philosophyText": "Bitcoin teaches behavior, not profit. Most of the experience is drawdown, lateralization, and discomfort. A small number of days explain most appreciation, and these days are unpredictable."
+    "philosophyText": "Bitcoin teaches behavior, not profit. Most of the experience is drawdown, lateralization, and discomfort. A small number of days explain most appreciation, and these days are unpredictable.",
+    "dataSource": "Data provided by"
   },
   "common": {
     "loading": "Loading...",

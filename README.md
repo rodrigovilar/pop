@@ -118,16 +118,33 @@ npm run lint
 
 ### Data Generation
 
+#### Getting CoinGecko API Key (Free)
+
+1. **Create account:** https://www.coingecko.com/en/developers/dashboard
+2. **Copy Demo API Key** (free plan, 30 calls/min, 10k calls/month)
+3. **Configure locally:**
+   ```bash
+   # Create .env file from template
+   cp .env.example .env
+
+   # Edit .env and add your key
+   COINGECKO_API_KEY=cg-demo-your-key-here
+   ```
+
+#### Generate Data
+
 ```bash
-# Generate mock data (for development)
+# With .env configured (recommended)
+npm run generate:data
+
+# Generate specific currency only
+npm run generate:data -- --currency=USD
+
+# Generate mock data (for testing, no API key needed)
 npm run generate:data -- --test --mock
-
-# Generate data for specific currency (requires API key)
-COINGECKO_API_KEY=your_key npm run generate:data -- --currency=USD
-
-# Generate all currencies (requires API key)
-COINGECKO_API_KEY=your_key npm run generate:data
 ```
+
+**Note:** Attribution to CoinGecko is included in the About page as per their [brand guidelines](https://brand.coingecko.com/resources/attribution-guide).
 
 ### Production Build
 

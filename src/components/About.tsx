@@ -68,6 +68,28 @@ export function About() {
         </p>
       </section>
 
+      <section style={{ marginBottom: '2rem', textAlign: 'center' }}>
+        <p style={{
+          fontSize: '0.875rem',
+          color: '#6b7280',
+          marginBottom: '0.5rem',
+        }}>
+          {t('about.dataSource')}
+        </p>
+        <a
+          href="https://www.coingecko.com?utm_source=pop-proof-of-patience&utm_medium=referral"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: '#f97316',
+            textDecoration: 'none',
+            fontWeight: '500',
+          }}
+        >
+          CoinGecko
+        </a>
+      </section>
+
       <div style={{
         backgroundColor: '#f9fafb',
         padding: '2rem',

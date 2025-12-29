@@ -13,6 +13,7 @@
  *   tsx scripts/generateData.ts --currency=USD --test
  */
 
+import 'dotenv/config';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import { fetchBitcoinHistory, convertToDailyPrices, groupByMonth } from './lib/coinGeckoClient';
