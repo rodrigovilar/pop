@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { DataLoader } from '../../src/lib/dataLoader';
+import { DataLoader, type LoadingProgress } from '../../src/lib/dataLoader';
 import type { Manifest, MonthlyData } from '../../src/types';
 
 // Mock fetch
@@ -15,6 +15,15 @@ vi.mock('../../src/lib/cacheManager', () => ({
 }));
 
 import { cacheManager } from '../../src/lib/cacheManager';
+
+// Helper to create mock Response objects
+function mockResponse<T>(data?: T, ok = true, status = 200): Response {
+  return {
+    ok,
+    status,
+    json: async () => data,
+  } as Response;
+}
 
 describe('Data Loader', () => {
   beforeEach(() => {
@@ -38,10 +47,7 @@ describe('Data Loader', () => {
       };
 
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockResolvedValue({
-        ok: true,
-        json: async () => mockManifest,
-      });
+      vi.mocked(global.fetch).mockResolvedValue(mockResponse(mockManifest));
 
       const loader = new DataLoader({ currency: 'USD' });
       const result = await loader.loadManifest();
@@ -75,10 +81,7 @@ describe('Data Loader', () => {
 
     it('should throw error if manifest fetch fails', async () => {
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockResolvedValue({
-        ok: false,
-        status: 404,
-      });
+      vi.mocked(global.fetch).mockResolvedValue(mockResponse(undefined, false, 404));
 
       const loader = new DataLoader({ currency: 'USD' });
 
@@ -101,10 +104,7 @@ describe('Data Loader', () => {
       };
 
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockResolvedValue({
-        ok: true,
-        json: async () => mockData,
-      });
+      vi.mocked(global.fetch).mockResolvedValue(mockResponse(mockData));
 
       const loader = new DataLoader({ currency: 'USD' });
       const result = await loader.loadMonth('2024-01', 'USD');
@@ -137,10 +137,7 @@ describe('Data Loader', () => {
 
     it('should throw error if month fetch fails', async () => {
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockResolvedValue({
-        ok: false,
-        status: 404,
-      });
+      vi.mocked(global.fetch).mockResolvedValue(mockResponse(undefined, false, 404));
 
       const loader = new DataLoader({ currency: 'USD' });
 
@@ -163,10 +160,7 @@ describe('Data Loader', () => {
       };
 
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockResolvedValue({
-        ok: true,
-        json: async () => mockData,
-      });
+      vi.mocked(global.fetch).mockResolvedValue(mockResponse(mockData));
 
       const loader = new DataLoader({ currency: 'USD', maxConcurrent: 3 });
       const months = ['2024-01', '2024-02', '2024-03'];
@@ -191,10 +185,7 @@ describe('Data Loader', () => {
       };
 
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockResolvedValue({
-        ok: true,
-        json: async () => mockData,
-      });
+      vi.mocked(global.fetch).mockResolvedValue(mockResponse(mockData));
 
       const loader = new DataLoader({ currency: 'USD', maxConcurrent: 2 });
       const months = ['2024-01', '2024-02', '2024-03', '2024-04', '2024-05'];
@@ -233,17 +224,12 @@ describe('Data Loader', () => {
       };
 
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockImplementation((url: string) => {
+      vi.mocked(global.fetch).mockImplementation((input: RequestInfo | URL) => {
+        const url = typeof input === 'string' ? input : input.toString();
         if (url.includes('manifest')) {
-          return Promise.resolve({
-            ok: true,
-            json: async () => mockManifest,
-          });
+          return Promise.resolve(mockResponse(mockManifest));
         }
-        return Promise.resolve({
-          ok: true,
-          json: async () => mockData,
-        });
+        return Promise.resolve(mockResponse(mockData));
       });
 
       const progressUpdates: LoadingProgress[] = [];
@@ -287,17 +273,12 @@ describe('Data Loader', () => {
       };
 
       vi.mocked(cacheManager.get).mockReturnValue(null);
-      vi.mocked(global.fetch).mockImplementation((url: string) => {
+      vi.mocked(global.fetch).mockImplementation((input: RequestInfo | URL) => {
+        const url = typeof input === 'string' ? input : input.toString();
         if (url.includes('manifest')) {
-          return Promise.resolve({
-            ok: true,
-            json: async () => mockManifest,
-          });
+          return Promise.resolve(mockResponse(mockManifest));
         }
-        return Promise.resolve({
-          ok: true,
-          json: async () => mockData,
-        });
+        return Promise.resolve(mockResponse(mockData));
       });
 
       const loader = new DataLoader({ currency: 'USD' });
