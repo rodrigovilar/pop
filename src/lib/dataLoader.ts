@@ -42,7 +42,8 @@ export class DataLoader {
     this.currency = options.currency;
     this.maxConcurrent = options.maxConcurrent || 3;
     this.onProgress = options.onProgress;
-    this.baseUrl = options.baseUrl || '/data';
+    const base = import.meta.env.BASE_URL || '/';
+    this.baseUrl = options.baseUrl || `${base}data`;
   }
 
   /**
