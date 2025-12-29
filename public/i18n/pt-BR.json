@@ -1,0 +1,100 @@
+{
+  "app": {
+    "title": "PoP - Prova de Paciência",
+    "tagline": "Bitcoin recompensa poucos dias — mas exige presença em todos eles."
+  },
+  "manifesto": {
+    "line1": "Bitcoin recompensa poucos dias —",
+    "line2": "mas exige presença em todos eles.",
+    "line3": "",
+    "line4": "A maior parte do tempo há desconforto.",
+    "line5": "Poucos momentos justificam o sacrifício.",
+    "line6": "",
+    "line7": "Não há atalhos.",
+    "line8": "Apenas disciplina, tempo e convicção."
+  },
+  "navigation": {
+    "overview": "Visão Geral",
+    "dca": "Simulação DCA",
+    "keyDays": "Dias Chave",
+    "about": "Sobre"
+  },
+  "settings": {
+    "language": "Idioma",
+    "currency": "Moeda"
+  },
+  "overview": {
+    "title": "A Realidade do Bitcoin",
+    "subtitle": "Compreendendo tempo, disciplina e paciência",
+    "daysPositive": "Dias Positivos",
+    "daysNegative": "Dias Negativos",
+    "daysLateral": "Dias Laterais",
+    "currentMonth": "Mês Atual",
+    "regime": "Regime",
+    "regimes": {
+      "BULL": "Alta",
+      "BEAR": "Baixa",
+      "LATERAL": "Lateral",
+      "N/A": "N/D"
+    }
+  },
+  "dca": {
+    "title": "Simulação DCA",
+    "subtitle": "Simule sua jornada de disciplina com Bitcoin",
+    "startDate": "Data de Início",
+    "monthlyAmount": "Valor Mensal",
+    "simulate": "Simular",
+    "errors": {
+      "selectDate": "Por favor selecione uma data de início",
+      "invalidAmount": "Por favor insira um valor mensal válido"
+    },
+    "results": {
+      "totalInvested": "Total Investido",
+      "totalBTC": "Total BTC",
+      "currentValue": "Valor Atual",
+      "pnl": "L&P",
+      "daysInDrawdown": "Dias em Perda",
+      "longestStreak": "Maior Sequência Negativa"
+    },
+    "insights": {
+      "drawdownTitle": "Tempo de Desconforto",
+      "drawdownText": "Você passou {days} dias abaixo do seu preço médio. Isso é normal.",
+      "disciplineTitle": "Disciplina Acima de Timing",
+      "disciplineText": "Sua maior sequência negativa foi de {days} dias. Paciência é o jogo."
+    }
+  },
+  "keyDays": {
+    "title": "Poucos Dias Importam",
+    "subtitle": "Um pequeno número de dias explica a maior parte da valorização",
+    "top10": "Top 10 Dias",
+    "top50": "Top 50 Dias",
+    "top100": "Top 100 Dias",
+    "contribution": "{percent}% da valorização total",
+    "insight": "Perder esses poucos dias invalidaria anos de espera."
+  },
+  "about": {
+    "title": "Sobre o PoP",
+    "purpose": "Propósito",
+    "purposeText": "Esta é uma ferramenta educacional para demonstrar que investir em Bitcoin requer sacrifício, disciplina e baixa preferência temporal. NÃO é uma ferramenta de trading, previsão de preços ou otimização de lucros.",
+    "principles": "Princípios",
+    "principle1": "Sem previsões de preço",
+    "principle2": "Sem sinais de trading",
+    "principle3": "Sem promessas de lucro",
+    "principle4": "Apenas educação",
+    "philosophy": "Filosofia",
+    "philosophyText": "Bitcoin ensina comportamento, não lucro. A maior parte da experiência é queda, lateralização e desconforto. Um pequeno número de dias explica a maior parte da valorização, e esses dias são imprevisíveis."
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "retry": "Tentar Novamente",
+    "month": "Mês",
+    "year": "Ano",
+    "day": "Dia",
+    "days": "dias",
+    "price": "Preço",
+    "change": "Mudança",
+    "from": "de",
+    "to": "para"
+  }
+}
