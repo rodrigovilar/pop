@@ -13,6 +13,11 @@
     "line7": "Não há atalhos.",
     "line8": "Apenas disciplina, tempo e convicção."
   },
+  "main": {
+    "ifYouHadInvested": "Se você tivesse investido em Bitcoin em",
+    "monthlyProgression": "Progressão Mensal",
+    "dcaSimulation": "Acumulação DCA"
+  },
   "navigation": {
     "overview": "Visão Geral",
     "dca": "Simulação DCA",

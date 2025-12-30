@@ -13,6 +13,11 @@
     "line7": "There are no shortcuts.",
     "line8": "Only discipline, time, and conviction."
   },
+  "main": {
+    "ifYouHadInvested": "If you had invested in Bitcoin on",
+    "monthlyProgression": "Monthly Progression",
+    "dcaSimulation": "DCA Accumulation"
+  },
   "navigation": {
     "overview": "Overview",
     "dca": "DCA Simulation",

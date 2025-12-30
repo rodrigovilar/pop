@@ -1,18 +1,14 @@
 import { useState } from 'react';
 import { I18nProvider } from './contexts/I18nContext';
-import { Navigation } from './components/Navigation';
 import { Settings } from './components/Settings';
 import { HeroIllustration } from './components/HeroIllustration';
-import { Overview } from './components/Overview';
-import { DCASimulation } from './components/DCASimulation';
-import { About } from './components/About';
+import { MainView } from './components/MainView';
 import { LoadingState } from './components/LoadingState';
 import { useData } from './hooks/useData';
 import { theme } from './styles/theme';
 import type { Currency } from './types';
 
 function AppContent() {
-  const [currentPage, setCurrentPage] = useState('overview');
   const [currency, setCurrency] = useState<Currency>('USD');
   const { monthlyData, isLoading, progress, error } = useData({
     currency,
@@ -32,77 +28,90 @@ function AppContent() {
     );
   }
 
-  const renderPage = () => {
-    if (isLoading || monthlyData.size === 0) {
-      return <LoadingState progress={progress} />;
-    }
-
-    switch (currentPage) {
-      case 'overview':
-        return <Overview monthlyData={monthlyData} />;
-      case 'dca':
-        return <DCASimulation monthlyData={monthlyData} currency={currency} />;
-      case 'about':
-        return <About />;
-      default:
-        return <Overview monthlyData={monthlyData} />;
-    }
-  };
+  if (isLoading || monthlyData.size === 0) {
+    return <LoadingState progress={progress} />;
+  }
 
   return (
     <div style={{
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
-      backgroundColor: theme.colors.background.primary,
+      backgroundColor: '#ffffff', // Pure white background
     }}>
+      {/* Header with Settings */}
       <header style={{
-        textAlign: 'center',
-        padding: `${theme.spacing['2xl']} ${theme.spacing.md} ${theme.spacing.xl}`,
-        background: `linear-gradient(180deg, ${theme.colors.background.tertiary} 0%, ${theme.colors.background.primary} 100%)`,
+        borderBottom: `2px solid ${theme.colors.secondary[200]}`,
+        backgroundColor: '#ffffff',
+        position: 'sticky',
+        top: 0,
+        zIndex: 100,
+        boxShadow: theme.shadows.sm,
       }}>
-        <h1 style={{
-          fontSize: theme.typography.fontSize['5xl'],
-          fontWeight: theme.typography.fontWeight.bold,
-          margin: `0 0 ${theme.spacing.sm} 0`,
-          background: `linear-gradient(135deg, ${theme.colors.primary[700]} 0%, ${theme.colors.primary[900]} 100%)`,
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          letterSpacing: '-0.02em',
+        <div style={{
+          maxWidth: '1400px',
+          margin: '0 auto',
+          padding: `${theme.spacing.lg} ${theme.spacing.xl}`,
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
         }}>
-          PoP
-        </h1>
-        <p style={{
-          fontSize: theme.typography.fontSize.xl,
-          color: theme.colors.text.secondary,
-          margin: `0 0 ${theme.spacing.xl} 0`,
-          fontWeight: theme.typography.fontWeight.medium,
-        }}>
-          Proof of Patience
-        </p>
+          <div>
+            <h1 style={{
+              fontSize: theme.typography.fontSize['2xl'],
+              fontWeight: theme.typography.fontWeight.bold,
+              margin: 0,
+              background: `linear-gradient(135deg, ${theme.colors.primary[700]} 0%, ${theme.colors.primary[900]} 100%)`,
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}>
+              PoP
+            </h1>
+            <p style={{
+              fontSize: theme.typography.fontSize.sm,
+              color: theme.colors.text.secondary,
+              margin: 0,
+            }}>
+              Proof of Patience
+            </p>
+          </div>
 
-        <HeroIllustration />
+          {/* Settings in header */}
+          <div style={{
+            display: 'flex',
+            gap: theme.spacing.lg,
+            alignItems: 'center',
+          }}>
+            <Settings currency={currency} onCurrencyChange={setCurrency} />
+          </div>
+        </div>
       </header>
 
-      <Settings currency={currency} onCurrencyChange={setCurrency} />
-      <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
-
+      {/* Main content */}
       <main style={{ flex: 1 }}>
-        {renderPage()}
+        <MainView monthlyData={monthlyData} currency={currency} />
       </main>
 
+      {/* Illustration moved to bottom */}
+      <div style={{
+        padding: `${theme.spacing['4xl']} ${theme.spacing.xl}`,
+        backgroundColor: theme.colors.background.secondary,
+      }}>
+        <HeroIllustration />
+      </div>
+
+      {/* Footer */}
       <footer style={{
-        marginTop: theme.spacing['4xl'],
-        paddingTop: theme.spacing['2xl'],
+        paddingTop: theme.spacing.xl,
+        paddingBottom: theme.spacing.xl,
         borderTop: `1px solid ${theme.colors.secondary[200]}`,
         textAlign: 'center',
         color: theme.colors.text.tertiary,
         fontSize: theme.typography.fontSize.sm,
-        padding: `${theme.spacing['2xl']} ${theme.spacing.md}`,
         backgroundColor: theme.colors.background.secondary,
       }}>
         <p style={{
-          margin: `0 0 ${theme.spacing.sm} 0`,
+          margin: `0 0 ${theme.spacing.xs} 0`,
           color: theme.colors.text.secondary,
           fontWeight: theme.typography.fontWeight.medium,
         }}>

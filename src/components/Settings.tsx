@@ -46,13 +46,8 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
   return (
     <div style={{
       display: 'flex',
-      gap: theme.spacing.lg,
+      gap: theme.spacing.md,
       alignItems: 'center',
-      justifyContent: 'center',
-      flexWrap: 'wrap',
-      padding: `${theme.spacing.md} ${theme.spacing.md}`,
-      borderBottom: `1px solid ${theme.colors.secondary[200]}`,
-      backgroundColor: theme.colors.background.tertiary,
     }}>
       {/* Language Selector */}
       <div style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
