@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { I18nProvider } from './contexts/I18nContext';
 import { Navigation } from './components/Navigation';
 import { Settings } from './components/Settings';
+import { HeroIllustration } from './components/HeroIllustration';
 import { Overview } from './components/Overview';
 import { DCASimulation } from './components/DCASimulation';
 import { About } from './components/About';
 import { LoadingState } from './components/LoadingState';
 import { useData } from './hooks/useData';
+import { theme } from './styles/theme';
 import type { Currency } from './types';
 
 function AppContent() {
@@ -48,25 +50,38 @@ function AppContent() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <header style={{ textAlign: 'center', padding: '2rem 1rem 1rem' }}>
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      backgroundColor: theme.colors.background.primary,
+    }}>
+      <header style={{
+        textAlign: 'center',
+        padding: `${theme.spacing['2xl']} ${theme.spacing.md} ${theme.spacing.xl}`,
+        background: `linear-gradient(180deg, ${theme.colors.background.tertiary} 0%, ${theme.colors.background.primary} 100%)`,
+      }}>
         <h1 style={{
-          fontSize: '2.5rem',
-          fontWeight: 'bold',
-          margin: '0 0 0.5rem 0',
-          background: 'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
+          fontSize: theme.typography.fontSize['5xl'],
+          fontWeight: theme.typography.fontWeight.bold,
+          margin: `0 0 ${theme.spacing.sm} 0`,
+          background: `linear-gradient(135deg, ${theme.colors.primary[700]} 0%, ${theme.colors.primary[900]} 100%)`,
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
+          letterSpacing: '-0.02em',
         }}>
           PoP
         </h1>
         <p style={{
-          fontSize: '1.1rem',
-          color: '#666',
-          margin: 0,
+          fontSize: theme.typography.fontSize.xl,
+          color: theme.colors.text.secondary,
+          margin: `0 0 ${theme.spacing.xl} 0`,
+          fontWeight: theme.typography.fontWeight.medium,
         }}>
           Proof of Patience
         </p>
+
+        <HeroIllustration />
       </header>
 
       <Settings currency={currency} onCurrencyChange={setCurrency} />
@@ -77,18 +92,27 @@ function AppContent() {
       </main>
 
       <footer style={{
-        marginTop: '4rem',
-        paddingTop: '2rem',
-        borderTop: '1px solid #e5e7eb',
+        marginTop: theme.spacing['4xl'],
+        paddingTop: theme.spacing['2xl'],
+        borderTop: `1px solid ${theme.colors.secondary[200]}`,
         textAlign: 'center',
-        color: '#888',
-        fontSize: '0.875rem',
-        padding: '2rem 1rem',
+        color: theme.colors.text.tertiary,
+        fontSize: theme.typography.fontSize.sm,
+        padding: `${theme.spacing['2xl']} ${theme.spacing.md}`,
+        backgroundColor: theme.colors.background.secondary,
       }}>
-        <p>
+        <p style={{
+          margin: `0 0 ${theme.spacing.sm} 0`,
+          color: theme.colors.text.secondary,
+          fontWeight: theme.typography.fontWeight.medium,
+        }}>
           PoP is an educational tool. Not financial advice.
         </p>
-        <p>
+        <p style={{
+          margin: 0,
+          fontStyle: 'italic',
+          color: theme.colors.text.tertiary,
+        }}>
           Bitcoin teaches behavior, not profit.
         </p>
       </footer>

@@ -1,4 +1,5 @@
 import { useI18n } from '../contexts/I18nContext';
+import { theme } from '../styles/theme';
 import type { Language, Currency } from '../types';
 
 interface SettingsProps {
@@ -45,21 +46,22 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
   return (
     <div style={{
       display: 'flex',
-      gap: '1rem',
+      gap: theme.spacing.lg,
       alignItems: 'center',
       justifyContent: 'center',
       flexWrap: 'wrap',
-      padding: '0.5rem 1rem',
-      borderBottom: '1px solid #e5e7eb',
+      padding: `${theme.spacing.md} ${theme.spacing.md}`,
+      borderBottom: `1px solid ${theme.colors.secondary[200]}`,
+      backgroundColor: theme.colors.background.tertiary,
     }}>
       {/* Language Selector */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
         <label
           htmlFor="language-select"
           style={{
-            fontSize: '0.875rem',
-            color: '#666',
-            fontWeight: '500',
+            fontSize: theme.typography.fontSize.sm,
+            color: theme.colors.text.secondary,
+            fontWeight: theme.typography.fontWeight.medium,
           }}
         >
           🌐
@@ -69,13 +71,24 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           value={language}
           onChange={(e) => setLanguage(e.target.value as Language)}
           style={{
-            padding: '0.375rem 0.75rem',
-            fontSize: '0.875rem',
-            border: '1px solid #d1d5db',
-            borderRadius: '0.375rem',
-            backgroundColor: 'white',
+            padding: `${theme.spacing.sm} ${theme.spacing.md}`,
+            fontSize: theme.typography.fontSize.sm,
+            border: `2px solid ${theme.colors.primary[200]}`,
+            borderRadius: theme.borderRadius.md,
+            backgroundColor: theme.colors.background.tertiary,
+            color: theme.colors.text.primary,
+            fontWeight: theme.typography.fontWeight.medium,
             cursor: 'pointer',
             outline: 'none',
+            transition: theme.transitions.base,
+          }}
+          onFocus={(e) => {
+            e.currentTarget.style.borderColor = theme.colors.primary[400];
+            e.currentTarget.style.boxShadow = `0 0 0 3px ${theme.colors.primary[100]}`;
+          }}
+          onBlur={(e) => {
+            e.currentTarget.style.borderColor = theme.colors.primary[200];
+            e.currentTarget.style.boxShadow = 'none';
           }}
         >
           {AVAILABLE_LANGUAGES.map((lang) => (
@@ -87,13 +100,13 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
       </div>
 
       {/* Currency Selector */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
         <label
           htmlFor="currency-select"
           style={{
-            fontSize: '0.875rem',
-            color: '#666',
-            fontWeight: '500',
+            fontSize: theme.typography.fontSize.sm,
+            color: theme.colors.text.secondary,
+            fontWeight: theme.typography.fontWeight.medium,
           }}
         >
           💱
@@ -103,13 +116,24 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           value={currency}
           onChange={(e) => onCurrencyChange(e.target.value as Currency)}
           style={{
-            padding: '0.375rem 0.75rem',
-            fontSize: '0.875rem',
-            border: '1px solid #d1d5db',
-            borderRadius: '0.375rem',
-            backgroundColor: 'white',
+            padding: `${theme.spacing.sm} ${theme.spacing.md}`,
+            fontSize: theme.typography.fontSize.sm,
+            border: `2px solid ${theme.colors.primary[200]}`,
+            borderRadius: theme.borderRadius.md,
+            backgroundColor: theme.colors.background.tertiary,
+            color: theme.colors.text.primary,
+            fontWeight: theme.typography.fontWeight.medium,
             cursor: 'pointer',
             outline: 'none',
+            transition: theme.transitions.base,
+          }}
+          onFocus={(e) => {
+            e.currentTarget.style.borderColor = theme.colors.primary[400];
+            e.currentTarget.style.boxShadow = `0 0 0 3px ${theme.colors.primary[100]}`;
+          }}
+          onBlur={(e) => {
+            e.currentTarget.style.borderColor = theme.colors.primary[200];
+            e.currentTarget.style.boxShadow = 'none';
           }}
         >
           {AVAILABLE_CURRENCIES.map((curr) => (

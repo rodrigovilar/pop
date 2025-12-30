@@ -1,4 +1,5 @@
 import { useI18n } from '../contexts/I18nContext';
+import { theme } from '../styles/theme';
 
 interface NavigationProps {
   currentPage: string;
@@ -16,15 +17,17 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
 
   return (
     <nav style={{
-      borderBottom: '1px solid #e5e7eb',
-      marginBottom: '2rem',
+      borderBottom: `2px solid ${theme.colors.secondary[200]}`,
+      marginBottom: theme.spacing['2xl'],
+      backgroundColor: theme.colors.background.tertiary,
+      boxShadow: theme.shadows.sm,
     }}>
       <div style={{
         display: 'flex',
-        gap: '2rem',
+        gap: theme.spacing['2xl'],
         maxWidth: '900px',
         margin: '0 auto',
-        padding: '0 1rem',
+        padding: `0 ${theme.spacing.md}`,
       }}>
         {pages.map((page) => (
           <button
@@ -33,13 +36,23 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
             style={{
               background: 'none',
               border: 'none',
-              padding: '1rem 0',
+              padding: `${theme.spacing.lg} 0`,
               cursor: 'pointer',
-              fontSize: '0.95rem',
-              fontWeight: currentPage === page.id ? '600' : '400',
-              color: currentPage === page.id ? '#f97316' : '#666',
-              borderBottom: currentPage === page.id ? '2px solid #f97316' : '2px solid transparent',
-              transition: 'all 0.2s',
+              fontSize: theme.typography.fontSize.base,
+              fontWeight: currentPage === page.id ? theme.typography.fontWeight.semibold : theme.typography.fontWeight.medium,
+              color: currentPage === page.id ? theme.colors.primary[700] : theme.colors.text.secondary,
+              borderBottom: currentPage === page.id ? `3px solid ${theme.colors.primary[600]}` : '3px solid transparent',
+              transition: theme.transitions.base,
+            }}
+            onMouseEnter={(e) => {
+              if (currentPage !== page.id) {
+                e.currentTarget.style.color = theme.colors.primary[600];
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (currentPage !== page.id) {
+                e.currentTarget.style.color = theme.colors.text.secondary;
+              }
             }}
           >
             {page.label}

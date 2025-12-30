@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Manifesto } from './Manifesto';
 import { MonthOverview } from './MonthOverview';
 import { useI18n } from '../contexts/I18nContext';
+import { theme } from '../styles/theme';
 import type { MonthlyData } from '../types';
 
 interface OverviewProps {
@@ -28,14 +29,19 @@ export function Overview({ monthlyData }: OverviewProps) {
   };
 
   return (
-    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem 1rem' }}>
+    <div style={{
+      maxWidth: '900px',
+      margin: '0 auto',
+      padding: `${theme.spacing['2xl']} ${theme.spacing.md}`,
+    }}>
       <Manifesto />
 
-      <section style={{ marginTop: '3rem' }}>
+      <section style={{ marginTop: theme.spacing['3xl'] }}>
         <h2 style={{
-          fontSize: '1.5rem',
-          marginBottom: '1.5rem',
-          color: '#333',
+          fontSize: theme.typography.fontSize['2xl'],
+          marginBottom: theme.spacing['2xl'],
+          color: theme.colors.text.primary,
+          fontWeight: theme.typography.fontWeight.semibold,
         }}>
           {t('overview.recentMonths')}
         </h2>
@@ -47,28 +53,36 @@ export function Overview({ monthlyData }: OverviewProps) {
         {hasMore && (
           <div style={{
             display: 'flex',
-            gap: '1rem',
+            gap: theme.spacing.md,
             justifyContent: 'center',
-            marginTop: '2rem',
+            marginTop: theme.spacing['2xl'],
+            flexWrap: 'wrap',
           }}>
             <button
               onClick={loadMore}
               style={{
-                padding: '0.75rem 1.5rem',
-                fontSize: '0.875rem',
-                fontWeight: '500',
-                color: '#f97316',
-                backgroundColor: 'white',
-                border: '2px solid #f97316',
-                borderRadius: '0.375rem',
+                padding: `${theme.spacing.md} ${theme.spacing.xl}`,
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.primary[700],
+                backgroundColor: theme.colors.background.tertiary,
+                border: `2px solid ${theme.colors.primary[300]}`,
+                borderRadius: theme.borderRadius.lg,
                 cursor: 'pointer',
-                transition: 'all 0.2s',
+                transition: theme.transitions.base,
+                boxShadow: theme.shadows.sm,
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#fff7ed';
+                e.currentTarget.style.backgroundColor = theme.colors.primary[50];
+                e.currentTarget.style.borderColor = theme.colors.primary[400];
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = theme.shadows.md;
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'white';
+                e.currentTarget.style.backgroundColor = theme.colors.background.tertiary;
+                e.currentTarget.style.borderColor = theme.colors.primary[300];
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = theme.shadows.sm;
               }}
             >
               {t('overview.loadMore')} (12 {t('overview.months')})
@@ -76,23 +90,28 @@ export function Overview({ monthlyData }: OverviewProps) {
             <button
               onClick={showAll}
               style={{
-                padding: '0.75rem 1.5rem',
-                fontSize: '0.875rem',
-                fontWeight: '500',
-                color: 'white',
-                backgroundColor: '#f97316',
-                border: '2px solid #f97316',
-                borderRadius: '0.375rem',
+                padding: `${theme.spacing.md} ${theme.spacing.xl}`,
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.background.tertiary,
+                backgroundColor: theme.colors.primary[600],
+                border: `2px solid ${theme.colors.primary[600]}`,
+                borderRadius: theme.borderRadius.lg,
                 cursor: 'pointer',
-                transition: 'all 0.2s',
+                transition: theme.transitions.base,
+                boxShadow: theme.shadows.md,
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#ea580c';
-                e.currentTarget.style.borderColor = '#ea580c';
+                e.currentTarget.style.backgroundColor = theme.colors.primary[700];
+                e.currentTarget.style.borderColor = theme.colors.primary[700];
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = theme.shadows.lg;
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#f97316';
-                e.currentTarget.style.borderColor = '#f97316';
+                e.currentTarget.style.backgroundColor = theme.colors.primary[600];
+                e.currentTarget.style.borderColor = theme.colors.primary[600];
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = theme.shadows.md;
               }}
             >
               {t('overview.showAll')} ({allMonths.length} {t('overview.months')})
@@ -102,9 +121,10 @@ export function Overview({ monthlyData }: OverviewProps) {
 
         <p style={{
           textAlign: 'center',
-          color: '#888',
-          fontSize: '0.875rem',
-          marginTop: '1.5rem',
+          color: theme.colors.text.tertiary,
+          fontSize: theme.typography.fontSize.sm,
+          marginTop: theme.spacing.xl,
+          fontWeight: theme.typography.fontWeight.medium,
         }}>
           {t('overview.showing')} {visibleMonths.length} {t('overview.of')} {allMonths.length} {t('overview.months')}
         </p>
