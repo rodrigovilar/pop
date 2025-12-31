@@ -66,7 +66,7 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
       {/* Two-column layout - STRICT 50/50 */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
+        gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', // Strict 50/50 ignoring content width
         gap: theme.spacing.xl,
         alignItems: 'start',
       }}>
