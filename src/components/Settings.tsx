@@ -68,21 +68,22 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           style={{
             padding: `${theme.spacing.sm} ${theme.spacing.md}`,
             fontSize: theme.typography.fontSize.sm,
-            border: `2px solid ${theme.colors.primary[200]}`,
+            border: `1px solid ${theme.colors.secondary[700]}`,
             borderRadius: theme.borderRadius.md,
             backgroundColor: theme.colors.background.tertiary,
             color: theme.colors.text.primary,
             fontWeight: theme.typography.fontWeight.medium,
             cursor: 'pointer',
             outline: 'none',
-            transition: theme.transitions.base,
+            transition: theme.transitions.default,
+            fontFamily: theme.typography.fontFamily.mono,
           }}
           onFocus={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.primary[400];
-            e.currentTarget.style.boxShadow = `0 0 0 3px ${theme.colors.primary[100]}`;
+            e.currentTarget.style.borderColor = theme.colors.accent[500];
+            e.currentTarget.style.boxShadow = `0 0 0 2px ${theme.colors.accent.glow}`;
           }}
           onBlur={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.primary[200];
+            e.currentTarget.style.borderColor = theme.colors.secondary[700];
             e.currentTarget.style.boxShadow = 'none';
           }}
         >
@@ -113,21 +114,22 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           style={{
             padding: `${theme.spacing.sm} ${theme.spacing.md}`,
             fontSize: theme.typography.fontSize.sm,
-            border: `2px solid ${theme.colors.primary[200]}`,
+            border: `1px solid ${theme.colors.secondary[700]}`,
             borderRadius: theme.borderRadius.md,
             backgroundColor: theme.colors.background.tertiary,
             color: theme.colors.text.primary,
             fontWeight: theme.typography.fontWeight.medium,
             cursor: 'pointer',
             outline: 'none',
-            transition: theme.transitions.base,
+            transition: theme.transitions.default,
+            fontFamily: theme.typography.fontFamily.mono,
           }}
           onFocus={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.primary[400];
-            e.currentTarget.style.boxShadow = `0 0 0 3px ${theme.colors.primary[100]}`;
+            e.currentTarget.style.borderColor = theme.colors.accent[500];
+            e.currentTarget.style.boxShadow = `0 0 0 2px ${theme.colors.accent.glow}`;
           }}
           onBlur={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.primary[200];
+            e.currentTarget.style.borderColor = theme.colors.secondary[700];
             e.currentTarget.style.boxShadow = 'none';
           }}
         >

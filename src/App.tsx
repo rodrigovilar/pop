@@ -28,10 +28,15 @@ function AppContent() {
       <div style={{
         padding: '2rem',
         textAlign: 'center',
-        color: '#ef4444',
+        color: theme.colors.status.error,
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
       }}>
-        <h2>Error</h2>
-        <p>{error.message}</p>
+        <h2 style={{ fontFamily: theme.typography.fontFamily.display }}>Error Loading Data</h2>
+        <p style={{ color: theme.colors.text.secondary }}>{error.message}</p>
       </div>
     );
   }
@@ -45,21 +50,24 @@ function AppContent() {
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
-      backgroundColor: '#ffffff', // Pure white background
+      backgroundColor: theme.colors.background.primary,
+      color: theme.colors.text.primary,
     }}>
       {/* Header with Settings */}
       <header style={{
-        borderBottom: `2px solid ${theme.colors.secondary[200]}`,
-        backgroundColor: '#ffffff',
+        borderBottom: `1px solid ${theme.colors.secondary[800]}`,
+        backgroundColor: theme.colors.background.overlay,
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        boxShadow: theme.shadows.sm,
+        boxShadow: theme.shadows.md,
       }}>
         <div style={{
           maxWidth: '1400px',
           margin: '0 auto',
-          padding: `${theme.spacing.lg} ${theme.spacing.xl}`,
+          padding: `${theme.spacing.md} ${theme.spacing.xl}`,
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
@@ -67,18 +75,24 @@ function AppContent() {
           <div>
             <h1 style={{
               fontSize: theme.typography.fontSize['2xl'],
-              fontWeight: theme.typography.fontWeight.bold,
+              fontFamily: theme.typography.fontFamily.display,
+              fontWeight: theme.typography.fontWeight.extrabold,
               margin: 0,
-              background: `linear-gradient(135deg, ${theme.colors.primary[700]} 0%, ${theme.colors.primary[900]} 100%)`,
+              letterSpacing: '-0.02em',
+              background: `linear-gradient(135deg, ${theme.colors.accent[400]} 0%, ${theme.colors.accent[500]} 100%)`,
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
+              filter: 'drop-shadow(0 2px 10px rgba(247, 147, 26, 0.3))',
             }}>
               PoP
             </h1>
             <p style={{
-              fontSize: theme.typography.fontSize.sm,
-              color: theme.colors.text.secondary,
+              fontSize: theme.typography.fontSize.xs,
+              color: theme.colors.text.tertiary,
               margin: 0,
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              fontWeight: theme.typography.fontWeight.bold,
             }}>
               Proof of Patience
             </p>
@@ -112,13 +126,15 @@ function AppContent() {
                 style={{
                   padding: `${theme.spacing.sm} ${theme.spacing.md}`,
                   fontSize: theme.typography.fontSize.sm,
-                  border: `2px solid ${theme.colors.primary[200]}`,
+                  border: `1px solid ${theme.colors.secondary[700]}`,
                   borderRadius: theme.borderRadius.md,
                   backgroundColor: theme.colors.background.tertiary,
                   color: theme.colors.text.primary,
                   fontWeight: theme.typography.fontWeight.medium,
                   cursor: 'pointer',
                   outline: 'none',
+                  transition: theme.transitions.default,
+                  fontFamily: theme.typography.fontFamily.mono,
                 }}
               />
             </div>
@@ -129,7 +145,7 @@ function AppContent() {
       </header>
 
       {/* Main content */}
-      <main style={{ flex: 1 }}>
+      <main style={{ flex: 1, position: 'relative' }}>
         <MainView monthlyData={monthlyData} currency={currency} startMonth={startMonth} />
       </main>
 
@@ -137,19 +153,24 @@ function AppContent() {
       <div style={{
         padding: `${theme.spacing['4xl']} ${theme.spacing.xl}`,
         backgroundColor: theme.colors.background.secondary,
+        borderTop: `1px solid ${theme.colors.secondary[800]}`,
+        display: 'flex',
+        justifyContent: 'center',
       }}>
-        <HeroIllustration />
+        <div style={{ opacity: 0.8, filter: 'grayscale(20%)' }}>
+          <HeroIllustration />
+        </div>
       </div>
 
       {/* Footer */}
       <footer style={{
         paddingTop: theme.spacing.xl,
         paddingBottom: theme.spacing.xl,
-        borderTop: `1px solid ${theme.colors.secondary[200]}`,
+        borderTop: `1px solid ${theme.colors.secondary[800]}`,
         textAlign: 'center',
         color: theme.colors.text.tertiary,
         fontSize: theme.typography.fontSize.sm,
-        backgroundColor: theme.colors.background.secondary,
+        backgroundColor: theme.colors.background.primary,
       }}>
         <p style={{
           margin: `0 0 ${theme.spacing.xs} 0`,
@@ -162,6 +183,7 @@ function AppContent() {
           margin: 0,
           fontStyle: 'italic',
           color: theme.colors.text.tertiary,
+          fontFamily: theme.typography.fontFamily.sans,
         }}>
           Bitcoin teaches behavior, not profit.
         </p>

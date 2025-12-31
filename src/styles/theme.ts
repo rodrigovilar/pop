@@ -9,23 +9,24 @@
  */
 
 export const theme = {
-  // Color Palette - Calm and Patient
+  // Color Palette - Bitcoin Dark Mode
   colors: {
-    // Primary: Deep Blue (Trust, Stability, Depth)
+    // Primary: Deep Slate/Blue (Backgrounds, Depth)
     primary: {
-      50: '#eff6ff',
-      100: '#dbeafe',
-      200: '#bfdbfe',
-      300: '#93c5fd',
-      400: '#60a5fa',
-      500: '#3b82f6',
-      600: '#2563eb',
-      700: '#1d4ed8',
-      800: '#1e40af',
-      900: '#1e3a8a',
+      50: '#f8fafc',
+      100: '#f1f5f9',
+      200: '#e2e8f0',
+      300: '#cbd5e1',
+      400: '#94a3b8',
+      500: '#64748b',
+      600: '#475569',
+      700: '#334155',
+      800: '#1e293b', // Card Background
+      900: '#0f172a', // Main Background
+      950: '#020617', // Darker Depth
     },
 
-    // Secondary: Sage/Earth (Natural Growth, Calm)
+    // Secondary: Cool Gray (Neutral elements)
     secondary: {
       50: '#f9fafb',
       100: '#f3f4f6',
@@ -39,131 +40,113 @@ export const theme = {
       900: '#111827',
     },
 
-    // Accent: Bitcoin Orange (used sparingly)
+    // Accent: Bitcoin Orange (Vibrant, Energetic)
     accent: {
       50: '#fff7ed',
       100: '#ffedd5',
       200: '#fed7aa',
       300: '#fdba74',
-      400: '#fb923c',
-      500: '#f97316', // Main Bitcoin orange
+      400: '#fb923c', // Light Orange
+      500: '#F7931A', // Bitcoin Core Orange
       600: '#ea580c',
       700: '#c2410c',
       800: '#9a3412',
       900: '#7c2d12',
+      glow: 'rgba(247, 147, 26, 0.5)', // For glow effects
     },
 
-    // Backgrounds: Off-white/Warm (Breathing space)
+    // Backgrounds
     background: {
-      primary: '#fafaf9',
-      secondary: '#f5f5f4',
-      tertiary: '#ffffff',
+      primary: '#0f172a',    // Deep Blue/Black
+      secondary: '#1e293b',  // Card/Panel
+      tertiary: '#334155',   // Inputs/Hover
+      overlay: 'rgba(15, 23, 42, 0.8)', // Glassmorphism
     },
 
-    // Text: Dark Gray (Readable without aggression)
+    // Text
     text: {
-      primary: '#18181b',
-      secondary: '#52525b',
-      tertiary: '#a1a1aa',
-      inverse: '#fafafa',
+      primary: '#f8fafc',    // Almost White
+      secondary: '#cbd5e1',  // Light Gray
+      tertiary: '#94a3b8',   // Muted
+      inverse: '#0f172a',    // Dark text for orange buttons
     },
 
-    // Regime colors (softened)
-    regime: {
-      bull: {
-        bg: '#dcfce7',
-        text: '#166534',
-        border: '#86efac',
-      },
-      bear: {
-        bg: '#fee2e2',
-        text: '#991b1b',
-        border: '#fca5a5',
-      },
-      lateral: {
-        bg: '#f3f4f6',
-        text: '#374151',
-        border: '#d1d5db',
-      },
+    // Status Colors
+    status: {
+      success: '#10b981', // Emerald
+      error: '#ef4444',   // Red
+      warning: '#f59e0b', // Amber
+      info: '#3b82f6',    // Blue
     },
   },
 
-  // Spacing - Generous (Calm, not cramped)
+  // Spacing
   spacing: {
-    xs: '0.5rem',    // 8px
-    sm: '0.75rem',   // 12px
-    md: '1rem',      // 16px
-    lg: '1.5rem',    // 24px
-    xl: '2rem',      // 32px
-    '2xl': '3rem',   // 48px
-    '3xl': '4rem',   // 64px
-    '4xl': '6rem',   // 96px
+    xs: '0.5rem',
+    sm: '0.75rem',
+    md: '1rem',
+    lg: '1.5rem',
+    xl: '2rem',
+    '2xl': '3rem',
+    '3xl': '4rem',
+    '4xl': '6rem',
   },
 
-  // Typography - Clear and Spacious
+  // Typography
   typography: {
     fontFamily: {
-      sans: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-      mono: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace',
+      sans: '"Inter", sans-serif',
+      display: '"Outfit", sans-serif', // For Headings
+      mono: '"JetBrains Mono", monospace',
     },
     fontSize: {
-      xs: '0.75rem',    // 12px
-      sm: '0.875rem',   // 14px
-      base: '1rem',     // 16px
-      lg: '1.125rem',   // 18px
-      xl: '1.25rem',    // 20px
-      '2xl': '1.5rem',  // 24px
-      '3xl': '1.875rem', // 30px
-      '4xl': '2.25rem', // 36px
-      '5xl': '3rem',    // 48px
-    },
-    lineHeight: {
-      tight: 1.25,
-      normal: 1.5,
-      relaxed: 1.75,
-      loose: 2,
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '2rem',
+      '4xl': '2.5rem',
+      '5xl': '3.5rem',
     },
     fontWeight: {
-      normal: 400,
+      regular: 400,
       medium: 500,
       semibold: 600,
       bold: 700,
+      extrabold: 800,
+    },
+    lineHeight: {
+      none: 1,
+      tight: 1.25,
+      snug: 1.375,
+      normal: 1.5,
+      relaxed: 1.625,
+      loose: 2,
     },
   },
 
-  // Border Radius - Soft and Organic
+  // Border Radius
   borderRadius: {
-    none: '0',
-    sm: '0.25rem',    // 4px
-    md: '0.5rem',     // 8px
-    lg: '0.75rem',    // 12px
-    xl: '1rem',       // 16px
-    '2xl': '1.5rem',  // 24px
+    sm: '0.375rem',
+    md: '0.75rem',     // Slightly softer
+    lg: '1rem',
+    xl: '1.5rem',
     full: '9999px',
   },
 
-  // Shadows - Subtle Depth
+  // Shadows (Glow effects included)
   shadows: {
     sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-    md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-    lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-    xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-    inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+    md: '0 4px 6px -1px rgba(0, 0, 0, 0.3)',
+    lg: '0 10px 15px -3px rgba(0, 0, 0, 0.4)',
+    glow: '0 0 20px rgba(247, 147, 26, 0.2)', // Orange aura
   },
 
-  // Transitions - Smooth and Calm
+  // Transitions
   transitions: {
-    fast: '150ms ease-in-out',
-    base: '200ms ease-in-out',
-    slow: '300ms ease-in-out',
-  },
-
-  // Breakpoints - Responsive
-  breakpoints: {
-    sm: '640px',
-    md: '768px',
-    lg: '1024px',
-    xl: '1280px',
+    default: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
   },
 } as const;
 

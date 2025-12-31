@@ -20,26 +20,28 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
 
   // Determine dominant regime
   if (positiveRatio > 0.6) {
-    // Bull: green gradient (lighter to darker based on ratio)
+    // Bull: Green with opacity based on intensity
+    // Dark mode friendly: darker base, higher saturation
     const intensity = Math.min(positiveRatio, 1);
-    const greenShade = Math.floor(200 + (intensity * 55)); // 200-255
+    // Use rgba for transparency on dark bg
+    const alpha = 0.3 + (intensity * 0.7); // 0.3 to 1.0
     return {
-      backgroundColor: `rgb(${255 - greenShade}, ${greenShade}, ${255 - greenShade})`,
-      textColor: intensity > 0.7 ? '#ffffff' : theme.colors.text.primary,
+      backgroundColor: `rgba(16, 185, 129, ${alpha})`, // Emulator styling
+      textColor: '#ffffff',
     };
   } else if (negativeRatio > 0.6) {
-    // Bear: red gradient
+    // Bear: Red
     const intensity = Math.min(negativeRatio, 1);
-    const redShade = Math.floor(200 + (intensity * 55));
+    const alpha = 0.3 + (intensity * 0.7);
     return {
-      backgroundColor: `rgb(${redShade}, ${255 - redShade}, ${255 - redShade})`,
-      textColor: intensity > 0.7 ? '#ffffff' : theme.colors.text.primary,
+      backgroundColor: `rgba(239, 68, 68, ${alpha})`,
+      textColor: '#ffffff',
     };
   } else {
-    // Lateral: gray
+    // Lateral: Dark Gray
     return {
-      backgroundColor: theme.colors.secondary[200],
-      textColor: theme.colors.text.primary,
+      backgroundColor: theme.colors.secondary[800],
+      textColor: theme.colors.text.secondary,
     };
   }
 }
@@ -64,34 +66,37 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
       style={{
         backgroundColor: data.backgroundColor,
         color: data.textColor,
-        border: `2px solid ${isHovered ? theme.colors.primary[400] : 'transparent'}`,
+        border: `1px solid ${isHovered ? theme.colors.accent[500] : 'transparent'}`,
         borderRadius: theme.borderRadius.md,
         padding: theme.spacing.md,
         cursor: 'pointer',
-        transition: theme.transitions.base,
+        transition: theme.transitions.default,
         transform: isHovered ? 'scale(1.05)' : 'scale(1)',
-        boxShadow: isHovered ? theme.shadows.lg : theme.shadows.sm,
+        boxShadow: isHovered ? theme.shadows.glow : 'none',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         minHeight: '80px',
         position: 'relative',
+        zIndex: isHovered ? 10 : 1,
       }}
     >
       {/* Month/Year Label */}
       <div style={{
-        fontSize: theme.typography.fontSize.sm,
+        fontSize: theme.typography.fontSize.xs,
         fontWeight: theme.typography.fontWeight.bold,
         marginBottom: theme.spacing.xs,
+        fontFamily: theme.typography.fontFamily.mono,
+        textTransform: 'uppercase',
       }}>
         {monthLabel}/{year.slice(2)}
       </div>
 
       {/* Delta % */}
       <div style={{
-        fontSize: theme.typography.fontSize.xs,
-        fontWeight: theme.typography.fontWeight.semibold,
+        fontSize: theme.typography.fontSize.sm,
+        fontWeight: theme.typography.fontWeight.bold,
         opacity: 0.9,
       }}>
         {changeLabel}
@@ -102,11 +107,11 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
         position: 'absolute',
         top: theme.spacing.xs,
         right: theme.spacing.xs,
-        width: '8px',
-        height: '8px',
+        width: '6px',
+        height: '6px',
         borderRadius: '50%',
-        backgroundColor: data.month.regime === 'BULL' ? '#10b981' :
-                        data.month.regime === 'BEAR' ? '#ef4444' : '#9ca3af',
+        backgroundColor: data.month.regime === 'BULL' ? theme.colors.status.success :
+          data.month.regime === 'BEAR' ? theme.colors.status.error : theme.colors.secondary[500],
       }} />
     </button>
   );
@@ -126,9 +131,10 @@ export function MonthGrid({ monthlyData }: MonthGridProps) {
     <div>
       <h2 style={{
         fontSize: theme.typography.fontSize.xl,
-        fontWeight: theme.typography.fontWeight.semibold,
+        fontWeight: theme.typography.fontWeight.bold,
         color: theme.colors.text.primary,
         marginBottom: theme.spacing.lg,
+        fontFamily: theme.typography.fontFamily.display,
       }}>
         {t('main.monthlyProgression')}
       </h2>
@@ -172,7 +178,8 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
       style={{
         position: 'fixed',
         inset: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        backgroundColor: theme.colors.background.overlay,
+        backdropFilter: 'blur(4px)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -183,12 +190,13 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
-          backgroundColor: theme.colors.background.tertiary,
+          backgroundColor: theme.colors.background.secondary,
           borderRadius: theme.borderRadius.xl,
           padding: theme.spacing['2xl'],
           maxWidth: '500px',
           width: '100%',
           boxShadow: theme.shadows.xl,
+          border: `1px solid ${theme.colors.secondary[700]}`,
           animation: 'slideIn 0.2s ease-out',
         }}
       >
@@ -199,11 +207,12 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
           alignItems: 'center',
           marginBottom: theme.spacing.xl,
           paddingBottom: theme.spacing.lg,
-          borderBottom: `2px solid ${theme.colors.secondary[200]}`,
+          borderBottom: `1px solid ${theme.colors.secondary[700]}`,
         }}>
           <h3 style={{
             fontSize: theme.typography.fontSize['2xl'],
             fontWeight: theme.typography.fontWeight.bold,
+            fontFamily: theme.typography.fontFamily.display,
             color: theme.colors.text.primary,
             margin: 0,
           }}>
@@ -216,9 +225,12 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
               border: 'none',
               fontSize: theme.typography.fontSize['2xl'],
               cursor: 'pointer',
-              color: theme.colors.text.secondary,
+              color: theme.colors.text.tertiary,
               padding: theme.spacing.xs,
+              transition: theme.transitions.default,
             }}
+            onMouseEnter={(e) => e.currentTarget.style.color = theme.colors.text.primary}
+            onMouseLeave={(e) => e.currentTarget.style.color = theme.colors.text.tertiary}
           >
             ×
           </button>
@@ -235,6 +247,7 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
               fontSize: theme.typography.fontSize.sm,
               color: theme.colors.text.secondary,
               marginBottom: theme.spacing.xs,
+              textTransform: 'uppercase',
             }}>
               Entry Price
             </div>
@@ -242,6 +255,7 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
               fontSize: theme.typography.fontSize.xl,
               fontWeight: theme.typography.fontWeight.bold,
               color: theme.colors.text.primary,
+              fontFamily: theme.typography.fontFamily.mono,
             }}>
               {formatCurrency(month.entryPrice, month.currency)}
             </div>
@@ -252,14 +266,15 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
               fontSize: theme.typography.fontSize.sm,
               color: theme.colors.text.secondary,
               marginBottom: theme.spacing.xs,
+              textTransform: 'uppercase',
             }}>
               Regime
             </div>
             <div style={{
               fontSize: theme.typography.fontSize.xl,
               fontWeight: theme.typography.fontWeight.bold,
-              color: month.regime === 'BULL' ? '#10b981' :
-                    month.regime === 'BEAR' ? '#ef4444' : theme.colors.text.primary,
+              color: month.regime === 'BULL' ? theme.colors.status.success :
+                month.regime === 'BEAR' ? theme.colors.status.error : theme.colors.text.primary,
             }}>
               {t(`overview.regimes.${month.regime}`)}
             </div>
@@ -270,13 +285,15 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
               fontSize: theme.typography.fontSize.sm,
               color: theme.colors.text.secondary,
               marginBottom: theme.spacing.xs,
+              textTransform: 'uppercase',
             }}>
               Days Positive
             </div>
             <div style={{
               fontSize: theme.typography.fontSize.lg,
               fontWeight: theme.typography.fontWeight.semibold,
-              color: '#10b981',
+              color: theme.colors.status.success,
+              fontFamily: theme.typography.fontFamily.mono,
             }}>
               {month.daysPositive} / {month.daysTotal}
             </div>
@@ -287,13 +304,15 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
               fontSize: theme.typography.fontSize.sm,
               color: theme.colors.text.secondary,
               marginBottom: theme.spacing.xs,
+              textTransform: 'uppercase',
             }}>
               Days Negative
             </div>
             <div style={{
               fontSize: theme.typography.fontSize.lg,
               fontWeight: theme.typography.fontWeight.semibold,
-              color: '#ef4444',
+              color: theme.colors.status.error,
+              fontFamily: theme.typography.fontFamily.mono,
             }}>
               {month.daysNegative} / {month.daysTotal}
             </div>
@@ -305,13 +324,15 @@ function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () 
                 fontSize: theme.typography.fontSize.sm,
                 color: theme.colors.text.secondary,
                 marginBottom: theme.spacing.xs,
+                textTransform: 'uppercase',
               }}>
                 Change vs Previous Month
               </div>
               <div style={{
                 fontSize: theme.typography.fontSize['2xl'],
                 fontWeight: theme.typography.fontWeight.bold,
-                color: month.pctChangeVsPrevMonthStart >= 0 ? '#10b981' : '#ef4444',
+                color: month.pctChangeVsPrevMonthStart >= 0 ? theme.colors.status.success : theme.colors.status.error,
+                fontFamily: theme.typography.fontFamily.mono,
               }}>
                 {month.pctChangeVsPrevMonthStart >= 0 ? '+' : ''}{month.pctChangeVsPrevMonthStart.toFixed(2)}%
               </div>
