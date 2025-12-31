@@ -38,6 +38,11 @@
       "N/A": "N/D"
     }
   },
+  "main": {
+    "ifYouHadInvested": "Se você tivesse investido em BTC em",
+    "monthlyProgression": "Progressão Mensal",
+    "dcaSimulation": "Simulação DCA"
+  },
   "dca": {
     "title": "Simulação DCA",
     "subtitle": "Simule sua jornada de disciplina com Bitcoin",

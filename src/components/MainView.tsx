@@ -20,20 +20,22 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
     .filter(m => m.month >= startMonth)
     .sort((a, b) => a.month.localeCompare(b.month)); // Ascending: oldest first
 
-  // Run DCA simulation from start month
+  // LIMIT TO 48 MONTHS (4 years)
+  // If we have more than 48, take the *last* 48 to show recent history up to now
+  // OR take the first 48 from start date? Usually "last 48" makes more sense for a fixed grid,
+  // but if the user selected a specific start date, maybe they want to see FROM that date.
+  // Given the request "shown 49 cards, want 48", let's slice the array.
+  const displayMonths = allMonths.slice(0, 48);
+
+  // Run DCA simulation from start month (using filtered months)
   const dcaResult = (() => {
-    if (monthlyData.size === 0) return null;
+    if (displayMonths.length === 0) return null;
 
-    // Convert monthly data to daily prices for simulation
-    const dailyPrices = Array.from(monthlyData.values())
-      .filter(m => m.month >= startMonth)
-      .sort((a, b) => a.month.localeCompare(b.month))
-      .map(m => ({
-        date: m.entryDate,
-        price: m.entryPrice,
-      }));
-
-    if (dailyPrices.length === 0) return null;
+    // Convert display months to daily prices for simulation
+    const dailyPrices = displayMonths.map(m => ({
+      date: m.entryDate,
+      price: m.entryPrice,
+    }));
 
     try {
       return simulateDCA(dailyPrices, dailyPrices[0].date, monthlyAmount);
@@ -56,12 +58,12 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
         color: theme.colors.text.primary,
         marginBottom: theme.spacing.xl,
         textAlign: 'center',
-        lineHeight: theme.typography.lineHeight.tight,
+        lineHeight: theme.typography.lineHeight?.tight,
       }}>
-        {t('main.ifYouHadInvested')} {formatDate(new Date(startMonth + '-01'), { year: 'numeric', month: 'long' })}
+        {t('main.ifYouHadInvested')} {formatDate(new Date(startMonth + '-02'), { year: 'numeric', month: 'long' })}
       </h1>
 
-      {/* Two-column layout */}
+      {/* Two-column layout - STRICT 50/50 */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -69,14 +71,15 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
         alignItems: 'start',
       }}>
         {/* LEFT: Monthly progression */}
-        <section>
-          <MonthGrid monthlyData={allMonths} />
+        <section style={{ width: '100%' }}>
+          <MonthGrid monthlyData={displayMonths} />
         </section>
 
         {/* RIGHT: DCA Simulation (sticky) */}
         <section style={{
           position: 'sticky',
           top: theme.spacing['4xl'], // Increased top offset for sticky header
+          width: '100%',
         }}>
           <h2 style={{
             fontSize: theme.typography.fontSize.xl,

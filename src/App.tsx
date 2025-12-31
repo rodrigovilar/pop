@@ -84,18 +84,8 @@ function AppContent() {
               WebkitTextFillColor: 'transparent',
               filter: 'drop-shadow(0 2px 10px rgba(247, 147, 26, 0.3))',
             }}>
-              PoP
-            </h1>
-            <p style={{
-              fontSize: theme.typography.fontSize.xs,
-              color: theme.colors.text.tertiary,
-              margin: 0,
-              textTransform: 'uppercase',
-              letterSpacing: '0.1em',
-              fontWeight: theme.typography.fontWeight.bold,
-            }}>
               Proof of Patience
-            </p>
+            </h1>
           </div>
 
           {/* Date Selector + Settings */}
