@@ -10,6 +10,14 @@ import type { Currency } from './types';
 
 function AppContent() {
   const [currency, setCurrency] = useState<Currency>('USD');
+
+  // Calculate default start date: 4 years ago
+  const now = new Date();
+  const fourYearsAgo = new Date(now.getFullYear() - 4, now.getMonth(), 1);
+  const defaultStartMonth = fourYearsAgo.toISOString().split('T')[0].substring(0, 7);
+
+  const [startMonth, setStartMonth] = useState(defaultStartMonth);
+
   const { monthlyData, isLoading, progress, error } = useData({
     currency,
     autoLoad: true,
@@ -76,12 +84,45 @@ function AppContent() {
             </p>
           </div>
 
-          {/* Settings in header */}
+          {/* Date Selector + Settings */}
           <div style={{
             display: 'flex',
             gap: theme.spacing.lg,
             alignItems: 'center',
           }}>
+            {/* Month/Year Selector */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
+              <label
+                htmlFor="start-month"
+                style={{
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  fontWeight: theme.typography.fontWeight.medium,
+                }}
+              >
+                📅
+              </label>
+              <input
+                id="start-month"
+                type="month"
+                value={startMonth}
+                onChange={(e) => setStartMonth(e.target.value)}
+                max={new Date().toISOString().split('T')[0].substring(0, 7)}
+                min="2010-07"
+                style={{
+                  padding: `${theme.spacing.sm} ${theme.spacing.md}`,
+                  fontSize: theme.typography.fontSize.sm,
+                  border: `2px solid ${theme.colors.primary[200]}`,
+                  borderRadius: theme.borderRadius.md,
+                  backgroundColor: theme.colors.background.tertiary,
+                  color: theme.colors.text.primary,
+                  fontWeight: theme.typography.fontWeight.medium,
+                  cursor: 'pointer',
+                  outline: 'none',
+                }}
+              />
+            </div>
+
             <Settings currency={currency} onCurrencyChange={setCurrency} />
           </div>
         </div>
@@ -89,7 +130,7 @@ function AppContent() {
 
       {/* Main content */}
       <main style={{ flex: 1 }}>
-        <MainView monthlyData={monthlyData} currency={currency} />
+        <MainView monthlyData={monthlyData} currency={currency} startMonth={startMonth} />
       </main>
 
       {/* Illustration moved to bottom */}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MonthOverview } from './MonthOverview';
+import { MonthGrid } from './MonthGrid';
 import { useI18n } from '../contexts/I18nContext';
 import { theme } from '../styles/theme';
 import { simulateDCA } from '../lib/dcaEngine';
@@ -8,23 +8,19 @@ import type { MonthlyData, Currency } from '../types';
 interface MainViewProps {
   monthlyData: Map<string, MonthlyData>;
   currency: Currency;
+  startMonth: string;
 }
 
-export function MainView({ monthlyData, currency }: MainViewProps) {
+export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
   const { t, formatCurrency, formatDate } = useI18n();
   const [monthlyAmount, setMonthlyAmount] = useState(100);
 
-  // Calculate start date: 4 years ago
-  const now = new Date();
-  const fourYearsAgo = new Date(now.getFullYear() - 4, now.getMonth(), 1);
-  const startMonth = fourYearsAgo.toISOString().split('T')[0].substring(0, 7); // YYYY-MM
-
-  // Get months from 4 years ago to now, in ascending order
+  // Get months from startMonth to now, in ascending order
   const allMonths = Array.from(monthlyData.values())
     .filter(m => m.month >= startMonth)
     .sort((a, b) => a.month.localeCompare(b.month)); // Ascending: oldest first
 
-  // Run DCA simulation for 4 years
+  // Run DCA simulation from start month
   const dcaResult = (() => {
     if (monthlyData.size === 0) return null;
 
@@ -61,36 +57,19 @@ export function MainView({ monthlyData, currency }: MainViewProps) {
         textAlign: 'center',
         lineHeight: theme.typography.lineHeight.tight,
       }}>
-        {t('main.ifYouHadInvested')} {formatDate(fourYearsAgo, { year: 'numeric', month: 'long' })}
+        {t('main.ifYouHadInvested')} {formatDate(new Date(startMonth + '-01'), { year: 'numeric', month: 'long' })}
       </h1>
 
       {/* Two-column layout */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+        gridTemplateColumns: '1fr 1fr',
         gap: theme.spacing.xl,
         alignItems: 'start',
       }}>
         {/* LEFT: Monthly progression */}
         <section>
-          <h2 style={{
-            fontSize: theme.typography.fontSize.xl,
-            fontWeight: theme.typography.fontWeight.semibold,
-            color: theme.colors.text.primary,
-            marginBottom: theme.spacing.lg,
-          }}>
-            {t('main.monthlyProgression')}
-          </h2>
-
-          <div style={{
-            maxHeight: '800px',
-            overflowY: 'auto',
-            paddingRight: theme.spacing.sm,
-          }}>
-            {allMonths.map((data) => (
-              <MonthOverview key={data.month} data={data} />
-            ))}
-          </div>
+          <MonthGrid monthlyData={allMonths} />
         </section>
 
         {/* RIGHT: DCA Simulation (sticky) */}
