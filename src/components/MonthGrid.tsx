@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useI18n } from '../contexts/I18nContext';
 import { theme } from '../styles/theme';
 import type { MonthlyData } from '../types';
+import { DonutChart } from './DonutChart';
 
 interface MonthGridProps {
   monthlyData: MonthlyData[];
@@ -21,12 +22,10 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
   // Determine dominant regime
   if (positiveRatio > 0.6) {
     // Bull: Green with opacity based on intensity
-    // Dark mode friendly: darker base, higher saturation
     const intensity = Math.min(positiveRatio, 1);
-    // Use rgba for transparency on dark bg
-    const alpha = 0.3 + (intensity * 0.7); // 0.3 to 1.0
+    const alpha = 0.3 + (intensity * 0.7);
     return {
-      backgroundColor: `rgba(16, 185, 129, ${alpha})`, // Emulator styling
+      backgroundColor: `rgba(16, 185, 129, ${alpha})`,
       textColor: '#ffffff',
     };
   } else if (negativeRatio > 0.6) {
@@ -46,80 +45,140 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
   }
 }
 
-function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void }) {
-  const [isHovered, setIsHovered] = useState(false);
+function MonthCard({ month, colorData }: { month: MonthlyData; colorData: { backgroundColor: string; textColor: string } }) {
+  const [flipped, setFlipped] = useState(false);
+  const { formatCurrency } = useI18n();
 
-  const pctChange = data.month.pctChangeVsPrevMonthStart;
+  const pctChange = month.pctChangeVsPrevMonthStart;
   const changeLabel = pctChange !== null
     ? `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`
     : 'N/A';
 
-  const [year, month] = data.month.month.split('-');
+  // Safe Date Parsing for Label (avoids timezone shifts)
+  const [year, monthNum] = month.month.split('-');
   const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const monthLabel = monthNames[parseInt(month) - 1];
+  const monthLabel = monthNames[parseInt(monthNum) - 1];
+
+  const chartData = [
+    { label: 'Bull', value: month.daysPositive, color: theme.colors.status.success },
+    { label: 'Bear', value: month.daysNegative, color: theme.colors.status.error },
+    { label: 'Lateral', value: month.daysTotal - month.daysPositive - month.daysNegative, color: theme.colors.secondary[500] },
+  ].filter(d => d.value > 0);
 
   return (
-    <button
-      onClick={onClick}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <div
       style={{
-        backgroundColor: data.backgroundColor,
-        color: data.textColor,
-        border: `1px solid ${isHovered ? theme.colors.accent[500] : 'transparent'}`,
-        borderRadius: theme.borderRadius.md,
-        padding: theme.spacing.md,
+        perspective: '1000px',
+        width: '100%',
+        height: '110px', // Fixed height
         cursor: 'pointer',
-        transition: theme.transitions.default,
-        transform: isHovered ? 'scale(1.05)' : 'scale(1)',
-        boxShadow: isHovered ? theme.shadows.glow : 'none',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '80px',
-        position: 'relative',
-        zIndex: isHovered ? 10 : 1,
       }}
+      onClick={() => setFlipped(!flipped)}
+      onMouseLeave={() => setFlipped(false)} // Auto flip back on mouse leave
     >
-      {/* Month/Year Label */}
       <div style={{
-        fontSize: theme.typography.fontSize.xs,
-        fontWeight: theme.typography.fontWeight.bold,
-        marginBottom: theme.spacing.xs,
-        fontFamily: theme.typography.fontFamily.mono,
-        textTransform: 'uppercase',
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        textAlign: 'center',
+        transition: 'transform 0.6s',
+        transformStyle: 'preserve-3d',
+        transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
       }}>
-        {monthLabel}/{year.slice(2)}
-      </div>
+        {/* FRONT */}
+        <div style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          backfaceVisibility: 'hidden',
+          backgroundColor: colorData.backgroundColor,
+          color: colorData.textColor,
+          borderRadius: theme.borderRadius.md,
+          padding: theme.spacing.xs,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: theme.shadows.md,
+          border: `1px solid rgba(255,255,255,0.05)`,
+        }}>
+          {/* Month/Year Label */}
+          <div style={{
+            fontSize: theme.typography.fontSize.xs,
+            fontWeight: theme.typography.fontWeight.bold,
+            marginBottom: '4px',
+            fontFamily: theme.typography.fontFamily.mono,
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            opacity: 0.9,
+          }}>
+            {monthLabel}/{year.slice(2)}
+          </div>
 
-      {/* Delta % */}
-      <div style={{
-        fontSize: theme.typography.fontSize.sm,
-        fontWeight: theme.typography.fontWeight.bold,
-        opacity: 0.9,
-      }}>
-        {changeLabel}
-      </div>
+          {/* Delta % */}
+          <div style={{
+            fontSize: theme.typography.fontSize.lg,
+            fontWeight: theme.typography.fontWeight.extrabold,
+            letterSpacing: '-0.02em',
+          }}>
+            {changeLabel}
+          </div>
 
-      {/* Regime indicator (small dot) */}
-      <div style={{
-        position: 'absolute',
-        top: theme.spacing.xs,
-        right: theme.spacing.xs,
-        width: '6px',
-        height: '6px',
-        borderRadius: '50%',
-        backgroundColor: data.month.regime === 'BULL' ? theme.colors.status.success :
-          data.month.regime === 'BEAR' ? theme.colors.status.error : theme.colors.secondary[500],
-      }} />
-    </button>
+          {/* Regime indicator (small dot) */}
+          <div style={{
+            position: 'absolute',
+            top: '8px',
+            right: '8px',
+            width: '6px',
+            height: '6px',
+            borderRadius: '50%',
+            backgroundColor: month.regime === 'BULL' ? theme.colors.status.success :
+              month.regime === 'BEAR' ? theme.colors.status.error : theme.colors.secondary[500],
+            boxShadow: '0 0 5px rgba(0,0,0,0.5)',
+          }} />
+        </div>
+
+        {/* BACK */}
+        <div style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          backfaceVisibility: 'hidden',
+          transform: 'rotateY(180deg)',
+          backgroundColor: theme.colors.background.secondary,
+          borderRadius: theme.borderRadius.md,
+          border: `1px solid ${theme.colors.secondary[700]}`,
+          boxShadow: theme.shadows.glow, // Glow effect on interaction
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          overflow: 'hidden',
+        }}>
+          <div style={{ transform: 'scale(0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <DonutChart data={chartData} size={80} thickness={18} />
+          </div>
+
+          <div style={{
+            position: 'absolute',
+            bottom: '6px',
+            width: '100%',
+            textAlign: 'center',
+            fontSize: '11px',
+            fontWeight: 'bold',
+            color: theme.colors.text.primary,
+            fontFamily: theme.typography.fontFamily.mono,
+            letterSpacing: '-0.02em',
+          }}>
+            {formatCurrency(month.entryPrice, month.currency).split('.')[0]}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
 export function MonthGrid({ monthlyData }: MonthGridProps) {
   const { t } = useI18n();
-  const [selectedMonth, setSelectedMonth] = useState<MonthlyData | null>(null);
 
   // Calculate cell colors
   const cellsData: MonthCellData[] = monthlyData.map(month => ({
@@ -139,220 +198,20 @@ export function MonthGrid({ monthlyData }: MonthGridProps) {
         {t('main.monthlyProgression')}
       </h2>
 
-      {/* Grid: 12 columns (12 months per row) */}
+      {/* Grid: 6 columns, requested by user */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(12, 1fr)',
-        gap: theme.spacing.sm,
-        maxHeight: '400px', // 4 rows + some padding
-        overflowY: 'auto',
-        padding: theme.spacing.xs,
+        gridTemplateColumns: 'repeat(6, 1fr)',
+        gap: theme.spacing.md,
       }}>
         {cellsData.map((cellData) => (
-          <MonthCell
+          <MonthCard
             key={cellData.month.month}
-            data={cellData}
-            onClick={() => setSelectedMonth(cellData.month)}
+            month={cellData.month}
+            colorData={cellData}
           />
         ))}
       </div>
-
-      {/* Modal for month details */}
-      {selectedMonth && (
-        <MonthDetailModal
-          month={selectedMonth}
-          onClose={() => setSelectedMonth(null)}
-        />
-      )}
-    </div>
-  );
-}
-
-// Month Detail Modal
-function MonthDetailModal({ month, onClose }: { month: MonthlyData; onClose: () => void }) {
-  const { t, formatCurrency, formatDate } = useI18n();
-
-  return (
-    <div
-      onClick={onClose}
-      style={{
-        position: 'fixed',
-        inset: 0,
-        backgroundColor: theme.colors.background.overlay,
-        backdropFilter: 'blur(4px)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        zIndex: 1000,
-        padding: theme.spacing.xl,
-      }}
-    >
-      <div
-        onClick={(e) => e.stopPropagation()}
-        style={{
-          backgroundColor: theme.colors.background.secondary,
-          borderRadius: theme.borderRadius.xl,
-          padding: theme.spacing['2xl'],
-          maxWidth: '500px',
-          width: '100%',
-          boxShadow: theme.shadows.xl,
-          border: `1px solid ${theme.colors.secondary[700]}`,
-          animation: 'slideIn 0.2s ease-out',
-        }}
-      >
-        {/* Header */}
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: theme.spacing.xl,
-          paddingBottom: theme.spacing.lg,
-          borderBottom: `1px solid ${theme.colors.secondary[700]}`,
-        }}>
-          <h3 style={{
-            fontSize: theme.typography.fontSize['2xl'],
-            fontWeight: theme.typography.fontWeight.bold,
-            fontFamily: theme.typography.fontFamily.display,
-            color: theme.colors.text.primary,
-            margin: 0,
-          }}>
-            {formatDate(new Date(month.entryDate), { year: 'numeric', month: 'long' })}
-          </h3>
-          <button
-            onClick={onClose}
-            style={{
-              background: 'none',
-              border: 'none',
-              fontSize: theme.typography.fontSize['2xl'],
-              cursor: 'pointer',
-              color: theme.colors.text.tertiary,
-              padding: theme.spacing.xs,
-              transition: theme.transitions.default,
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.color = theme.colors.text.primary}
-            onMouseLeave={(e) => e.currentTarget.style.color = theme.colors.text.tertiary}
-          >
-            ×
-          </button>
-        </div>
-
-        {/* Details Grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: theme.spacing.lg,
-        }}>
-          <div>
-            <div style={{
-              fontSize: theme.typography.fontSize.sm,
-              color: theme.colors.text.secondary,
-              marginBottom: theme.spacing.xs,
-              textTransform: 'uppercase',
-            }}>
-              Entry Price
-            </div>
-            <div style={{
-              fontSize: theme.typography.fontSize.xl,
-              fontWeight: theme.typography.fontWeight.bold,
-              color: theme.colors.text.primary,
-              fontFamily: theme.typography.fontFamily.mono,
-            }}>
-              {formatCurrency(month.entryPrice, month.currency)}
-            </div>
-          </div>
-
-          <div>
-            <div style={{
-              fontSize: theme.typography.fontSize.sm,
-              color: theme.colors.text.secondary,
-              marginBottom: theme.spacing.xs,
-              textTransform: 'uppercase',
-            }}>
-              Regime
-            </div>
-            <div style={{
-              fontSize: theme.typography.fontSize.xl,
-              fontWeight: theme.typography.fontWeight.bold,
-              color: month.regime === 'BULL' ? theme.colors.status.success :
-                month.regime === 'BEAR' ? theme.colors.status.error : theme.colors.text.primary,
-            }}>
-              {t(`overview.regimes.${month.regime}`)}
-            </div>
-          </div>
-
-          <div>
-            <div style={{
-              fontSize: theme.typography.fontSize.sm,
-              color: theme.colors.text.secondary,
-              marginBottom: theme.spacing.xs,
-              textTransform: 'uppercase',
-            }}>
-              Days Positive
-            </div>
-            <div style={{
-              fontSize: theme.typography.fontSize.lg,
-              fontWeight: theme.typography.fontWeight.semibold,
-              color: theme.colors.status.success,
-              fontFamily: theme.typography.fontFamily.mono,
-            }}>
-              {month.daysPositive} / {month.daysTotal}
-            </div>
-          </div>
-
-          <div>
-            <div style={{
-              fontSize: theme.typography.fontSize.sm,
-              color: theme.colors.text.secondary,
-              marginBottom: theme.spacing.xs,
-              textTransform: 'uppercase',
-            }}>
-              Days Negative
-            </div>
-            <div style={{
-              fontSize: theme.typography.fontSize.lg,
-              fontWeight: theme.typography.fontWeight.semibold,
-              color: theme.colors.status.error,
-              fontFamily: theme.typography.fontFamily.mono,
-            }}>
-              {month.daysNegative} / {month.daysTotal}
-            </div>
-          </div>
-
-          {month.pctChangeVsPrevMonthStart !== null && (
-            <div style={{ gridColumn: '1 / -1' }}>
-              <div style={{
-                fontSize: theme.typography.fontSize.sm,
-                color: theme.colors.text.secondary,
-                marginBottom: theme.spacing.xs,
-                textTransform: 'uppercase',
-              }}>
-                Change vs Previous Month
-              </div>
-              <div style={{
-                fontSize: theme.typography.fontSize['2xl'],
-                fontWeight: theme.typography.fontWeight.bold,
-                color: month.pctChangeVsPrevMonthStart >= 0 ? theme.colors.status.success : theme.colors.status.error,
-                fontFamily: theme.typography.fontFamily.mono,
-              }}>
-                {month.pctChangeVsPrevMonthStart >= 0 ? '+' : ''}{month.pctChangeVsPrevMonthStart.toFixed(2)}%
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-
-      <style>{`
-        @keyframes slideIn {
-          from {
-            transform: translateY(-20px);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-      `}</style>
     </div>
   );
 }
