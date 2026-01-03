@@ -2,13 +2,13 @@
   "month": "2024-09",
   "currency": "USD",
   "entryDate": "2024-09-01",
-  "entryPrice": 578789453.8,
-  "exitDate": "2024-09-30",
-  "exitPrice": 921227794.9,
-  "pctChangeWithinMonth": 59.16457856164208,
-  "daysPositive": 29,
-  "daysNegative": 0,
+  "entryPrice": 57313.44,
+  "daysPositive": 24,
+  "daysNegative": 5,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": 71.54848238163416,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": -12.23084887475859,
+  "regime": "BEAR",
+  "exitDate": "2024-09-30",
+  "exitPrice": 60752.25,
+  "pctChangeWithinMonth": 6.0
 }

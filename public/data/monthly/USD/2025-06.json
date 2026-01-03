@@ -2,13 +2,13 @@
   "month": "2025-06",
   "currency": "USD",
   "entryDate": "2025-06-01",
-  "entryPrice": 4226601870.44,
-  "exitDate": "2025-06-30",
-  "exitPrice": 14040205634.73,
-  "pctChangeWithinMonth": 232.1866138593361,
-  "daysPositive": 29,
-  "daysNegative": 0,
+  "entryPrice": 105702.19,
+  "daysPositive": 15,
+  "daysNegative": 14,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": 191.40841513103547,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": 9.514034031117715,
+  "regime": "LATERAL",
+  "exitDate": "2025-06-30",
+  "exitPrice": 106054.53,
+  "pctChangeWithinMonth": 0.33
 }

@@ -2,13 +2,13 @@
   "month": "2024-02",
   "currency": "USD",
   "entryDate": "2024-02-01",
-  "entryPrice": 12278413.68,
-  "exitDate": "2024-02-29",
-  "exitPrice": 17032813.57,
-  "pctChangeWithinMonth": 38.72161350732402,
-  "daysPositive": 26,
-  "daysNegative": 2,
+  "entryPrice": 43073.2,
+  "daysPositive": 25,
+  "daysNegative": 3,
   "daysTotal": 29,
-  "pctChangeVsPrevMonthStart": 32.970916081845544,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": -2.5440515901199263,
+  "regime": "LATERAL",
+  "exitDate": "2024-02-29",
+  "exitPrice": 46192.29,
+  "pctChangeWithinMonth": 7.24
 }

@@ -2,13 +2,13 @@
   "month": "2021-12",
   "currency": "USD",
   "entryDate": "2021-12-01",
-  "entryPrice": 121999.17,
-  "exitDate": "2021-12-31",
-  "exitPrice": 186569.03,
-  "pctChangeWithinMonth": 52.92647482765661,
-  "daysPositive": 30,
-  "daysNegative": 0,
+  "entryPrice": 57227.97,
+  "daysPositive": 0,
+  "daysNegative": 30,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": 62.162941368659204,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": -6.123605624450266,
+  "regime": "LATERAL",
+  "exitDate": "2021-12-31",
+  "exitPrice": 51874.39,
+  "pctChangeWithinMonth": -9.35
 }

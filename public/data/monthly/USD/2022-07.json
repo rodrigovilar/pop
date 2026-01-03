@@ -2,13 +2,13 @@
   "month": "2022-07",
   "currency": "USD",
   "entryDate": "2022-07-01",
-  "entryPrice": 4887124.13,
-  "exitDate": "2022-07-31",
-  "exitPrice": 4843735.15,
-  "pctChangeWithinMonth": -0.8878223438944964,
-  "daysPositive": 23,
-  "daysNegative": 7,
+  "entryPrice": 19249.33,
+  "daysPositive": 29,
+  "daysNegative": 1,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": 71.87699872934179,
-  "regime": "BULL"
+  "pctChangeVsPrevMonthStart": -35.38233838812094,
+  "regime": "BEAR",
+  "exitDate": "2022-07-31",
+  "exitPrice": 20925.88,
+  "pctChangeWithinMonth": 8.71
 }
