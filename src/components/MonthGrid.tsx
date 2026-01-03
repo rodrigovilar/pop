@@ -48,8 +48,8 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
 function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void }) {
   const [isHovered, setIsHovered] = useState(false);
 
-  // Use within-month change
-  const pctChange = data.month.pctChangeWithinMonth;
+  // Use within-month change (with fallback for old data)
+  const pctChange = data.month.pctChangeWithinMonth ?? 0;
   const changeLabel = `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`;
 
   // Safe Date Parsing for Label (avoids timezone shifts)
@@ -110,8 +110,8 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
         width: '6px',
         height: '6px',
         borderRadius: '50%',
-        backgroundColor: data.month.pctChangeWithinMonth > 0 ? theme.colors.status.success :
-          data.month.pctChangeWithinMonth < 0 ? theme.colors.status.error : theme.colors.secondary[500],
+        backgroundColor: pctChange > 0 ? theme.colors.status.success :
+          pctChange < 0 ? theme.colors.status.error : theme.colors.secondary[500],
         boxShadow: '0 0 5px rgba(0,0,0,0.5)',
       }} />
     </button>
@@ -128,8 +128,8 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
     return () => clearTimeout(timer);
   }, []);
 
-  // Use within-month change for the modal
-  const pctChange = month.pctChangeWithinMonth;
+  // Use within-month change for the modal (with fallback for old data)
+  const pctChange = month.pctChangeWithinMonth ?? 0;
   const changeLabel = `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`;
 
   const [year, monthNum] = month.month.split('-');
@@ -360,7 +360,7 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
                   color: theme.colors.text.primary,
                   fontFamily: theme.typography.fontFamily.mono,
                 }}>
-                  {formatCurrency(month.exitPrice, month.currency)}
+                  {formatCurrency(month.exitPrice ?? month.entryPrice, month.currency)}
                 </div>
               </div>
 

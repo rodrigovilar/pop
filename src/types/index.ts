@@ -28,9 +28,9 @@ export interface MonthlyData {
   currency: Currency;
   entryDate: string;       // YYYY-MM-DD (first available day of month)
   entryPrice: number;
-  exitDate: string;        // YYYY-MM-DD (last available day of month)
-  exitPrice: number;
-  pctChangeWithinMonth: number;  // % change from entry to exit price
+  exitDate?: string;       // YYYY-MM-DD (last available day of month) - optional for backwards compatibility
+  exitPrice?: number;      // optional for backwards compatibility
+  pctChangeWithinMonth?: number;  // % change from entry to exit price - optional for backwards compatibility
   daysPositive: number;
   daysNegative: number;
   daysTotal: number;
