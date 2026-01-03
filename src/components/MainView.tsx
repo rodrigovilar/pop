@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { MonthGrid } from './MonthGrid';
 import { useI18n } from '../contexts/I18nContext';
 import { theme } from '../styles/theme';
@@ -16,19 +16,22 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
   const [monthlyAmount, setMonthlyAmount] = useState(100);
 
   // Get months from startMonth to now, in ascending order
-  const allMonths = Array.from(monthlyData.values())
-    .filter(m => m.month >= startMonth)
-    .sort((a, b) => a.month.localeCompare(b.month)); // Ascending: oldest first
+  // Memoize to ensure stable reference for downstream calculations
+  const displayMonths = useMemo(() => {
+    const allMonths = Array.from(monthlyData.values())
+      .filter(m => m.month >= startMonth)
+      .sort((a, b) => a.month.localeCompare(b.month)); // Ascending: oldest first
 
-  // LIMIT TO 48 MONTHS (4 years)
-  // If we have more than 48, take the *last* 48 to show recent history up to now
-  // OR take the first 48 from start date? Usually "last 48" makes more sense for a fixed grid,
-  // but if the user selected a specific start date, maybe they want to see FROM that date.
-  // Given the request "shown 49 cards, want 48", let's slice the array.
-  const displayMonths = allMonths.slice(0, 48);
+    // LIMIT TO 48 MONTHS (4 years)
+    // If we have more than 48, take the *last* 48 to show recent history up to now
+    // OR take the first 48 from start date? Usually "last 48" makes more sense for a fixed grid,
+    // but if the user selected a specific start date, maybe they want to see FROM that date.
+    // Given the request "shown 49 cards, want 48", let's slice the array.
+    return allMonths.slice(0, 48);
+  }, [monthlyData, startMonth]);
 
   // Run DCA simulation from start month (using filtered months)
-  const dcaResult = (() => {
+  const dcaResult = useMemo(() => {
     if (displayMonths.length === 0) return null;
 
     // Convert display months to daily prices for simulation
@@ -42,7 +45,7 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
     } catch {
       return null;
     }
-  })();
+  }, [displayMonths, monthlyAmount]);
 
   return (
     <div style={{
