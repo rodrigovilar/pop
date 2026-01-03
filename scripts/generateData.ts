@@ -13,7 +13,6 @@
  *   tsx scripts/generateData.ts --currency=USD --test
  */
 
-import 'dotenv/config';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import { fetchAllBitcoinHistory, convertToDailyPrices, groupByMonth } from './lib/cryptoCompareClient';

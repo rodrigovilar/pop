@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "USD",
+  "entryDate": "2026-01-01",
+  "entryPrice": 5746949665.8,
+  "exitDate": "2026-01-03",
+  "exitPrice": 5914459257.99,
+  "pctChangeWithinMonth": 2.9147565566277067,
+  "daysPositive": 2,
+  "daysNegative": 0,
+  "daysTotal": 3,
+  "pctChangeVsPrevMonthStart": 21.563794728866203,
+  "regime": "BULL"
+}
