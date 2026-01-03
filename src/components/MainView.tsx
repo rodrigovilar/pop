@@ -12,7 +12,7 @@ interface MainViewProps {
 }
 
 export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
-  const { t, formatCurrency, formatDate } = useI18n();
+  const { t, formatCurrency } = useI18n();
   const [monthlyAmount, setMonthlyAmount] = useState(100);
 
   // Get months from startMonth to now, in ascending order
