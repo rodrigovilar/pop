@@ -60,7 +60,13 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
         textAlign: 'center',
         lineHeight: theme.typography.lineHeight?.tight,
       }}>
-        {t('main.ifYouHadInvested')} {formatDate(new Date(startMonth + '-02'), { year: 'numeric', month: 'long' })}
+        {t('main.ifYouHadInvested')} {(() => {
+          // Safe date parsing to avoid timezone issues
+          const [year, monthNum] = startMonth.split('-');
+          const monthNamesLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+          const monthName = monthNamesLong[parseInt(monthNum) - 1];
+          return `${monthName} ${year}`;
+        })()}
       </h1>
 
       {/* Two-column layout - STRICT 50/50 */}
