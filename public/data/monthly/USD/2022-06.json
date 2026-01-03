@@ -7,5 +7,8 @@
   "daysNegative": 22,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -22.585317821765962,
-  "regime": "BEAR"
+  "regime": "BEAR",
+  "exitDate": "2022-06-30",
+  "exitPrice": 28399.4,
+  "pctChangeWithinMonth": -4.67
 }

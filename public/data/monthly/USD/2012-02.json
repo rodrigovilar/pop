@@ -7,5 +7,8 @@
   "daysNegative": 27,
   "daysTotal": 29,
   "pctChangeVsPrevMonthStart": 15.337889141989367,
-  "regime": "BULL"
+  "regime": "BULL",
+  "exitDate": "2012-02-29",
+  "exitPrice": 5.55,
+  "pctChangeWithinMonth": -8.62
 }

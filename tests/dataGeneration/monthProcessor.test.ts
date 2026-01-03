@@ -25,6 +25,40 @@ describe('Month Processor', () => {
     expect(result.entryPrice).toBe(42000);
   });
 
+  it('should extract exit date as last day of month', () => {
+    const dailyPrices = [
+      { date: '2024-01-01', price: 42000 },
+      { date: '2024-01-02', price: 43000 },
+      { date: '2024-01-03', price: 44000 },
+    ];
+
+    const result = processMonth(dailyPrices, '2024-01');
+    expect(result.exitDate).toBe('2024-01-03');
+    expect(result.exitPrice).toBe(44000);
+  });
+
+  it('should calculate percentage change within month correctly', () => {
+    const dailyPrices = [
+      { date: '2024-01-01', price: 40000 }, // entry
+      { date: '2024-01-02', price: 41000 },
+      { date: '2024-01-03', price: 42000 }, // exit (+5%)
+    ];
+
+    const result = processMonth(dailyPrices, '2024-01');
+    expect(result.pctChangeWithinMonth).toBeCloseTo(5.0, 1);
+  });
+
+  it('should handle negative percentage change within month', () => {
+    const dailyPrices = [
+      { date: '2024-01-01', price: 50000 }, // entry
+      { date: '2024-01-02', price: 48000 },
+      { date: '2024-01-03', price: 45000 }, // exit (-10%)
+    ];
+
+    const result = processMonth(dailyPrices, '2024-01');
+    expect(result.pctChangeWithinMonth).toBeCloseTo(-10.0, 1);
+  });
+
   it('should count days positive correctly', () => {
     const dailyPrices = [
       { date: '2024-01-01', price: 40000 }, // entry

@@ -7,5 +7,8 @@
   "daysNegative": 10,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 7.131102837591177,
-  "regime": "LATERAL"
+  "regime": "LATERAL",
+  "exitDate": "2025-08-31",
+  "exitPrice": 116551.77,
+  "pctChangeWithinMonth": 2.9
 }

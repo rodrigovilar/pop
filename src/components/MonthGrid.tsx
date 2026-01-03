@@ -48,10 +48,9 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
 function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void }) {
   const [isHovered, setIsHovered] = useState(false);
 
-  const pctChange = data.month.pctChangeVsPrevMonthStart;
-  const changeLabel = pctChange !== null
-    ? `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`
-    : 'N/A';
+  // Use within-month change
+  const pctChange = data.month.pctChangeWithinMonth;
+  const changeLabel = `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`;
 
   // Safe Date Parsing for Label (avoids timezone shifts)
   const [year, monthNum] = data.month.month.split('-');
@@ -103,7 +102,7 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
         {changeLabel}
       </div>
 
-      {/* Regime indicator (small dot) */}
+      {/* Within-month price change indicator (small dot) */}
       <div style={{
         position: 'absolute',
         top: '8px',
@@ -111,8 +110,8 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
         width: '6px',
         height: '6px',
         borderRadius: '50%',
-        backgroundColor: data.month.regime === 'BULL' ? theme.colors.status.success :
-          data.month.regime === 'BEAR' ? theme.colors.status.error : theme.colors.secondary[500],
+        backgroundColor: data.month.pctChangeWithinMonth > 0 ? theme.colors.status.success :
+          data.month.pctChangeWithinMonth < 0 ? theme.colors.status.error : theme.colors.secondary[500],
         boxShadow: '0 0 5px rgba(0,0,0,0.5)',
       }} />
     </button>
@@ -129,10 +128,9 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
     return () => clearTimeout(timer);
   }, []);
 
-  const pctChange = month.pctChangeVsPrevMonthStart;
-  const changeLabel = pctChange !== null
-    ? `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`
-    : 'N/A';
+  // Use within-month change for the modal
+  const pctChange = month.pctChangeWithinMonth;
+  const changeLabel = `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`;
 
   const [year, monthNum] = month.month.split('-');
   const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -320,12 +318,15 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               <DonutChart data={chartData} size={180} thickness={35} />
             </div>
 
-            {/* Details Grid */}
+            {/* Price Change Summary */}
             <div style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: theme.spacing.lg,
-              marginBottom: theme.spacing.lg,
+              marginBottom: theme.spacing.xl,
+              padding: theme.spacing.lg,
+              backgroundColor: 'rgba(0,0,0,0.2)',
+              borderRadius: theme.borderRadius.md,
             }}>
               <div>
                 <div style={{
@@ -336,7 +337,7 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
                   {t('overview.entryPrice') || 'Entry Price'}
                 </div>
                 <div style={{
-                  fontSize: theme.typography.fontSize.xl,
+                  fontSize: theme.typography.fontSize.lg,
                   fontWeight: theme.typography.fontWeight.bold,
                   color: theme.colors.text.primary,
                   fontFamily: theme.typography.fontFamily.mono,
@@ -351,17 +352,43 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
                   color: theme.colors.text.secondary,
                   marginBottom: theme.spacing.xs,
                 }}>
-                  {t('overview.totalDays') || 'Total Days'}
+                  {t('overview.exitPrice') || 'Exit Price'}
                 </div>
                 <div style={{
-                  fontSize: theme.typography.fontSize.xl,
+                  fontSize: theme.typography.fontSize.lg,
                   fontWeight: theme.typography.fontWeight.bold,
                   color: theme.colors.text.primary,
+                  fontFamily: theme.typography.fontFamily.mono,
                 }}>
-                  {month.daysTotal}
+                  {formatCurrency(month.exitPrice, month.currency)}
                 </div>
               </div>
 
+              <div style={{ gridColumn: '1 / -1' }}>
+                <div style={{
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  marginBottom: theme.spacing.xs,
+                }}>
+                  {t('overview.monthChange') || 'Month Change'}
+                </div>
+                <div style={{
+                  fontSize: theme.typography.fontSize['2xl'],
+                  fontWeight: theme.typography.fontWeight.extrabold,
+                  color: pctChange >= 0 ? theme.colors.status.success : theme.colors.status.error,
+                }}>
+                  {changeLabel}
+                </div>
+              </div>
+            </div>
+
+            {/* Days Breakdown */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr 1fr',
+              gap: theme.spacing.md,
+              marginBottom: theme.spacing.lg,
+            }}>
               <div>
                 <div style={{
                   fontSize: theme.typography.fontSize.sm,
@@ -393,6 +420,23 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
                   color: theme.colors.status.error,
                 }}>
                   {month.daysNegative}
+                </div>
+              </div>
+
+              <div>
+                <div style={{
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  marginBottom: theme.spacing.xs,
+                }}>
+                  {t('overview.totalDays') || 'Total Days'}
+                </div>
+                <div style={{
+                  fontSize: theme.typography.fontSize.lg,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: theme.colors.text.primary,
+                }}>
+                  {month.daysTotal}
                 </div>
               </div>
             </div>
