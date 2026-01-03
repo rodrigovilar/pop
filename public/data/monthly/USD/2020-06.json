@@ -2,13 +2,13 @@
   "month": "2020-06",
   "currency": "USD",
   "entryDate": "2020-06-01",
-  "entryPrice": 10211.23,
-  "daysPositive": 0,
-  "daysNegative": 29,
-  "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": 15.653994962125314,
-  "regime": "BULL",
+  "entryPrice": 56010.64,
   "exitDate": "2020-06-30",
-  "exitPrice": 9258.18,
-  "pctChangeWithinMonth": -9.33
+  "exitPrice": 40207.21,
+  "pctChangeWithinMonth": -28.2150498548133,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -26.562598539843567,
+  "regime": "BEAR"
 }

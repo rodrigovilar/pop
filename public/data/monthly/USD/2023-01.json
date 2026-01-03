@@ -2,13 +2,13 @@
   "month": "2023-01",
   "currency": "USD",
   "entryDate": "2023-01-01",
-  "entryPrice": 16613.87,
+  "entryPrice": 1962571.72,
+  "exitDate": "2023-01-31",
+  "exitPrice": 5588228.01,
+  "pctChangeWithinMonth": 184.74006595794626,
   "daysPositive": 30,
   "daysNegative": 0,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": -2.1484052904119557,
-  "regime": "LATERAL",
-  "exitDate": "2023-01-31",
-  "exitPrice": 18168.07,
-  "pctChangeWithinMonth": 9.35
+  "pctChangeVsPrevMonthStart": 32.77742275538786,
+  "regime": "BULL"
 }

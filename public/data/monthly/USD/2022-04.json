@@ -2,13 +2,13 @@
   "month": "2022-04",
   "currency": "USD",
   "entryDate": "2022-04-01",
-  "entryPrice": 46299.75,
-  "daysPositive": 2,
-  "daysNegative": 27,
-  "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": 4.21189385995061,
-  "regime": "LATERAL",
+  "entryPrice": 850968.73,
   "exitDate": "2022-04-30",
-  "exitPrice": 42595.77,
-  "pctChangeWithinMonth": -8.0
+  "exitPrice": 1365654.24,
+  "pctChangeWithinMonth": 60.48230585394131,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 97.18368940393236,
+  "regime": "BULL"
 }
