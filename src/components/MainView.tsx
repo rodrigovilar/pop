@@ -18,16 +18,9 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
   // Get months from startMonth to now, in ascending order
   // Memoize to ensure stable reference for downstream calculations
   const displayMonths = useMemo(() => {
-    const allMonths = Array.from(monthlyData.values())
+    return Array.from(monthlyData.values())
       .filter(m => m.month >= startMonth)
       .sort((a, b) => a.month.localeCompare(b.month)); // Ascending: oldest first
-
-    // LIMIT TO 48 MONTHS (4 years)
-    // If we have more than 48, take the *last* 48 to show recent history up to now
-    // OR take the first 48 from start date? Usually "last 48" makes more sense for a fixed grid,
-    // but if the user selected a specific start date, maybe they want to see FROM that date.
-    // Given the request "shown 49 cards, want 48", let's slice the array.
-    return allMonths.slice(0, 48);
   }, [monthlyData, startMonth]);
 
   // Run DCA simulation from start month (using filtered months)
