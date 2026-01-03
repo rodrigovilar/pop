@@ -136,7 +136,9 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
 
   const [year, monthNum] = month.month.split('-');
   const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthNamesLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const monthLabel = monthNames[parseInt(monthNum) - 1];
+  const monthLabelLong = monthNamesLong[parseInt(monthNum) - 1];
 
   const chartData = [
     { label: 'Bull', value: month.daysPositive, color: theme.colors.status.success },
@@ -238,7 +240,7 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               marginBottom: theme.spacing.xl,
               fontFamily: theme.typography.fontFamily.display,
             }}>
-              {formatDate(new Date(month.entryDate), { year: 'numeric', month: 'long' })}
+              {monthLabelLong} {year}
             </div>
 
             {/* Delta % */}
