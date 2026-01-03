@@ -47,6 +47,7 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
 
 function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void }) {
   const [isHovered, setIsHovered] = useState(false);
+  const { t } = useI18n();
 
   // Use within-month change (with fallback for old data)
   const pctChange = data.month.pctChangeWithinMonth ?? 0;
@@ -54,8 +55,8 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
 
   // Safe Date Parsing for Label (avoids timezone shifts)
   const [year, monthNum] = data.month.month.split('-');
-  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const monthLabel = monthNames[parseInt(monthNum) - 1];
+  const monthKeys = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+  const monthLabel = t(`common.monthsShort.${monthKeys[parseInt(monthNum) - 1]}`);
 
   return (
     <button
@@ -133,13 +134,13 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
   const changeLabel = `${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%`;
 
   const [year, monthNum] = month.month.split('-');
-  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const monthLabel = monthNames[parseInt(monthNum) - 1];
+  const monthKeys = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+  const monthLabel = t(`common.monthsShort.${monthKeys[parseInt(monthNum) - 1]}`);
 
   const chartData = [
-    { label: 'Bull', value: month.daysPositive, color: theme.colors.status.success },
-    { label: 'Bear', value: month.daysNegative, color: theme.colors.status.error },
-    { label: 'Lateral', value: month.daysTotal - month.daysPositive - month.daysNegative, color: theme.colors.secondary[500] },
+    { label: t('overview.regimes.BULL'), value: month.daysPositive, color: theme.colors.status.success },
+    { label: t('overview.regimes.BEAR'), value: month.daysNegative, color: theme.colors.status.error },
+    { label: t('overview.regimes.LATERAL'), value: month.daysTotal - month.daysPositive - month.daysNegative, color: theme.colors.secondary[500] },
   ].filter(d => d.value > 0);
 
   return (
@@ -239,8 +240,8 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               {(() => {
                 // Safe date parsing to avoid timezone issues
                 const [year, monthNum] = month.month.split('-');
-                const monthNamesLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-                const monthName = monthNamesLong[parseInt(monthNum) - 1];
+                const monthKeys = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+                const monthName = t(`common.monthsLong.${monthKeys[parseInt(monthNum) - 1]}`);
                 return `${monthName} ${year}`;
               })()}
             </div>
