@@ -120,7 +120,7 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
 }
 
 function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; colorData: { backgroundColor: string; textColor: string }; onClose: () => void }) {
-  const { t, formatCurrency, formatDate } = useI18n();
+  const { t, formatCurrency } = useI18n();
   const [flipped, setFlipped] = useState(false);
 
   // Auto-flip after a short delay to show the animation
@@ -238,7 +238,13 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               marginBottom: theme.spacing.xl,
               fontFamily: theme.typography.fontFamily.display,
             }}>
-              {formatDate(new Date(month.entryDate), { year: 'numeric', month: 'long' })}
+              {(() => {
+                // Safe date parsing to avoid timezone issues
+                const [year, monthNum] = month.month.split('-');
+                const monthNamesLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                const monthName = monthNamesLong[parseInt(monthNum) - 1];
+                return `${monthName} ${year}`;
+              })()}
             </div>
 
             {/* Delta % */}
