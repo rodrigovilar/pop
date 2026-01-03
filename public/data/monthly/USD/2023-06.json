@@ -7,5 +7,8 @@
   "daysNegative": 13,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -4.489800714001649,
-  "regime": "LATERAL"
+  "regime": "LATERAL",
+  "exitDate": "2023-06-30",
+  "exitPrice": 27093.99,
+  "pctChangeWithinMonth": 1.0
 }

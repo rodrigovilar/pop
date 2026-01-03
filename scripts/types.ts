@@ -18,6 +18,9 @@ export interface MonthProcessingResult {
   currency: string;
   entryDate: string;       // YYYY-MM-DD
   entryPrice: number;
+  exitDate: string;        // YYYY-MM-DD
+  exitPrice: number;
+  pctChangeWithinMonth: number;  // % change from entry to exit price
   daysPositive: number;
   daysNegative: number;
   daysTotal: number;

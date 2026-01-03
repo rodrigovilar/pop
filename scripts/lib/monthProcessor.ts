@@ -11,6 +11,9 @@ export interface MonthResult {
   month: string;           // YYYY-MM
   entryDate: string;       // YYYY-MM-DD (first day of month)
   entryPrice: number;
+  exitDate: string;        // YYYY-MM-DD (last day of month)
+  exitPrice: number;
+  pctChangeWithinMonth: number;  // % change from entry to exit price
   daysPositive: number;    // Days when price > entry price
   daysNegative: number;    // Days when price < entry price
   daysTotal: number;       // Total days in month
@@ -38,6 +41,13 @@ export function processMonth(
   const entryDate = sorted[0].date;
   const entryPrice = sorted[0].price;
 
+  // Exit is last day of month
+  const exitDate = sorted[sorted.length - 1].date;
+  const exitPrice = sorted[sorted.length - 1].price;
+
+  // Calculate percentage change within month
+  const pctChangeWithinMonth = ((exitPrice - entryPrice) / entryPrice) * 100;
+
   // Count positive and negative days (excluding entry day)
   let daysPositive = 0;
   let daysNegative = 0;
@@ -57,6 +67,9 @@ export function processMonth(
     month,
     entryDate,
     entryPrice,
+    exitDate,
+    exitPrice,
+    pctChangeWithinMonth,
     daysPositive,
     daysNegative,
     daysTotal: sorted.length,

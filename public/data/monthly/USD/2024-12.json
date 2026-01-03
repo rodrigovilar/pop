@@ -7,5 +7,8 @@
   "daysNegative": 13,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 40.019714017204564,
-  "regime": "BULL"
+  "regime": "BULL",
+  "exitDate": "2024-12-31",
+  "exitPrice": 98531.65,
+  "pctChangeWithinMonth": 1.29
 }
