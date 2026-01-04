@@ -3,9 +3,9 @@
  *
  * Implements progressive loading strategy:
  * 1. Manifest
- * 2. Current month
+ * 2. Most recent complete month (excludes current month)
  * 3. Previous month
- * 4. Last 12 months
+ * 4. Last 48 complete months
  * 5. Remaining months (background)
  *
  * Features:
@@ -13,6 +13,7 @@
  * - Concurrent loading (max 3-5 parallel)
  * - Progressive UI updates via callbacks
  * - Automatic cache management
+ * - Excludes current month (only complete months)
  */
 
 import type { Manifest, MonthlyData, Currency } from '../types';
@@ -130,32 +131,36 @@ export class DataLoader {
     const manifest = await this.loadManifest();
     this.reportProgress('manifest', 1, 1);
 
-    const availableMonths = manifest.monthsAvailable;
-    if (availableMonths.length === 0) {
+    // Get current month (YYYY-MM) to exclude incomplete data
+    const now = new Date();
+    const currentMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+
+    // Filter to only complete months (exclude current month)
+    const completeMonths = manifest.monthsAvailable.filter(m => m < currentMonth);
+
+    if (completeMonths.length === 0) {
       return { manifest, monthlyData };
     }
 
-    // Get current month (last available)
-    const currentMonth = availableMonths[availableMonths.length - 1];
-
-    // Phase 2: Load current month
+    // Phase 2: Load most recent complete month
+    const latestMonth = completeMonths[completeMonths.length - 1];
     this.reportProgress('current', 0, 1);
-    const currentData = await this.loadMonth(currentMonth, this.currency);
-    monthlyData.set(currentMonth, currentData);
+    const latestData = await this.loadMonth(latestMonth, this.currency);
+    monthlyData.set(latestMonth, latestData);
     this.reportProgress('current', 1, 1);
 
     // Phase 3: Load previous month (if exists)
-    if (availableMonths.length > 1) {
-      const previousMonth = availableMonths[availableMonths.length - 2];
+    if (completeMonths.length > 1) {
+      const previousMonth = completeMonths[completeMonths.length - 2];
       this.reportProgress('previous', 0, 1);
       const previousData = await this.loadMonth(previousMonth, this.currency);
       monthlyData.set(previousMonth, previousData);
       this.reportProgress('previous', 1, 1);
     }
 
-    // Phase 4: Load recent 12 months (excluding current and previous already loaded)
-    const recentMonths = availableMonths.slice(-12).filter(
-      m => m !== currentMonth && m !== availableMonths[availableMonths.length - 2]
+    // Phase 4: Load recent 48 months (excluding latest and previous already loaded)
+    const recentMonths = completeMonths.slice(-48).filter(
+      m => m !== latestMonth && m !== completeMonths[completeMonths.length - 2]
     );
 
     if (recentMonths.length > 0) {
@@ -168,8 +173,8 @@ export class DataLoader {
     }
 
     // Phase 5: Load remaining months in background
-    const loadedMonths = new Set([currentMonth, availableMonths[availableMonths.length - 2], ...recentMonths]);
-    const remainingMonths = availableMonths.filter(m => !loadedMonths.has(m));
+    const loadedMonths = new Set([latestMonth, completeMonths[completeMonths.length - 2], ...recentMonths]);
+    const remainingMonths = completeMonths.filter(m => !loadedMonths.has(m));
 
     if (remainingMonths.length > 0) {
       // Load in background (don't await)

@@ -11,10 +11,12 @@ import type { Currency } from './types';
 function AppContent() {
   const [currency, setCurrency] = useState<Currency>('USD');
 
-  // Calculate default start date: 4 years ago
+  // Calculate default start date: 48 months ago (excluding current month)
   const now = new Date();
-  const fourYearsAgo = new Date(now.getFullYear() - 4, now.getMonth(), 1);
-  const defaultStartMonth = fourYearsAgo.toISOString().split('T')[0].substring(0, 7);
+  const lastCompleteMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+  const lastCompleteMonthStr = lastCompleteMonth.toISOString().split('T')[0].substring(0, 7);
+  const startDate = new Date(lastCompleteMonth.getFullYear(), lastCompleteMonth.getMonth() - 47, 1);
+  const defaultStartMonth = startDate.toISOString().split('T')[0].substring(0, 7);
 
   const [startMonth, setStartMonth] = useState(defaultStartMonth);
 
@@ -111,7 +113,7 @@ function AppContent() {
                 type="month"
                 value={startMonth}
                 onChange={(e) => setStartMonth(e.target.value)}
-                max={new Date().toISOString().split('T')[0].substring(0, 7)}
+                max={lastCompleteMonthStr}
                 min="2010-07"
                 style={{
                   padding: `${theme.spacing.sm} ${theme.spacing.md}`,
