@@ -15,21 +15,22 @@ interface MonthCellData {
 }
 
 function calculateCellColor(data: MonthlyData): { backgroundColor: string; textColor: string } {
+  // Use the regime from data (calculated based on price change between months)
+  // Calculate intensity based on the ratio of positive/negative days
   const totalDays = data.daysTotal;
   const positiveRatio = data.daysPositive / totalDays;
   const negativeRatio = data.daysNegative / totalDays;
 
-  // Determine dominant regime
-  if (positiveRatio > 0.6) {
-    // Bull: Green with opacity based on intensity
+  if (data.regime === 'BULL') {
+    // Bull: Green with opacity based on positive days intensity
     const intensity = Math.min(positiveRatio, 1);
     const alpha = 0.3 + (intensity * 0.7);
     return {
       backgroundColor: `rgba(16, 185, 129, ${alpha})`,
       textColor: '#ffffff',
     };
-  } else if (negativeRatio > 0.6) {
-    // Bear: Red
+  } else if (data.regime === 'BEAR') {
+    // Bear: Red with opacity based on negative days intensity
     const intensity = Math.min(negativeRatio, 1);
     const alpha = 0.3 + (intensity * 0.7);
     return {
@@ -37,7 +38,7 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
       textColor: '#ffffff',
     };
   } else {
-    // Lateral: Dark Gray
+    // Lateral or N/A: Dark Gray
     return {
       backgroundColor: theme.colors.secondary[800],
       textColor: theme.colors.text.secondary,
@@ -289,18 +290,18 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
             borderRadius: theme.borderRadius.xl,
             border: `1px solid ${theme.colors.secondary[700]}`,
             boxShadow: theme.shadows.glow,
-            padding: theme.spacing['2xl'],
+            padding: theme.spacing.lg,
             display: 'flex',
             flexDirection: 'column',
-            overflow: 'auto',
+            overflow: 'hidden',
           }}>
             {/* Header */}
             <div style={{
-              marginBottom: theme.spacing.xl,
+              marginBottom: theme.spacing.md,
               textAlign: 'center',
             }}>
               <h3 style={{
-                fontSize: theme.typography.fontSize['2xl'],
+                fontSize: theme.typography.fontSize.xl,
                 fontWeight: theme.typography.fontWeight.bold,
                 color: theme.colors.text.primary,
                 margin: 0,
@@ -314,18 +315,18 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
             <div style={{
               display: 'flex',
               justifyContent: 'center',
-              marginBottom: theme.spacing.xl,
+              marginBottom: theme.spacing.md,
             }}>
-              <DonutChart data={chartData} size={180} thickness={35} />
+              <DonutChart data={chartData} size={140} thickness={28} />
             </div>
 
             {/* Price Change Summary */}
             <div style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
-              gap: theme.spacing.lg,
-              marginBottom: theme.spacing.xl,
-              padding: theme.spacing.lg,
+              gap: theme.spacing.md,
+              marginBottom: theme.spacing.md,
+              padding: theme.spacing.md,
               backgroundColor: 'rgba(0,0,0,0.2)',
               borderRadius: theme.borderRadius.md,
             }}>
@@ -374,7 +375,7 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
                   {t('overview.monthChange') || 'Month Change'}
                 </div>
                 <div style={{
-                  fontSize: theme.typography.fontSize['2xl'],
+                  fontSize: theme.typography.fontSize.xl,
                   fontWeight: theme.typography.fontWeight.extrabold,
                   color: pctChange >= 0 ? theme.colors.status.success : theme.colors.status.error,
                 }}>
@@ -388,7 +389,7 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               display: 'grid',
               gridTemplateColumns: '1fr 1fr 1fr',
               gap: theme.spacing.md,
-              marginBottom: theme.spacing.lg,
+              marginBottom: theme.spacing.md,
             }}>
               <div>
                 <div style={{

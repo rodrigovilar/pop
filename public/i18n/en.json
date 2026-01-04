@@ -31,6 +31,10 @@
     "daysLateral": "Days Lateral",
     "currentMonth": "Current Month",
     "regime": "Regime",
+    "entryPrice": "Entry Price",
+    "exitPrice": "Exit Price",
+    "monthChange": "Month Change",
+    "totalDays": "Total Days",
     "regimes": {
       "BULL": "Bull",
       "BEAR": "Bear",
@@ -41,7 +45,9 @@
   "main": {
     "ifYouHadInvested": "If you had invested in BTC on",
     "monthlyProgression": "Monthly Progression",
-    "dcaSimulation": "DCA Simulation"
+    "dcaSimulation": "DCA Simulation",
+    "clickToFlip": "Click to see details →",
+    "clickToFlipBack": "← Click to flip back"
   },
   "dca": {
     "title": "DCA Simulation",
