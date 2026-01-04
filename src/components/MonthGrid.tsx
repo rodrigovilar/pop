@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useI18n } from '../contexts/I18nContext';
 import { theme } from '../styles/theme';
 import type { MonthlyData } from '../types';
-import { DonutChart } from './DonutChart';
+import { PieChart } from './PieChart';
 
 interface MonthGridProps {
   monthlyData: MonthlyData[];
@@ -350,13 +350,13 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               </h3>
             </div>
 
-            {/* Donut Chart */}
+            {/* Pie Chart */}
             <div style={{
               display: 'flex',
               justifyContent: 'center',
               marginBottom: theme.spacing.md,
             }}>
-              <DonutChart data={chartData} size={140} thickness={28} />
+              <PieChart data={chartData} size={140} />
             </div>
 
             {/* Price Change Summary */}
@@ -470,14 +470,14 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
                   color: theme.colors.text.secondary,
                   marginBottom: theme.spacing.xs,
                 }}>
-                  {t('overview.totalDays') || 'Total Days'}
+                  {t('overview.daysLateral') || 'Days Lateral'}
                 </div>
                 <div style={{
                   fontSize: theme.typography.fontSize.lg,
-                  fontWeight: theme.typography.fontWeight.bold,
-                  color: theme.colors.text.primary,
+                  fontWeight: theme.typography.fontWeight.semibold,
+                  color: theme.colors.text.secondary,
                 }}>
-                  {month.daysTotal}
+                  {month.daysTotal - month.daysPositive - month.daysNegative}
                 </div>
               </div>
             </div>
