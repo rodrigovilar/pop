@@ -167,39 +167,6 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
           maxWidth: '600px',
         }}
       >
-        {/* Close button */}
-        <button
-          onClick={onClose}
-          style={{
-            position: 'absolute',
-            top: theme.spacing.xl,
-            right: theme.spacing.xl,
-            background: 'rgba(0, 0, 0, 0.5)',
-            border: `1px solid ${theme.colors.secondary[600]}`,
-            borderRadius: '50%',
-            width: '40px',
-            height: '40px',
-            fontSize: '24px',
-            cursor: 'pointer',
-            color: theme.colors.text.primary,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: theme.transitions.base,
-            zIndex: 1001,
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = theme.colors.secondary[700];
-            e.currentTarget.style.transform = 'scale(1.1)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          ×
-        </button>
-
         {/* Flip Card Container */}
         <div
           style={{
@@ -231,6 +198,42 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
             boxShadow: theme.shadows.xl,
             border: `1px solid rgba(255,255,255,0.1)`,
           }}>
+            {/* Close button - FRONT */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onClose();
+              }}
+              style={{
+                position: 'absolute',
+                top: theme.spacing.md,
+                right: theme.spacing.md,
+                background: 'rgba(0, 0, 0, 0.3)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '50%',
+                width: '36px',
+                height: '36px',
+                fontSize: '24px',
+                cursor: 'pointer',
+                color: colorData.textColor,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: theme.transitions.base,
+                zIndex: 10,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)';
+                e.currentTarget.style.transform = 'scale(1.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)';
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              ×
+            </button>
+
             {/* Month/Year */}
             <div style={{
               fontSize: theme.typography.fontSize['4xl'],
@@ -295,6 +298,42 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
             flexDirection: 'column',
             overflow: 'hidden',
           }}>
+            {/* Close button - BACK */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onClose();
+              }}
+              style={{
+                position: 'absolute',
+                top: theme.spacing.md,
+                right: theme.spacing.md,
+                background: 'rgba(0, 0, 0, 0.3)',
+                border: `1px solid ${theme.colors.secondary[600]}`,
+                borderRadius: '50%',
+                width: '36px',
+                height: '36px',
+                fontSize: '24px',
+                cursor: 'pointer',
+                color: theme.colors.text.primary,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: theme.transitions.base,
+                zIndex: 10,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)';
+                e.currentTarget.style.transform = 'scale(1.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)';
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              ×
+            </button>
+
             {/* Header */}
             <div style={{
               marginBottom: theme.spacing.md,
