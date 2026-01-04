@@ -10,11 +10,10 @@ interface SettingsProps {
 const AVAILABLE_CURRENCIES: Currency[] = [
   'USD', 'EUR', 'BRL', 'GBP', 'JPY',
   'CHF', 'CAD', 'AUD', 'NZD',
-  'CNY', 'HKD', 'SGD',
+  'HKD', 'SGD',
   'INR', 'KRW',
   'MXN', 'ARS',
   'ZAR', 'TRY',
-  'SEK', 'NOK',
 ];
 
 const AVAILABLE_LANGUAGES: Array<{ code: Language; label: string }> = [
@@ -25,18 +24,12 @@ const AVAILABLE_LANGUAGES: Array<{ code: Language; label: string }> = [
   { code: 'de', label: 'Deutsch' },
   { code: 'it', label: 'Italiano' },
   { code: 'nl', label: 'Nederlands' },
-  { code: 'sv', label: 'Svenska' },
-  { code: 'da', label: 'Dansk' },
-  { code: 'no', label: 'Norsk' },
   { code: 'fi', label: 'Suomi' },
   { code: 'pl', label: 'Polski' },
   { code: 'cs', label: 'Čeština' },
   { code: 'tr', label: 'Türkçe' },
-  { code: 'ru', label: 'Русский' },
-  { code: 'uk', label: 'Українська' },
   { code: 'ja', label: '日本語' },
   { code: 'ko', label: '한국어' },
-  { code: 'zh-Hans', label: '简体中文' },
   { code: 'hi', label: 'हिन्दी' },
 ];
 

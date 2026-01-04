@@ -24,11 +24,10 @@ import type { MonthlyData, Manifest, Currency } from '../src/types';
 const CURRENCIES: Currency[] = [
   'USD', 'EUR', 'BRL', 'GBP', 'JPY',
   'CHF', 'CAD', 'AUD', 'NZD',
-  'CNY', 'HKD', 'SGD',
+  'HKD', 'SGD',
   'INR', 'KRW',
   'MXN', 'ARS',
   'ZAR', 'TRY',
-  'SEK', 'NOK',
 ];
 
 const REGIME_THRESHOLD = 0.10; // 10%

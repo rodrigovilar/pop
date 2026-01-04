@@ -5,20 +5,17 @@
 export type Currency =
   | 'USD' | 'EUR' | 'BRL' | 'GBP' | 'JPY'
   | 'CHF' | 'CAD' | 'AUD' | 'NZD'
-  | 'CNY' | 'HKD' | 'SGD'
+  | 'HKD' | 'SGD'
   | 'INR' | 'KRW'
   | 'MXN' | 'ARS'
-  | 'ZAR' | 'TRY'
-  | 'SEK' | 'NOK';
+  | 'ZAR' | 'TRY';
 
 export type Regime = 'BULL' | 'BEAR' | 'LATERAL' | 'N/A';
 
 export type Language =
   | 'en' | 'pt-BR' | 'es' | 'fr' | 'de' | 'it' | 'nl'
-  | 'sv' | 'da' | 'no' | 'fi'
-  | 'pl' | 'cs' | 'tr'
-  | 'ru' | 'uk'
-  | 'ja' | 'ko' | 'zh-Hans' | 'hi';
+  | 'fi' | 'pl' | 'cs' | 'tr'
+  | 'ja' | 'ko' | 'hi';
 
 /**
  * Monthly data shard schema

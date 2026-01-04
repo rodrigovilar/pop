@@ -28,10 +28,8 @@ const DEFAULT_CONFIG: I18nConfig = {
   fallbackLanguage: 'en',
   availableLanguages: [
     'en', 'pt-BR', 'es', 'fr', 'de', 'it', 'nl',
-    'sv', 'da', 'no', 'fi',
-    'pl', 'cs', 'tr',
-    'ru', 'uk',
-    'ja', 'ko', 'zh-Hans', 'hi',
+    'fi', 'pl', 'cs', 'tr',
+    'ja', 'ko', 'hi',
   ],
 };
 

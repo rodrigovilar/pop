@@ -56,9 +56,9 @@ public/
 - Source: historical daily Bitcoin prices
 - Daily price: last seen price in UTC
 - Entry price: first available day of month
-- Regime classification:
-  - Bull ≥ +10% vs previous month
-  - Bear ≤ -10% vs previous month
+- Regime classification (within-month):
+  - Bull ≥ +10% from entry to exit price
+  - Bear ≤ -10% from entry to exit price
   - Otherwise Lateral
 
 ## Progressive Loading Strategy
@@ -93,8 +93,8 @@ btcReport:v1:index
 
 ## Localization (i18n)
 
-### Supported Languages (~20)
-en (fallback), pt-BR, es, fr, de, it, nl, sv, da, no, fi, pl, cs, tr, ru, uk, ja, ko, zh-Hans, hi
+### Supported Languages (~14)
+en (fallback), pt-BR, es, fr, de, it, nl, fi, pl, cs, tr, ja, ko, hi
 
 **Note:** RTL languages explicitly excluded for now
 
@@ -107,9 +107,9 @@ en (fallback), pt-BR, es, fr, de, it, nl, sv, da, no, fi, pl, cs, tr, ru, uk, ja
 - Key-based strings, lazy loaded
 - Use `Intl` API for dates, currencies, percentages (no manual formatting)
 
-## Currency Support (~20)
+## Currency Support (~17)
 
-USD, EUR, BRL, GBP, JPY, CHF, CAD, AUD, NZD, CNY, HKD, SGD, INR, KRW, MXN, ARS, ZAR, TRY, SEK, NOK
+USD, EUR, BRL, GBP, JPY, CHF, CAD, AUD, NZD, HKD, SGD, INR, KRW, MXN, ARS, ZAR, TRY
 
 **Critical:** Each currency has its own preprocessed dataset. No FX conversion on frontend.
 
