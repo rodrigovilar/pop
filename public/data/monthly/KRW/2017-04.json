@@ -1,0 +1,14 @@
+{
+  "month": "2017-04",
+  "currency": "KRW",
+  "entryDate": "2017-04-01",
+  "entryPrice": 1277704.44,
+  "exitDate": "2017-04-30",
+  "exitPrice": 1569956.21,
+  "pctChangeWithinMonth": 22.873190453967588,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -11.424302253032932,
+  "regime": "BULL"
+}

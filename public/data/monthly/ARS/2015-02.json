@@ -1,0 +1,14 @@
+{
+  "month": "2015-02",
+  "currency": "ARS",
+  "entryDate": "2015-02-01",
+  "entryPrice": 3147.95,
+  "exitDate": "2015-02-28",
+  "exitPrice": 3296.62,
+  "pctChangeWithinMonth": 4.722756079353233,
+  "daysPositive": 6,
+  "daysNegative": 21,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": -19.36396936396937,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2021-03",
+  "currency": "JPY",
+  "entryDate": "2021-03-01",
+  "entryPrice": 5310818.84,
+  "exitDate": "2021-03-31",
+  "exitPrice": 6508632.17,
+  "pctChangeWithinMonth": 22.554211809642524,
+  "daysPositive": 26,
+  "daysNegative": 4,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 52.11378072726208,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2023-05",
+  "currency": "CAD",
+  "entryDate": "2023-05-01",
+  "entryPrice": 38125.01,
+  "exitDate": "2023-05-31",
+  "exitPrice": 36916.45,
+  "pctChangeWithinMonth": -3.169992611149492,
+  "daysPositive": 5,
+  "daysNegative": 25,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -0.667565890931586,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2022-02",
+  "currency": "ZAR",
+  "entryDate": "2022-02-01",
+  "entryPrice": 603081.2,
+  "exitDate": "2022-02-28",
+  "exitPrice": 669891.76,
+  "pctChangeWithinMonth": 11.0782030678456,
+  "daysPositive": 19,
+  "daysNegative": 8,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": -21.84085290707956,
+  "regime": "BULL"
+}

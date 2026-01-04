@@ -1,0 +1,14 @@
+{
+  "month": "2015-08",
+  "currency": "EUR",
+  "entryDate": "2015-08-01",
+  "entryPrice": 258.02,
+  "exitDate": "2015-08-31",
+  "exitPrice": 206.19,
+  "pctChangeWithinMonth": -20.08759010929385,
+  "daysPositive": 4,
+  "daysNegative": 26,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 10.420678734968115,
+  "regime": "BEAR"
+}

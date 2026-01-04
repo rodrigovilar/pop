@@ -1,0 +1,14 @@
+{
+  "month": "2017-03",
+  "currency": "NZD",
+  "entryDate": "2017-03-01",
+  "entryPrice": 1807.23,
+  "exitDate": "2017-03-31",
+  "exitPrice": 1529.7,
+  "pctChangeWithinMonth": -15.356650786009526,
+  "daysPositive": 11,
+  "daysNegative": 19,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 28.889919052883066,
+  "regime": "BEAR"
+}

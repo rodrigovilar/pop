@@ -1,0 +1,14 @@
+{
+  "month": "2022-06",
+  "currency": "ZAR",
+  "entryDate": "2022-06-01",
+  "entryPrice": 474428.52,
+  "exitDate": "2022-06-30",
+  "exitPrice": 329615.18,
+  "pctChangeWithinMonth": -30.523742543976912,
+  "daysPositive": 4,
+  "daysNegative": 25,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -23.71025171594982,
+  "regime": "BEAR"
+}

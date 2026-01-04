@@ -1,0 +1,14 @@
+{
+  "month": "2023-10",
+  "currency": "INR",
+  "entryDate": "2023-10-01",
+  "entryPrice": 2353877.8,
+  "exitDate": "2023-10-31",
+  "exitPrice": 2783407.71,
+  "pctChangeWithinMonth": 18.24775738145796,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 1.8886196207915489,
+  "regime": "BULL"
+}

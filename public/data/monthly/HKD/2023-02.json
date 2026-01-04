@@ -1,0 +1,14 @@
+{
+  "month": "2023-02",
+  "currency": "HKD",
+  "entryDate": "2023-02-01",
+  "entryPrice": 185633.04,
+  "exitDate": "2023-02-28",
+  "exitPrice": 181957.68,
+  "pctChangeWithinMonth": -1.9799061632562904,
+  "daysPositive": 8,
+  "daysNegative": 19,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": 42.782026419357244,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2024-11",
+  "currency": "ARS",
+  "entryDate": "2024-11-01",
+  "entryPrice": 81042298.38,
+  "exitDate": "2024-11-30",
+  "exitPrice": 107179594.17,
+  "pctChangeWithinMonth": 32.25142464178965,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 7.425797907203396,
+  "regime": "BULL"
+}

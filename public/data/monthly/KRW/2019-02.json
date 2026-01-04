@@ -1,0 +1,14 @@
+{
+  "month": "2019-02",
+  "currency": "KRW",
+  "entryDate": "2019-02-01",
+  "entryPrice": 3817557.32,
+  "exitDate": "2019-02-28",
+  "exitPrice": 4241104.14,
+  "pctChangeWithinMonth": 11.094707544561501,
+  "daysPositive": 25,
+  "daysNegative": 2,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": -11.064434637644972,
+  "regime": "BULL"
+}

@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2015-07-01",
   "entryPrice": 257.62,
+  "exitDate": "2015-07-31",
+  "exitPrice": 283.73,
+  "pctChangeWithinMonth": 10.13508267991616,
   "daysPositive": 28,
   "daysNegative": 2,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 15.45218248633146,
-  "regime": "BULL",
-  "exitDate": "2015-07-31",
-  "exitPrice": 278.4,
-  "pctChangeWithinMonth": 8.06
+  "regime": "BULL"
 }

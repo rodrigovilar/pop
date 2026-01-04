@@ -1,0 +1,14 @@
+{
+  "month": "2024-11",
+  "currency": "TRY",
+  "entryDate": "2024-11-01",
+  "entryPrice": 2401950.68,
+  "exitDate": "2024-11-30",
+  "exitPrice": 3348205.48,
+  "pctChangeWithinMonth": 39.39526351973221,
+  "daysPositive": 26,
+  "daysNegative": 3,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 15.130498066295175,
+  "regime": "BULL"
+}

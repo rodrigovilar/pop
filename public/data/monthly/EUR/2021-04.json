@@ -1,0 +1,14 @@
+{
+  "month": "2021-04",
+  "currency": "EUR",
+  "entryDate": "2021-04-01",
+  "entryPrice": 49890.52,
+  "exitDate": "2021-04-30",
+  "exitPrice": 47989.98,
+  "pctChangeWithinMonth": -3.8094211084590692,
+  "daysPositive": 10,
+  "daysNegative": 19,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 21.02775240051642,
+  "regime": "LATERAL"
+}

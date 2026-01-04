@@ -1,0 +1,14 @@
+{
+  "month": "2016-04",
+  "currency": "TRY",
+  "entryDate": "2016-04-01",
+  "entryPrice": 1295.34,
+  "exitDate": "2016-04-30",
+  "exitPrice": 1385.19,
+  "pctChangeWithinMonth": 6.9364027977210725,
+  "daysPositive": 21,
+  "daysNegative": 7,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -5.763984373294924,
+  "regime": "LATERAL"
+}

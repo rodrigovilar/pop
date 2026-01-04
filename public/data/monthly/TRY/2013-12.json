@@ -1,0 +1,14 @@
+{
+  "month": "2013-12",
+  "currency": "TRY",
+  "entryDate": "2013-12-01",
+  "entryPrice": 2054.68,
+  "exitDate": "2013-12-31",
+  "exitPrice": 1678.65,
+  "pctChangeWithinMonth": -18.301146650573312,
+  "daysPositive": 18,
+  "daysNegative": 4,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 652.2167307340288,
+  "regime": "BEAR"
+}

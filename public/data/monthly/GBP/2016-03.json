@@ -1,0 +1,14 @@
+{
+  "month": "2016-03",
+  "currency": "GBP",
+  "entryDate": "2016-03-01",
+  "entryPrice": 302.67,
+  "exitDate": "2016-03-31",
+  "exitPrice": 291.93,
+  "pctChangeWithinMonth": -3.548419070274559,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 16.36678200692041,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2019-06",
+  "currency": "GBP",
+  "entryDate": "2019-06-01",
+  "entryPrice": 6817.53,
+  "exitDate": "2019-06-30",
+  "exitPrice": 8480.38,
+  "pctChangeWithinMonth": 24.39079842699628,
+  "daysPositive": 18,
+  "daysNegative": 11,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 67.18565311857805,
+  "regime": "BULL"
+}

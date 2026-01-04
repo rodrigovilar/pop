@@ -1,0 +1,14 @@
+{
+  "month": "2023-04",
+  "currency": "EUR",
+  "entryDate": "2023-04-01",
+  "entryPrice": 26277.42,
+  "exitDate": "2023-04-30",
+  "exitPrice": 26570.58,
+  "pctChangeWithinMonth": 1.1156346399304173,
+  "daysPositive": 14,
+  "daysNegative": 15,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 18.239675735898253,
+  "regime": "LATERAL"
+}

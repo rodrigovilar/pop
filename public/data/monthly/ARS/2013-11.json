@@ -1,0 +1,14 @@
+{
+  "month": "2013-11",
+  "currency": "ARS",
+  "entryDate": "2013-11-01",
+  "entryPrice": 2116.62,
+  "exitDate": "2013-11-30",
+  "exitPrice": 12152.83,
+  "pctChangeWithinMonth": 474.16210751103176,
+  "daysPositive": 26,
+  "daysNegative": 3,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 86.65243961586961,
+  "regime": "BULL"
+}

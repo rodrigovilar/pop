@@ -1,0 +1,14 @@
+{
+  "month": "2019-06",
+  "currency": "SGD",
+  "entryDate": "2019-06-01",
+  "entryPrice": 11716.19,
+  "exitDate": "2019-06-30",
+  "exitPrice": 14571.72,
+  "pctChangeWithinMonth": 24.372513590168808,
+  "daysPositive": 18,
+  "daysNegative": 11,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 61.81018409822256,
+  "regime": "BULL"
+}

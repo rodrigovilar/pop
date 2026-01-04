@@ -1,0 +1,14 @@
+{
+  "month": "2021-09",
+  "currency": "AUD",
+  "entryDate": "2021-09-01",
+  "entryPrice": 66088.41,
+  "exitDate": "2021-09-30",
+  "exitPrice": 60776.08,
+  "pctChangeWithinMonth": -8.038217291049977,
+  "daysPositive": 6,
+  "daysNegative": 23,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 21.980449804732455,
+  "regime": "LATERAL"
+}

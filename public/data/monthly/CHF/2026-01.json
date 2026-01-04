@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "CHF",
+  "entryDate": "2026-01-01",
+  "entryPrice": 70289.1,
+  "exitDate": "2026-01-04",
+  "exitPrice": 72165.7,
+  "pctChangeWithinMonth": 2.6698307418931115,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 1.1353956834532457,
+  "regime": "LATERAL"
+}

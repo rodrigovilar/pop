@@ -1,0 +1,14 @@
+{
+  "month": "2025-09",
+  "currency": "AUD",
+  "entryDate": "2025-09-01",
+  "entryPrice": 166889.83,
+  "exitDate": "2025-09-30",
+  "exitPrice": 172521.75,
+  "pctChangeWithinMonth": 3.374633433325454,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -4.96635438799472,
+  "regime": "LATERAL"
+}

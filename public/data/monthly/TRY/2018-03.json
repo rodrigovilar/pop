@@ -1,0 +1,14 @@
+{
+  "month": "2018-03",
+  "currency": "TRY",
+  "entryDate": "2018-03-01",
+  "entryPrice": 39132.37,
+  "exitDate": "2018-03-31",
+  "exitPrice": 27075.1,
+  "pctChangeWithinMonth": -30.811499533506414,
+  "daysPositive": 5,
+  "daysNegative": 25,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 14.353990224538727,
+  "regime": "BEAR"
+}

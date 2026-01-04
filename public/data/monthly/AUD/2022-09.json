@@ -1,0 +1,14 @@
+{
+  "month": "2022-09",
+  "currency": "AUD",
+  "entryDate": "2022-09-01",
+  "entryPrice": 29572.49,
+  "exitDate": "2022-09-30",
+  "exitPrice": 30419.79,
+  "pctChangeWithinMonth": 2.8651628591302227,
+  "daysPositive": 13,
+  "daysNegative": 16,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -10.483587062895044,
+  "regime": "LATERAL"
+}

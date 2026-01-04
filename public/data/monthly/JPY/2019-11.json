@@ -1,0 +1,14 @@
+{
+  "month": "2019-11",
+  "currency": "JPY",
+  "entryDate": "2019-11-01",
+  "entryPrice": 999995.71,
+  "exitDate": "2019-11-30",
+  "exitPrice": 827715.99,
+  "pctChangeWithinMonth": -17.228045908316943,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 11.428100531398435,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "NZD",
+  "entryDate": "2026-01-01",
+  "entryPrice": 153711.12,
+  "exitDate": "2026-01-04",
+  "exitPrice": 156099.96,
+  "pctChangeWithinMonth": 1.5541100734937048,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 4.110107879257808,
+  "regime": "LATERAL"
+}

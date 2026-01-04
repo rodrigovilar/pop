@@ -1,0 +1,14 @@
+{
+  "month": "2016-06",
+  "currency": "TRY",
+  "entryDate": "2016-06-01",
+  "entryPrice": 1706.48,
+  "exitDate": "2016-06-30",
+  "exitPrice": 2105.26,
+  "pctChangeWithinMonth": 23.36857156251466,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 22.525058157902297,
+  "regime": "BULL"
+}

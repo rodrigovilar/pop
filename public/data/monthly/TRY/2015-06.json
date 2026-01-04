@@ -1,0 +1,14 @@
+{
+  "month": "2015-06",
+  "currency": "TRY",
+  "entryDate": "2015-06-01",
+  "entryPrice": 675.68,
+  "exitDate": "2015-06-30",
+  "exitPrice": 719.85,
+  "pctChangeWithinMonth": 6.537118162443771,
+  "daysPositive": 16,
+  "daysNegative": 13,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 24.228718514432796,
+  "regime": "LATERAL"
+}

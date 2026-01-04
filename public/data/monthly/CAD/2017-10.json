@@ -1,0 +1,14 @@
+{
+  "month": "2017-10",
+  "currency": "CAD",
+  "entryDate": "2017-10-01",
+  "entryPrice": 5543.59,
+  "exitDate": "2017-10-31",
+  "exitPrice": 8436.2,
+  "pctChangeWithinMonth": 52.179363913997975,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -10.254766449248258,
+  "regime": "BULL"
+}

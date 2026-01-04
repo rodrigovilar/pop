@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "BRL",
+  "entryDate": "2026-01-01",
+  "entryPrice": 488616.76,
+  "exitDate": "2026-01-04",
+  "exitPrice": 495328.31,
+  "pctChangeWithinMonth": 1.3735816184446863,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 5.503910938579487,
+  "regime": "LATERAL"
+}

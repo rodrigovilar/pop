@@ -1,0 +1,14 @@
+{
+  "month": "2022-05",
+  "currency": "BRL",
+  "entryDate": "2022-05-01",
+  "entryPrice": 192516.22,
+  "exitDate": "2022-05-31",
+  "exitPrice": 151606.98,
+  "pctChangeWithinMonth": -21.249762747263574,
+  "daysPositive": 2,
+  "daysNegative": 28,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -11.636992202219956,
+  "regime": "BEAR"
+}

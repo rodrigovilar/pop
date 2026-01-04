@@ -1,0 +1,14 @@
+{
+  "month": "2011-10",
+  "currency": "JPY",
+  "entryDate": "2011-10-01",
+  "entryPrice": 429.06,
+  "exitDate": "2011-10-31",
+  "exitPrice": 211.31,
+  "pctChangeWithinMonth": -50.750477788654266,
+  "daysPositive": 0,
+  "daysNegative": 19,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -33.99076923076923,
+  "regime": "BEAR"
+}

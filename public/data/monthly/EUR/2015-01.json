@@ -1,0 +1,14 @@
+{
+  "month": "2015-01",
+  "currency": "EUR",
+  "entryDate": "2015-01-01",
+  "entryPrice": 262.66,
+  "exitDate": "2015-01-31",
+  "exitPrice": 194.22,
+  "pctChangeWithinMonth": -26.056498895911073,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -13.450639251350992,
+  "regime": "BEAR"
+}

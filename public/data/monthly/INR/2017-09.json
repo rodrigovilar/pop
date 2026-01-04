@@ -1,0 +1,14 @@
+{
+  "month": "2017-09",
+  "currency": "INR",
+  "entryDate": "2017-09-01",
+  "entryPrice": 339195.98,
+  "exitDate": "2017-09-30",
+  "exitPrice": 286473.29,
+  "pctChangeWithinMonth": -15.54343008428343,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 96.52018420045898,
+  "regime": "BEAR"
+}

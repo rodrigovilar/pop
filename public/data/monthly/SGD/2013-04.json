@@ -1,0 +1,14 @@
+{
+  "month": "2013-04",
+  "currency": "SGD",
+  "entryDate": "2013-04-01",
+  "entryPrice": 145.88,
+  "exitDate": "2013-04-30",
+  "exitPrice": 145.88,
+  "pctChangeWithinMonth": 0,
+  "daysPositive": 0,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 240.44340723453908,
+  "regime": "LATERAL"
+}

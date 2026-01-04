@@ -1,0 +1,14 @@
+{
+  "month": "2020-07",
+  "currency": "KRW",
+  "entryDate": "2020-07-01",
+  "entryPrice": 11047776.8,
+  "exitDate": "2020-07-31",
+  "exitPrice": 13414010.86,
+  "pctChangeWithinMonth": 21.41819211988423,
+  "daysPositive": 13,
+  "daysNegative": 17,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -8.586321311388282,
+  "regime": "BULL"
+}

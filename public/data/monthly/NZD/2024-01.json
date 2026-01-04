@@ -1,0 +1,14 @@
+{
+  "month": "2024-01",
+  "currency": "NZD",
+  "entryDate": "2024-01-01",
+  "entryPrice": 68233.19,
+  "exitDate": "2024-01-31",
+  "exitPrice": 69400.72,
+  "pctChangeWithinMonth": 1.71108810829451,
+  "daysPositive": 22,
+  "daysNegative": 8,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 9.249438767855878,
+  "regime": "LATERAL"
+}

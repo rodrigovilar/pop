@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "AUD",
+  "entryDate": "2023-06-01",
+  "entryPrice": 40690.02,
+  "exitDate": "2023-06-30",
+  "exitPrice": 45702.59,
+  "pctChangeWithinMonth": 12.318917513434497,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -4.037815072541156,
+  "regime": "BULL"
+}

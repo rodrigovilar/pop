@@ -1,0 +1,14 @@
+{
+  "month": "2023-08",
+  "currency": "TRY",
+  "entryDate": "2023-08-01",
+  "entryPrice": 807039,
+  "exitDate": "2023-08-31",
+  "exitPrice": 700323,
+  "pctChangeWithinMonth": -13.223152784437927,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -1.103506538433398,
+  "regime": "BEAR"
+}

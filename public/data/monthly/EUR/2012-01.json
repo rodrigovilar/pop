@@ -1,0 +1,14 @@
+{
+  "month": "2012-01",
+  "currency": "EUR",
+  "entryDate": "2012-01-01",
+  "entryPrice": 4.107,
+  "exitDate": "2012-01-31",
+  "exitPrice": 4.251,
+  "pctChangeWithinMonth": 3.5062089116143196,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 80.13157894736844,
+  "regime": "LATERAL"
+}

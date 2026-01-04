@@ -1,0 +1,14 @@
+{
+  "month": "2015-10",
+  "currency": "GBP",
+  "entryDate": "2015-10-01",
+  "entryPrice": 155.48,
+  "exitDate": "2015-10-31",
+  "exitPrice": 203.97,
+  "pctChangeWithinMonth": 31.18729096989967,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 4.756771324619326,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2019-04",
+  "currency": "CAD",
+  "entryDate": "2019-04-01",
+  "entryPrice": 5445.1,
+  "exitDate": "2019-04-30",
+  "exitPrice": 7028.8,
+  "pctChangeWithinMonth": 29.08486529173017,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 6.478548242011814,
+  "regime": "BULL"
+}

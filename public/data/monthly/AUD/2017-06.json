@@ -1,0 +1,14 @@
+{
+  "month": "2017-06",
+  "currency": "AUD",
+  "entryDate": "2017-06-01",
+  "entryPrice": 3426.19,
+  "exitDate": "2017-06-30",
+  "exitPrice": 3317.62,
+  "pctChangeWithinMonth": -3.1688260137353783,
+  "daysPositive": 27,
+  "daysNegative": 2,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 80.82734743208795,
+  "regime": "LATERAL"
+}

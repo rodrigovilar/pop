@@ -1,0 +1,14 @@
+{
+  "month": "2018-11",
+  "currency": "NZD",
+  "entryDate": "2018-11-01",
+  "entryPrice": 9515.58,
+  "exitDate": "2018-11-30",
+  "exitPrice": 5251.67,
+  "pctChangeWithinMonth": -44.809775126686965,
+  "daysPositive": 9,
+  "daysNegative": 20,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -12.04393190960719,
+  "regime": "BEAR"
+}

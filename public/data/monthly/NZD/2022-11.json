@@ -1,0 +1,14 @@
+{
+  "month": "2022-11",
+  "currency": "NZD",
+  "entryDate": "2022-11-01",
+  "entryPrice": 34732.95,
+  "exitDate": "2022-11-30",
+  "exitPrice": 27349.36,
+  "pctChangeWithinMonth": -21.25817127540274,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 0.5439274223079549,
+  "regime": "BEAR"
+}

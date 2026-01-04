@@ -1,0 +1,14 @@
+{
+  "month": "2019-10",
+  "currency": "KRW",
+  "entryDate": "2019-10-01",
+  "entryPrice": 9991011.41,
+  "exitDate": "2019-10-31",
+  "exitPrice": 10693494.39,
+  "pctChangeWithinMonth": 7.031149812289129,
+  "daysPositive": 10,
+  "daysNegative": 20,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -15.09677270437663,
+  "regime": "LATERAL"
+}

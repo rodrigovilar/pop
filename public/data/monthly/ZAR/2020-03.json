@@ -1,0 +1,14 @@
+{
+  "month": "2020-03",
+  "currency": "ZAR",
+  "entryDate": "2020-03-01",
+  "entryPrice": 140999,
+  "exitDate": "2020-03-31",
+  "exitPrice": 119301.05,
+  "pctChangeWithinMonth": -15.388726161178445,
+  "daysPositive": 4,
+  "daysNegative": 26,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -2.859800206682742,
+  "regime": "BEAR"
+}

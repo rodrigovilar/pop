@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "GBP",
+  "entryDate": "2026-01-01",
+  "entryPrice": 65858.51,
+  "exitDate": "2026-01-04",
+  "exitPrice": 67605.76,
+  "pctChangeWithinMonth": 2.6530360313344477,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 0.7706543584753025,
+  "regime": "LATERAL"
+}

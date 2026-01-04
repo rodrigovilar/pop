@@ -1,0 +1,14 @@
+{
+  "month": "2022-12",
+  "currency": "CHF",
+  "entryDate": "2022-12-01",
+  "entryPrice": 15876.01,
+  "exitDate": "2022-12-31",
+  "exitPrice": 15256.88,
+  "pctChangeWithinMonth": -3.8997833838603086,
+  "daysPositive": 12,
+  "daysNegative": 18,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -22.6228950501786,
+  "regime": "LATERAL"
+}

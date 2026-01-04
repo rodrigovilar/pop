@@ -1,0 +1,14 @@
+{
+  "month": "2016-06",
+  "currency": "MXN",
+  "entryDate": "2016-06-01",
+  "entryPrice": 10952.9,
+  "exitDate": "2016-06-30",
+  "exitPrice": 12787.72,
+  "pctChangeWithinMonth": 16.751910452939402,
+  "daysPositive": 26,
+  "daysNegative": 3,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 28.55244842245116,
+  "regime": "BULL"
+}

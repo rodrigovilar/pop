@@ -1,0 +1,14 @@
+{
+  "month": "2013-11",
+  "currency": "ZAR",
+  "entryDate": "2013-11-01",
+  "entryPrice": 2080,
+  "exitDate": "2013-11-30",
+  "exitPrice": 13000,
+  "pctChangeWithinMonth": 525,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 54.074074074074076,
+  "regime": "BULL"
+}

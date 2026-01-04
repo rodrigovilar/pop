@@ -1,0 +1,14 @@
+{
+  "month": "2022-08",
+  "currency": "INR",
+  "entryDate": "2022-08-01",
+  "entryPrice": 453330.24,
+  "exitDate": "2022-08-31",
+  "exitPrice": 409763.29,
+  "pctChangeWithinMonth": -9.610422194645567,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -21.57842126043804,
+  "regime": "LATERAL"
+}

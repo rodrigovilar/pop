@@ -1,0 +1,14 @@
+{
+  "month": "2021-04",
+  "currency": "SGD",
+  "entryDate": "2021-04-01",
+  "entryPrice": 79571.68,
+  "exitDate": "2021-04-30",
+  "exitPrice": 77006.52,
+  "pctChangeWithinMonth": -3.223709741958432,
+  "daysPositive": 8,
+  "daysNegative": 21,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 20.661307660731882,
+  "regime": "LATERAL"
+}

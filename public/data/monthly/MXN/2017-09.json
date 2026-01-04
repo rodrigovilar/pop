@@ -1,0 +1,14 @@
+{
+  "month": "2017-09",
+  "currency": "MXN",
+  "entryDate": "2017-09-01",
+  "entryPrice": 88580,
+  "exitDate": "2017-09-30",
+  "exitPrice": 78748.85,
+  "pctChangeWithinMonth": -11.09861142470083,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 86.51169646053103,
+  "regime": "BEAR"
+}

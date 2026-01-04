@@ -1,0 +1,14 @@
+{
+  "month": "2024-09",
+  "currency": "CHF",
+  "entryDate": "2024-09-01",
+  "entryPrice": 48753.4,
+  "exitDate": "2024-09-30",
+  "exitPrice": 53501.7,
+  "pctChangeWithinMonth": 9.739423301759457,
+  "daysPositive": 24,
+  "daysNegative": 5,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -14.592833305596187,
+  "regime": "LATERAL"
+}

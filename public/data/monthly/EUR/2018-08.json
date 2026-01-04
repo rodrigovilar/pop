@@ -1,0 +1,14 @@
+{
+  "month": "2018-08",
+  "currency": "EUR",
+  "entryDate": "2018-08-01",
+  "entryPrice": 6515.75,
+  "exitDate": "2018-08-31",
+  "exitPrice": 6039.08,
+  "pctChangeWithinMonth": -7.315658212792083,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 19.623088362187673,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2023-05",
+  "currency": "JPY",
+  "entryDate": "2023-05-01",
+  "entryPrice": 3874288.67,
+  "exitDate": "2023-05-31",
+  "exitPrice": 3791907.79,
+  "pctChangeWithinMonth": -2.1263485252894148,
+  "daysPositive": 8,
+  "daysNegative": 22,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 2.3831539820184147,
+  "regime": "LATERAL"
+}

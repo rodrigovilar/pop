@@ -1,0 +1,14 @@
+{
+  "month": "2024-12",
+  "currency": "GBP",
+  "entryDate": "2024-12-01",
+  "entryPrice": 76188.71,
+  "exitDate": "2024-12-31",
+  "exitPrice": 74619.58,
+  "pctChangeWithinMonth": -2.059530867499928,
+  "daysPositive": 19,
+  "daysNegative": 11,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 41.64268888072124,
+  "regime": "LATERAL"
+}

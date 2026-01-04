@@ -1,0 +1,14 @@
+{
+  "month": "2017-07",
+  "currency": "TRY",
+  "entryDate": "2017-07-01",
+  "entryPrice": 11099.29,
+  "exitDate": "2017-07-31",
+  "exitPrice": 9334.66,
+  "pctChangeWithinMonth": -15.89858450405387,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 19.42836422170766,
+  "regime": "BEAR"
+}

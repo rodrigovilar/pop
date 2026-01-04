@@ -1,0 +1,14 @@
+{
+  "month": "2024-02",
+  "currency": "JPY",
+  "entryDate": "2024-02-01",
+  "entryPrice": 6312515.53,
+  "exitDate": "2024-02-29",
+  "exitPrice": 9175402.73,
+  "pctChangeWithinMonth": 45.35255693858071,
+  "daysPositive": 28,
+  "daysNegative": 0,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": 1.1982992186757029,
+  "regime": "BULL"
+}

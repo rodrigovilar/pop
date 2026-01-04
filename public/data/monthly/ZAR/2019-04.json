@@ -1,0 +1,14 @@
+{
+  "month": "2019-04",
+  "currency": "ZAR",
+  "entryDate": "2019-04-01",
+  "entryPrice": 60630,
+  "exitDate": "2019-04-30",
+  "exitPrice": 78573,
+  "pctChangeWithinMonth": 29.594260267194457,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 9.144914491449144,
+  "regime": "BULL"
+}

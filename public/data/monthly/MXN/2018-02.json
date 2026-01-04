@@ -1,0 +1,14 @@
+{
+  "month": "2018-02",
+  "currency": "MXN",
+  "entryDate": "2018-02-01",
+  "entryPrice": 166680.85,
+  "exitDate": "2018-02-28",
+  "exitPrice": 195098,
+  "pctChangeWithinMonth": 17.04883914378886,
+  "daysPositive": 17,
+  "daysNegative": 10,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": -45.49351417656827,
+  "regime": "BULL"
+}

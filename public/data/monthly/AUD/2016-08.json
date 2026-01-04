@@ -1,0 +1,14 @@
+{
+  "month": "2016-08",
+  "currency": "AUD",
+  "entryDate": "2016-08-01",
+  "entryPrice": 806.02,
+  "exitDate": "2016-08-31",
+  "exitPrice": 769.99,
+  "pctChangeWithinMonth": -4.470112404158702,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -11.850652901419542,
+  "regime": "LATERAL"
+}

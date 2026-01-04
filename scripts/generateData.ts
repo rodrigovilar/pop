@@ -78,11 +78,11 @@ async function generateCurrencyData(currency: Currency, options: GenerationOptio
     // Process month
     const result = processMonth(prices, month);
 
-    // Calculate regime
-    const previousMonthEntry = i > 0 ? monthlyData[i - 1].entryPrice : null;
-    const regime = calculateRegime(result.entryPrice, previousMonthEntry, REGIME_THRESHOLD);
+    // Calculate regime based on within-month price change
+    const regime = calculateRegime(result.entryPrice, result.exitPrice, REGIME_THRESHOLD);
 
-    // Calculate percentage change
+    // Calculate percentage change vs previous month (for reference)
+    const previousMonthEntry = i > 0 ? monthlyData[i - 1].entryPrice : null;
     const pctChange = previousMonthEntry !== null
       ? ((result.entryPrice - previousMonthEntry) / previousMonthEntry) * 100
       : null;

@@ -1,0 +1,14 @@
+{
+  "month": "2020-11",
+  "currency": "ZAR",
+  "entryDate": "2020-11-01",
+  "entryPrice": 230499.21,
+  "exitDate": "2020-11-30",
+  "exitPrice": 307065.61,
+  "pctChangeWithinMonth": 33.21764096284755,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 25.954840690623953,
+  "regime": "BULL"
+}

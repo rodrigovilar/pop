@@ -1,0 +1,14 @@
+{
+  "month": "2020-09",
+  "currency": "SGD",
+  "entryDate": "2020-09-01",
+  "entryPrice": 16329.07,
+  "exitDate": "2020-09-30",
+  "exitPrice": 14720.88,
+  "pctChangeWithinMonth": -9.848631918412993,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 0.38033589062653056,
+  "regime": "LATERAL"
+}

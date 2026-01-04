@@ -1,0 +1,14 @@
+{
+  "month": "2016-06",
+  "currency": "AUD",
+  "entryDate": "2016-06-01",
+  "entryPrice": 740.89,
+  "exitDate": "2016-06-30",
+  "exitPrice": 924.94,
+  "pctChangeWithinMonth": 24.841744388505727,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 25.941728428639426,
+  "regime": "BULL"
+}

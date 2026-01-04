@@ -1,0 +1,14 @@
+{
+  "month": "2024-07",
+  "currency": "KRW",
+  "entryDate": "2024-07-01",
+  "entryPrice": 88278428.46,
+  "exitDate": "2024-07-31",
+  "exitPrice": 90334426.76,
+  "pctChangeWithinMonth": 2.32899286481024,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -6.839164782321736,
+  "regime": "LATERAL"
+}

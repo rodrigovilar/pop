@@ -1,0 +1,14 @@
+{
+  "month": "2023-07",
+  "currency": "SGD",
+  "entryDate": "2023-07-01",
+  "entryPrice": 41467.9,
+  "exitDate": "2023-07-31",
+  "exitPrice": 38996.69,
+  "pctChangeWithinMonth": -5.9593323992775105,
+  "daysPositive": 4,
+  "daysNegative": 26,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 14.984513599472047,
+  "regime": "LATERAL"
+}

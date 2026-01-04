@@ -1,0 +1,14 @@
+{
+  "month": "2016-06",
+  "currency": "GBP",
+  "entryDate": "2016-06-01",
+  "entryPrice": 372.94,
+  "exitDate": "2016-06-30",
+  "exitPrice": 503.38,
+  "pctChangeWithinMonth": 34.976135571405585,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 18.929778684865113,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2022-03",
+  "currency": "AUD",
+  "entryDate": "2022-03-01",
+  "entryPrice": 61244.93,
+  "exitDate": "2022-03-31",
+  "exitPrice": 60936.82,
+  "pctChangeWithinMonth": -0.5030783772632291,
+  "daysPositive": 4,
+  "daysNegative": 26,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 12.61163494923415,
+  "regime": "LATERAL"
+}

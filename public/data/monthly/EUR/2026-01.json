@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "EUR",
+  "entryDate": "2026-01-01",
+  "entryPrice": 75501.89,
+  "exitDate": "2026-01-04",
+  "exitPrice": 77749.93,
+  "pctChangeWithinMonth": 2.9774618887023805,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 1.5346818325650247,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2019-05",
+  "currency": "NZD",
+  "entryDate": "2019-05-01",
+  "entryPrice": 8128.99,
+  "exitDate": "2019-05-31",
+  "exitPrice": 12807.79,
+  "pctChangeWithinMonth": 57.55696587152895,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 32.14303131187354,
+  "regime": "BULL"
+}

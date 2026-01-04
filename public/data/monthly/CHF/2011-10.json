@@ -1,0 +1,14 @@
+{
+  "month": "2011-10",
+  "currency": "CHF",
+  "entryDate": "2011-10-01",
+  "entryPrice": 4.341,
+  "exitDate": "2011-10-31",
+  "exitPrice": 2.868,
+  "pctChangeWithinMonth": -33.93227366966137,
+  "daysPositive": 0,
+  "daysNegative": 24,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -33.112480739599384,
+  "regime": "BEAR"
+}

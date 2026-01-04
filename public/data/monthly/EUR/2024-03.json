@@ -1,0 +1,14 @@
+{
+  "month": "2024-03",
+  "currency": "EUR",
+  "entryDate": "2024-03-01",
+  "entryPrice": 57571.8,
+  "exitDate": "2024-03-31",
+  "exitPrice": 66115.71,
+  "pctChangeWithinMonth": 14.840442716746747,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 45.29388220080669,
+  "regime": "BULL"
+}

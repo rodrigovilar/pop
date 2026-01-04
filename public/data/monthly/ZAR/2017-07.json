@@ -1,0 +1,14 @@
+{
+  "month": "2017-07",
+  "currency": "ZAR",
+  "entryDate": "2017-07-01",
+  "entryPrice": 35708,
+  "exitDate": "2017-07-31",
+  "exitPrice": 38883,
+  "pctChangeWithinMonth": 8.891564915425116,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 1.2274982282069455,
+  "regime": "LATERAL"
+}

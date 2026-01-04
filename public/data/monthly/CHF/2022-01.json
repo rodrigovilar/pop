@@ -1,0 +1,14 @@
+{
+  "month": "2022-01",
+  "currency": "CHF",
+  "entryDate": "2022-01-01",
+  "entryPrice": 43417.62,
+  "exitDate": "2022-01-31",
+  "exitPrice": 35777.69,
+  "pctChangeWithinMonth": -17.596381376961702,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -17.786179708963783,
+  "regime": "BEAR"
+}

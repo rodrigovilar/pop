@@ -1,0 +1,14 @@
+{
+  "month": "2012-02",
+  "currency": "AUD",
+  "entryDate": "2012-02-01",
+  "entryPrice": 5.75,
+  "exitDate": "2012-02-29",
+  "exitPrice": 4.595,
+  "pctChangeWithinMonth": -20.086956521739136,
+  "daysPositive": 0,
+  "daysNegative": 27,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": 18.556701030927844,
+  "regime": "BEAR"
+}

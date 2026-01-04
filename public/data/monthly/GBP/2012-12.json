@@ -1,0 +1,14 @@
+{
+  "month": "2012-12",
+  "currency": "GBP",
+  "entryDate": "2012-12-01",
+  "entryPrice": 8,
+  "exitDate": "2012-12-31",
+  "exitPrice": 8.4,
+  "pctChangeWithinMonth": 5.000000000000004,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 18.853067894815037,
+  "regime": "LATERAL"
+}

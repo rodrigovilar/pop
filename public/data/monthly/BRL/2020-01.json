@@ -1,0 +1,14 @@
+{
+  "month": "2020-01",
+  "currency": "BRL",
+  "entryDate": "2020-01-01",
+  "entryPrice": 29199,
+  "exitDate": "2020-01-31",
+  "exitPrice": 39890.8,
+  "pctChangeWithinMonth": 36.61700743176137,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -8.141693144996383,
+  "regime": "BULL"
+}

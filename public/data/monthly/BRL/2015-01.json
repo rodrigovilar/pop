@@ -1,0 +1,14 @@
+{
+  "month": "2015-01",
+  "currency": "BRL",
+  "entryDate": "2015-01-01",
+  "entryPrice": 910.99,
+  "exitDate": "2015-01-31",
+  "exitPrice": 645,
+  "pctChangeWithinMonth": -29.197905575253298,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -12.394699388390977,
+  "regime": "BEAR"
+}

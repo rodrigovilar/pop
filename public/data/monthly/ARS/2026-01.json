@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "ARS",
+  "entryDate": "2026-01-01",
+  "entryPrice": 136922142.69,
+  "exitDate": "2026-01-04",
+  "exitPrice": 140653742.69,
+  "pctChangeWithinMonth": 2.725344437859527,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 5.231449211876198,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "KRW",
+  "entryDate": "2023-06-01",
+  "entryPrice": 35819997.49,
+  "exitDate": "2023-06-30",
+  "exitPrice": 40549210.24,
+  "pctChangeWithinMonth": 13.202716586790023,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -5.1231452659571595,
+  "regime": "BULL"
+}

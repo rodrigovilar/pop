@@ -1,0 +1,14 @@
+{
+  "month": "2020-08",
+  "currency": "CHF",
+  "entryDate": "2020-08-01",
+  "entryPrice": 10817.91,
+  "exitDate": "2020-08-31",
+  "exitPrice": 10619.99,
+  "pctChangeWithinMonth": -1.82955857462301,
+  "daysPositive": 4,
+  "daysNegative": 26,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 23.396195423420842,
+  "regime": "LATERAL"
+}

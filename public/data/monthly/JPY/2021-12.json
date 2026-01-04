@@ -1,0 +1,14 @@
+{
+  "month": "2021-12",
+  "currency": "JPY",
+  "entryDate": "2021-12-01",
+  "entryPrice": 6466086.58,
+  "exitDate": "2021-12-31",
+  "exitPrice": 5320562.12,
+  "pctChangeWithinMonth": -17.715884961132083,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -7.0493774264750675,
+  "regime": "BEAR"
+}

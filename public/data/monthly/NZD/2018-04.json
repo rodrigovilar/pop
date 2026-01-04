@@ -1,0 +1,14 @@
+{
+  "month": "2018-04",
+  "currency": "NZD",
+  "entryDate": "2018-04-01",
+  "entryPrice": 9430.21,
+  "exitDate": "2018-04-30",
+  "exitPrice": 13203.38,
+  "pctChangeWithinMonth": 40.01151618044562,
+  "daysPositive": 27,
+  "daysNegative": 2,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -34.153705429929026,
+  "regime": "BULL"
+}

@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2011-11-01",
   "entryPrice": 3.15,
+  "exitDate": "2011-11-30",
+  "exitPrice": 2.97,
+  "pctChangeWithinMonth": -5.714285714285705,
   "daysPositive": 2,
   "daysNegative": 27,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -37.4006359300477,
-  "regime": "BEAR",
-  "exitDate": "2011-11-30",
-  "exitPrice": 2.9,
-  "pctChangeWithinMonth": -8.0
+  "regime": "LATERAL"
 }

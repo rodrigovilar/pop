@@ -1,0 +1,14 @@
+{
+  "month": "2021-06",
+  "currency": "TRY",
+  "entryDate": "2021-06-01",
+  "entryPrice": 313638.44,
+  "exitDate": "2021-06-30",
+  "exitPrice": 302422.15,
+  "pctChangeWithinMonth": -3.5761847304176038,
+  "daysPositive": 11,
+  "daysNegative": 18,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -33.984899970545214,
+  "regime": "LATERAL"
+}

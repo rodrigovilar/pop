@@ -1,0 +1,14 @@
+{
+  "month": "2020-06",
+  "currency": "AUD",
+  "entryDate": "2020-06-01",
+  "entryPrice": 14970,
+  "exitDate": "2020-06-30",
+  "exitPrice": 13283.23,
+  "pctChangeWithinMonth": -11.267668670674686,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 8.407717297005284,
+  "regime": "BEAR"
+}

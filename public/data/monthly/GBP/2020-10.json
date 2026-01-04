@@ -1,0 +1,14 @@
+{
+  "month": "2020-10",
+  "currency": "GBP",
+  "entryDate": "2020-10-01",
+  "entryPrice": 8266.01,
+  "exitDate": "2020-10-31",
+  "exitPrice": 10684.25,
+  "pctChangeWithinMonth": 29.25522712892919,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -7.688553662524226,
+  "regime": "BULL"
+}

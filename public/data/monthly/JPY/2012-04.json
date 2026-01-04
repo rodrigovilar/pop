@@ -1,0 +1,14 @@
+{
+  "month": "2012-04",
+  "currency": "JPY",
+  "entryDate": "2012-04-01",
+  "entryPrice": 400,
+  "exitDate": "2012-04-30",
+  "exitPrice": 424.12,
+  "pctChangeWithinMonth": 6.030000000000001,
+  "daysPositive": 19,
+  "daysNegative": 10,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -1.900674432863274,
+  "regime": "LATERAL"
+}

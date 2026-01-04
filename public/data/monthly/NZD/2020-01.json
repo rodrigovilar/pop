@@ -1,0 +1,14 @@
+{
+  "month": "2020-01",
+  "currency": "NZD",
+  "entryDate": "2020-01-01",
+  "entryPrice": 5420.04,
+  "exitDate": "2020-01-31",
+  "exitPrice": 14461.78,
+  "pctChangeWithinMonth": 166.82054006981502,
+  "daysPositive": 20,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -52.68551375558146,
+  "regime": "BULL"
+}

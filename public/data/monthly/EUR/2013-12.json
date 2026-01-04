@@ -1,0 +1,14 @@
+{
+  "month": "2013-12",
+  "currency": "EUR",
+  "entryDate": "2013-12-01",
+  "entryPrice": 738.58,
+  "exitDate": "2013-12-31",
+  "exitPrice": 566.94,
+  "pctChangeWithinMonth": -23.239188713477212,
+  "daysPositive": 5,
+  "daysNegative": 25,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 381.5046613208163,
+  "regime": "BEAR"
+}

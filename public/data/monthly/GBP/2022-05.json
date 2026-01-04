@@ -1,0 +1,14 @@
+{
+  "month": "2022-05",
+  "currency": "GBP",
+  "entryDate": "2022-05-01",
+  "entryPrice": 30607.66,
+  "exitDate": "2022-05-31",
+  "exitPrice": 25204.06,
+  "pctChangeWithinMonth": -17.654404158958897,
+  "daysPositive": 2,
+  "daysNegative": 28,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -13.29847066751685,
+  "regime": "BEAR"
+}

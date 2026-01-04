@@ -2,13 +2,13 @@
   "month": "2024-05",
   "currency": "USD",
   "entryDate": "2024-05-01",
-  "entryPrice": 51559799.91,
+  "entryPrice": 58277.44,
   "exitDate": "2024-05-31",
-  "exitPrice": 91436927.58,
-  "pctChangeWithinMonth": 77.34150974132437,
+  "exitPrice": 67482.25,
+  "pctChangeWithinMonth": 15.794808419861953,
   "daysPositive": 30,
   "daysNegative": 0,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": 64.19871654829876,
+  "pctChangeVsPrevMonthStart": -16.371824217562192,
   "regime": "BULL"
 }

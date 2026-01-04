@@ -1,0 +1,14 @@
+{
+  "month": "2021-04",
+  "currency": "BRL",
+  "entryDate": "2021-04-01",
+  "entryPrice": 338233.97,
+  "exitDate": "2021-04-30",
+  "exitPrice": 315848.92,
+  "pctChangeWithinMonth": -6.6182146045236045,
+  "daysPositive": 9,
+  "daysNegative": 20,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 20.288442060508313,
+  "regime": "LATERAL"
+}

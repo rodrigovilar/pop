@@ -1,0 +1,14 @@
+{
+  "month": "2011-12",
+  "currency": "GBP",
+  "entryDate": "2011-12-01",
+  "entryPrice": 1.917,
+  "exitDate": "2011-12-31",
+  "exitPrice": 3.073,
+  "pctChangeWithinMonth": 60.30255607720396,
+  "daysPositive": 25,
+  "daysNegative": 5,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -3.083923154701716,
+  "regime": "BULL"
+}

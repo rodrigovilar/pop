@@ -1,0 +1,14 @@
+{
+  "month": "2020-08",
+  "currency": "TRY",
+  "entryDate": "2020-08-01",
+  "entryPrice": 82322.25,
+  "exitDate": "2020-08-31",
+  "exitPrice": 86327.65,
+  "pctChangeWithinMonth": 4.865513272535668,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 29.710319960709807,
+  "regime": "LATERAL"
+}

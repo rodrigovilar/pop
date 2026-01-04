@@ -1,0 +1,14 @@
+{
+  "month": "2020-08",
+  "currency": "INR",
+  "entryDate": "2020-08-01",
+  "entryPrice": 466929.88,
+  "exitDate": "2020-08-31",
+  "exitPrice": 852976.64,
+  "pctChangeWithinMonth": 82.67767314441303,
+  "daysPositive": 21,
+  "daysNegative": 9,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -23.749999285559216,
+  "regime": "BULL"
+}

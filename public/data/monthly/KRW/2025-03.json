@@ -1,0 +1,14 @@
+{
+  "month": "2025-03",
+  "currency": "KRW",
+  "entryDate": "2025-03-01",
+  "entryPrice": 128286637.27,
+  "exitDate": "2025-03-31",
+  "exitPrice": 123161194.04,
+  "pctChangeWithinMonth": -3.995305621124564,
+  "daysPositive": 11,
+  "daysNegative": 19,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -18.48318245974103,
+  "regime": "LATERAL"
+}

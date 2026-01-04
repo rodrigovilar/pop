@@ -1,0 +1,14 @@
+{
+  "month": "2025-08",
+  "currency": "INR",
+  "entryDate": "2025-08-01",
+  "entryPrice": 4736041.9,
+  "exitDate": "2025-08-31",
+  "exitPrice": 3594348.78,
+  "pctChangeWithinMonth": -24.106482672798997,
+  "daysPositive": 2,
+  "daysNegative": 28,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -26.079896049774554,
+  "regime": "BEAR"
+}

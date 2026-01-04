@@ -1,0 +1,14 @@
+{
+  "month": "2015-03",
+  "currency": "AUD",
+  "entryDate": "2015-03-01",
+  "entryPrice": 354.85,
+  "exitDate": "2015-03-31",
+  "exitPrice": 319.48,
+  "pctChangeWithinMonth": -9.967591940256447,
+  "daysPositive": 22,
+  "daysNegative": 8,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 22.58187094099765,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2022-04",
+  "currency": "EUR",
+  "entryDate": "2022-04-01",
+  "entryPrice": 41919.17,
+  "exitDate": "2022-04-30",
+  "exitPrice": 35762.59,
+  "pctChangeWithinMonth": -14.686788884417327,
+  "daysPositive": 2,
+  "daysNegative": 27,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 4.9757539271525975,
+  "regime": "BEAR"
+}

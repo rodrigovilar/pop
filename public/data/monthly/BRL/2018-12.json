@@ -1,0 +1,14 @@
+{
+  "month": "2018-12",
+  "currency": "BRL",
+  "entryDate": "2018-12-01",
+  "entryPrice": 16127.1,
+  "exitDate": "2018-12-31",
+  "exitPrice": 14881.96,
+  "pctChangeWithinMonth": -7.720792950995536,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -32.6999958268998,
+  "regime": "LATERAL"
+}

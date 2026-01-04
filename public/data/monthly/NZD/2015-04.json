@@ -1,0 +1,14 @@
+{
+  "month": "2015-04",
+  "currency": "NZD",
+  "entryDate": "2015-04-01",
+  "entryPrice": 346.34,
+  "exitDate": "2015-04-30",
+  "exitPrice": 322.55,
+  "pctChangeWithinMonth": -6.86897268580007,
+  "daysPositive": 7,
+  "daysNegative": 22,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 6.6055158827874845,
+  "regime": "LATERAL"
+}

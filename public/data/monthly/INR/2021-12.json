@@ -1,0 +1,14 @@
+{
+  "month": "2021-12",
+  "currency": "INR",
+  "entryDate": "2021-12-01",
+  "entryPrice": 396317.53,
+  "exitDate": "2021-12-31",
+  "exitPrice": 399306.73,
+  "pctChangeWithinMonth": 0.7542436994901419,
+  "daysPositive": 10,
+  "daysNegative": 20,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -11.515908358648488,
+  "regime": "LATERAL"
+}

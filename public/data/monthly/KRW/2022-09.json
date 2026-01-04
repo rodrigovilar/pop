@@ -1,0 +1,14 @@
+{
+  "month": "2022-09",
+  "currency": "KRW",
+  "entryDate": "2022-09-01",
+  "entryPrice": 27625560.8,
+  "exitDate": "2022-09-30",
+  "exitPrice": 27931742.1,
+  "pctChangeWithinMonth": 1.1083260977637808,
+  "daysPositive": 12,
+  "daysNegative": 17,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -10.505925854789735,
+  "regime": "LATERAL"
+}

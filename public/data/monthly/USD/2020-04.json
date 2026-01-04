@@ -2,13 +2,13 @@
   "month": "2020-04",
   "currency": "USD",
   "entryDate": "2020-04-01",
-  "entryPrice": 48908.68,
+  "entryPrice": 6663.63,
   "exitDate": "2020-04-30",
-  "exitPrice": 77186.65,
-  "pctChangeWithinMonth": 57.81789653697461,
+  "exitPrice": 8637.56,
+  "pctChangeWithinMonth": 29.622443022796872,
   "daysPositive": 28,
   "daysNegative": 1,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": 69.61102851699225,
+  "pctChangeVsPrevMonthStart": -22.057155021767652,
   "regime": "BULL"
 }

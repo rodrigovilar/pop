@@ -1,0 +1,14 @@
+{
+  "month": "2018-04",
+  "currency": "EUR",
+  "entryDate": "2018-04-01",
+  "entryPrice": 5528.67,
+  "exitDate": "2018-04-30",
+  "exitPrice": 7647.28,
+  "pctChangeWithinMonth": 38.320427878676064,
+  "daysPositive": 26,
+  "daysNegative": 3,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -37.678723605719156,
+  "regime": "BULL"
+}

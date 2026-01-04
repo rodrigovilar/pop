@@ -1,0 +1,14 @@
+{
+  "month": "2018-11",
+  "currency": "ZAR",
+  "entryDate": "2018-11-01",
+  "entryPrice": 96066.48,
+  "exitDate": "2018-11-30",
+  "exitPrice": 57298.76,
+  "pctChangeWithinMonth": -40.35509576285089,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -1.4720958997680116,
+  "regime": "BEAR"
+}

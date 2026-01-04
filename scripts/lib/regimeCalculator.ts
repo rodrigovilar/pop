@@ -1,21 +1,21 @@
 /**
- * Calculate market regime based on price change vs previous month
+ * Calculate market regime based on price change within the month
  *
- * @param currentMonthPrice - Entry price of current month
- * @param previousMonthPrice - Entry price of previous month (null if first month)
+ * @param entryPrice - Entry price (first day of month)
+ * @param exitPrice - Exit price (last day of month), null if not available
  * @param threshold - Threshold for bull/bear classification (default 0.10 = 10%)
  * @returns Market regime: BULL, BEAR, LATERAL, or N/A
  */
 export function calculateRegime(
-  currentMonthPrice: number,
-  previousMonthPrice: number | null,
+  entryPrice: number,
+  exitPrice: number | null,
   threshold = 0.10
 ): 'BULL' | 'BEAR' | 'LATERAL' | 'N/A' {
-  if (previousMonthPrice === null) {
+  if (exitPrice === null) {
     return 'N/A';
   }
 
-  const pctChange = (currentMonthPrice - previousMonthPrice) / previousMonthPrice;
+  const pctChange = (exitPrice - entryPrice) / entryPrice;
 
   if (pctChange >= threshold) {
     return 'BULL';

@@ -1,0 +1,14 @@
+{
+  "month": "2012-02",
+  "currency": "SGD",
+  "entryDate": "2012-02-01",
+  "entryPrice": 8.166,
+  "exitDate": "2012-02-29",
+  "exitPrice": 6.25,
+  "pctChangeWithinMonth": -23.463139848150874,
+  "daysPositive": 0,
+  "daysNegative": 7,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": 122.93202293202295,
+  "regime": "BEAR"
+}

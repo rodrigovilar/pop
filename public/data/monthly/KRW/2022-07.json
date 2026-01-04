@@ -1,0 +1,14 @@
+{
+  "month": "2022-07",
+  "currency": "KRW",
+  "entryDate": "2022-07-01",
+  "entryPrice": 25539362.49,
+  "exitDate": "2022-07-31",
+  "exitPrice": 30755928.67,
+  "pctChangeWithinMonth": 20.42559277680703,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -32.51545515047242,
+  "regime": "BULL"
+}

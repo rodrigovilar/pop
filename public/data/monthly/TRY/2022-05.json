@@ -1,0 +1,14 @@
+{
+  "month": "2022-05",
+  "currency": "TRY",
+  "entryDate": "2022-05-01",
+  "entryPrice": 586045.08,
+  "exitDate": "2022-05-31",
+  "exitPrice": 522789.3,
+  "pctChangeWithinMonth": -10.793671367397193,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -14.143086826965993,
+  "regime": "BEAR"
+}

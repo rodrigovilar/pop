@@ -1,0 +1,14 @@
+{
+  "month": "2015-08",
+  "currency": "ZAR",
+  "entryDate": "2015-08-01",
+  "entryPrice": 3955,
+  "exitDate": "2015-08-31",
+  "exitPrice": 3306.62,
+  "pctChangeWithinMonth": -16.393931731984832,
+  "daysPositive": 2,
+  "daysNegative": 28,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 14.076885801970601,
+  "regime": "BEAR"
+}

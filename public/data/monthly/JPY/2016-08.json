@@ -1,0 +1,14 @@
+{
+  "month": "2016-08",
+  "currency": "JPY",
+  "entryDate": "2016-08-01",
+  "entryPrice": 62417.25,
+  "exitDate": "2016-08-31",
+  "exitPrice": 59196.02,
+  "pctChangeWithinMonth": -5.1608009003921245,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -10.994566179924393,
+  "regime": "LATERAL"
+}

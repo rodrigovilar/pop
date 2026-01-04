@@ -1,0 +1,14 @@
+{
+  "month": "2020-09",
+  "currency": "INR",
+  "entryDate": "2020-09-01",
+  "entryPrice": 795912.05,
+  "exitDate": "2020-09-30",
+  "exitPrice": 951613.24,
+  "pctChangeWithinMonth": 19.562612477094664,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 70.45643984060305,
+  "regime": "BULL"
+}

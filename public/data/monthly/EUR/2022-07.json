@@ -1,0 +1,14 @@
+{
+  "month": "2022-07",
+  "currency": "EUR",
+  "entryDate": "2022-07-01",
+  "entryPrice": 18468.38,
+  "exitDate": "2022-07-31",
+  "exitPrice": 22847.05,
+  "pctChangeWithinMonth": 23.709009669499967,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -33.968110271129916,
+  "regime": "BULL"
+}

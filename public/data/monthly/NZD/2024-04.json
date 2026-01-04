@@ -1,0 +1,14 @@
+{
+  "month": "2024-04",
+  "currency": "NZD",
+  "entryDate": "2024-04-01",
+  "entryPrice": 117319.16,
+  "exitDate": "2024-04-30",
+  "exitPrice": 103448.33,
+  "pctChangeWithinMonth": -11.823158297417063,
+  "daysPositive": 2,
+  "daysNegative": 27,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 14.665815952033151,
+  "regime": "BEAR"
+}

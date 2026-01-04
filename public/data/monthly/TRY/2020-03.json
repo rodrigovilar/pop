@@ -1,0 +1,14 @@
+{
+  "month": "2020-03",
+  "currency": "TRY",
+  "entryDate": "2020-03-01",
+  "entryPrice": 54363.36,
+  "exitDate": "2020-03-31",
+  "exitPrice": 42265,
+  "pctChangeWithinMonth": -22.254621495065795,
+  "daysPositive": 3,
+  "daysNegative": 27,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -3.889477609011337,
+  "regime": "BEAR"
+}

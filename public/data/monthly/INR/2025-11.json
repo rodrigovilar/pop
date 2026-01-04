@@ -1,0 +1,14 @@
+{
+  "month": "2025-11",
+  "currency": "INR",
+  "entryDate": "2025-11-01",
+  "entryPrice": 4142691.19,
+  "exitDate": "2025-11-30",
+  "exitPrice": 4405520.54,
+  "pctChangeWithinMonth": 6.344410865923127,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 4.147727320150674,
+  "regime": "LATERAL"
+}

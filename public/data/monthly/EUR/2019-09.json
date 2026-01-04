@@ -1,0 +1,14 @@
+{
+  "month": "2019-09",
+  "currency": "EUR",
+  "entryDate": "2019-09-01",
+  "entryPrice": 8891.83,
+  "exitDate": "2019-09-30",
+  "exitPrice": 7626.03,
+  "pctChangeWithinMonth": -14.235539815763461,
+  "daysPositive": 21,
+  "daysNegative": 8,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -5.2001262316649575,
+  "regime": "BEAR"
+}

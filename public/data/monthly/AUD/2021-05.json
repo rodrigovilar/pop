@@ -1,0 +1,14 @@
+{
+  "month": "2021-05",
+  "currency": "AUD",
+  "entryDate": "2021-05-01",
+  "entryPrice": 75021.99,
+  "exitDate": "2021-05-31",
+  "exitPrice": 48051.92,
+  "pctChangeWithinMonth": -35.9495529244159,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -2.915285286517189,
+  "regime": "BEAR"
+}

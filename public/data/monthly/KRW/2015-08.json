@@ -1,0 +1,14 @@
+{
+  "month": "2015-08",
+  "currency": "KRW",
+  "entryDate": "2015-08-01",
+  "entryPrice": 315706.39,
+  "exitDate": "2015-08-31",
+  "exitPrice": 285459.41,
+  "pctChangeWithinMonth": -9.580731007693585,
+  "daysPositive": 0,
+  "daysNegative": 14,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 13.654299490765599,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2021-07",
+  "currency": "AUD",
+  "entryDate": "2021-07-01",
+  "entryPrice": 44790.13,
+  "exitDate": "2021-07-31",
+  "exitPrice": 56662.46,
+  "pctChangeWithinMonth": 26.50657633724216,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -5.570263089043053,
+  "regime": "BULL"
+}

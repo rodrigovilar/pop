@@ -1,0 +1,14 @@
+{
+  "month": "2013-04",
+  "currency": "NZD",
+  "entryDate": "2013-04-01",
+  "entryPrice": 62,
+  "exitDate": "2013-04-30",
+  "exitPrice": 190,
+  "pctChangeWithinMonth": 206.4516129032258,
+  "daysPositive": 28,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 49.97581035316883,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2017-11",
+  "currency": "GBP",
+  "entryDate": "2017-11-01",
+  "entryPrice": 5145.33,
+  "exitDate": "2017-11-30",
+  "exitPrice": 7417.92,
+  "pctChangeWithinMonth": 44.16801254730018,
+  "daysPositive": 24,
+  "daysNegative": 5,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 53.04099272469854,
+  "regime": "BULL"
+}

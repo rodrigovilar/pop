@@ -1,0 +1,14 @@
+{
+  "month": "2011-11",
+  "currency": "CAD",
+  "entryDate": "2011-11-01",
+  "entryPrice": 3.119,
+  "exitDate": "2011-11-30",
+  "exitPrice": 2.877,
+  "pctChangeWithinMonth": -7.758897082398218,
+  "daysPositive": 1,
+  "daysNegative": 23,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -40.61309977151561,
+  "regime": "LATERAL"
+}

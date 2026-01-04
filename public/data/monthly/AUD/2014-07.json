@@ -1,0 +1,14 @@
+{
+  "month": "2014-07",
+  "currency": "AUD",
+  "entryDate": "2014-07-01",
+  "entryPrice": 719.93,
+  "exitDate": "2014-07-31",
+  "exitPrice": 674.48,
+  "pctChangeWithinMonth": -6.313113774950334,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -4.354930849862508,
+  "regime": "LATERAL"
+}

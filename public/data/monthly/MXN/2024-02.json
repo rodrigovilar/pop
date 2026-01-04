@@ -1,0 +1,14 @@
+{
+  "month": "2024-02",
+  "currency": "MXN",
+  "entryDate": "2024-02-01",
+  "entryPrice": 735010,
+  "exitDate": "2024-02-29",
+  "exitPrice": 1044010,
+  "pctChangeWithinMonth": 42.040244350417,
+  "daysPositive": 25,
+  "daysNegative": 3,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": -1.938522293673453,
+  "regime": "BULL"
+}

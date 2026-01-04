@@ -1,0 +1,14 @@
+{
+  "month": "2013-05",
+  "currency": "SGD",
+  "entryDate": "2013-05-01",
+  "entryPrice": 145.88,
+  "exitDate": "2013-05-31",
+  "exitPrice": 187.07,
+  "pctChangeWithinMonth": 28.23553605703318,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 0,
+  "regime": "BULL"
+}

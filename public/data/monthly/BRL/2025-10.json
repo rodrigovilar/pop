@@ -1,0 +1,14 @@
+{
+  "month": "2025-10",
+  "currency": "BRL",
+  "entryDate": "2025-10-01",
+  "entryPrice": 631912.28,
+  "exitDate": "2025-10-31",
+  "exitPrice": 590312.77,
+  "pctChangeWithinMonth": -6.583114669017036,
+  "daysPositive": 11,
+  "daysNegative": 19,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 5.820620536538146,
+  "regime": "LATERAL"
+}

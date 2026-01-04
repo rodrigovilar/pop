@@ -1,0 +1,14 @@
+{
+  "month": "2017-05",
+  "currency": "CHF",
+  "entryDate": "2017-05-01",
+  "entryPrice": 1996,
+  "exitDate": "2017-05-31",
+  "exitPrice": 2207.05,
+  "pctChangeWithinMonth": 10.573647294589188,
+  "daysPositive": 13,
+  "daysNegative": 16,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 63.79855076031743,
+  "regime": "BULL"
+}

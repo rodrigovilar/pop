@@ -1,0 +1,14 @@
+{
+  "month": "2020-07",
+  "currency": "ARS",
+  "entryDate": "2020-07-01",
+  "entryPrice": 1090111.56,
+  "exitDate": "2020-07-31",
+  "exitPrice": 1450213.07,
+  "pctChangeWithinMonth": 33.03345485117138,
+  "daysPositive": 20,
+  "daysNegative": 10,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -10.123272197799327,
+  "regime": "BULL"
+}

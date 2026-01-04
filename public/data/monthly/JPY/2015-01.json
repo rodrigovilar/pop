@@ -1,0 +1,14 @@
+{
+  "month": "2015-01",
+  "currency": "JPY",
+  "entryDate": "2015-01-01",
+  "entryPrice": 38315.8,
+  "exitDate": "2015-01-31",
+  "exitPrice": 26692.83,
+  "pctChangeWithinMonth": -30.334666116849966,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -16.976665979063338,
+  "regime": "BEAR"
+}

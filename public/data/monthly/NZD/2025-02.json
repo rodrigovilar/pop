@@ -1,0 +1,14 @@
+{
+  "month": "2025-02",
+  "currency": "NZD",
+  "entryDate": "2025-02-01",
+  "entryPrice": 178782.1,
+  "exitDate": "2025-02-28",
+  "exitPrice": 150031.72,
+  "pctChangeWithinMonth": -16.08124079535927,
+  "daysPositive": 1,
+  "daysNegative": 26,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": 5.95844175948688,
+  "regime": "BEAR"
+}

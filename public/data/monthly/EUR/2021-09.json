@@ -1,0 +1,14 @@
+{
+  "month": "2021-09",
+  "currency": "EUR",
+  "entryDate": "2021-09-01",
+  "entryPrice": 41295.09,
+  "exitDate": "2021-09-30",
+  "exitPrice": 37858.08,
+  "pctChangeWithinMonth": -8.32304760687044,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 22.243937326695647,
+  "regime": "LATERAL"
+}

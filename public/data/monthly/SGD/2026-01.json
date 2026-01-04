@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "SGD",
+  "entryDate": "2026-01-01",
+  "entryPrice": 114240.69,
+  "exitDate": "2026-01-04",
+  "exitPrice": 117505.24,
+  "pctChangeWithinMonth": 2.857607040013504,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 2.07660846083451,
+  "regime": "LATERAL"
+}

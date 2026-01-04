@@ -1,0 +1,14 @@
+{
+  "month": "2015-12",
+  "currency": "CAD",
+  "entryDate": "2015-12-01",
+  "entryPrice": 479.24,
+  "exitDate": "2015-12-31",
+  "exitPrice": 594.63,
+  "pctChangeWithinMonth": 24.077706368416656,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 15.982575024201362,
+  "regime": "BULL"
+}

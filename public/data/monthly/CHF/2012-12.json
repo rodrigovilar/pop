@@ -1,0 +1,14 @@
+{
+  "month": "2012-12",
+  "currency": "CHF",
+  "entryDate": "2012-12-01",
+  "entryPrice": 11.58,
+  "exitDate": "2012-12-31",
+  "exitPrice": 12.32,
+  "pctChangeWithinMonth": 6.390328151986186,
+  "daysPositive": 28,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 14.540059347181018,
+  "regime": "LATERAL"
+}

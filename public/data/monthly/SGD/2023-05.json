@@ -1,0 +1,14 @@
+{
+  "month": "2023-05",
+  "currency": "SGD",
+  "entryDate": "2023-05-01",
+  "entryPrice": 42418.82,
+  "exitDate": "2023-05-31",
+  "exitPrice": 36750,
+  "pctChangeWithinMonth": -13.363926672170512,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 11.646836650764927,
+  "regime": "BEAR"
+}

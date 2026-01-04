@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "TRY",
+  "entryDate": "2026-01-01",
+  "entryPrice": 3819199.06,
+  "exitDate": "2026-01-04",
+  "exitPrice": 3910805.73,
+  "pctChangeWithinMonth": 2.3985832778247467,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 4.210131552580968,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2018-01",
+  "currency": "INR",
+  "entryDate": "2018-01-01",
+  "entryPrice": 1018847.83,
+  "exitDate": "2018-01-31",
+  "exitPrice": 696893.78,
+  "pctChangeWithinMonth": -31.599817020761574,
+  "daysPositive": 8,
+  "daysNegative": 22,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 17.824584060176164,
+  "regime": "BEAR"
+}

@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2018-06-01",
   "entryPrice": 7530.55,
+  "exitDate": "2018-06-30",
+  "exitPrice": 6385.38,
+  "pctChangeWithinMonth": -15.206990193279376,
   "daysPositive": 6,
   "daysNegative": 23,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -17.039575731937322,
-  "regime": "BEAR",
-  "exitDate": "2018-06-30",
-  "exitPrice": 7128.92,
-  "pctChangeWithinMonth": -5.33
+  "regime": "BEAR"
 }

@@ -1,0 +1,14 @@
+{
+  "month": "2021-09",
+  "currency": "GBP",
+  "entryDate": "2021-09-01",
+  "entryPrice": 35486.12,
+  "exitDate": "2021-09-30",
+  "exitPrice": 32542.77,
+  "pctChangeWithinMonth": -8.29436974231052,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 23.97105698191621,
+  "regime": "LATERAL"
+}

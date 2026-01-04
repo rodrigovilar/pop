@@ -1,0 +1,14 @@
+{
+  "month": "2012-06",
+  "currency": "EUR",
+  "entryDate": "2012-06-01",
+  "entryPrice": 4.16,
+  "exitDate": "2012-06-30",
+  "exitPrice": 5.336,
+  "pctChangeWithinMonth": 28.269230769230774,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 8.333333333333341,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2019-09",
+  "currency": "CHF",
+  "entryDate": "2019-09-01",
+  "entryPrice": 9440,
+  "exitDate": "2019-09-30",
+  "exitPrice": 8285,
+  "pctChangeWithinMonth": -12.235169491525424,
+  "daysPositive": 22,
+  "daysNegative": 7,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -6.678424130745104,
+  "regime": "BEAR"
+}

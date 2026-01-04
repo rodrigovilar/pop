@@ -1,0 +1,14 @@
+{
+  "month": "2015-08",
+  "currency": "NZD",
+  "entryDate": "2015-08-01",
+  "entryPrice": 405.95,
+  "exitDate": "2015-08-31",
+  "exitPrice": 362.96,
+  "pctChangeWithinMonth": -10.589974134745662,
+  "daysPositive": 13,
+  "daysNegative": 17,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 4.940026884500055,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2023-10",
+  "currency": "TRY",
+  "entryDate": "2023-10-01",
+  "entryPrice": 772898,
+  "exitDate": "2023-10-31",
+  "exitPrice": 984250.27,
+  "pctChangeWithinMonth": 27.34542850414932,
+  "daysPositive": 20,
+  "daysNegative": 10,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 10.279616410288606,
+  "regime": "BULL"
+}

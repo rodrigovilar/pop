@@ -1,0 +1,14 @@
+{
+  "month": "2014-12",
+  "currency": "NZD",
+  "entryDate": "2014-12-01",
+  "entryPrice": 557.1,
+  "exitDate": "2014-12-31",
+  "exitPrice": 404.24,
+  "pctChangeWithinMonth": -27.438520911865016,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 27.93955539224693,
+  "regime": "BEAR"
+}

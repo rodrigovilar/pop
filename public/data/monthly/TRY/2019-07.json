@@ -1,0 +1,14 @@
+{
+  "month": "2019-07",
+  "currency": "TRY",
+  "entryDate": "2019-07-01",
+  "entryPrice": 62666.85,
+  "exitDate": "2019-07-31",
+  "exitPrice": 57923.17,
+  "pctChangeWithinMonth": -7.569679982319201,
+  "daysPositive": 14,
+  "daysNegative": 16,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 23.687957512521397,
+  "regime": "LATERAL"
+}

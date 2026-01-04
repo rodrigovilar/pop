@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2019-03-01",
   "entryPrice": 3831.48,
+  "exitDate": "2019-03-31",
+  "exitPrice": 4112.69,
+  "pctChangeWithinMonth": 7.3394615135665475,
   "daysPositive": 28,
   "daysNegative": 2,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 10.684273015891355,
-  "regime": "BULL",
-  "exitDate": "2019-03-31",
-  "exitPrice": 4140.47,
-  "pctChangeWithinMonth": 8.06
+  "regime": "LATERAL"
 }

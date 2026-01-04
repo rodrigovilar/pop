@@ -1,0 +1,14 @@
+{
+  "month": "2014-03",
+  "currency": "CHF",
+  "entryDate": "2014-03-01",
+  "entryPrice": 541.99,
+  "exitDate": "2014-03-31",
+  "exitPrice": 975.92,
+  "pctChangeWithinMonth": 80.06236277422092,
+  "daysPositive": 23,
+  "daysNegative": 7,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -30.805076090286992,
+  "regime": "BULL"
+}

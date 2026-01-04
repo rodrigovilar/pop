@@ -1,0 +1,14 @@
+{
+  "month": "2017-07",
+  "currency": "EUR",
+  "entryDate": "2017-07-01",
+  "entryPrice": 2109.41,
+  "exitDate": "2017-07-31",
+  "exitPrice": 2467.06,
+  "pctChangeWithinMonth": 16.954977932218018,
+  "daysPositive": 20,
+  "daysNegative": 10,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -1.0683850876329126,
+  "regime": "BULL"
+}

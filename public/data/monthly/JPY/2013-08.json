@@ -1,0 +1,14 @@
+{
+  "month": "2013-08",
+  "currency": "JPY",
+  "entryDate": "2013-08-01",
+  "entryPrice": 10101,
+  "exitDate": "2013-08-31",
+  "exitPrice": 13776,
+  "pctChangeWithinMonth": 36.38253638253639,
+  "daysPositive": 26,
+  "daysNegative": 4,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 14.26044050391784,
+  "regime": "BULL"
+}

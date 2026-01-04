@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "MXN",
+  "entryDate": "2023-06-01",
+  "entryPrice": 471630,
+  "exitDate": "2023-06-30",
+  "exitPrice": 522380,
+  "pctChangeWithinMonth": 10.760553823972181,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -6.204880377065808,
+  "regime": "BULL"
+}

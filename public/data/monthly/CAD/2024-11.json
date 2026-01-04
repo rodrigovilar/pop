@@ -1,0 +1,14 @@
+{
+  "month": "2024-11",
+  "currency": "CAD",
+  "entryDate": "2024-11-01",
+  "entryPrice": 96963.9,
+  "exitDate": "2024-11-30",
+  "exitPrice": 135291.85,
+  "pctChangeWithinMonth": 39.52806147442503,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 17.84582700840905,
+  "regime": "BULL"
+}

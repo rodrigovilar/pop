@@ -1,0 +1,14 @@
+{
+  "month": "2019-10",
+  "currency": "JPY",
+  "entryDate": "2019-10-01",
+  "entryPrice": 897435.84,
+  "exitDate": "2019-10-31",
+  "exitPrice": 988631.34,
+  "pctChangeWithinMonth": 10.161784936068521,
+  "daysPositive": 14,
+  "daysNegative": 16,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -13.436377419838436,
+  "regime": "BULL"
+}

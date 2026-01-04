@@ -1,0 +1,14 @@
+{
+  "month": "2020-05",
+  "currency": "INR",
+  "entryDate": "2020-05-01",
+  "entryPrice": 637340.82,
+  "exitDate": "2020-05-31",
+  "exitPrice": 625114.29,
+  "pctChangeWithinMonth": -1.9183660635450765,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -15.022888418358846,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2018-06",
+  "currency": "ARS",
+  "entryDate": "2018-06-01",
+  "entryPrice": 200558.96,
+  "exitDate": "2018-06-30",
+  "exitPrice": 196659.29,
+  "pctChangeWithinMonth": -1.9444007886758006,
+  "daysPositive": 12,
+  "daysNegative": 17,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -8.202158606126595,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2014-11",
+  "currency": "BRL",
+  "entryDate": "2014-11-01",
+  "entryPrice": 840,
+  "exitDate": "2014-11-30",
+  "exitPrice": 1015,
+  "pctChangeWithinMonth": 20.833333333333336,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -17.96875,
+  "regime": "BULL"
+}

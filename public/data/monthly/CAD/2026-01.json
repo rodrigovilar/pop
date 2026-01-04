@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "CAD",
+  "entryDate": "2026-01-01",
+  "entryPrice": 121542.39,
+  "exitDate": "2026-01-04",
+  "exitPrice": 124908.44,
+  "pctChangeWithinMonth": 2.7694452939423053,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 0.5327036694294272,
+  "regime": "LATERAL"
+}

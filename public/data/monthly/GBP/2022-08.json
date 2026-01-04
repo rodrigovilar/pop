@@ -1,0 +1,14 @@
+{
+  "month": "2022-08",
+  "currency": "GBP",
+  "entryDate": "2022-08-01",
+  "entryPrice": 18991.28,
+  "exitDate": "2022-08-31",
+  "exitPrice": 17291.99,
+  "pctChangeWithinMonth": -8.947738119810762,
+  "daysPositive": 14,
+  "daysNegative": 16,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 19.416101537716646,
+  "regime": "LATERAL"
+}

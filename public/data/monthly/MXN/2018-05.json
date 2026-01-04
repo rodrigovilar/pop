@@ -1,0 +1,14 @@
+{
+  "month": "2018-05",
+  "currency": "MXN",
+  "entryDate": "2018-05-01",
+  "entryPrice": 171293.83,
+  "exitDate": "2018-05-31",
+  "exitPrice": 149000,
+  "pctChangeWithinMonth": -13.01496381977097,
+  "daysPositive": 10,
+  "daysNegative": 20,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 37.07262189840015,
+  "regime": "BEAR"
+}

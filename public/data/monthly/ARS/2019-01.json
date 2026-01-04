@@ -1,0 +1,14 @@
+{
+  "month": "2019-01",
+  "currency": "ARS",
+  "entryDate": "2019-01-01",
+  "entryPrice": 106661.59,
+  "exitDate": "2019-01-31",
+  "exitPrice": 134481.29,
+  "pctChangeWithinMonth": 26.08221010018697,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -26.382424421290008,
+  "regime": "BULL"
+}

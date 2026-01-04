@@ -1,0 +1,14 @@
+{
+  "month": "2019-07",
+  "currency": "AUD",
+  "entryDate": "2019-07-01",
+  "entryPrice": 15108.03,
+  "exitDate": "2019-07-31",
+  "exitPrice": 14688.71,
+  "pctChangeWithinMonth": -2.775477676440949,
+  "daysPositive": 15,
+  "daysNegative": 15,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 22.155077131059336,
+  "regime": "LATERAL"
+}

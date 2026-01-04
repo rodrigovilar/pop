@@ -1,0 +1,14 @@
+{
+  "month": "2011-10",
+  "currency": "AUD",
+  "entryDate": "2011-10-01",
+  "entryPrice": 5.391,
+  "exitDate": "2011-10-31",
+  "exitPrice": 3.001,
+  "pctChangeWithinMonth": -44.33314783899091,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -29.959724568013513,
+  "regime": "BEAR"
+}

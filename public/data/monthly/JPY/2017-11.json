@@ -1,0 +1,14 @@
+{
+  "month": "2017-11",
+  "currency": "JPY",
+  "entryDate": "2017-11-01",
+  "entryPrice": 764334.9,
+  "exitDate": "2017-11-30",
+  "exitPrice": 1207497.14,
+  "pctChangeWithinMonth": 57.98011316767033,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 54.27404257627866,
+  "regime": "BULL"
+}

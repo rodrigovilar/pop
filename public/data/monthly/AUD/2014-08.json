@@ -1,0 +1,14 @@
+{
+  "month": "2014-08",
+  "currency": "AUD",
+  "entryDate": "2014-08-01",
+  "entryPrice": 682.98,
+  "exitDate": "2014-08-31",
+  "exitPrice": 510.53,
+  "pctChangeWithinMonth": -25.24964127792908,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -5.132443432000324,
+  "regime": "BEAR"
+}

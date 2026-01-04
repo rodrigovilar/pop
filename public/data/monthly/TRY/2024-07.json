@@ -1,0 +1,14 @@
+{
+  "month": "2024-07",
+  "currency": "TRY",
+  "entryDate": "2024-07-01",
+  "entryPrice": 2060723.07,
+  "exitDate": "2024-07-31",
+  "exitPrice": 2148950.75,
+  "pctChangeWithinMonth": 4.281394297196854,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -5.867804301835657,
+  "regime": "LATERAL"
+}

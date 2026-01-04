@@ -1,0 +1,14 @@
+{
+  "month": "2025-11",
+  "currency": "GBP",
+  "entryDate": "2025-11-01",
+  "entryPrice": 83698.48,
+  "exitDate": "2025-11-30",
+  "exitPrice": 68276.03,
+  "pctChangeWithinMonth": -18.426200810337292,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -4.899027520926002,
+  "regime": "BEAR"
+}

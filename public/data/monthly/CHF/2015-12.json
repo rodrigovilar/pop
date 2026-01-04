@@ -1,0 +1,14 @@
+{
+  "month": "2015-12",
+  "currency": "CHF",
+  "entryDate": "2015-12-01",
+  "entryPrice": 385.96,
+  "exitDate": "2015-12-31",
+  "exitPrice": 453.36,
+  "pctChangeWithinMonth": 17.462949528448554,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -38.81226418085545,
+  "regime": "BULL"
+}

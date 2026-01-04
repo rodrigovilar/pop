@@ -1,0 +1,14 @@
+{
+  "month": "2019-12",
+  "currency": "NZD",
+  "entryDate": "2019-12-01",
+  "entryPrice": 11455.35,
+  "exitDate": "2019-12-31",
+  "exitPrice": 10807.35,
+  "pctChangeWithinMonth": -5.656745538111013,
+  "daysPositive": 3,
+  "daysNegative": 27,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -21.19649711762035,
+  "regime": "LATERAL"
+}

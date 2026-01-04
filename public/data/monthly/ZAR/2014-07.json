@@ -1,0 +1,14 @@
+{
+  "month": "2014-07",
+  "currency": "ZAR",
+  "entryDate": "2014-07-01",
+  "entryPrice": 6900,
+  "exitDate": "2014-07-31",
+  "exitPrice": 6700,
+  "pctChangeWithinMonth": -2.898550724637681,
+  "daysPositive": 7,
+  "daysNegative": 21,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 6.153682840487934,
+  "regime": "LATERAL"
+}

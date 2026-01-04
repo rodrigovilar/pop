@@ -1,0 +1,14 @@
+{
+  "month": "2023-08",
+  "currency": "INR",
+  "entryDate": "2023-08-01",
+  "entryPrice": 2312444.18,
+  "exitDate": "2023-08-31",
+  "exitPrice": 2297868.42,
+  "pctChangeWithinMonth": -0.6303183499979766,
+  "daysPositive": 16,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -0.2220108455100432,
+  "regime": "LATERAL"
+}

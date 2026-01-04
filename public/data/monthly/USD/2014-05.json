@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2014-05-01",
   "entryPrice": 460.13,
+  "exitDate": "2014-05-31",
+  "exitPrice": 627.91,
+  "pctChangeWithinMonth": 36.4636081107513,
   "daysPositive": 12,
   "daysNegative": 18,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": -0.7163663825655396,
-  "regime": "LATERAL",
-  "exitDate": "2014-05-31",
-  "exitPrice": 451.22,
-  "pctChangeWithinMonth": -1.94
+  "regime": "BULL"
 }

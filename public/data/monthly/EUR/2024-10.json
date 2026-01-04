@@ -1,0 +1,14 @@
+{
+  "month": "2024-10",
+  "currency": "EUR",
+  "entryDate": "2024-10-01",
+  "entryPrice": 54984.44,
+  "exitDate": "2024-10-31",
+  "exitPrice": 64531.73,
+  "pctChangeWithinMonth": 17.363621417259136,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 5.884185765715983,
+  "regime": "BULL"
+}

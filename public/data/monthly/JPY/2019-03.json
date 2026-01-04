@@ -1,0 +1,14 @@
+{
+  "month": "2019-03",
+  "currency": "JPY",
+  "entryDate": "2019-03-01",
+  "entryPrice": 425983.04,
+  "exitDate": "2019-03-31",
+  "exitPrice": 453387.12,
+  "pctChangeWithinMonth": 6.433138746556674,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 13.405008329610022,
+  "regime": "LATERAL"
+}

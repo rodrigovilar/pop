@@ -1,0 +1,14 @@
+{
+  "month": "2014-05",
+  "currency": "EUR",
+  "entryDate": "2014-05-01",
+  "entryPrice": 332.38,
+  "exitDate": "2014-05-31",
+  "exitPrice": 456.74,
+  "pctChangeWithinMonth": 37.415006919790606,
+  "daysPositive": 12,
+  "daysNegative": 18,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -7.065566895009083,
+  "regime": "BULL"
+}

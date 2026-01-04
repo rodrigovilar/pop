@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "HKD",
+  "entryDate": "2026-01-01",
+  "entryPrice": 689221.73,
+  "exitDate": "2026-01-04",
+  "exitPrice": 707334,
+  "pctChangeWithinMonth": 2.6279307821591784,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 2.49682849090001,
+  "regime": "LATERAL"
+}

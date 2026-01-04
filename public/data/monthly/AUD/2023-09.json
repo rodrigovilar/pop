@@ -1,0 +1,14 @@
+{
+  "month": "2023-09",
+  "currency": "AUD",
+  "entryDate": "2023-09-01",
+  "entryPrice": 40111.17,
+  "exitDate": "2023-09-30",
+  "exitPrice": 42017.3,
+  "pctChangeWithinMonth": 4.752117676946359,
+  "daysPositive": 27,
+  "daysNegative": 2,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -10.686233032883258,
+  "regime": "LATERAL"
+}

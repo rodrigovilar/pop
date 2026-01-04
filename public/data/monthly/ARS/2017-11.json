@@ -1,0 +1,14 @@
+{
+  "month": "2017-11",
+  "currency": "ARS",
+  "entryDate": "2017-11-01",
+  "entryPrice": 129264.89,
+  "exitDate": "2017-11-30",
+  "exitPrice": 225440.51,
+  "pctChangeWithinMonth": 74.40196638081696,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 74.211512484439,
+  "regime": "BULL"
+}

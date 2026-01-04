@@ -1,0 +1,14 @@
+{
+  "month": "2013-10",
+  "currency": "EUR",
+  "entryDate": "2013-10-01",
+  "entryPrice": 102.4,
+  "exitDate": "2013-10-31",
+  "exitPrice": 152.83,
+  "pctChangeWithinMonth": 49.24804687500001,
+  "daysPositive": 19,
+  "daysNegative": 11,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -5.500184569952006,
+  "regime": "BULL"
+}

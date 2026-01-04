@@ -1,0 +1,14 @@
+{
+  "month": "2018-03",
+  "currency": "ARS",
+  "entryDate": "2018-03-01",
+  "entryPrice": 309567.9,
+  "exitDate": "2018-03-31",
+  "exitPrice": 172700.63,
+  "pctChangeWithinMonth": -44.21235858110612,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 33.69795140197444,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2025-12",
+  "currency": "MXN",
+  "entryDate": "2025-12-01",
+  "entryPrice": 1583219.52,
+  "exitDate": "2025-12-31",
+  "exitPrice": 1580402.07,
+  "pctChangeWithinMonth": -0.17795700245029528,
+  "daysPositive": 18,
+  "daysNegative": 12,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -22.649204715184197,
+  "regime": "LATERAL"
+}

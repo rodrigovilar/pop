@@ -1,0 +1,14 @@
+{
+  "month": "2015-08",
+  "currency": "ARS",
+  "entryDate": "2015-08-01",
+  "entryPrice": 4284.77,
+  "exitDate": "2015-08-31",
+  "exitPrice": 3439.75,
+  "pctChangeWithinMonth": -19.721478632458695,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 20.3935408278238,
+  "regime": "BEAR"
+}

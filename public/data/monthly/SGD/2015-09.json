@@ -1,0 +1,14 @@
+{
+  "month": "2015-09",
+  "currency": "SGD",
+  "entryDate": "2015-09-01",
+  "entryPrice": 322.43,
+  "exitDate": "2015-09-30",
+  "exitPrice": 336.36,
+  "pctChangeWithinMonth": 4.320317588313745,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -15.334926345088354,
+  "regime": "LATERAL"
+}

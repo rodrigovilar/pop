@@ -1,0 +1,14 @@
+{
+  "month": "2020-03",
+  "currency": "EUR",
+  "entryDate": "2020-03-01",
+  "entryPrice": 7711,
+  "exitDate": "2020-03-31",
+  "exitPrice": 5837.51,
+  "pctChangeWithinMonth": -24.296329918298532,
+  "daysPositive": 6,
+  "daysNegative": 24,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -8.842006208815768,
+  "regime": "BEAR"
+}

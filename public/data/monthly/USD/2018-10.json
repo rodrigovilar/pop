@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2018-10-01",
   "entryPrice": 6594.98,
+  "exitDate": "2018-10-31",
+  "exitPrice": 6342.61,
+  "pctChangeWithinMonth": -3.8266984888506093,
   "daysPositive": 5,
   "daysNegative": 25,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": -8.4470518334245,
-  "regime": "LATERAL",
-  "exitDate": "2018-10-31",
-  "exitPrice": 6190.77,
-  "pctChangeWithinMonth": -6.13
+  "regime": "LATERAL"
 }

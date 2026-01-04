@@ -1,0 +1,14 @@
+{
+  "month": "2020-03",
+  "currency": "SGD",
+  "entryDate": "2020-03-01",
+  "entryPrice": 11941.01,
+  "exitDate": "2020-03-31",
+  "exitPrice": 9190.55,
+  "pctChangeWithinMonth": -23.033729977614968,
+  "daysPositive": 6,
+  "daysNegative": 24,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -6.455438874113295,
+  "regime": "BEAR"
+}

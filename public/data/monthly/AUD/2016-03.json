@@ -1,0 +1,14 @@
+{
+  "month": "2016-03",
+  "currency": "AUD",
+  "entryDate": "2016-03-01",
+  "entryPrice": 607.53,
+  "exitDate": "2016-03-31",
+  "exitPrice": 534.15,
+  "pctChangeWithinMonth": -12.07841588069725,
+  "daysPositive": 3,
+  "daysNegative": 27,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 16.8574121448768,
+  "regime": "BEAR"
+}

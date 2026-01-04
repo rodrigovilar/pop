@@ -1,0 +1,14 @@
+{
+  "month": "2016-07",
+  "currency": "KRW",
+  "entryDate": "2016-07-01",
+  "entryPrice": 802700,
+  "exitDate": "2016-07-31",
+  "exitPrice": 711500,
+  "pctChangeWithinMonth": -11.361654416344837,
+  "daysPositive": 2,
+  "daysNegative": 28,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 23.473311798184895,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2020-04",
+  "currency": "CAD",
+  "entryDate": "2020-04-01",
+  "entryPrice": 9414,
+  "exitDate": "2020-04-30",
+  "exitPrice": 12110.1,
+  "pctChangeWithinMonth": 28.63926067558955,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -17.853403141361255,
+  "regime": "BULL"
+}

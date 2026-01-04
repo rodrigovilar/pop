@@ -1,0 +1,14 @@
+{
+  "month": "2021-12",
+  "currency": "EUR",
+  "entryDate": "2021-12-01",
+  "entryPrice": 50574.41,
+  "exitDate": "2021-12-31",
+  "exitPrice": 40652.32,
+  "pctChangeWithinMonth": -19.618795355200394,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -3.8724049285568274,
+  "regime": "BEAR"
+}

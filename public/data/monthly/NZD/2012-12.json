@@ -1,0 +1,14 @@
+{
+  "month": "2012-12",
+  "currency": "NZD",
+  "entryDate": "2012-12-01",
+  "entryPrice": 15.37,
+  "exitDate": "2012-12-31",
+  "exitPrice": 16.06,
+  "pctChangeWithinMonth": 4.48926480156148,
+  "daysPositive": 28,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 15.563909774436077,
+  "regime": "LATERAL"
+}

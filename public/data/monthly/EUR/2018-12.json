@@ -1,0 +1,14 @@
+{
+  "month": "2018-12",
+  "currency": "EUR",
+  "entryDate": "2018-12-01",
+  "entryPrice": 3691.6,
+  "exitDate": "2018-12-31",
+  "exitPrice": 3247.79,
+  "pctChangeWithinMonth": -12.022158413695957,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -33.82165764951795,
+  "regime": "BEAR"
+}

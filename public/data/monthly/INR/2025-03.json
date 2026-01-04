@@ -1,0 +1,14 @@
+{
+  "month": "2025-03",
+  "currency": "INR",
+  "entryDate": "2025-03-01",
+  "entryPrice": 5660820.26,
+  "exitDate": "2025-03-31",
+  "exitPrice": 6604290.31,
+  "pctChangeWithinMonth": 16.66666678443523,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 20.263975166495793,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2023-12",
+  "currency": "ARS",
+  "entryDate": "2023-12-01",
+  "entryPrice": 34802308.68,
+  "exitDate": "2023-12-31",
+  "exitPrice": 41848521.67,
+  "pctChangeWithinMonth": 20.24639530322102,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 12.106163266418896,
+  "regime": "BULL"
+}

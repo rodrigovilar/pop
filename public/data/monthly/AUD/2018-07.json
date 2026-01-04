@@ -1,0 +1,14 @@
+{
+  "month": "2018-07",
+  "currency": "AUD",
+  "entryDate": "2018-07-01",
+  "entryPrice": 8489.05,
+  "exitDate": "2018-07-31",
+  "exitPrice": 10452.2,
+  "pctChangeWithinMonth": 23.12567366195277,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -14.84637529967601,
+  "regime": "BULL"
+}

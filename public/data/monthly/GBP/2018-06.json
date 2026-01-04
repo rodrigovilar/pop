@@ -1,0 +1,14 @@
+{
+  "month": "2018-06",
+  "currency": "GBP",
+  "entryDate": "2018-06-01",
+  "entryPrice": 5723.15,
+  "exitDate": "2018-06-30",
+  "exitPrice": 4826.99,
+  "pctChangeWithinMonth": -15.658509736770831,
+  "daysPositive": 4,
+  "daysNegative": 25,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -13.548627811144282,
+  "regime": "BEAR"
+}

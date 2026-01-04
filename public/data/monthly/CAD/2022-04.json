@@ -1,0 +1,14 @@
+{
+  "month": "2022-04",
+  "currency": "CAD",
+  "entryDate": "2022-04-01",
+  "entryPrice": 57807.28,
+  "exitDate": "2022-04-30",
+  "exitPrice": 48293.97,
+  "pctChangeWithinMonth": -16.456941063478506,
+  "daysPositive": 2,
+  "daysNegative": 27,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 2.1686181419777637,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2018-01",
+  "currency": "AUD",
+  "entryDate": "2018-01-01",
+  "entryPrice": 18361.44,
+  "exitDate": "2018-01-31",
+  "exitPrice": 12510.44,
+  "pctChangeWithinMonth": -31.865692451136724,
+  "daysPositive": 14,
+  "daysNegative": 16,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 25.776726828346032,
+  "regime": "BEAR"
+}

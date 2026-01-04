@@ -1,0 +1,14 @@
+{
+  "month": "2017-12",
+  "currency": "CHF",
+  "entryDate": "2017-12-01",
+  "entryPrice": 10700,
+  "exitDate": "2017-12-31",
+  "exitPrice": 13800,
+  "pctChangeWithinMonth": 28.971962616822427,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 55.483029100029356,
+  "regime": "BULL"
+}

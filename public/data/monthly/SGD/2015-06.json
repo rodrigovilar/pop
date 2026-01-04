@@ -1,0 +1,14 @@
+{
+  "month": "2015-06",
+  "currency": "SGD",
+  "entryDate": "2015-06-01",
+  "entryPrice": 304.68,
+  "exitDate": "2015-06-30",
+  "exitPrice": 355.92,
+  "pctChangeWithinMonth": 16.81764474202442,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -2.493039331775857,
+  "regime": "BULL"
+}

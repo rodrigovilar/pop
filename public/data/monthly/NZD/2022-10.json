@@ -1,0 +1,14 @@
+{
+  "month": "2022-10",
+  "currency": "NZD",
+  "entryDate": "2022-10-01",
+  "entryPrice": 34545.05,
+  "exitDate": "2022-10-31",
+  "exitPrice": 33866.81,
+  "pctChangeWithinMonth": -1.9633493076432231,
+  "daysPositive": 16,
+  "daysNegative": 14,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 4.0528598003826755,
+  "regime": "LATERAL"
+}

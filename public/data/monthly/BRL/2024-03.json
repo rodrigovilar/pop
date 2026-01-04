@@ -1,0 +1,14 @@
+{
+  "month": "2024-03",
+  "currency": "BRL",
+  "entryDate": "2024-03-01",
+  "entryPrice": 312033.6,
+  "exitDate": "2024-03-31",
+  "exitPrice": 360183.08,
+  "pctChangeWithinMonth": 15.430863855687349,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 46.47533102324674,
+  "regime": "BULL"
+}

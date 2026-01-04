@@ -1,0 +1,14 @@
+{
+  "month": "2019-04",
+  "currency": "CHF",
+  "entryDate": "2019-04-01",
+  "entryPrice": 4200,
+  "exitDate": "2019-04-30",
+  "exitPrice": 5400,
+  "pctChangeWithinMonth": 28.57142857142857,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 9.05833322514054,
+  "regime": "BULL"
+}

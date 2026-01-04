@@ -1,0 +1,14 @@
+{
+  "month": "2019-10",
+  "currency": "EUR",
+  "entryDate": "2019-10-01",
+  "entryPrice": 7625.56,
+  "exitDate": "2019-10-31",
+  "exitPrice": 8212.98,
+  "pctChangeWithinMonth": 7.703303101673834,
+  "daysPositive": 10,
+  "daysNegative": 20,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -14.240825566840568,
+  "regime": "LATERAL"
+}

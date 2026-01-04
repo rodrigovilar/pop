@@ -1,0 +1,14 @@
+{
+  "month": "2022-07",
+  "currency": "ARS",
+  "entryDate": "2022-07-01",
+  "entryPrice": 4634867.94,
+  "exitDate": "2022-07-31",
+  "exitPrice": 6449963.79,
+  "pctChangeWithinMonth": 39.16175980625673,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -22.78518974076975,
+  "regime": "BULL"
+}

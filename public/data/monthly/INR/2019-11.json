@@ -1,0 +1,14 @@
+{
+  "month": "2019-11",
+  "currency": "INR",
+  "entryDate": "2019-11-01",
+  "entryPrice": 773109.54,
+  "exitDate": "2019-11-30",
+  "exitPrice": 762714.14,
+  "pctChangeWithinMonth": -1.3446218759634012,
+  "daysPositive": 3,
+  "daysNegative": 26,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 6.966178046693577,
+  "regime": "LATERAL"
+}

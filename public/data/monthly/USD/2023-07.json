@@ -2,13 +2,13 @@
   "month": "2023-07",
   "currency": "USD",
   "entryDate": "2023-07-01",
-  "entryPrice": 13475321.65,
+  "entryPrice": 30590.76,
   "exitDate": "2023-07-31",
-  "exitPrice": 8451981.97,
-  "pctChangeWithinMonth": -37.27806883184862,
-  "daysPositive": 0,
-  "daysNegative": 30,
+  "exitPrice": 29231.47,
+  "pctChangeWithinMonth": -4.443465935465472,
+  "daysPositive": 5,
+  "daysNegative": 25,
   "daysTotal": 31,
-  "pctChangeVsPrevMonthStart": -53.29505900189674,
-  "regime": "BEAR"
+  "pctChangeVsPrevMonthStart": 14.035144616754133,
+  "regime": "LATERAL"
 }

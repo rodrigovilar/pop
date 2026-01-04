@@ -1,0 +1,14 @@
+{
+  "month": "2019-09",
+  "currency": "MXN",
+  "entryDate": "2019-09-01",
+  "entryPrice": 196250.53,
+  "exitDate": "2019-09-30",
+  "exitPrice": 164496.07,
+  "pctChangeWithinMonth": -16.18057286265672,
+  "daysPositive": 19,
+  "daysNegative": 10,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -2.70559998778432,
+  "regime": "BEAR"
+}

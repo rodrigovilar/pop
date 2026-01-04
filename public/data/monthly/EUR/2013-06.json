@@ -1,0 +1,14 @@
+{
+  "month": "2013-06",
+  "currency": "EUR",
+  "entryDate": "2013-06-01",
+  "entryPrice": 100,
+  "exitDate": "2013-06-30",
+  "exitPrice": 73.9,
+  "pctChangeWithinMonth": -26.099999999999994,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 11.11111111111111,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2024-11",
+  "currency": "GBP",
+  "entryDate": "2024-11-01",
+  "entryPrice": 53789.37,
+  "exitDate": "2024-11-30",
+  "exitPrice": 75482.16,
+  "pctChangeWithinMonth": 40.32913938200057,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 17.327480341582056,
+  "regime": "BULL"
+}

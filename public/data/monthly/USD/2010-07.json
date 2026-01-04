@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2010-07-17",
   "entryPrice": 0.04951,
+  "exitDate": "2010-07-31",
+  "exitPrice": 0.06785,
+  "pctChangeWithinMonth": 37.04302161179559,
   "daysPositive": 14,
   "daysNegative": 0,
   "daysTotal": 15,
   "pctChangeVsPrevMonthStart": null,
-  "regime": "N/A",
-  "exitDate": "2010-07-31",
-  "exitPrice": 0.05,
-  "pctChangeWithinMonth": 8.67
+  "regime": "BULL"
 }

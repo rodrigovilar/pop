@@ -1,0 +1,14 @@
+{
+  "month": "2023-12",
+  "currency": "GBP",
+  "entryDate": "2023-12-01",
+  "entryPrice": 30483.9,
+  "exitDate": "2023-12-31",
+  "exitPrice": 33291.12,
+  "pctChangeWithinMonth": 9.208861070925968,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 4.756606072769035,
+  "regime": "LATERAL"
+}

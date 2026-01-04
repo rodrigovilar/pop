@@ -1,0 +1,14 @@
+{
+  "month": "2025-11",
+  "currency": "CHF",
+  "entryDate": "2025-11-01",
+  "entryPrice": 88399.3,
+  "exitDate": "2025-11-30",
+  "exitPrice": 72601.1,
+  "pctChangeWithinMonth": -17.87140848400383,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -6.037360011564718,
+  "regime": "BEAR"
+}

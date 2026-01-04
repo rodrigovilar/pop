@@ -1,0 +1,14 @@
+{
+  "month": "2021-10",
+  "currency": "EUR",
+  "entryDate": "2021-10-01",
+  "entryPrice": 41479.11,
+  "exitDate": "2021-10-31",
+  "exitPrice": 53132.3,
+  "pctChangeWithinMonth": 28.09411773782032,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 0.44562198556778565,
+  "regime": "BULL"
+}

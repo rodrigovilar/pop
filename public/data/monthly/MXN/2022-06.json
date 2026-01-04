@@ -1,0 +1,14 @@
+{
+  "month": "2022-06",
+  "currency": "MXN",
+  "entryDate": "2022-06-01",
+  "entryPrice": 587467.84,
+  "exitDate": "2022-06-30",
+  "exitPrice": 400876.1,
+  "pctChangeWithinMonth": -31.76203483751553,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -25.39103145262127,
+  "regime": "BEAR"
+}

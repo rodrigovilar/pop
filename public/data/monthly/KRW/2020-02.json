@@ -1,0 +1,14 @@
+{
+  "month": "2020-02",
+  "currency": "KRW",
+  "entryDate": "2020-02-01",
+  "entryPrice": 10822483.28,
+  "exitDate": "2020-02-29",
+  "exitPrice": 10379444.22,
+  "pctChangeWithinMonth": -4.0936913325496835,
+  "daysPositive": 21,
+  "daysNegative": 7,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": 30.441990927546335,
+  "regime": "LATERAL"
+}

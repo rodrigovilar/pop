@@ -1,0 +1,14 @@
+{
+  "month": "2020-09",
+  "currency": "AUD",
+  "entryDate": "2020-09-01",
+  "entryPrice": 16251.86,
+  "exitDate": "2020-09-30",
+  "exitPrice": 15081.86,
+  "pctChangeWithinMonth": -7.199175971242676,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -2.22292546810305,
+  "regime": "LATERAL"
+}

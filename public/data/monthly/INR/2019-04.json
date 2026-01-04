@@ -1,0 +1,14 @@
+{
+  "month": "2019-04",
+  "currency": "INR",
+  "entryDate": "2019-04-01",
+  "entryPrice": 203687.59,
+  "exitDate": "2019-04-30",
+  "exitPrice": 228411.51,
+  "pctChangeWithinMonth": 12.138157263287377,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 3.784101039392054,
+  "regime": "BULL"
+}

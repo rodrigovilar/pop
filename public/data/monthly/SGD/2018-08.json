@@ -1,0 +1,14 @@
+{
+  "month": "2018-08",
+  "currency": "SGD",
+  "entryDate": "2018-08-01",
+  "entryPrice": 11104.95,
+  "exitDate": "2018-08-31",
+  "exitPrice": 9687.19,
+  "pctChangeWithinMonth": -12.766919256727856,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 28.643863990213536,
+  "regime": "BEAR"
+}

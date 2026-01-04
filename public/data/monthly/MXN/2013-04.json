@@ -1,0 +1,14 @@
+{
+  "month": "2013-04",
+  "currency": "MXN",
+  "entryDate": "2013-04-01",
+  "entryPrice": 999.4,
+  "exitDate": "2013-04-30",
+  "exitPrice": 1730.07,
+  "pctChangeWithinMonth": 73.11086651991194,
+  "daysPositive": 25,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 63.28731312801242,
+  "regime": "BULL"
+}

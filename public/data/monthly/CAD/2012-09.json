@@ -1,0 +1,14 @@
+{
+  "month": "2012-09",
+  "currency": "CAD",
+  "entryDate": "2012-09-01",
+  "entryPrice": 9.625,
+  "exitDate": "2012-09-30",
+  "exitPrice": 11.79,
+  "pctChangeWithinMonth": 22.493506493506484,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 1.9813519813519747,
+  "regime": "BULL"
+}

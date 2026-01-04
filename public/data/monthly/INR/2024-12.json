@@ -1,0 +1,14 @@
+{
+  "month": "2024-12",
+  "currency": "INR",
+  "entryDate": "2024-12-01",
+  "entryPrice": 3826363.95,
+  "exitDate": "2024-12-31",
+  "exitPrice": 4088105.69,
+  "pctChangeWithinMonth": 6.8404820717590065,
+  "daysPositive": 21,
+  "daysNegative": 9,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -5.1430070027922525,
+  "regime": "LATERAL"
+}

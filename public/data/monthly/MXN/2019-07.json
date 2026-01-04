@@ -1,0 +1,14 @@
+{
+  "month": "2019-07",
+  "currency": "MXN",
+  "entryDate": "2019-07-01",
+  "entryPrice": 204445.99,
+  "exitDate": "2019-07-31",
+  "exitPrice": 193189.9,
+  "pctChangeWithinMonth": -5.505654574100474,
+  "daysPositive": 15,
+  "daysNegative": 15,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 20.297728743748156,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2021-04",
+  "currency": "KRW",
+  "entryDate": "2021-04-01",
+  "entryPrice": 72376001.27,
+  "exitDate": "2021-04-30",
+  "exitPrice": 68114127.61,
+  "pctChangeWithinMonth": -5.888517720260614,
+  "daysPositive": 16,
+  "daysNegative": 13,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 28.34617802842181,
+  "regime": "LATERAL"
+}

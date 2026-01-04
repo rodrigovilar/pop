@@ -1,0 +1,14 @@
+{
+  "month": "2024-12",
+  "currency": "EUR",
+  "entryDate": "2024-12-01",
+  "entryPrice": 92117.76,
+  "exitDate": "2024-12-31",
+  "exitPrice": 90162.35,
+  "pctChangeWithinMonth": -2.1227285596175904,
+  "daysPositive": 18,
+  "daysNegative": 12,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 43.595630359149006,
+  "regime": "LATERAL"
+}

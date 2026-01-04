@@ -1,0 +1,14 @@
+{
+  "month": "2025-04",
+  "currency": "HKD",
+  "entryDate": "2025-04-01",
+  "entryPrice": 662216.29,
+  "exitDate": "2025-04-30",
+  "exitPrice": 729619.71,
+  "pctChangeWithinMonth": 10.178459971137213,
+  "daysPositive": 10,
+  "daysNegative": 19,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -1.145370352401661,
+  "regime": "BULL"
+}

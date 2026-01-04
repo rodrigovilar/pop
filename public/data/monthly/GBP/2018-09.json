@@ -1,0 +1,14 @@
+{
+  "month": "2018-09",
+  "currency": "GBP",
+  "entryDate": "2018-09-01",
+  "entryPrice": 5577.96,
+  "exitDate": "2018-09-30",
+  "exitPrice": 5086.92,
+  "pctChangeWithinMonth": -8.803218380913451,
+  "daysPositive": 2,
+  "daysNegative": 27,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -3.653024035098322,
+  "regime": "LATERAL"
+}

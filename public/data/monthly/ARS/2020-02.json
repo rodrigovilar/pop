@@ -1,0 +1,14 @@
+{
+  "month": "2020-02",
+  "currency": "ARS",
+  "entryDate": "2020-02-01",
+  "entryPrice": 770754.49,
+  "exitDate": "2020-02-29",
+  "exitPrice": 697597.14,
+  "pctChangeWithinMonth": -9.491654080406327,
+  "daysPositive": 20,
+  "daysNegative": 8,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": 36.41182996850714,
+  "regime": "LATERAL"
+}

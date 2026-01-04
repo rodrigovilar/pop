@@ -1,0 +1,14 @@
+{
+  "month": "2021-11",
+  "currency": "NZD",
+  "entryDate": "2021-11-01",
+  "entryPrice": 85719.43,
+  "exitDate": "2021-11-30",
+  "exitPrice": 83271.75,
+  "pctChangeWithinMonth": -2.8554552917582314,
+  "daysPositive": 18,
+  "daysNegative": 11,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 23.764501673474086,
+  "regime": "LATERAL"
+}

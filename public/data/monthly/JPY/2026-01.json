@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "JPY",
+  "entryDate": "2026-01-01",
+  "entryPrice": 13889563.63,
+  "exitDate": "2026-01-04",
+  "exitPrice": 14238294.83,
+  "pctChangeWithinMonth": 2.510742664706733,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 3.2557388540031247,
+  "regime": "LATERAL"
+}

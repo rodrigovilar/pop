@@ -1,0 +1,14 @@
+{
+  "month": "2015-04",
+  "currency": "TRY",
+  "entryDate": "2015-04-01",
+  "entryPrice": 797.09,
+  "exitDate": "2015-04-30",
+  "exitPrice": 682.85,
+  "pctChangeWithinMonth": -14.33213313427593,
+  "daysPositive": 2,
+  "daysNegative": 23,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -92.0291,
+  "regime": "BEAR"
+}

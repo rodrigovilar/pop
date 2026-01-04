@@ -1,0 +1,14 @@
+{
+  "month": "2016-03",
+  "currency": "MXN",
+  "entryDate": "2016-03-01",
+  "entryPrice": 7704.16,
+  "exitDate": "2016-03-31",
+  "exitPrice": 7637.02,
+  "pctChangeWithinMonth": -0.8714772278872638,
+  "daysPositive": 10,
+  "daysNegative": 20,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 5.253982805047819,
+  "regime": "LATERAL"
+}

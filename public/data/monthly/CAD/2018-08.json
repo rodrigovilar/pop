@@ -1,0 +1,14 @@
+{
+  "month": "2018-08",
+  "currency": "CAD",
+  "entryDate": "2018-08-01",
+  "entryPrice": 10159.77,
+  "exitDate": "2018-08-31",
+  "exitPrice": 9554.65,
+  "pctChangeWithinMonth": -5.95604034343298,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 20.901857837140568,
+  "regime": "LATERAL"
+}

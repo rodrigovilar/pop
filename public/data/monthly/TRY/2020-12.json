@@ -1,0 +1,14 @@
+{
+  "month": "2020-12",
+  "currency": "TRY",
+  "entryDate": "2020-12-01",
+  "entryPrice": 148313.71,
+  "exitDate": "2020-12-31",
+  "exitPrice": 216385.09,
+  "pctChangeWithinMonth": 45.89688977505856,
+  "daysPositive": 24,
+  "daysNegative": 6,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 28.87498110066265,
+  "regime": "BULL"
+}

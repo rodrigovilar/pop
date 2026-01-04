@@ -1,0 +1,14 @@
+{
+  "month": "2018-08",
+  "currency": "BRL",
+  "entryDate": "2018-08-01",
+  "entryPrice": 28904.07,
+  "exitDate": "2018-08-31",
+  "exitPrice": 29039.99,
+  "pctChangeWithinMonth": 0.4702451938429498,
+  "daysPositive": 4,
+  "daysNegative": 26,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 16.548669354838708,
+  "regime": "LATERAL"
+}

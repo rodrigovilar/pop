@@ -1,0 +1,14 @@
+{
+  "month": "2024-04",
+  "currency": "CHF",
+  "entryDate": "2024-04-01",
+  "entryPrice": 62318.2,
+  "exitDate": "2024-04-30",
+  "exitPrice": 55815.5,
+  "pctChangeWithinMonth": -10.434672375004409,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 12.9853096724528,
+  "regime": "BEAR"
+}

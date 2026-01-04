@@ -1,0 +1,14 @@
+{
+  "month": "2021-07",
+  "currency": "ARS",
+  "entryDate": "2021-07-01",
+  "entryPrice": 5712415.62,
+  "exitDate": "2021-07-31",
+  "exitPrice": 7475819.37,
+  "pctChangeWithinMonth": 30.869668233278862,
+  "daysPositive": 22,
+  "daysNegative": 8,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -5.683498428752211,
+  "regime": "BULL"
+}

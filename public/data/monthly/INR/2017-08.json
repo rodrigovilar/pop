@@ -1,0 +1,14 @@
+{
+  "month": "2017-08",
+  "currency": "INR",
+  "entryDate": "2017-08-01",
+  "entryPrice": 172601.09,
+  "exitDate": "2017-08-31",
+  "exitPrice": 328458.26,
+  "pctChangeWithinMonth": 90.29906473939418,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -0.651362621848092,
+  "regime": "BULL"
+}

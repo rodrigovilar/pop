@@ -1,0 +1,14 @@
+{
+  "month": "2022-01",
+  "currency": "SGD",
+  "entryDate": "2022-01-01",
+  "entryPrice": 64135.59,
+  "exitDate": "2022-01-31",
+  "exitPrice": 52132.54,
+  "pctChangeWithinMonth": -18.715115897429175,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -17.89646100965878,
+  "regime": "BEAR"
+}

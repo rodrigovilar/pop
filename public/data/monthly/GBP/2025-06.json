@@ -1,0 +1,14 @@
+{
+  "month": "2025-06",
+  "currency": "GBP",
+  "entryDate": "2025-06-01",
+  "entryPrice": 78516.12,
+  "exitDate": "2025-06-30",
+  "exitPrice": 78047.7,
+  "pctChangeWithinMonth": -0.5965908656719133,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 8.127315050394198,
+  "regime": "LATERAL"
+}

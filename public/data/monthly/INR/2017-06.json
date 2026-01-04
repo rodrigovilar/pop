@@ -1,0 +1,14 @@
+{
+  "month": "2017-06",
+  "currency": "INR",
+  "entryDate": "2017-06-01",
+  "entryPrice": 180249.07,
+  "exitDate": "2017-06-30",
+  "exitPrice": 175982.53,
+  "pctChangeWithinMonth": -2.3670246953285297,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 42.4776585579005,
+  "regime": "LATERAL"
+}

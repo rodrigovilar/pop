@@ -1,0 +1,14 @@
+{
+  "month": "2020-08",
+  "currency": "BRL",
+  "entryDate": "2020-08-01",
+  "entryPrice": 61298.06,
+  "exitDate": "2020-08-31",
+  "exitPrice": 64200,
+  "pctChangeWithinMonth": 4.734146561897721,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 22.620742245042802,
+  "regime": "LATERAL"
+}

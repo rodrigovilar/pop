@@ -1,0 +1,14 @@
+{
+  "month": "2020-08",
+  "currency": "JPY",
+  "entryDate": "2020-08-01",
+  "entryPrice": 1253513.47,
+  "exitDate": "2020-08-31",
+  "exitPrice": 1237874.25,
+  "pctChangeWithinMonth": -1.2476307893205145,
+  "daysPositive": 8,
+  "daysNegative": 22,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 26.284925995309965,
+  "regime": "LATERAL"
+}

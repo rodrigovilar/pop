@@ -1,0 +1,14 @@
+{
+  "month": "2022-04",
+  "currency": "ARS",
+  "entryDate": "2022-04-01",
+  "entryPrice": 8701192.63,
+  "exitDate": "2022-04-30",
+  "exitPrice": 7690384.18,
+  "pctChangeWithinMonth": -11.616895441607996,
+  "daysPositive": 2,
+  "daysNegative": 27,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -1.1294807380743894,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2017-09",
+  "currency": "CHF",
+  "entryDate": "2017-09-01",
+  "entryPrice": 4759.61,
+  "exitDate": "2017-09-30",
+  "exitPrice": 4382.89,
+  "pctChangeWithinMonth": -7.914934206794241,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 70.78448891424553,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2016-04",
+  "currency": "KRW",
+  "entryDate": "2016-04-01",
+  "entryPrice": 537832.11,
+  "exitDate": "2016-04-30",
+  "exitPrice": 515600,
+  "pctChangeWithinMonth": -4.1336524143194024,
+  "daysPositive": 11,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 5.107760192963045,
+  "regime": "LATERAL"
+}

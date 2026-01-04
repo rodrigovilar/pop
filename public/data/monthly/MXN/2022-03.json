@@ -1,0 +1,14 @@
+{
+  "month": "2022-03",
+  "currency": "MXN",
+  "entryDate": "2022-03-01",
+  "entryPrice": 917376.09,
+  "exitDate": "2022-03-31",
+  "exitPrice": 905326.65,
+  "pctChangeWithinMonth": -1.3134678493746161,
+  "daysPositive": 4,
+  "daysNegative": 26,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 14.214788038210276,
+  "regime": "LATERAL"
+}

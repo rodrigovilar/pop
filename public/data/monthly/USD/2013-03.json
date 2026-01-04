@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2013-03-01",
   "entryPrice": 34.5,
+  "exitDate": "2013-03-31",
+  "exitPrice": 93.03,
+  "pctChangeWithinMonth": 169.65217391304347,
   "daysPositive": 28,
   "daysNegative": 1,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 68.29268292682927,
-  "regime": "BULL",
-  "exitDate": "2013-03-31",
-  "exitPrice": 37.28,
-  "pctChangeWithinMonth": 8.06
+  "regime": "BULL"
 }

@@ -1,0 +1,14 @@
+{
+  "month": "2021-09",
+  "currency": "JPY",
+  "entryDate": "2021-09-01",
+  "entryPrice": 5371847.82,
+  "exitDate": "2021-09-30",
+  "exitPrice": 4878868.62,
+  "pctChangeWithinMonth": -9.177087968958887,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 22.618904194387476,
+  "regime": "LATERAL"
+}

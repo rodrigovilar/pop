@@ -1,0 +1,14 @@
+{
+  "month": "2021-03",
+  "currency": "CAD",
+  "entryDate": "2021-03-01",
+  "entryPrice": 62862.21,
+  "exitDate": "2021-03-31",
+  "exitPrice": 73927.46,
+  "pctChangeWithinMonth": 17.602387825690517,
+  "daysPositive": 26,
+  "daysNegative": 4,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 45.80876018665464,
+  "regime": "BULL"
+}

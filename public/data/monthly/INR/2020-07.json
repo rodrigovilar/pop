@@ -1,0 +1,14 @@
+{
+  "month": "2020-07",
+  "currency": "INR",
+  "entryDate": "2020-07-01",
+  "entryPrice": 612367.05,
+  "exitDate": "2020-07-31",
+  "exitPrice": 501155.1,
+  "pctChangeWithinMonth": -18.160995109060828,
+  "daysPositive": 2,
+  "daysNegative": 28,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -2.7189128104226294,
+  "regime": "BEAR"
+}

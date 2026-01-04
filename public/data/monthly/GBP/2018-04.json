@@ -1,0 +1,14 @@
+{
+  "month": "2018-04",
+  "currency": "GBP",
+  "entryDate": "2018-04-01",
+  "entryPrice": 4892.83,
+  "exitDate": "2018-04-30",
+  "exitPrice": 6704.03,
+  "pctChangeWithinMonth": 37.01743162954772,
+  "daysPositive": 23,
+  "daysNegative": 6,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -38.374661823458,
+  "regime": "BULL"
+}

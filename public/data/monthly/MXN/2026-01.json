@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "MXN",
+  "entryDate": "2026-01-01",
+  "entryPrice": 1599035.64,
+  "exitDate": "2026-01-04",
+  "exitPrice": 1634053.64,
+  "pctChangeWithinMonth": 2.189944934560683,
+  "daysPositive": 3,
+  "daysNegative": 0,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": 0.9989846512251112,
+  "regime": "LATERAL"
+}

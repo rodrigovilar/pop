@@ -1,0 +1,14 @@
+{
+  "month": "2020-09",
+  "currency": "EUR",
+  "entryDate": "2020-09-01",
+  "entryPrice": 10008.41,
+  "exitDate": "2020-09-30",
+  "exitPrice": 9195.81,
+  "pctChangeWithinMonth": -8.119171776535937,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -0.34392285135344564,
+  "regime": "LATERAL"
+}

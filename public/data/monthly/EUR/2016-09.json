@@ -1,0 +1,14 @@
+{
+  "month": "2016-09",
+  "currency": "EUR",
+  "entryDate": "2016-09-01",
+  "entryPrice": 510.22,
+  "exitDate": "2016-09-30",
+  "exitPrice": 545.3,
+  "pctChangeWithinMonth": 6.875465485476838,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -4.653161907609504,
+  "regime": "LATERAL"
+}

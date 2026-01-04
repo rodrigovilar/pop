@@ -1,0 +1,14 @@
+{
+  "month": "2025-10",
+  "currency": "SGD",
+  "entryDate": "2025-10-01",
+  "entryPrice": 152500,
+  "exitDate": "2025-10-31",
+  "exitPrice": 142472.32,
+  "pctChangeWithinMonth": -6.575527868852454,
+  "daysPositive": 8,
+  "daysNegative": 22,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 8.724658331870002,
+  "regime": "LATERAL"
+}

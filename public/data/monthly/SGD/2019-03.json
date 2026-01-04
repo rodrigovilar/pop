@@ -1,0 +1,14 @@
+{
+  "month": "2019-03",
+  "currency": "SGD",
+  "entryDate": "2019-03-01",
+  "entryPrice": 5158.79,
+  "exitDate": "2019-03-31",
+  "exitPrice": 5537.51,
+  "pctChangeWithinMonth": 7.341256379887537,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 11.037236332328884,
+  "regime": "LATERAL"
+}

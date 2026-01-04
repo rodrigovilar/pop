@@ -1,0 +1,14 @@
+{
+  "month": "2025-04",
+  "currency": "CAD",
+  "entryDate": "2025-04-01",
+  "entryPrice": 121399.95,
+  "exitDate": "2025-04-30",
+  "exitPrice": 129825.22,
+  "pctChangeWithinMonth": 6.940093467913293,
+  "daysPositive": 9,
+  "daysNegative": 20,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -2.644861138154214,
+  "regime": "LATERAL"
+}

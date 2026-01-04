@@ -1,0 +1,14 @@
+{
+  "month": "2025-11",
+  "currency": "JPY",
+  "entryDate": "2025-11-01",
+  "entryPrice": 16972399.3,
+  "exitDate": "2025-11-30",
+  "exitPrice": 14124647.43,
+  "pctChangeWithinMonth": -16.778723029454067,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -2.7138357361556285,
+  "regime": "BEAR"
+}

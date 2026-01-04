@@ -1,0 +1,14 @@
+{
+  "month": "2017-03",
+  "currency": "BRL",
+  "entryDate": "2017-03-01",
+  "entryPrice": 3800,
+  "exitDate": "2017-03-31",
+  "exitPrice": 3585.51,
+  "pctChangeWithinMonth": -5.644473684210521,
+  "daysPositive": 12,
+  "daysNegative": 18,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 26.920507682030724,
+  "regime": "LATERAL"
+}

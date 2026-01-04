@@ -1,0 +1,14 @@
+{
+  "month": "2015-05",
+  "currency": "BRL",
+  "entryDate": "2015-05-01",
+  "entryPrice": 737.56,
+  "exitDate": "2015-05-31",
+  "exitPrice": 768.98,
+  "pctChangeWithinMonth": 4.259992407397375,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -11.66840321440976,
+  "regime": "LATERAL"
+}

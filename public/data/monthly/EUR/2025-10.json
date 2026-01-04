@@ -1,0 +1,14 @@
+{
+  "month": "2025-10",
+  "currency": "EUR",
+  "entryDate": "2025-10-01",
+  "entryPrice": 101056.84,
+  "exitDate": "2025-10-31",
+  "exitPrice": 94889.15,
+  "pctChangeWithinMonth": -6.1031890567724085,
+  "daysPositive": 8,
+  "daysNegative": 22,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 8.364346350400737,
+  "regime": "LATERAL"
+}

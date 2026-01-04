@@ -1,0 +1,14 @@
+{
+  "month": "2013-12",
+  "currency": "KRW",
+  "entryDate": "2013-12-01",
+  "entryPrice": 1586722.26,
+  "exitDate": "2013-12-31",
+  "exitPrice": 749941.12,
+  "pctChangeWithinMonth": -52.736459372543244,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 629.5003418033784,
+  "regime": "BEAR"
+}

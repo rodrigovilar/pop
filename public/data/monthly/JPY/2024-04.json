@@ -1,0 +1,14 @@
+{
+  "month": "2024-04",
+  "currency": "JPY",
+  "entryDate": "2024-04-01",
+  "entryPrice": 10600972.07,
+  "exitDate": "2024-04-30",
+  "exitPrice": 9628019.66,
+  "pctChangeWithinMonth": -9.177954659020248,
+  "daysPositive": 3,
+  "daysNegative": 26,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 13.016945117336466,
+  "regime": "LATERAL"
+}

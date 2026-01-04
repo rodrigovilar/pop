@@ -1,0 +1,14 @@
+{
+  "month": "2020-07",
+  "currency": "JPY",
+  "entryDate": "2020-07-01",
+  "entryPrice": 992607.36,
+  "exitDate": "2020-07-31",
+  "exitPrice": 1201834.06,
+  "pctChangeWithinMonth": 21.07849573067845,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -9.35731074942638,
+  "regime": "BULL"
+}

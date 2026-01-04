@@ -1,0 +1,14 @@
+{
+  "month": "2025-07",
+  "currency": "CHF",
+  "entryDate": "2025-07-01",
+  "entryPrice": 83616.5,
+  "exitDate": "2025-07-31",
+  "exitPrice": 94333.4,
+  "pctChangeWithinMonth": 12.816728755688164,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -3.985315867314596,
+  "regime": "BULL"
+}

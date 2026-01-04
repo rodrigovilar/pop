@@ -1,0 +1,14 @@
+{
+  "month": "2015-05",
+  "currency": "GBP",
+  "entryDate": "2015-05-01",
+  "entryPrice": 159.92,
+  "exitDate": "2015-05-31",
+  "exitPrice": 152.81,
+  "pctChangeWithinMonth": -4.445972986493238,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -4.809523809523817,
+  "regime": "LATERAL"
+}

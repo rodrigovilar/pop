@@ -1,0 +1,14 @@
+{
+  "month": "2021-05",
+  "currency": "EUR",
+  "entryDate": "2021-05-01",
+  "entryPrice": 48018.9,
+  "exitDate": "2021-05-31",
+  "exitPrice": 30490.9,
+  "pctChangeWithinMonth": -36.50229388844809,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -3.7514541840814557,
+  "regime": "BEAR"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2021-05",
+  "currency": "KRW",
+  "entryDate": "2021-05-01",
+  "entryPrice": 68870033.97,
+  "exitDate": "2021-05-31",
+  "exitPrice": 43715168.78,
+  "pctChangeWithinMonth": -36.52512383100832,
+  "daysPositive": 5,
+  "daysNegative": 25,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -4.8441019654027615,
+  "regime": "BEAR"
+}

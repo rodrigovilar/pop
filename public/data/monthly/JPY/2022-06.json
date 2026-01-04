@@ -1,0 +1,14 @@
+{
+  "month": "2022-06",
+  "currency": "JPY",
+  "entryDate": "2022-06-01",
+  "entryPrice": 3876304.43,
+  "exitDate": "2022-06-30",
+  "exitPrice": 2705919.41,
+  "pctChangeWithinMonth": -30.193320497275806,
+  "daysPositive": 9,
+  "daysNegative": 20,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -22.50148645609811,
+  "regime": "BEAR"
+}

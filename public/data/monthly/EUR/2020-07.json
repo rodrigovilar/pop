@@ -1,0 +1,14 @@
+{
+  "month": "2020-07",
+  "currency": "EUR",
+  "entryDate": "2020-07-01",
+  "entryPrice": 8212.85,
+  "exitDate": "2020-07-31",
+  "exitPrice": 9643.78,
+  "pctChangeWithinMonth": 17.423062639643973,
+  "daysPositive": 15,
+  "daysNegative": 15,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -9.888820984559128,
+  "regime": "BULL"
+}

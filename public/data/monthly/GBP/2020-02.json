@@ -1,0 +1,14 @@
+{
+  "month": "2020-02",
+  "currency": "GBP",
+  "entryDate": "2020-02-01",
+  "entryPrice": 7117.49,
+  "exitDate": "2020-02-29",
+  "exitPrice": 6660.61,
+  "pctChangeWithinMonth": -6.419116851586727,
+  "daysPositive": 22,
+  "daysNegative": 6,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": 31.096961235398336,
+  "regime": "LATERAL"
+}

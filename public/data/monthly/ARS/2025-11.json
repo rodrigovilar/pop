@@ -1,0 +1,14 @@
+{
+  "month": "2025-11",
+  "currency": "ARS",
+  "entryDate": "2025-11-01",
+  "entryPrice": 165180735.08,
+  "exitDate": "2025-11-30",
+  "exitPrice": 137092805.32,
+  "pctChangeWithinMonth": -17.00436176555125,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -8.487051497268684,
+  "regime": "BEAR"
+}

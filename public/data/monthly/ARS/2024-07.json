@@ -1,0 +1,14 @@
+{
+  "month": "2024-07",
+  "currency": "ARS",
+  "entryDate": "2024-07-01",
+  "entryPrice": 88286504.01,
+  "exitDate": "2024-07-31",
+  "exitPrice": 85058570.19,
+  "pctChangeWithinMonth": -3.6562030133556847,
+  "daysPositive": 12,
+  "daysNegative": 18,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 6.051688322650915,
+  "regime": "LATERAL"
+}

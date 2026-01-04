@@ -1,0 +1,14 @@
+{
+  "month": "2011-10",
+  "currency": "EUR",
+  "entryDate": "2011-10-01",
+  "entryPrice": 3.81,
+  "exitDate": "2011-10-31",
+  "exitPrice": 2.301,
+  "pctChangeWithinMonth": -39.60629921259842,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -40.450140668959044,
+  "regime": "BEAR"
+}

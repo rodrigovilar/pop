@@ -1,0 +1,14 @@
+{
+  "month": "2022-11",
+  "currency": "HKD",
+  "entryDate": "2022-11-01",
+  "entryPrice": 160381.23,
+  "exitDate": "2022-11-30",
+  "exitPrice": 133778.24,
+  "pctChangeWithinMonth": -16.58734628734299,
+  "daysPositive": 4,
+  "daysNegative": 25,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 5.941055926579804,
+  "regime": "BEAR"
+}

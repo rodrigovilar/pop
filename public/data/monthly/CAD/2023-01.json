@@ -1,0 +1,14 @@
+{
+  "month": "2023-01",
+  "currency": "CAD",
+  "entryDate": "2023-01-01",
+  "entryPrice": 22185.52,
+  "exitDate": "2023-01-31",
+  "exitPrice": 30763.17,
+  "pctChangeWithinMonth": 38.663281275354365,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -2.555588351042897,
+  "regime": "BULL"
+}

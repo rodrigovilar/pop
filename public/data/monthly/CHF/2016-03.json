@@ -1,0 +1,14 @@
+{
+  "month": "2016-03",
+  "currency": "CHF",
+  "entryDate": "2016-03-01",
+  "entryPrice": 463.37,
+  "exitDate": "2016-03-31",
+  "exitPrice": 429.18,
+  "pctChangeWithinMonth": -7.378552776398989,
+  "daysPositive": 12,
+  "daysNegative": 18,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 15.19453076444997,
+  "regime": "LATERAL"
+}

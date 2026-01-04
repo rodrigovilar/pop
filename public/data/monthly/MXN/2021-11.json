@@ -1,0 +1,14 @@
+{
+  "month": "2021-11",
+  "currency": "MXN",
+  "entryDate": "2021-11-01",
+  "entryPrice": 1270500,
+  "exitDate": "2021-11-30",
+  "exitPrice": 1224455.46,
+  "pctChangeWithinMonth": -3.6241275088547846,
+  "daysPositive": 12,
+  "daysNegative": 17,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 29.359799421751003,
+  "regime": "LATERAL"
+}

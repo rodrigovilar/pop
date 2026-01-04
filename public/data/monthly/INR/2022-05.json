@@ -1,0 +1,14 @@
+{
+  "month": "2022-05",
+  "currency": "INR",
+  "entryDate": "2022-05-01",
+  "entryPrice": 432351.3,
+  "exitDate": "2022-05-31",
+  "exitPrice": 520223.55,
+  "pctChangeWithinMonth": 20.324271026824714,
+  "daysPositive": 21,
+  "daysNegative": 9,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 1.606097691777724,
+  "regime": "BULL"
+}

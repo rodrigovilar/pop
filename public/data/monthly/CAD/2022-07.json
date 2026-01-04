@@ -1,0 +1,14 @@
+{
+  "month": "2022-07",
+  "currency": "CAD",
+  "entryDate": "2022-07-01",
+  "entryPrice": 24870.73,
+  "exitDate": "2022-07-31",
+  "exitPrice": 30118.05,
+  "pctChangeWithinMonth": 21.09837547993163,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -34.09567585457804,
+  "regime": "BULL"
+}

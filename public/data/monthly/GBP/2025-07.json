@@ -1,0 +1,14 @@
+{
+  "month": "2025-07",
+  "currency": "GBP",
+  "entryDate": "2025-07-01",
+  "entryPrice": 76932.89,
+  "exitDate": "2025-07-31",
+  "exitPrice": 87627.25,
+  "pctChangeWithinMonth": 13.900894662867858,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -2.016439426706256,
+  "regime": "BULL"
+}

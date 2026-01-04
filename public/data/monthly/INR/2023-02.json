@@ -1,0 +1,14 @@
+{
+  "month": "2023-02",
+  "currency": "INR",
+  "entryDate": "2023-02-01",
+  "entryPrice": 1933885,
+  "exitDate": "2023-02-28",
+  "exitPrice": 1922785.69,
+  "pctChangeWithinMonth": -0.5739384710052592,
+  "daysPositive": 13,
+  "daysNegative": 14,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": 39.94690023606046,
+  "regime": "LATERAL"
+}

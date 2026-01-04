@@ -1,0 +1,14 @@
+{
+  "month": "2015-12",
+  "currency": "MXN",
+  "entryDate": "2015-12-01",
+  "entryPrice": 6227.01,
+  "exitDate": "2015-12-31",
+  "exitPrice": 7681.56,
+  "pctChangeWithinMonth": 23.358722725674124,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 9.906772660844517,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2020-08",
+  "currency": "CAD",
+  "entryDate": "2020-08-01",
+  "entryPrice": 16065.17,
+  "exitDate": "2020-08-31",
+  "exitPrice": 15322.91,
+  "pctChangeWithinMonth": -4.620305916464004,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 27.700095148083655,
+  "regime": "LATERAL"
+}

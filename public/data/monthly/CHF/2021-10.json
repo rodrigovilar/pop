@@ -1,0 +1,14 @@
+{
+  "month": "2021-10",
+  "currency": "CHF",
+  "entryDate": "2021-10-01",
+  "entryPrice": 44949.37,
+  "exitDate": "2021-10-31",
+  "exitPrice": 56097.81,
+  "pctChangeWithinMonth": 24.802216360318276,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 0.8040214528317,
+  "regime": "BULL"
+}

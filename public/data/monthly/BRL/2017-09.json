@@ -1,0 +1,14 @@
+{
+  "month": "2017-09",
+  "currency": "BRL",
+  "entryDate": "2017-09-01",
+  "entryPrice": 18250,
+  "exitDate": "2017-09-30",
+  "exitPrice": 14250,
+  "pctChangeWithinMonth": -21.91780821917808,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 102.84561836792084,
+  "regime": "BEAR"
+}

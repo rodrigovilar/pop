@@ -1,0 +1,14 @@
+{
+  "month": "2022-03",
+  "currency": "BRL",
+  "entryDate": "2022-03-01",
+  "entryPrice": 228607.41,
+  "exitDate": "2022-03-31",
+  "exitPrice": 217755.07,
+  "pctChangeWithinMonth": -4.7471514593512065,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 11.233331354618464,
+  "regime": "LATERAL"
+}

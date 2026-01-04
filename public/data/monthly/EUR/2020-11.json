@@ -1,0 +1,14 @@
+{
+  "month": "2020-11",
+  "currency": "EUR",
+  "entryDate": "2020-11-01",
+  "entryPrice": 11819.12,
+  "exitDate": "2020-11-30",
+  "exitPrice": 16424.12,
+  "pctChangeWithinMonth": 38.96229160885073,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 30.600320005657565,
+  "regime": "BULL"
+}

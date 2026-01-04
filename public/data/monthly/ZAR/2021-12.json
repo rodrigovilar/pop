@@ -1,0 +1,14 @@
+{
+  "month": "2021-12",
+  "currency": "ZAR",
+  "entryDate": "2021-12-01",
+  "entryPrice": 928894.51,
+  "exitDate": "2021-12-31",
+  "exitPrice": 751649.98,
+  "pctChangeWithinMonth": -19.08123345459325,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -2.529862905852216,
+  "regime": "BEAR"
+}

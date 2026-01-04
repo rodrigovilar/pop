@@ -1,0 +1,14 @@
+{
+  "month": "2021-07",
+  "currency": "GBP",
+  "entryDate": "2021-07-01",
+  "entryPrice": 24269.75,
+  "exitDate": "2021-07-31",
+  "exitPrice": 29418.94,
+  "pctChangeWithinMonth": 21.216493783413505,
+  "daysPositive": 15,
+  "daysNegative": 15,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -6.394512432649255,
+  "regime": "BULL"
+}

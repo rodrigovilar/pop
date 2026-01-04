@@ -1,0 +1,14 @@
+{
+  "month": "2025-02",
+  "currency": "AUD",
+  "entryDate": "2025-02-01",
+  "entryPrice": 162535.16,
+  "exitDate": "2025-02-28",
+  "exitPrice": 135884.56,
+  "pctChangeWithinMonth": -16.396821463122198,
+  "daysPositive": 1,
+  "daysNegative": 26,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": 6.326636335132117,
+  "regime": "BEAR"
+}

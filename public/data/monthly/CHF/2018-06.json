@@ -1,0 +1,14 @@
+{
+  "month": "2018-06",
+  "currency": "CHF",
+  "entryDate": "2018-06-01",
+  "entryPrice": 7434.43,
+  "exitDate": "2018-06-30",
+  "exitPrice": 6265.84,
+  "pctChangeWithinMonth": -15.71862267853756,
+  "daysPositive": 8,
+  "daysNegative": 21,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -22.107706008696105,
+  "regime": "BEAR"
+}

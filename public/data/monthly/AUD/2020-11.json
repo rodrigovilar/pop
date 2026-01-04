@@ -1,0 +1,14 @@
+{
+  "month": "2020-11",
+  "currency": "AUD",
+  "entryDate": "2020-11-01",
+  "entryPrice": 19669.83,
+  "exitDate": "2020-11-30",
+  "exitPrice": 26823.21,
+  "pctChangeWithinMonth": 36.36726906129843,
+  "daysPositive": 27,
+  "daysNegative": 2,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 32.54111202078092,
+  "regime": "BULL"
+}

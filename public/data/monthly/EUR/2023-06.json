@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "EUR",
+  "entryDate": "2023-06-01",
+  "entryPrice": 24947.76,
+  "exitDate": "2023-06-30",
+  "exitPrice": 27918.31,
+  "pctChangeWithinMonth": 11.907081036533954,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -2.67847425156148,
+  "regime": "BULL"
+}

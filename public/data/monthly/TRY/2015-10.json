@@ -1,0 +1,14 @@
+{
+  "month": "2015-10",
+  "currency": "TRY",
+  "entryDate": "2015-10-01",
+  "entryPrice": 716.35,
+  "exitDate": "2015-10-31",
+  "exitPrice": 960.61,
+  "pctChangeWithinMonth": 34.09785719271306,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 7.360170253581922,
+  "regime": "BULL"
+}

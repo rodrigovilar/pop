@@ -1,0 +1,14 @@
+{
+  "month": "2017-09",
+  "currency": "GBP",
+  "entryDate": "2017-09-01",
+  "entryPrice": 3836.54,
+  "exitDate": "2017-09-30",
+  "exitPrice": 3282.51,
+  "pctChangeWithinMonth": -14.440876414686144,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 82.38319800718781,
+  "regime": "BEAR"
+}

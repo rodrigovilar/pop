@@ -1,0 +1,14 @@
+{
+  "month": "2018-10",
+  "currency": "JPY",
+  "entryDate": "2018-10-01",
+  "entryPrice": 745575.48,
+  "exitDate": "2018-10-31",
+  "exitPrice": 711198.25,
+  "pctChangeWithinMonth": -4.610831622306032,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -6.700016334291026,
+  "regime": "LATERAL"
+}

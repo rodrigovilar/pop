@@ -1,0 +1,14 @@
+{
+  "month": "2022-10",
+  "currency": "JPY",
+  "entryDate": "2022-10-01",
+  "entryPrice": 2801313.36,
+  "exitDate": "2022-10-31",
+  "exitPrice": 3050210.11,
+  "pctChangeWithinMonth": 8.885002069172296,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -0.6263669751260924,
+  "regime": "LATERAL"
+}

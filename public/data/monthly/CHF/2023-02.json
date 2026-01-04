@@ -1,0 +1,14 @@
+{
+  "month": "2023-02",
+  "currency": "CHF",
+  "entryDate": "2023-02-01",
+  "entryPrice": 21590.84,
+  "exitDate": "2023-02-28",
+  "exitPrice": 21756.23,
+  "pctChangeWithinMonth": 0.7660192933669993,
+  "daysPositive": 16,
+  "daysNegative": 11,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": 41.083681781440546,
+  "regime": "LATERAL"
+}

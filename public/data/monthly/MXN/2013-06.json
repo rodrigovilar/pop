@@ -1,0 +1,14 @@
+{
+  "month": "2013-06",
+  "currency": "MXN",
+  "entryDate": "2013-06-01",
+  "entryPrice": 1513.12,
+  "exitDate": "2013-06-30",
+  "exitPrice": 1650.03,
+  "pctChangeWithinMonth": 9.048191815586344,
+  "daysPositive": 13,
+  "daysNegative": 15,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -12.539955030721304,
+  "regime": "LATERAL"
+}

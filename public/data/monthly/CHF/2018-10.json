@@ -1,0 +1,14 @@
+{
+  "month": "2018-10",
+  "currency": "CHF",
+  "entryDate": "2018-10-01",
+  "entryPrice": 6438.04,
+  "exitDate": "2018-10-31",
+  "exitPrice": 6369.07,
+  "pctChangeWithinMonth": -1.0712887773297504,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -8.505470736286206,
+  "regime": "LATERAL"
+}

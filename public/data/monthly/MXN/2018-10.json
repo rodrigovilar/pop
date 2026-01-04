@@ -1,0 +1,14 @@
+{
+  "month": "2018-10",
+  "currency": "MXN",
+  "entryDate": "2018-10-01",
+  "entryPrice": 121415,
+  "exitDate": "2018-10-31",
+  "exitPrice": 127689.08,
+  "pctChangeWithinMonth": 5.167466952188775,
+  "daysPositive": 23,
+  "daysNegative": 7,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -11.246345029239766,
+  "regime": "LATERAL"
+}

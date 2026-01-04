@@ -1,0 +1,14 @@
+{
+  "month": "2020-05",
+  "currency": "MXN",
+  "entryDate": "2020-05-01",
+  "entryPrice": 216948.31,
+  "exitDate": "2020-05-31",
+  "exitPrice": 209979.68,
+  "pctChangeWithinMonth": -3.212115365176159,
+  "daysPositive": 14,
+  "daysNegative": 16,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 34.70666905346762,
+  "regime": "LATERAL"
+}

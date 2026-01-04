@@ -1,0 +1,14 @@
+{
+  "month": "2013-07",
+  "currency": "NZD",
+  "entryDate": "2013-07-01",
+  "entryPrice": 142.5,
+  "exitDate": "2013-07-31",
+  "exitPrice": 150.86,
+  "pctChangeWithinMonth": 5.866666666666676,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -20.833333333333336,
+  "regime": "LATERAL"
+}

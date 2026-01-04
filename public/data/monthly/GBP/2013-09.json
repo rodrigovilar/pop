@@ -1,0 +1,14 @@
+{
+  "month": "2013-09",
+  "currency": "GBP",
+  "entryDate": "2013-09-01",
+  "entryPrice": 92.49,
+  "exitDate": "2013-09-30",
+  "exitPrice": 87.58,
+  "pctChangeWithinMonth": -5.3086820196778,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 36.014705882352935,
+  "regime": "LATERAL"
+}

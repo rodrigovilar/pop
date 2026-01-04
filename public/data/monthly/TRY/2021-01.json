@@ -1,0 +1,14 @@
+{
+  "month": "2021-01",
+  "currency": "TRY",
+  "entryDate": "2021-01-01",
+  "entryPrice": 219022.9,
+  "exitDate": "2021-01-31",
+  "exitPrice": 241048.27,
+  "pctChangeWithinMonth": 10.05619503713995,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 47.67542393754428,
+  "regime": "BULL"
+}

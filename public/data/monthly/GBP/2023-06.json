@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "GBP",
+  "entryDate": "2023-06-01",
+  "entryPrice": 21428.31,
+  "exitDate": "2023-06-30",
+  "exitPrice": 24037.74,
+  "pctChangeWithinMonth": 12.177488565360498,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -4.8330672327687765,
+  "regime": "BULL"
+}

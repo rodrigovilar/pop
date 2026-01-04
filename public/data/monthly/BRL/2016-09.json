@@ -1,0 +1,14 @@
+{
+  "month": "2016-09",
+  "currency": "BRL",
+  "entryDate": "2016-09-01",
+  "entryPrice": 1896.01,
+  "exitDate": "2016-09-30",
+  "exitPrice": 1970.1,
+  "pctChangeWithinMonth": 3.9076798118153344,
+  "daysPositive": 29,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -4.818775100401607,
+  "regime": "LATERAL"
+}

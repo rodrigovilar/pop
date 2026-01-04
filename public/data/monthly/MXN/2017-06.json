@@ -1,0 +1,14 @@
+{
+  "month": "2017-06",
+  "currency": "MXN",
+  "entryDate": "2017-06-01",
+  "entryPrice": 45900,
+  "exitDate": "2017-06-30",
+  "exitPrice": 45368.8,
+  "pctChangeWithinMonth": -1.1572984749455273,
+  "daysPositive": 24,
+  "daysNegative": 5,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 66.89962314865046,
+  "regime": "LATERAL"
+}

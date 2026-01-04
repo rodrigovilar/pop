@@ -1,0 +1,14 @@
+{
+  "month": "2017-10",
+  "currency": "ZAR",
+  "entryDate": "2017-10-01",
+  "entryPrice": 59500,
+  "exitDate": "2017-10-31",
+  "exitPrice": 96889.98,
+  "pctChangeWithinMonth": 62.8403025210084,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -11.061285500747383,
+  "regime": "BULL"
+}

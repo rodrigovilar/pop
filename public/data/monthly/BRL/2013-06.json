@@ -1,0 +1,14 @@
+{
+  "month": "2013-06",
+  "currency": "BRL",
+  "entryDate": "2013-06-01",
+  "entryPrice": 301.76,
+  "exitDate": "2013-06-30",
+  "exitPrice": 246.99,
+  "pctChangeWithinMonth": -18.150185577942732,
+  "daysPositive": 0,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 23.41417528935422,
+  "regime": "BEAR"
+}

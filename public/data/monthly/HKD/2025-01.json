@@ -1,0 +1,14 @@
+{
+  "month": "2025-01",
+  "currency": "HKD",
+  "entryDate": "2025-01-21",
+  "entryPrice": 824463,
+  "exitDate": "2025-01-31",
+  "exitPrice": 795341,
+  "pctChangeWithinMonth": -3.5322385601294415,
+  "daysPositive": 0,
+  "daysNegative": 10,
+  "daysTotal": 11,
+  "pctChangeVsPrevMonthStart": 342.84016968871424,
+  "regime": "LATERAL"
+}

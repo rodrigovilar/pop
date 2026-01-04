@@ -1,0 +1,14 @@
+{
+  "month": "2022-11",
+  "currency": "INR",
+  "entryDate": "2022-11-01",
+  "entryPrice": 1682866.25,
+  "exitDate": "2022-11-30",
+  "exitPrice": 1388245.35,
+  "pctChangeWithinMonth": -17.507089467151644,
+  "daysPositive": 3,
+  "daysNegative": 26,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 259.7795874511648,
+  "regime": "BEAR"
+}

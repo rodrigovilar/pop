@@ -1,0 +1,14 @@
+{
+  "month": "2015-05",
+  "currency": "EUR",
+  "entryDate": "2015-05-01",
+  "entryPrice": 208.28,
+  "exitDate": "2015-05-31",
+  "exitPrice": 208.44,
+  "pctChangeWithinMonth": 0.07681966583445198,
+  "daysPositive": 24,
+  "daysNegative": 6,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -9.016250218416909,
+  "regime": "LATERAL"
+}

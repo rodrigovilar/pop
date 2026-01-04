@@ -1,0 +1,14 @@
+{
+  "month": "2017-09",
+  "currency": "AUD",
+  "entryDate": "2017-09-01",
+  "entryPrice": 6288.94,
+  "exitDate": "2017-09-30",
+  "exitPrice": 5528.35,
+  "pctChangeWithinMonth": -12.094088987969345,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 68.26775403616358,
+  "regime": "BEAR"
+}

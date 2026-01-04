@@ -1,0 +1,14 @@
+{
+  "month": "2014-06",
+  "currency": "GBP",
+  "entryDate": "2014-06-01",
+  "entryPrice": 405.57,
+  "exitDate": "2014-06-30",
+  "exitPrice": 399,
+  "pctChangeWithinMonth": -1.6199423034248077,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 43.174356620891736,
+  "regime": "LATERAL"
+}

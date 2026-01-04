@@ -1,0 +1,14 @@
+{
+  "month": "2019-11",
+  "currency": "AUD",
+  "entryDate": "2019-11-01",
+  "entryPrice": 13408.47,
+  "exitDate": "2019-11-30",
+  "exitPrice": 11366.68,
+  "pctChangeWithinMonth": -15.22761359051405,
+  "daysPositive": 4,
+  "daysNegative": 25,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 7.633369027914005,
+  "regime": "BEAR"
+}

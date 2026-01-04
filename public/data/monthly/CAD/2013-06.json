@@ -1,0 +1,14 @@
+{
+  "month": "2013-06",
+  "currency": "CAD",
+  "entryDate": "2013-06-01",
+  "entryPrice": 141.01,
+  "exitDate": "2013-06-30",
+  "exitPrice": 121.38,
+  "pctChangeWithinMonth": -13.920998510743917,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 5.831582107475219,
+  "regime": "BEAR"
+}

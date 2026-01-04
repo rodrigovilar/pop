@@ -1,0 +1,14 @@
+{
+  "month": "2022-07",
+  "currency": "MXN",
+  "entryDate": "2022-07-01",
+  "entryPrice": 390815.99,
+  "exitDate": "2022-07-31",
+  "exitPrice": 474800,
+  "pctChangeWithinMonth": 21.48939965327417,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -33.474487726851564,
+  "regime": "BULL"
+}

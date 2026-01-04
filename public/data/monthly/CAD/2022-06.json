@@ -1,0 +1,14 @@
+{
+  "month": "2022-06",
+  "currency": "CAD",
+  "entryDate": "2022-06-01",
+  "entryPrice": 37737.63,
+  "exitDate": "2022-06-30",
+  "exitPrice": 25642.36,
+  "pctChangeWithinMonth": -32.05095285527999,
+  "daysPositive": 5,
+  "daysNegative": 24,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -23.575207811938654,
+  "regime": "BEAR"
+}

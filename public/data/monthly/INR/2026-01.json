@@ -1,0 +1,14 @@
+{
+  "month": "2026-01",
+  "currency": "INR",
+  "entryDate": "2026-01-01",
+  "entryPrice": 4311730.63,
+  "exitDate": "2026-01-04",
+  "exitPrice": 7586672.37,
+  "pctChangeWithinMonth": 75.95422861562203,
+  "daysPositive": 1,
+  "daysNegative": 2,
+  "daysTotal": 4,
+  "pctChangeVsPrevMonthStart": -4.050857584347411,
+  "regime": "BULL"
+}

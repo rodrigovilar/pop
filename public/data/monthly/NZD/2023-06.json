@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "NZD",
+  "entryDate": "2023-06-01",
+  "entryPrice": 44076.44,
+  "exitDate": "2023-06-30",
+  "exitPrice": 49471.25,
+  "pctChangeWithinMonth": 12.239668176467966,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 3.9077466086986923,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2017-12",
+  "currency": "SGD",
+  "entryDate": "2017-12-01",
+  "entryPrice": 14799.53,
+  "exitDate": "2017-12-31",
+  "exitPrice": 19710.39,
+  "pctChangeWithinMonth": 33.18254025634597,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 61.759408029205055,
+  "regime": "BULL"
+}

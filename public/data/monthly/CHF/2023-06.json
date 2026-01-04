@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "CHF",
+  "entryDate": "2023-06-01",
+  "entryPrice": 24304.82,
+  "exitDate": "2023-06-30",
+  "exitPrice": 27345.1,
+  "pctChangeWithinMonth": 12.508959128271671,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -3.572811497237099,
+  "regime": "BULL"
+}

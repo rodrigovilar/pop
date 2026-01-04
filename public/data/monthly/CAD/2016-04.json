@@ -1,0 +1,14 @@
+{
+  "month": "2016-04",
+  "currency": "CAD",
+  "entryDate": "2016-04-01",
+  "entryPrice": 544.61,
+  "exitDate": "2016-04-30",
+  "exitPrice": 570.99,
+  "pctChangeWithinMonth": 4.843833201740694,
+  "daysPositive": 28,
+  "daysNegative": 1,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -6.268178923635606,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2019-03",
+  "currency": "GBP",
+  "entryDate": "2019-03-01",
+  "entryPrice": 2905.72,
+  "exitDate": "2019-03-31",
+  "exitPrice": 3148.41,
+  "pctChangeWithinMonth": 8.352146800104624,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 9.725169739217122,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2014-08",
+  "currency": "ARS",
+  "entryDate": "2014-08-01",
+  "entryPrice": 7481.83,
+  "exitDate": "2014-08-31",
+  "exitPrice": 7509.12,
+  "pctChangeWithinMonth": 0.36475033514527816,
+  "daysPositive": 1,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 5.577145598735635,
+  "regime": "LATERAL"
+}

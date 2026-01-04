@@ -1,0 +1,14 @@
+{
+  "month": "2023-06",
+  "currency": "JPY",
+  "entryDate": "2023-06-01",
+  "entryPrice": 3724379.79,
+  "exitDate": "2023-06-30",
+  "exitPrice": 4406143.32,
+  "pctChangeWithinMonth": 18.30542448518657,
+  "daysPositive": 19,
+  "daysNegative": 10,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -3.8693265465941624,
+  "regime": "BULL"
+}

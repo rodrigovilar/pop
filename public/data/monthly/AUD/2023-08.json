@@ -1,0 +1,14 @@
+{
+  "month": "2023-08",
+  "currency": "AUD",
+  "entryDate": "2023-08-01",
+  "entryPrice": 44910.4,
+  "exitDate": "2023-08-31",
+  "exitPrice": 40149.86,
+  "pctChangeWithinMonth": -10.60008372225587,
+  "daysPositive": 8,
+  "daysNegative": 22,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -2.0302100278200275,
+  "regime": "BEAR"
+}

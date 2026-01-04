@@ -1,0 +1,14 @@
+{
+  "month": "2018-07",
+  "currency": "TRY",
+  "entryDate": "2018-07-01",
+  "entryPrice": 29280.88,
+  "exitDate": "2018-07-31",
+  "exitPrice": 37898.36,
+  "pctChangeWithinMonth": 29.430399632797922,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -16.68896383874791,
+  "regime": "BULL"
+}

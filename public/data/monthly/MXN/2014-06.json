@@ -1,0 +1,14 @@
+{
+  "month": "2014-06",
+  "currency": "MXN",
+  "entryDate": "2014-06-01",
+  "entryPrice": 10208.87,
+  "exitDate": "2014-06-30",
+  "exitPrice": 8599.17,
+  "pctChangeWithinMonth": -15.767660867461341,
+  "daysPositive": 1,
+  "daysNegative": 28,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 45.71734842148236,
+  "regime": "BEAR"
+}

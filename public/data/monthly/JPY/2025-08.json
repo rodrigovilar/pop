@@ -1,0 +1,14 @@
+{
+  "month": "2025-08",
+  "currency": "JPY",
+  "entryDate": "2025-08-01",
+  "entryPrice": 16730808.56,
+  "exitDate": "2025-08-31",
+  "exitPrice": 15951965.37,
+  "pctChangeWithinMonth": -4.655143755945297,
+  "daysPositive": 20,
+  "daysNegative": 10,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 10.176352516122854,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2020-12",
+  "currency": "SGD",
+  "entryDate": "2020-12-01",
+  "entryPrice": 25198.09,
+  "exitDate": "2020-12-31",
+  "exitPrice": 39279.86,
+  "pctChangeWithinMonth": 55.884275355790855,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 33.37340131657995,
+  "regime": "BULL"
+}

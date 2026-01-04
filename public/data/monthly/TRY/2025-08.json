@@ -1,0 +1,14 @@
+{
+  "month": "2025-08",
+  "currency": "TRY",
+  "entryDate": "2025-08-01",
+  "entryPrice": 4616687.53,
+  "exitDate": "2025-08-31",
+  "exitPrice": 4458085.46,
+  "pctChangeWithinMonth": -3.435408373847651,
+  "daysPositive": 22,
+  "daysNegative": 8,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 9.635378538118145,
+  "regime": "LATERAL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2024-08",
+  "currency": "BRL",
+  "entryDate": "2024-08-01",
+  "entryPrice": 376122.99,
+  "exitDate": "2024-08-31",
+  "exitPrice": 334004.3,
+  "pctChangeWithinMonth": -11.198116339551593,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 6.252952958017499,
+  "regime": "BEAR"
+}

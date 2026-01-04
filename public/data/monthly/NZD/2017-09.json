@@ -1,0 +1,14 @@
+{
+  "month": "2017-09",
+  "currency": "NZD",
+  "entryDate": "2017-09-01",
+  "entryPrice": 7015.78,
+  "exitDate": "2017-09-30",
+  "exitPrice": 22824.79,
+  "pctChangeWithinMonth": 225.33503045990614,
+  "daysPositive": 3,
+  "daysNegative": 26,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 65.10786710941562,
+  "regime": "BULL"
+}

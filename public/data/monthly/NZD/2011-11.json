@@ -1,0 +1,14 @@
+{
+  "month": "2011-11",
+  "currency": "NZD",
+  "entryDate": "2011-11-01",
+  "entryPrice": 3.42,
+  "exitDate": "2011-11-30",
+  "exitPrice": 3.672,
+  "pctChangeWithinMonth": 7.368421052631585,
+  "daysPositive": 24,
+  "daysNegative": 0,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -47.473506373828904,
+  "regime": "LATERAL"
+}

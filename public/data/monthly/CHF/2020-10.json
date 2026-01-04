@@ -1,0 +1,14 @@
+{
+  "month": "2020-10",
+  "currency": "CHF",
+  "entryDate": "2020-10-01",
+  "entryPrice": 9781.5,
+  "exitDate": "2020-10-31",
+  "exitPrice": 12701.58,
+  "pctChangeWithinMonth": 29.853090016868578,
+  "daysPositive": 27,
+  "daysNegative": 3,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -9.625446606346138,
+  "regime": "BULL"
+}

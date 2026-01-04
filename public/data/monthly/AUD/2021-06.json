@@ -1,0 +1,14 @@
+{
+  "month": "2021-06",
+  "currency": "AUD",
+  "entryDate": "2021-06-01",
+  "entryPrice": 47432.23,
+  "exitDate": "2021-06-30",
+  "exitPrice": 46824.92,
+  "pctChangeWithinMonth": -1.2803741253573886,
+  "daysPositive": 12,
+  "daysNegative": 17,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -36.77556407128097,
+  "regime": "LATERAL"
+}

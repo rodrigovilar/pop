@@ -1,0 +1,14 @@
+{
+  "month": "2024-08",
+  "currency": "MXN",
+  "entryDate": "2024-08-01",
+  "entryPrice": 1235327.18,
+  "exitDate": "2024-08-31",
+  "exitPrice": 1168070.2,
+  "pctChangeWithinMonth": -5.444466946805136,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 7.134683364265514,
+  "regime": "LATERAL"
+}

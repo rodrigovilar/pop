@@ -1,0 +1,14 @@
+{
+  "month": "2018-07",
+  "currency": "BRL",
+  "entryDate": "2018-07-01",
+  "entryPrice": 24800,
+  "exitDate": "2018-07-31",
+  "exitPrice": 29490.11,
+  "pctChangeWithinMonth": 18.911733870967744,
+  "daysPositive": 26,
+  "daysNegative": 4,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -13.412567816638543,
+  "regime": "BULL"
+}

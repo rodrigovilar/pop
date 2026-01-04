@@ -1,0 +1,14 @@
+{
+  "month": "2021-10",
+  "currency": "BRL",
+  "entryDate": "2021-10-01",
+  "entryPrice": 258053.21,
+  "exitDate": "2021-10-31",
+  "exitPrice": 349933.99,
+  "pctChangeWithinMonth": 35.60536216542317,
+  "daysPositive": 29,
+  "daysNegative": 1,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 1.796619944552007,
+  "regime": "BULL"
+}

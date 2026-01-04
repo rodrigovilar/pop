@@ -1,0 +1,14 @@
+{
+  "month": "2024-06",
+  "currency": "AUD",
+  "entryDate": "2024-06-01",
+  "entryPrice": 101730.83,
+  "exitDate": "2024-06-30",
+  "exitPrice": 93808.11,
+  "pctChangeWithinMonth": -7.787924270351477,
+  "daysPositive": 11,
+  "daysNegative": 18,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 13.6822570521145,
+  "regime": "LATERAL"
+}

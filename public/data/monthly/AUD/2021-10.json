@@ -1,0 +1,14 @@
+{
+  "month": "2021-10",
+  "currency": "AUD",
+  "entryDate": "2021-10-01",
+  "entryPrice": 66548.84,
+  "exitDate": "2021-10-31",
+  "exitPrice": 81841.06,
+  "pctChangeWithinMonth": 22.978942983829622,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 0.6966879669218747,
+  "regime": "BULL"
+}

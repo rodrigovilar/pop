@@ -1,0 +1,14 @@
+{
+  "month": "2015-08",
+  "currency": "CHF",
+  "entryDate": "2015-08-01",
+  "entryPrice": 273.43,
+  "exitDate": "2015-08-31",
+  "exitPrice": 230.18,
+  "pctChangeWithinMonth": -15.817576710675493,
+  "daysPositive": 8,
+  "daysNegative": 21,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -1.7181265950181421,
+  "regime": "BEAR"
+}

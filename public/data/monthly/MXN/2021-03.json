@@ -1,0 +1,14 @@
+{
+  "month": "2021-03",
+  "currency": "MXN",
+  "entryDate": "2021-03-01",
+  "entryPrice": 1044754.94,
+  "exitDate": "2021-03-31",
+  "exitPrice": 1205915.93,
+  "pctChangeWithinMonth": 15.425721748681084,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 52.705785365246605,
+  "regime": "BULL"
+}

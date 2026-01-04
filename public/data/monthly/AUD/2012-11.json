@@ -1,0 +1,14 @@
+{
+  "month": "2012-11",
+  "currency": "AUD",
+  "entryDate": "2012-11-01",
+  "entryPrice": 10.6,
+  "exitDate": "2012-11-30",
+  "exitPrice": 12.31,
+  "pctChangeWithinMonth": 16.13207547169812,
+  "daysPositive": 21,
+  "daysNegative": 8,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -10.321489001692052,
+  "regime": "BULL"
+}

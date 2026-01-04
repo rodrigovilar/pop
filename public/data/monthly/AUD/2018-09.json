@@ -1,0 +1,14 @@
+{
+  "month": "2018-09",
+  "currency": "AUD",
+  "entryDate": "2018-09-01",
+  "entryPrice": 9997.54,
+  "exitDate": "2018-09-30",
+  "exitPrice": 9139.68,
+  "pctChangeWithinMonth": -8.580710854870304,
+  "daysPositive": 3,
+  "daysNegative": 26,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -2.6951320995284402,
+  "regime": "LATERAL"
+}

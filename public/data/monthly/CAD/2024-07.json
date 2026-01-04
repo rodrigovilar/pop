@@ -1,0 +1,14 @@
+{
+  "month": "2024-07",
+  "currency": "CAD",
+  "entryDate": "2024-07-01",
+  "entryPrice": 86204.4,
+  "exitDate": "2024-07-31",
+  "exitPrice": 89363.3,
+  "pctChangeWithinMonth": 3.664430121896341,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -6.89100971653972,
+  "regime": "LATERAL"
+}

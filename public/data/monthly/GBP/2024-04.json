@@ -1,0 +1,14 @@
+{
+  "month": "2024-04",
+  "currency": "GBP",
+  "entryDate": "2024-04-01",
+  "entryPrice": 55522.55,
+  "exitDate": "2024-04-30",
+  "exitPrice": 48526.52,
+  "pctChangeWithinMonth": -12.600339861911971,
+  "daysPositive": 3,
+  "daysNegative": 26,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 12.604309350717513,
+  "regime": "BEAR"
+}

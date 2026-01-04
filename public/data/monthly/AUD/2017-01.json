@@ -1,0 +1,14 @@
+{
+  "month": "2017-01",
+  "currency": "AUD",
+  "entryDate": "2017-01-01",
+  "entryPrice": 1381.4,
+  "exitDate": "2017-01-31",
+  "exitPrice": 1272.29,
+  "pctChangeWithinMonth": -7.8985087592297765,
+  "daysPositive": 3,
+  "daysNegative": 27,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 34.57903863764784,
+  "regime": "LATERAL"
+}

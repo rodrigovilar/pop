@@ -1,0 +1,14 @@
+{
+  "month": "2024-03",
+  "currency": "CHF",
+  "entryDate": "2024-03-01",
+  "entryPrice": 55156.02,
+  "exitDate": "2024-03-31",
+  "exitPrice": 63885.51,
+  "pctChangeWithinMonth": 15.826903391506505,
+  "daysPositive": 28,
+  "daysNegative": 2,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 49.263560122428764,
+  "regime": "BULL"
+}

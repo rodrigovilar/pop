@@ -1,0 +1,14 @@
+{
+  "month": "2024-08",
+  "currency": "SGD",
+  "entryDate": "2024-08-01",
+  "entryPrice": 87076.76,
+  "exitDate": "2024-08-31",
+  "exitPrice": 77427.22,
+  "pctChangeWithinMonth": -11.081647962096884,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 1.8911766891273127,
+  "regime": "BEAR"
+}

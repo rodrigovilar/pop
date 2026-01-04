@@ -1,0 +1,14 @@
+{
+  "month": "2023-12",
+  "currency": "BRL",
+  "entryDate": "2023-12-01",
+  "entryPrice": 190323.63,
+  "exitDate": "2023-12-31",
+  "exitPrice": 209184.67,
+  "pctChangeWithinMonth": 9.909983326820747,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 7.654811363316513,
+  "regime": "LATERAL"
+}

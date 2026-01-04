@@ -1,0 +1,14 @@
+{
+  "month": "2020-07",
+  "currency": "CHF",
+  "entryDate": "2020-07-01",
+  "entryPrice": 8766.81,
+  "exitDate": "2020-07-31",
+  "exitPrice": 10380.1,
+  "pctChangeWithinMonth": 18.402246655282834,
+  "daysPositive": 13,
+  "daysNegative": 17,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -9.694156620735054,
+  "regime": "BULL"
+}

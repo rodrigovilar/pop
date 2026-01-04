@@ -1,0 +1,14 @@
+{
+  "month": "2018-09",
+  "currency": "ZAR",
+  "entryDate": "2018-09-01",
+  "entryPrice": 106697.59,
+  "exitDate": "2018-09-30",
+  "exitPrice": 98199.69,
+  "pctChangeWithinMonth": -7.964472299702359,
+  "daysPositive": 4,
+  "daysNegative": 25,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 1.9928729555917617,
+  "regime": "LATERAL"
+}

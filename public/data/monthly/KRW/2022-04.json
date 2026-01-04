@@ -1,0 +1,14 @@
+{
+  "month": "2022-04",
+  "currency": "KRW",
+  "entryDate": "2022-04-01",
+  "entryPrice": 56494956.97,
+  "exitDate": "2022-04-30",
+  "exitPrice": 49261820.53,
+  "pctChangeWithinMonth": -12.803154171514713,
+  "daysPositive": 2,
+  "daysNegative": 27,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 5.028504233500057,
+  "regime": "BEAR"
+}

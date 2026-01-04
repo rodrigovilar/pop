@@ -1,0 +1,14 @@
+{
+  "month": "2011-08",
+  "currency": "EUR",
+  "entryDate": "2011-08-27",
+  "entryPrice": 6.145,
+  "exitDate": "2011-08-31",
+  "exitPrice": 6.398,
+  "pctChangeWithinMonth": 4.1171684296175775,
+  "daysPositive": 4,
+  "daysNegative": 0,
+  "daysTotal": 5,
+  "pctChangeVsPrevMonthStart": null,
+  "regime": "LATERAL"
+}

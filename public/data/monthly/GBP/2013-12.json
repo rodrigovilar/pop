@@ -1,0 +1,14 @@
+{
+  "month": "2013-12",
+  "currency": "GBP",
+  "entryDate": "2013-12-01",
+  "entryPrice": 616,
+  "exitDate": "2013-12-31",
+  "exitPrice": 492.1,
+  "pctChangeWithinMonth": -20.11363636363636,
+  "daysPositive": 5,
+  "daysNegative": 25,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 363.15789473684214,
+  "regime": "BEAR"
+}

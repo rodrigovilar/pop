@@ -1,0 +1,14 @@
+{
+  "month": "2016-02",
+  "currency": "CHF",
+  "entryDate": "2016-02-01",
+  "entryPrice": 402.25,
+  "exitDate": "2016-02-29",
+  "exitPrice": 976.56,
+  "pctChangeWithinMonth": 142.7743940335612,
+  "daysPositive": 19,
+  "daysNegative": 9,
+  "daysTotal": 29,
+  "pctChangeVsPrevMonthStart": -25.499601800233357,
+  "regime": "BULL"
+}

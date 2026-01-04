@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2014-09-01",
   "entryPrice": 477.19,
+  "exitDate": "2014-09-30",
+  "exitPrice": 388.17,
+  "pctChangeWithinMonth": -18.655043064607383,
   "daysPositive": 12,
   "daysNegative": 17,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -20.306289455225624,
-  "regime": "BEAR",
-  "exitDate": "2014-09-30",
-  "exitPrice": 469.24,
-  "pctChangeWithinMonth": -1.67
+  "regime": "BEAR"
 }

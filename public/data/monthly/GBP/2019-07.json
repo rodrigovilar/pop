@@ -1,0 +1,14 @@
+{
+  "month": "2019-07",
+  "currency": "GBP",
+  "entryDate": "2019-07-01",
+  "entryPrice": 8364.5,
+  "exitDate": "2019-07-31",
+  "exitPrice": 8303.6,
+  "pctChangeWithinMonth": -0.7280769920497296,
+  "daysPositive": 17,
+  "daysNegative": 13,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 22.691062598917792,
+  "regime": "LATERAL"
+}

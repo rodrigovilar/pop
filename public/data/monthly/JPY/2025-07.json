@@ -1,0 +1,14 @@
+{
+  "month": "2025-07",
+  "currency": "JPY",
+  "entryDate": "2025-07-01",
+  "entryPrice": 15185480.53,
+  "exitDate": "2025-07-31",
+  "exitPrice": 17485133.24,
+  "pctChangeWithinMonth": 15.14375989259524,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -0.27729173935900225,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2022-06",
+  "currency": "CHF",
+  "entryDate": "2022-06-01",
+  "entryPrice": 28728.61,
+  "exitDate": "2022-06-30",
+  "exitPrice": 18968.96,
+  "pctChangeWithinMonth": -33.971883777182406,
+  "daysPositive": 8,
+  "daysNegative": 21,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -23.447756894765018,
+  "regime": "BEAR"
+}

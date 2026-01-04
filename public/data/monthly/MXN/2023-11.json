@@ -1,0 +1,14 @@
+{
+  "month": "2023-11",
+  "currency": "MXN",
+  "entryDate": "2023-11-01",
+  "entryPrice": 631270,
+  "exitDate": "2023-11-30",
+  "exitPrice": 655980,
+  "pctChangeWithinMonth": 3.9143314271231007,
+  "daysPositive": 17,
+  "daysNegative": 12,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 29.850869073331275,
+  "regime": "LATERAL"
+}

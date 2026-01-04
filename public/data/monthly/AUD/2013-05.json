@@ -1,0 +1,14 @@
+{
+  "month": "2013-05",
+  "currency": "AUD",
+  "entryDate": "2013-05-01",
+  "entryPrice": 142.8,
+  "exitDate": "2013-05-31",
+  "exitPrice": 136.63,
+  "pctChangeWithinMonth": -4.320728291316538,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 28.811113115641362,
+  "regime": "LATERAL"
+}

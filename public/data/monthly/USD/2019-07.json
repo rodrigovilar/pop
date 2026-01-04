@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2019-07-01",
   "entryPrice": 10591.87,
+  "exitDate": "2019-07-31",
+  "exitPrice": 10089.25,
+  "pctChangeWithinMonth": -4.745337697687007,
   "daysPositive": 15,
   "daysNegative": 15,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 23.796527997737225,
-  "regime": "BULL",
-  "exitDate": "2019-07-31",
-  "exitPrice": 10591.87,
-  "pctChangeWithinMonth": 0.0
+  "regime": "LATERAL"
 }

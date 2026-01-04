@@ -1,0 +1,14 @@
+{
+  "month": "2023-11",
+  "currency": "ZAR",
+  "entryDate": "2023-11-01",
+  "entryPrice": 671794.62,
+  "exitDate": "2023-11-30",
+  "exitPrice": 717519.39,
+  "pctChangeWithinMonth": 6.806361444216391,
+  "daysPositive": 22,
+  "daysNegative": 7,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 24.39959217050325,
+  "regime": "LATERAL"
+}

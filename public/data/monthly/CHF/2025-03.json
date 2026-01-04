@@ -1,0 +1,14 @@
+{
+  "month": "2025-03",
+  "currency": "CHF",
+  "entryDate": "2025-03-01",
+  "entryPrice": 77741.8,
+  "exitDate": "2025-03-31",
+  "exitPrice": 72898.8,
+  "pctChangeWithinMonth": -6.229595918797867,
+  "daysPositive": 3,
+  "daysNegative": 27,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -15.309791874329349,
+  "regime": "LATERAL"
+}

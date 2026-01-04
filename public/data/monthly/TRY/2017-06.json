@@ -1,0 +1,14 @@
+{
+  "month": "2017-06",
+  "currency": "TRY",
+  "entryDate": "2017-06-01",
+  "entryPrice": 9293.68,
+  "exitDate": "2017-06-30",
+  "exitPrice": 8724.65,
+  "pctChangeWithinMonth": -6.122762995928423,
+  "daysPositive": 23,
+  "daysNegative": 6,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 82.74752090735873,
+  "regime": "LATERAL"
+}

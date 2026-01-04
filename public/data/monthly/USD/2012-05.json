@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2012-05-01",
   "entryPrice": 5,
+  "exitDate": "2012-05-31",
+  "exitPrice": 5.18,
+  "pctChangeWithinMonth": 3.5999999999999943,
   "daysPositive": 26,
   "daysNegative": 4,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 3.5840066293764252,
-  "regime": "LATERAL",
-  "exitDate": "2012-05-31",
-  "exitPrice": 5.34,
-  "pctChangeWithinMonth": 6.77
+  "regime": "LATERAL"
 }

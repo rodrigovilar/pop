@@ -1,0 +1,14 @@
+{
+  "month": "2014-04",
+  "currency": "CHF",
+  "entryDate": "2014-04-01",
+  "entryPrice": 421.61,
+  "exitDate": "2014-04-30",
+  "exitPrice": 433.71,
+  "pctChangeWithinMonth": 2.8699509024928167,
+  "daysPositive": 24,
+  "daysNegative": 5,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -22.21074189560693,
+  "regime": "LATERAL"
+}

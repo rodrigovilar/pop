@@ -1,0 +1,14 @@
+{
+  "month": "2021-06",
+  "currency": "CHF",
+  "entryDate": "2021-06-01",
+  "entryPrice": 32857.08,
+  "exitDate": "2021-06-30",
+  "exitPrice": 32336.52,
+  "pctChangeWithinMonth": -1.5843160743437983,
+  "daysPositive": 13,
+  "daysNegative": 16,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -37.659058473258746,
+  "regime": "LATERAL"
+}

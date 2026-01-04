@@ -1,0 +1,14 @@
+{
+  "month": "2024-08",
+  "currency": "ZAR",
+  "entryDate": "2024-08-01",
+  "entryPrice": 1214979.99,
+  "exitDate": "2024-08-31",
+  "exitPrice": 1069140.51,
+  "pctChangeWithinMonth": -12.003447069115927,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 3.469045511715664,
+  "regime": "BEAR"
+}

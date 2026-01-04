@@ -1,0 +1,14 @@
+{
+  "month": "2024-08",
+  "currency": "AUD",
+  "entryDate": "2024-08-01",
+  "entryPrice": 100728.92,
+  "exitDate": "2024-08-31",
+  "exitPrice": 87546.78,
+  "pctChangeWithinMonth": -13.086748075924968,
+  "daysPositive": 0,
+  "daysNegative": 30,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 6.7131478936348925,
+  "regime": "BEAR"
+}

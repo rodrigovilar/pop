@@ -1,0 +1,14 @@
+{
+  "month": "2025-10",
+  "currency": "ZAR",
+  "entryDate": "2025-10-01",
+  "entryPrice": 2056416.38,
+  "exitDate": "2025-10-31",
+  "exitPrice": 1909458.73,
+  "pctChangeWithinMonth": -7.146298358117528,
+  "daysPositive": 8,
+  "daysNegative": 22,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 5.878978716929582,
+  "regime": "LATERAL"
+}

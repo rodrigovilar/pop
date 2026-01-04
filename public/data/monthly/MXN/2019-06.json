@@ -1,0 +1,14 @@
+{
+  "month": "2019-06",
+  "currency": "MXN",
+  "entryDate": "2019-06-01",
+  "entryPrice": 169950,
+  "exitDate": "2019-06-30",
+  "exitPrice": 208988.54,
+  "pctChangeWithinMonth": 22.970603118564288,
+  "daysPositive": 16,
+  "daysNegative": 13,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 67.4384236453202,
+  "regime": "BULL"
+}

@@ -1,0 +1,14 @@
+{
+  "month": "2024-05",
+  "currency": "SGD",
+  "entryDate": "2024-05-01",
+  "entryPrice": 79377.59,
+  "exitDate": "2024-05-31",
+  "exitPrice": 91011.28,
+  "pctChangeWithinMonth": 14.656139094170035,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -15.86183028864678,
+  "regime": "BULL"
+}

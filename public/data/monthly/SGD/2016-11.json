@@ -1,0 +1,14 @@
+{
+  "month": "2016-11",
+  "currency": "SGD",
+  "entryDate": "2016-11-01",
+  "entryPrice": 1028.04,
+  "exitDate": "2016-11-30",
+  "exitPrice": 1085.01,
+  "pctChangeWithinMonth": 5.5416131668028505,
+  "daysPositive": 15,
+  "daysNegative": 14,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 22.928649152805846,
+  "regime": "LATERAL"
+}

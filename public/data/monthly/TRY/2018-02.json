@@ -1,0 +1,14 @@
+{
+  "month": "2018-02",
+  "currency": "TRY",
+  "entryDate": "2018-02-01",
+  "entryPrice": 34220.38,
+  "exitDate": "2018-02-28",
+  "exitPrice": 37376.37,
+  "pctChangeWithinMonth": 9.22254516168437,
+  "daysPositive": 19,
+  "daysNegative": 8,
+  "daysTotal": 28,
+  "pctChangeVsPrevMonthStart": -43.28348511986991,
+  "regime": "LATERAL"
+}

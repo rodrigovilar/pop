@@ -2,13 +2,13 @@
   "month": "2021-04",
   "currency": "USD",
   "entryDate": "2021-04-01",
-  "entryPrice": 210529.96,
+  "entryPrice": 58730.82,
   "exitDate": "2021-04-30",
-  "exitPrice": 107870.53,
-  "pctChangeWithinMonth": -48.762385173112655,
-  "daysPositive": 0,
-  "daysNegative": 29,
+  "exitPrice": 57757.97,
+  "pctChangeWithinMonth": -1.6564556735288192,
+  "daysPositive": 10,
+  "daysNegative": 19,
   "daysTotal": 30,
-  "pctChangeVsPrevMonthStart": -46.35302286236199,
-  "regime": "BEAR"
+  "pctChangeVsPrevMonthStart": 18.32524865986892,
+  "regime": "LATERAL"
 }

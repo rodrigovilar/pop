@@ -1,0 +1,14 @@
+{
+  "month": "2018-09",
+  "currency": "INR",
+  "entryDate": "2018-09-01",
+  "entryPrice": 538067.71,
+  "exitDate": "2018-09-30",
+  "exitPrice": 491805.12,
+  "pctChangeWithinMonth": -8.597912333375286,
+  "daysPositive": 8,
+  "daysNegative": 21,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -7.79748823983291,
+  "regime": "LATERAL"
+}

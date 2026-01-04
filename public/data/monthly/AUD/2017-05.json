@@ -1,0 +1,14 @@
+{
+  "month": "2017-05",
+  "currency": "AUD",
+  "entryDate": "2017-05-01",
+  "entryPrice": 1894.73,
+  "exitDate": "2017-05-31",
+  "exitPrice": 3240.08,
+  "pctChangeWithinMonth": 71.00483973969905,
+  "daysPositive": 30,
+  "daysNegative": 0,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 30.050380254234955,
+  "regime": "BULL"
+}

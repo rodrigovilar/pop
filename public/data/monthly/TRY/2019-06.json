@@ -1,0 +1,14 @@
+{
+  "month": "2019-06",
+  "currency": "TRY",
+  "entryDate": "2019-06-01",
+  "entryPrice": 50665.28,
+  "exitDate": "2019-06-30",
+  "exitPrice": 66171.58,
+  "pctChangeWithinMonth": 30.605377094531015,
+  "daysPositive": 17,
+  "daysNegative": 12,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 52.68292844630119,
+  "regime": "BULL"
+}

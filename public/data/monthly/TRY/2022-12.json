@@ -1,0 +1,14 @@
+{
+  "month": "2022-12",
+  "currency": "TRY",
+  "entryDate": "2022-12-01",
+  "entryPrice": 321754.86,
+  "exitDate": "2022-12-31",
+  "exitPrice": 315502.12,
+  "pctChangeWithinMonth": -1.943324181645614,
+  "daysPositive": 11,
+  "daysNegative": 19,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -16.393447351286984,
+  "regime": "LATERAL"
+}

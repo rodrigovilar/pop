@@ -3,12 +3,12 @@
   "currency": "USD",
   "entryDate": "2017-06-01",
   "entryPrice": 2412.65,
+  "exitDate": "2017-06-30",
+  "exitPrice": 2480.61,
+  "pctChangeWithinMonth": 2.8168196796054144,
   "daysPositive": 29,
   "daysNegative": 0,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": 70.40775245265962,
-  "regime": "BULL",
-  "exitDate": "2017-06-30",
-  "exitPrice": 2637.83,
-  "pctChangeWithinMonth": 9.33
+  "regime": "LATERAL"
 }

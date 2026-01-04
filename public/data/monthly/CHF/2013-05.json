@@ -1,0 +1,14 @@
+{
+  "month": "2013-05",
+  "currency": "CHF",
+  "entryDate": "2013-05-01",
+  "entryPrice": 142.74,
+  "exitDate": "2013-05-31",
+  "exitPrice": 67.5,
+  "pctChangeWithinMonth": -52.71122320302648,
+  "daysPositive": 0,
+  "daysNegative": 29,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": 42.74000000000001,
+  "regime": "BEAR"
+}

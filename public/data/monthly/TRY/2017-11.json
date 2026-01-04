@@ -1,0 +1,14 @@
+{
+  "month": "2017-11",
+  "currency": "TRY",
+  "entryDate": "2017-11-01",
+  "entryPrice": 27040.99,
+  "exitDate": "2017-11-30",
+  "exitPrice": 45396.58,
+  "pctChangeWithinMonth": 67.88061383847263,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 82.2435625694593,
+  "regime": "BULL"
+}

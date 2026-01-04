@@ -1,0 +1,14 @@
+{
+  "month": "2018-07",
+  "currency": "ZAR",
+  "entryDate": "2018-07-01",
+  "entryPrice": 89701.53,
+  "exitDate": "2018-07-31",
+  "exitPrice": 106847.75,
+  "pctChangeWithinMonth": 19.11474642628727,
+  "daysPositive": 24,
+  "daysNegative": 6,
+  "daysTotal": 31,
+  "pctChangeVsPrevMonthStart": -9.802301480212506,
+  "regime": "BULL"
+}

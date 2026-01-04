@@ -1,0 +1,14 @@
+{
+  "month": "2024-11",
+  "currency": "AUD",
+  "entryDate": "2024-11-01",
+  "entryPrice": 106029.14,
+  "exitDate": "2024-11-30",
+  "exitPrice": 147798.67,
+  "pctChangeWithinMonth": 39.39438724109242,
+  "daysPositive": 25,
+  "daysNegative": 4,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 19.609453859909497,
+  "regime": "BULL"
+}

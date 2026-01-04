@@ -1,0 +1,14 @@
+{
+  "month": "2015-04",
+  "currency": "SGD",
+  "entryDate": "2015-04-01",
+  "entryPrice": 331.36,
+  "exitDate": "2015-04-30",
+  "exitPrice": 301.29,
+  "pctChangeWithinMonth": -9.074722356349588,
+  "daysPositive": 13,
+  "daysNegative": 16,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -10.506130826986436,
+  "regime": "LATERAL"
+}

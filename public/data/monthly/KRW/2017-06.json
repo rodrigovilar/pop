@@ -1,0 +1,14 @@
+{
+  "month": "2017-06",
+  "currency": "KRW",
+  "entryDate": "2017-06-01",
+  "entryPrice": 3130814.56,
+  "exitDate": "2017-06-30",
+  "exitPrice": 3109444.19,
+  "pctChangeWithinMonth": -0.6825817879165642,
+  "daysPositive": 21,
+  "daysNegative": 8,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": 86.7935431306779,
+  "regime": "LATERAL"
+}

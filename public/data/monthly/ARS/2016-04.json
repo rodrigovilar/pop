@@ -1,0 +1,14 @@
+{
+  "month": "2016-04",
+  "currency": "ARS",
+  "entryDate": "2016-04-01",
+  "entryPrice": 6371.29,
+  "exitDate": "2016-04-30",
+  "exitPrice": 6356.87,
+  "pctChangeWithinMonth": -0.2263277923309106,
+  "daysPositive": 21,
+  "daysNegative": 8,
+  "daysTotal": 30,
+  "pctChangeVsPrevMonthStart": -11.158691159778792,
+  "regime": "LATERAL"
+}
