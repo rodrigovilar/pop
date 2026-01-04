@@ -200,7 +200,6 @@
     "CAD",
     "AUD",
     "NZD",
-    "CNY",
     "HKD",
     "SGD",
     "INR",
@@ -208,14 +207,12 @@
     "MXN",
     "ARS",
     "ZAR",
-    "TRY",
-    "SEK",
-    "NOK"
+    "TRY"
   ],
   "rules": {
     "dailyPrice": "last_seen_price_utc",
     "entry": "first_available_day_of_month",
     "regimeThreshold": 0.1
   },
-  "generatedAt": "2026-01-04T02:53:06.383Z"
+  "generatedAt": "2026-01-04T03:23:23.981Z"
 }

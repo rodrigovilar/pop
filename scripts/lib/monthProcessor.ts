@@ -14,8 +14,8 @@ export interface MonthResult {
   exitDate: string;        // YYYY-MM-DD (last day of month)
   exitPrice: number;
   pctChangeWithinMonth: number;  // % change from entry to exit price
-  daysPositive: number;    // Days when price > entry price
-  daysNegative: number;    // Days when price < entry price
+  daysPositive: number;    // Days when price > +10% vs entry price (Bull days)
+  daysNegative: number;    // Days when price < -10% vs entry price (Bear days)
   daysTotal: number;       // Total days in month
 }
 
@@ -48,19 +48,22 @@ export function processMonth(
   // Calculate percentage change within month
   const pctChangeWithinMonth = ((exitPrice - entryPrice) / entryPrice) * 100;
 
-  // Count positive and negative days (excluding entry day)
-  let daysPositive = 0;
-  let daysNegative = 0;
+  // Count bull/bear/lateral days (excluding entry day)
+  // Bull: > +10% vs entry, Bear: < -10% vs entry, Lateral: between -10% and +10%
+  const THRESHOLD = 0.10; // 10%
+  let daysPositive = 0; // Bull days
+  let daysNegative = 0; // Bear days
 
   for (let i = 1; i < sorted.length; i++) {
     const price = sorted[i].price;
+    const pctChange = (price - entryPrice) / entryPrice;
 
-    if (price > entryPrice) {
+    if (pctChange >= THRESHOLD) {
       daysPositive++;
-    } else if (price < entryPrice) {
+    } else if (pctChange <= -THRESHOLD) {
       daysNegative++;
     }
-    // If price === entryPrice, don't count as positive or negative
+    // If between -10% and +10%, it's a lateral day (not counted in positive/negative)
   }
 
   return {

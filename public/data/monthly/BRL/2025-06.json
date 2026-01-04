@@ -6,8 +6,8 @@
   "exitDate": "2025-06-30",
   "exitPrice": 585906.77,
   "pctChangeWithinMonth": -3.5536775196524486,
-  "daysPositive": 2,
-  "daysNegative": 27,
+  "daysPositive": 0,
+  "daysNegative": 0,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": 10.545280788237218,
   "regime": "LATERAL"

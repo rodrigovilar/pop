@@ -6,8 +6,8 @@
   "exitDate": "2020-02-29",
   "exitPrice": 6660.61,
   "pctChangeWithinMonth": -6.419116851586727,
-  "daysPositive": 22,
-  "daysNegative": 6,
+  "daysPositive": 6,
+  "daysNegative": 0,
   "daysTotal": 29,
   "pctChangeVsPrevMonthStart": 31.096961235398336,
   "regime": "LATERAL"

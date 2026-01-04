@@ -15,35 +15,32 @@ interface MonthCellData {
 }
 
 function calculateCellColor(data: MonthlyData): { backgroundColor: string; textColor: string } {
-  // Use the regime from data (calculated based on price change between months)
-  // Calculate intensity based on the ratio of positive/negative days
+  // Calculate proportion of bull/bear/lateral days
   const totalDays = data.daysTotal;
-  const positiveRatio = data.daysPositive / totalDays;
-  const negativeRatio = data.daysNegative / totalDays;
+  const daysLateral = totalDays - data.daysPositive - data.daysNegative;
 
-  if (data.regime === 'BULL') {
-    // Bull: Green with opacity based on positive days intensity
-    const intensity = Math.min(positiveRatio, 1);
-    const alpha = 0.3 + (intensity * 0.7);
-    return {
-      backgroundColor: `rgba(16, 185, 129, ${alpha})`,
-      textColor: '#ffffff',
-    };
-  } else if (data.regime === 'BEAR') {
-    // Bear: Red with opacity based on negative days intensity
-    const intensity = Math.min(negativeRatio, 1);
-    const alpha = 0.3 + (intensity * 0.7);
-    return {
-      backgroundColor: `rgba(239, 68, 68, ${alpha})`,
-      textColor: '#ffffff',
-    };
-  } else {
-    // Lateral or N/A: Dark Gray
-    return {
-      backgroundColor: theme.colors.secondary[800],
-      textColor: theme.colors.text.secondary,
-    };
-  }
+  const bullRatio = data.daysPositive / totalDays;
+  const bearRatio = data.daysNegative / totalDays;
+  const lateralRatio = daysLateral / totalDays;
+
+  // Define RGB colors for each type
+  const bullColor = { r: 16, g: 185, b: 129 };    // Green
+  const bearColor = { r: 239, g: 68, b: 68 };     // Red
+  const lateralColor = { r: 75, g: 85, b: 99 };   // Gray (secondary[600])
+
+  // Mix colors based on proportions
+  const r = Math.round(bullColor.r * bullRatio + bearColor.r * bearRatio + lateralColor.r * lateralRatio);
+  const g = Math.round(bullColor.g * bullRatio + bearColor.g * bearRatio + lateralColor.g * lateralRatio);
+  const b = Math.round(bullColor.b * bullRatio + bearColor.b * bearRatio + lateralColor.b * lateralRatio);
+
+  // Determine dominant type for text color
+  const maxRatio = Math.max(bullRatio, bearRatio, lateralRatio);
+  const textColor = maxRatio === lateralRatio ? theme.colors.text.secondary : '#ffffff';
+
+  return {
+    backgroundColor: `rgb(${r}, ${g}, ${b})`,
+    textColor,
+  };
 }
 
 function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void }) {

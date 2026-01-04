@@ -6,8 +6,8 @@
   "exitDate": "2020-03-31",
   "exitPrice": 10509.01,
   "pctChangeWithinMonth": -20.14157019047003,
-  "daysPositive": 6,
-  "daysNegative": 24,
+  "daysPositive": 0,
+  "daysNegative": 20,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": -6.373040774654401,
   "regime": "BEAR"

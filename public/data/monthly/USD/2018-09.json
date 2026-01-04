@@ -6,8 +6,8 @@
   "exitDate": "2018-09-30",
   "exitPrice": 6623.71,
   "pctChangeWithinMonth": -8.04821571855747,
-  "daysPositive": 3,
-  "daysNegative": 26,
+  "daysPositive": 0,
+  "daysNegative": 11,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -5.353374765139466,
   "regime": "LATERAL"

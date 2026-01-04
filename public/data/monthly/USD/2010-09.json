@@ -6,8 +6,8 @@
   "exitDate": "2010-09-30",
   "exitPrice": 0.0619,
   "pctChangeWithinMonth": -1.5898251192368855,
-  "daysPositive": 2,
-  "daysNegative": 27,
+  "daysPositive": 0,
+  "daysNegative": 0,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": 2.9459901800327266,
   "regime": "LATERAL"

@@ -6,8 +6,8 @@
   "exitDate": "2014-06-30",
   "exitPrice": 635.14,
   "pctChangeWithinMonth": -2.254574554856181,
-  "daysPositive": 7,
-  "daysNegative": 22,
+  "daysPositive": 0,
+  "daysNegative": 4,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": 41.2187859952622,
   "regime": "LATERAL"

@@ -6,8 +6,8 @@
   "exitDate": "2017-03-31",
   "exitPrice": 1453.91,
   "pctChangeWithinMonth": -10.748311847759357,
-  "daysPositive": 10,
-  "daysNegative": 20,
+  "daysPositive": 0,
+  "daysNegative": 14,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 25.40415704387991,
   "regime": "BEAR"

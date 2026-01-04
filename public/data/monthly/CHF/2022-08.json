@@ -6,8 +6,8 @@
   "exitDate": "2022-08-31",
   "exitPrice": 19580.62,
   "pctChangeWithinMonth": -11.226379166515542,
-  "daysPositive": 13,
-  "daysNegative": 17,
+  "daysPositive": 0,
+  "daysNegative": 6,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 19.65852769362973,
   "regime": "BEAR"

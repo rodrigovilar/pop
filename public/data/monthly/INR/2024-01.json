@@ -6,8 +6,8 @@
   "exitDate": "2024-01-31",
   "exitPrice": 2720065.85,
   "pctChangeWithinMonth": -0.6901694534460182,
-  "daysPositive": 8,
-  "daysNegative": 22,
+  "daysPositive": 0,
+  "daysNegative": 7,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 1.3335837387310865,
   "regime": "LATERAL"

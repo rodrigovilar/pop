@@ -6,8 +6,8 @@
   "exitDate": "2023-11-30",
   "exitPrice": 37729.58,
   "pctChangeWithinMonth": 6.4611611365313975,
-  "daysPositive": 23,
-  "daysNegative": 6,
+  "daysPositive": 0,
+  "daysNegative": 0,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": 26.595393168160484,
   "regime": "LATERAL"

@@ -6,8 +6,8 @@
   "exitDate": "2021-09-30",
   "exitPrice": 53483640.22,
   "pctChangeWithinMonth": -5.3166352883429715,
-  "daysPositive": 12,
-  "daysNegative": 17,
+  "daysPositive": 0,
+  "daysNegative": 3,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": 21.979181866780294,
   "regime": "LATERAL"

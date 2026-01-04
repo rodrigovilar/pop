@@ -6,8 +6,8 @@
   "exitDate": "2017-07-31",
   "exitPrice": 4096.26,
   "pctChangeWithinMonth": 15.141430013014428,
-  "daysPositive": 20,
-  "daysNegative": 10,
+  "daysPositive": 5,
+  "daysNegative": 2,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 3.604440535613398,
   "regime": "BULL"

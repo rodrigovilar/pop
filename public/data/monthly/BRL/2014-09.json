@@ -6,8 +6,8 @@
   "exitDate": "2014-09-30",
   "exitPrice": 1000,
   "pctChangeWithinMonth": -13.644214162348877,
-  "daysPositive": 11,
-  "daysNegative": 18,
+  "daysPositive": 0,
+  "daysNegative": 6,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -22.28187919463087,
   "regime": "BEAR"

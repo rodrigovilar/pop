@@ -6,8 +6,8 @@
   "exitDate": "2016-01-31",
   "exitPrice": 7434.94,
   "pctChangeWithinMonth": -9.665449641271147,
-  "daysPositive": 7,
-  "daysNegative": 23,
+  "daysPositive": 0,
+  "daysNegative": 5,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": 32.17338658521506,
   "regime": "LATERAL"

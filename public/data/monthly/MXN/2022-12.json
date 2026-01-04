@@ -6,8 +6,8 @@
   "exitDate": "2022-12-31",
   "exitPrice": 348000,
   "pctChangeWithinMonth": 7.086808013047357,
-  "daysPositive": 28,
-  "daysNegative": 2,
+  "daysPositive": 0,
+  "daysNegative": 0,
   "daysTotal": 31,
   "pctChangeVsPrevMonthStart": -19.69704457843234,
   "regime": "LATERAL"

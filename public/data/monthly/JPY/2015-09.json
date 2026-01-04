@@ -6,8 +6,8 @@
   "exitDate": "2015-09-30",
   "exitPrice": 28834.09,
   "pctChangeWithinMonth": 3.6977031141940695,
-  "daysPositive": 23,
-  "daysNegative": 6,
+  "daysPositive": 0,
+  "daysNegative": 0,
   "daysTotal": 30,
   "pctChangeVsPrevMonthStart": -20.09841897460359,
   "regime": "LATERAL"
