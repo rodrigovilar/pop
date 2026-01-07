@@ -113,22 +113,22 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
         }
 
         .dca-details-table thead {
-          background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+          background: linear-gradient(135deg, rgb(59, 130, 246) 0%, rgb(16, 185, 129) 100%);
           position: sticky;
           top: 0;
           z-index: 10;
-          border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+          border-bottom: 3px solid rgb(16, 185, 129);
         }
 
         .dca-details-table th {
           padding: ${theme.spacing.md} ${theme.spacing.lg};
           text-align: left;
           font-weight: ${theme.typography.fontWeight.bold};
-          color: rgb(147, 197, 253);
+          color: #ffffff;
           text-transform: uppercase;
           letter-spacing: 0.05em;
           font-size: ${theme.typography.fontSize.xs};
-          border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .dca-details-table th:nth-child(n+2) {
