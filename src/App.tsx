@@ -5,6 +5,7 @@ import { HeroIllustration } from './components/HeroIllustration';
 import { MainView } from './components/MainView';
 import { DCADetails } from './components/DCADetails';
 import { LoadingState } from './components/LoadingState';
+import { BreezeBackground } from './components/BreezeBackground';
 import { useData } from './hooks/useData';
 import { theme } from './styles/theme';
 import type { Currency } from './types';
@@ -51,24 +52,29 @@ function AppContent() {
   }
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      backgroundColor: theme.colors.background.primary,
-      color: theme.colors.text.primary,
-    }}>
-      {/* Header with Settings */}
-      <header style={{
-        borderBottom: `1px solid ${theme.colors.secondary[800]}`,
-        backgroundColor: theme.colors.background.overlay,
-        backdropFilter: 'blur(12px)',
-        WebkitBackdropFilter: 'blur(12px)',
-        position: 'sticky',
-        top: 0,
-        zIndex: 100,
-        boxShadow: theme.shadows.md,
+    <>
+      {/* Animated Background */}
+      <BreezeBackground />
+
+      <div style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'relative',
+        zIndex: 1,
+        color: theme.colors.text.primary,
       }}>
+        {/* Header with Settings */}
+        <header style={{
+          borderBottom: `1px solid ${theme.colors.border.light}`,
+          backgroundColor: theme.colors.background.overlay,
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          position: 'sticky',
+          top: 0,
+          zIndex: 100,
+          boxShadow: theme.shadows.sm,
+        }}>
         <div style={{
           maxWidth: '1400px',
           margin: '0 auto',
@@ -84,10 +90,10 @@ function AppContent() {
               fontWeight: theme.typography.fontWeight.extrabold,
               margin: 0,
               letterSpacing: '-0.02em',
-              background: `linear-gradient(135deg, ${theme.colors.accent[400]} 0%, ${theme.colors.accent[500]} 100%)`,
+              background: theme.colors.gradients.blueGreen,
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              filter: 'drop-shadow(0 2px 10px rgba(247, 147, 26, 0.3))',
+              filter: 'drop-shadow(0 2px 8px rgba(59, 130, 246, 0.3))',
             }}>
               Proof of Patience
             </h1>
@@ -121,15 +127,16 @@ function AppContent() {
                 style={{
                   padding: `${theme.spacing.sm} ${theme.spacing.md}`,
                   fontSize: theme.typography.fontSize.sm,
-                  border: `1px solid ${theme.colors.secondary[700]}`,
+                  border: `1px solid ${theme.colors.border.medium}`,
                   borderRadius: theme.borderRadius.md,
-                  backgroundColor: theme.colors.background.tertiary,
+                  backgroundColor: theme.colors.background.elevated,
                   color: theme.colors.text.primary,
                   fontWeight: theme.typography.fontWeight.medium,
                   cursor: 'pointer',
                   outline: 'none',
                   transition: theme.transitions.default,
                   fontFamily: theme.typography.fontFamily.mono,
+                  boxShadow: theme.shadows.sm,
                 }}
               />
             </div>
@@ -162,46 +169,47 @@ function AppContent() {
         )}
       </main>
 
-      {/* Illustration moved to bottom */}
-      <div style={{
-        padding: `${theme.spacing['4xl']} ${theme.spacing.xl}`,
-        backgroundColor: theme.colors.background.secondary,
-        borderTop: `1px solid ${theme.colors.secondary[800]}`,
-        display: 'flex',
-        justifyContent: 'center',
-      }}>
-        <div style={{ opacity: 0.8, filter: 'grayscale(20%)' }}>
-          <HeroIllustration />
+        {/* Illustration moved to bottom */}
+        <div style={{
+          padding: `${theme.spacing['4xl']} ${theme.spacing.xl}`,
+          backgroundColor: theme.colors.background.secondary,
+          borderTop: `1px solid ${theme.colors.border.light}`,
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+          <div style={{ opacity: 0.6 }}>
+            <HeroIllustration />
+          </div>
         </div>
-      </div>
 
-      {/* Footer */}
-      <footer style={{
-        paddingTop: theme.spacing.xl,
-        paddingBottom: theme.spacing.xl,
-        borderTop: `1px solid ${theme.colors.secondary[800]}`,
-        textAlign: 'center',
-        color: theme.colors.text.tertiary,
-        fontSize: theme.typography.fontSize.sm,
-        backgroundColor: theme.colors.background.primary,
-      }}>
-        <p style={{
-          margin: `0 0 ${theme.spacing.xs} 0`,
-          color: theme.colors.text.secondary,
-          fontWeight: theme.typography.fontWeight.medium,
-        }}>
-          PoP is an educational tool. Not financial advice.
-        </p>
-        <p style={{
-          margin: 0,
-          fontStyle: 'italic',
+        {/* Footer */}
+        <footer style={{
+          paddingTop: theme.spacing.xl,
+          paddingBottom: theme.spacing.xl,
+          borderTop: `1px solid ${theme.colors.border.light}`,
+          textAlign: 'center',
           color: theme.colors.text.tertiary,
-          fontFamily: theme.typography.fontFamily.sans,
+          fontSize: theme.typography.fontSize.sm,
+          backgroundColor: theme.colors.background.primary,
         }}>
-          Bitcoin teaches behavior, not profit.
-        </p>
-      </footer>
-    </div>
+          <p style={{
+            margin: `0 0 ${theme.spacing.xs} 0`,
+            color: theme.colors.text.secondary,
+            fontWeight: theme.typography.fontWeight.medium,
+          }}>
+            PoP is an educational tool. Not financial advice.
+          </p>
+          <p style={{
+            margin: 0,
+            fontStyle: 'italic',
+            color: theme.colors.text.tertiary,
+            fontFamily: theme.typography.fontFamily.sans,
+          }}>
+            Bitcoin teaches behavior, not profit.
+          </p>
+        </footer>
+      </div>
+    </>
   );
 }
 

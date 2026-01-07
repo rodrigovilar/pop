@@ -1,4 +1,5 @@
 import { useI18n } from '../contexts/I18nContext';
+import { theme } from '../styles/theme';
 import type { LoadingProgress } from '../lib/dataLoader';
 
 interface LoadingStateProps {
@@ -26,7 +27,7 @@ export function LoadingState({ progress }: LoadingStateProps) {
       alignItems: 'center',
       justifyContent: 'center',
       minHeight: '400px',
-      padding: '2rem',
+      padding: theme.spacing['2xl'],
     }}>
       <div style={{
         width: '100%',
@@ -34,9 +35,10 @@ export function LoadingState({ progress }: LoadingStateProps) {
       }}>
         <p style={{
           textAlign: 'center',
-          marginBottom: '1rem',
-          fontSize: '1.1rem',
-          color: '#666',
+          marginBottom: theme.spacing.lg,
+          fontSize: theme.typography.fontSize.lg,
+          color: theme.colors.text.secondary,
+          fontWeight: theme.typography.fontWeight.medium,
         }}>
           {t('common.loading')}
         </p>
@@ -46,23 +48,24 @@ export function LoadingState({ progress }: LoadingStateProps) {
             <div style={{
               width: '100%',
               height: '8px',
-              backgroundColor: '#e5e7eb',
-              borderRadius: '4px',
+              backgroundColor: theme.colors.background.tertiary,
+              borderRadius: theme.borderRadius.md,
               overflow: 'hidden',
-              marginBottom: '0.5rem',
+              marginBottom: theme.spacing.sm,
+              border: `1px solid ${theme.colors.border.light}`,
             }}>
               <div style={{
                 width: `${progress.percentage}%`,
                 height: '100%',
-                backgroundColor: '#f97316',
+                background: theme.colors.gradients.blueGreen,
                 transition: 'width 0.3s ease',
               }} />
             </div>
 
             <p style={{
               textAlign: 'center',
-              fontSize: '0.875rem',
-              color: '#888',
+              fontSize: theme.typography.fontSize.sm,
+              color: theme.colors.text.tertiary,
               margin: 0,
             }}>
               {getPhaseText(progress.phase)}

@@ -72,7 +72,7 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
             fontFamily: theme.typography.fontFamily.sans,
           }}
           onFocus={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.accent[500];
+            e.currentTarget.style.borderColor = theme.colors.primary[500];
             e.currentTarget.style.boxShadow = theme.shadows.glow;
             e.currentTarget.style.transform = 'scale(1.02)';
           }}
@@ -120,7 +120,7 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
             fontFamily: theme.typography.fontFamily.mono,
           }}
           onFocus={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.accent[500];
+            e.currentTarget.style.borderColor = theme.colors.primary[500];
             e.currentTarget.style.boxShadow = theme.shadows.glow;
             e.currentTarget.style.transform = 'scale(1.02)';
           }}

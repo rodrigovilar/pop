@@ -2,97 +2,104 @@
  * Design System - PoP (Proof of Patience)
  *
  * Theme focused on:
- * - Calmness and patience
- * - Anti-anxiety visual language
- * - Long-term thinking
- * - Natural, organic growth
+ * - Calmness and patience through fresh, airy design
+ * - Blue/Green gradients representing flow and growth
+ * - Long-term thinking with clean, open spaces
+ * - Natural, organic movement (breeze effect)
  */
 
 export const theme = {
-  // Color Palette - Bitcoin Dark Mode (Enhanced)
+  // Color Palette - Light Mode with Blue/Green Accents
   colors: {
-    // Primary: Deep Slate/Blue (Backgrounds, Depth) - Refined for cleaner look
+    // Primary: Blue (Main brand color) - Fresh and trustworthy
     primary: {
-      50: '#f8fafc',
-      100: '#f1f5f9',
-      200: '#e2e8f0',
-      300: '#cbd5e1',
-      400: '#94a3b8',
-      500: '#64748b',
-      600: '#475569',
-      700: '#334155',
-      800: '#1e293b', // Card Background
-      900: '#0a0f1e', // Main Background (Deeper, richer)
-      950: '#050a14', // Darker Depth
+      50: '#eff6ff',   // Very light blue
+      100: '#dbeafe',  // Light blue
+      200: '#bfdbfe',  // Lighter blue
+      300: '#93c5fd',  // Light-medium blue
+      400: '#60a5fa',  // Medium blue
+      500: '#3b82f6',  // Core blue (rgb(59, 130, 246))
+      600: '#2563eb',  // Darker blue
+      700: '#1d4ed8',  // Deep blue
+      800: '#1e40af',  // Very deep blue
+      900: '#1e3a8a',  // Darkest blue
+      950: '#172554',  // Ultra dark blue
     },
 
-    // Secondary: Cool Gray (Neutral elements) - Warmer tones
+    // Secondary: Green (Growth, positivity) - Natural and calming
     secondary: {
-      50: '#fafafa',
-      100: '#f4f4f5',
-      200: '#e4e4e7',
-      300: '#d4d4d8',
-      400: '#a1a1aa',
-      500: '#71717a',
-      600: '#52525b',
-      700: '#3f3f46',
-      800: '#27272a',
-      900: '#18181b',
+      50: '#ecfdf5',   // Very light green
+      100: '#d1fae5',  // Light green
+      200: '#a7f3d0',  // Lighter green
+      300: '#6ee7b7',  // Light-medium green
+      400: '#34d399',  // Medium green
+      500: '#10b981',  // Core green (rgb(16, 185, 129))
+      600: '#059669',  // Darker green
+      700: '#047857',  // Deep green
+      800: '#065f46',  // Very deep green
+      900: '#064e3b',  // Darkest green
     },
 
-    // Accent: Bitcoin Orange (Vibrant, Energetic) - Enhanced vibrancy
+    // Accent: Bitcoin Orange (Heritage color) - Kept for BTC references
     accent: {
       50: '#fff8f0',
       100: '#ffeed9',
       200: '#ffddb3',
       300: '#ffc68a',
-      400: '#ffa854', // Brighter light orange
+      400: '#ffa854',
       500: '#F7931A', // Bitcoin Core Orange
       600: '#e67e00',
       700: '#c96d00',
       800: '#a85a00',
       900: '#8a4900',
-      glow: 'rgba(247, 147, 26, 0.35)', // Softer glow
-      glowStrong: 'rgba(247, 147, 26, 0.6)', // Stronger glow
+      glow: 'rgba(247, 147, 26, 0.35)',
+      glowStrong: 'rgba(247, 147, 26, 0.6)',
     },
 
-    // Backgrounds - More refined hierarchy
+    // Backgrounds - Light, airy, clean
     background: {
-      primary: '#0a0f1e',    // Deep Blue/Black (richer)
-      secondary: '#1a1f2e',  // Card/Panel (slightly lighter)
-      tertiary: '#252a3a',   // Inputs/Hover (more contrast)
-      elevated: '#2a2f3f',   // Elevated elements
-      overlay: 'rgba(10, 15, 30, 0.9)', // Glassmorphism (darker)
-      overlayLight: 'rgba(10, 15, 30, 0.6)', // Lighter overlay
+      primary: '#ffffff',    // Pure white
+      secondary: '#f8fafc',  // Very light gray-blue
+      tertiary: '#f1f5f9',   // Light gray-blue
+      elevated: '#ffffff',   // White for cards
+      overlay: 'rgba(255, 255, 255, 0.95)', // Light overlay
+      overlayLight: 'rgba(255, 255, 255, 0.7)', // Lighter overlay
     },
 
-    // Text - Improved hierarchy
+    // Text - Dark on light
     text: {
-      primary: '#ffffff',    // Pure White (stronger contrast)
-      secondary: '#cbd5e1',  // Light Gray
-      tertiary: '#94a3b8',   // Muted
-      quaternary: '#64748b', // Extra muted
-      inverse: '#0a0f1e',    // Dark text for light backgrounds
+      primary: '#0f172a',    // Very dark slate
+      secondary: '#475569',  // Dark gray
+      tertiary: '#64748b',   // Medium gray
+      quaternary: '#94a3b8', // Light gray
+      inverse: '#ffffff',    // White text for dark backgrounds
     },
 
-    // Status Colors - More refined
+    // Status Colors - Vibrant and clear
     status: {
-      success: '#22c55e',    // Brighter Emerald
-      successDark: '#16a34a',// Darker green
+      success: '#10b981',    // Green (matches secondary)
+      successDark: '#059669',// Darker green
       error: '#ef4444',      // Red
       errorDark: '#dc2626',  // Darker red
       warning: '#f59e0b',    // Amber
       warningDark: '#d97706',// Darker amber
-      info: '#3b82f6',       // Blue
+      info: '#3b82f6',       // Blue (matches primary)
       infoDark: '#2563eb',   // Darker blue
     },
 
-    // Border colors for cleaner separation
+    // Border colors for subtle separation
     border: {
-      subtle: 'rgba(255, 255, 255, 0.03)',
-      light: 'rgba(255, 255, 255, 0.08)',
-      medium: 'rgba(255, 255, 255, 0.12)',
-      strong: 'rgba(255, 255, 255, 0.16)',
+      subtle: 'rgba(15, 23, 42, 0.05)',
+      light: 'rgba(15, 23, 42, 0.1)',
+      medium: 'rgba(15, 23, 42, 0.15)',
+      strong: 'rgba(15, 23, 42, 0.2)',
+    },
+
+    // Gradient combinations for breeze effect
+    gradients: {
+      blueGreen: 'linear-gradient(135deg, rgb(59, 130, 246) 0%, rgb(16, 185, 129) 100%)',
+      blueGreenSoft: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%)',
+      blueGreenMedium: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(16, 185, 129, 0.2) 100%)',
     },
   },
 
@@ -154,22 +161,23 @@ export const theme = {
     full: '9999px',
   },
 
-  // Shadows - Enhanced with elevation levels
+  // Shadows - Soft elevation for light mode
   shadows: {
     none: 'none',
-    xs: '0 1px 2px 0 rgba(0, 0, 0, 0.1)',
-    sm: '0 2px 4px 0 rgba(0, 0, 0, 0.15)',
-    md: '0 4px 12px -1px rgba(0, 0, 0, 0.25)',
-    lg: '0 8px 24px -3px rgba(0, 0, 0, 0.35)',
-    xl: '0 16px 48px -8px rgba(0, 0, 0, 0.45)',
-    '2xl': '0 24px 60px -12px rgba(0, 0, 0, 0.55)',
-    inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.2)',
-    // Glow effects
-    glow: '0 0 20px rgba(247, 147, 26, 0.25)', // Orange aura
-    glowSoft: '0 0 30px rgba(247, 147, 26, 0.15)', // Softer glow
-    glowStrong: '0 0 40px rgba(247, 147, 26, 0.4)', // Stronger glow
+    xs: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    sm: '0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+    md: '0 4px 12px -1px rgba(0, 0, 0, 0.08)',
+    lg: '0 8px 24px -3px rgba(0, 0, 0, 0.1)',
+    xl: '0 16px 48px -8px rgba(0, 0, 0, 0.12)',
+    '2xl': '0 24px 60px -12px rgba(0, 0, 0, 0.15)',
+    inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+    // Blue/Green glow effects for accent elements
+    glow: '0 0 20px rgba(59, 130, 246, 0.2)',
+    glowSoft: '0 0 30px rgba(59, 130, 246, 0.15)',
+    glowStrong: '0 0 40px rgba(59, 130, 246, 0.3)',
+    glowGreen: '0 0 20px rgba(16, 185, 129, 0.2)',
     // Colored shadows for depth
-    elevatedCard: '0 8px 24px -6px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.05)',
+    elevatedCard: '0 8px 24px -6px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.05)',
   },
 
   // Transitions - More variety and control

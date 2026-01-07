@@ -183,7 +183,7 @@ export function MainView({ monthlyData, currency, startMonth, onNavigateToDetail
                 fontFamily: theme.typography.fontFamily.mono,
               }}
               onFocus={(e) => {
-                e.currentTarget.style.borderColor = theme.colors.accent[500];
+                e.currentTarget.style.borderColor = theme.colors.primary[500];
                 e.currentTarget.style.boxShadow = theme.shadows.glow;
                 e.currentTarget.style.transform = 'scale(1.01)';
               }}
@@ -214,10 +214,10 @@ export function MainView({ monthlyData, currency, startMonth, onNavigateToDetail
                 left: 0,
                 right: 0,
                 height: '3px',
-                background: `linear-gradient(90deg, ${theme.colors.accent[600]}, ${theme.colors.accent[400]}, ${theme.colors.accent[600]})`,
+                background: theme.colors.gradients.blueGreen,
                 backgroundSize: '200% 100%',
                 animation: 'shimmer 3s linear infinite',
-                boxShadow: `0 0 12px ${theme.colors.accent.glow}`,
+                boxShadow: theme.shadows.glow,
               }} />
 
               <div style={{ marginBottom: theme.spacing.lg }}>
@@ -253,9 +253,9 @@ export function MainView({ monthlyData, currency, startMonth, onNavigateToDetail
                 <div style={{
                   fontSize: theme.typography.fontSize['3xl'],
                   fontWeight: theme.typography.fontWeight.bold,
-                  color: theme.colors.accent[400], // Orange for value
+                  color: theme.colors.primary[600],
                   fontFamily: theme.typography.fontFamily.mono,
-                  textShadow: '0 0 20px rgba(251, 146, 60, 0.2)', // Glow
+                  textShadow: '0 0 20px rgba(59, 130, 246, 0.3)',
                 }}>
                   {formatCurrency(dcaResult.currentValue, currency)}
                 </div>
@@ -361,7 +361,7 @@ export function MainView({ monthlyData, currency, startMonth, onNavigateToDetail
                     marginTop: theme.spacing.xl,
                     width: '100%',
                     padding: theme.spacing.lg,
-                    backgroundColor: theme.colors.accent[500],
+                    background: theme.colors.gradients.blueGreen,
                     border: 'none',
                     borderRadius: theme.borderRadius.lg,
                     color: theme.colors.text.inverse,
@@ -376,12 +376,10 @@ export function MainView({ monthlyData, currency, startMonth, onNavigateToDetail
                     gap: theme.spacing.sm,
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = theme.colors.accent[600];
                     e.currentTarget.style.boxShadow = theme.shadows.glowStrong;
                     e.currentTarget.style.transform = 'translateY(-2px)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = theme.colors.accent[500];
                     e.currentTarget.style.boxShadow = theme.shadows.md;
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
