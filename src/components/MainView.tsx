@@ -41,48 +41,95 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
   }, [displayMonths, monthlyAmount]);
 
   return (
-    <div style={{
-      maxWidth: '1400px',
-      margin: '0 auto',
-      padding: theme.spacing.xl,
-    }}>
-      {/* Heading: "If you had invested in BTC on DATE" */}
-      <h1 style={{
-        fontSize: theme.typography.fontSize['3xl'],
-        fontFamily: theme.typography.fontFamily.display,
-        fontWeight: theme.typography.fontWeight.bold,
-        color: theme.colors.text.primary,
-        marginBottom: theme.spacing.xl,
-        textAlign: 'center',
-        lineHeight: theme.typography.lineHeight?.tight,
-      }}>
-        {t('main.ifYouHadInvested')} {(() => {
-          // Safe date parsing to avoid timezone issues
-          const [year, monthNum] = startMonth.split('-');
-          const monthNamesLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-          const monthName = monthNamesLong[parseInt(monthNum) - 1];
-          return `${monthName} ${year}`;
-        })()}
-      </h1>
+    <>
+      <style>{`
+        .main-view-container {
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: ${theme.spacing.xl};
+        }
 
-      {/* Two-column layout - STRICT 50/50 */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', // Strict 50/50 ignoring content width
-        gap: theme.spacing.xl,
-        alignItems: 'start',
-      }}>
+        .main-view-heading {
+          font-size: ${theme.typography.fontSize['3xl']};
+          font-family: ${theme.typography.fontFamily.display};
+          font-weight: ${theme.typography.fontWeight.bold};
+          color: ${theme.colors.text.primary};
+          margin-bottom: ${theme.spacing.xl};
+          text-align: center;
+          line-height: ${theme.typography.lineHeight?.tight};
+        }
+
+        .main-view-grid {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          gap: ${theme.spacing.xl};
+          align-items: start;
+        }
+
+        .dca-sidebar {
+          position: sticky;
+          top: ${theme.spacing['4xl']};
+          width: 100%;
+        }
+
+        @media (max-width: 1023px) {
+          .main-view-container {
+            padding: ${theme.spacing.md};
+          }
+
+          .main-view-heading {
+            font-size: ${theme.typography.fontSize['2xl']};
+            margin-bottom: ${theme.spacing.lg};
+          }
+
+          .main-view-grid {
+            grid-template-columns: 1fr;
+            gap: ${theme.spacing.lg};
+          }
+
+          .dca-sidebar {
+            position: static;
+            top: 0;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .main-view-container {
+            padding: ${theme.spacing.sm};
+          }
+
+          .main-view-heading {
+            font-size: ${theme.typography.fontSize.xl};
+            margin-bottom: ${theme.spacing.md};
+          }
+
+          .main-view-grid {
+            gap: ${theme.spacing.md};
+          }
+        }
+      `}</style>
+
+      <div className="main-view-container">
+        {/* Heading: "If you had invested in BTC on DATE" */}
+        <h1 className="main-view-heading">
+          {t('main.ifYouHadInvested')} {(() => {
+            // Safe date parsing to avoid timezone issues
+            const [year, monthNum] = startMonth.split('-');
+            const monthNamesLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            const monthName = monthNamesLong[parseInt(monthNum) - 1];
+            return `${monthName} ${year}`;
+          })()}
+        </h1>
+
+        {/* Two-column layout - STRICT 50/50 on desktop, stacked on mobile */}
+        <div className="main-view-grid">
         {/* LEFT: Monthly progression */}
         <section style={{ width: '100%' }}>
           <MonthGrid monthlyData={displayMonths} />
         </section>
 
-        {/* RIGHT: DCA Simulation (sticky) */}
-        <section style={{
-          position: 'sticky',
-          top: theme.spacing['4xl'], // Increased top offset for sticky header
-          width: '100%',
-        }}>
+        {/* RIGHT: DCA Simulation (sticky on desktop, normal on mobile) */}
+        <section className="dca-sidebar">
           <h2 style={{
             fontSize: theme.typography.fontSize.xl,
             fontWeight: theme.typography.fontWeight.semibold,
@@ -99,15 +146,18 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
             padding: theme.spacing.xl,
             borderRadius: theme.borderRadius.xl,
             marginBottom: theme.spacing.lg,
-            border: `1px solid ${theme.colors.secondary[700]}`,
-            boxShadow: theme.shadows.md,
+            border: `1px solid ${theme.colors.border.light}`,
+            boxShadow: theme.shadows.elevatedCard,
+            transition: theme.transitions.smooth,
           }}>
             <label style={{
               display: 'block',
               fontSize: theme.typography.fontSize.sm,
-              fontWeight: theme.typography.fontWeight.medium,
+              fontWeight: theme.typography.fontWeight.semibold,
               color: theme.colors.text.secondary,
               marginBottom: theme.spacing.sm,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
             }}>
               {t('dca.monthlyAmount')}
             </label>
@@ -119,24 +169,26 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
               step="10"
               style={{
                 width: '100%',
-                padding: theme.spacing.md,
-                fontSize: theme.typography.fontSize.lg,
-                fontWeight: theme.typography.fontWeight.semibold,
+                padding: theme.spacing.lg,
+                fontSize: theme.typography.fontSize.xl,
+                fontWeight: theme.typography.fontWeight.bold,
                 backgroundColor: theme.colors.background.tertiary,
                 color: theme.colors.text.primary,
-                border: `1px solid ${theme.colors.secondary[600]}`,
-                borderRadius: theme.borderRadius.md,
+                border: `2px solid ${theme.colors.border.medium}`,
+                borderRadius: theme.borderRadius.lg,
                 outline: 'none',
-                transition: theme.transitions.default,
+                transition: theme.transitions.smooth,
                 fontFamily: theme.typography.fontFamily.mono,
               }}
               onFocus={(e) => {
                 e.currentTarget.style.borderColor = theme.colors.accent[500];
-                e.currentTarget.style.boxShadow = `0 0 0 2px ${theme.colors.accent.glow}`;
+                e.currentTarget.style.boxShadow = theme.shadows.glow;
+                e.currentTarget.style.transform = 'scale(1.01)';
               }}
               onBlur={(e) => {
-                e.currentTarget.style.borderColor = theme.colors.secondary[600];
+                e.currentTarget.style.borderColor = theme.colors.border.medium;
                 e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'scale(1)';
               }}
             />
           </div>
@@ -144,22 +196,26 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
           {/* DCA Results */}
           {dcaResult && (
             <div style={{
-              backgroundColor: theme.colors.background.secondary, // Dark card
-              padding: theme.spacing.xl,
+              backgroundColor: theme.colors.background.secondary,
+              padding: theme.spacing['2xl'],
               borderRadius: theme.borderRadius.xl,
-              border: `1px solid ${theme.colors.secondary[700]}`, // Subtle border
+              border: `1px solid ${theme.colors.border.light}`,
               position: 'relative',
               overflow: 'hidden',
-              boxShadow: theme.shadows.lg,
+              boxShadow: theme.shadows.elevatedCard,
+              animation: 'slideUp 0.4s ease-out',
             }}>
-              {/* Top Accent Line */}
+              {/* Top Accent Line with glow */}
               <div style={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
                 right: 0,
-                height: '4px',
-                background: `linear-gradient(90deg, ${theme.colors.accent[500]}, ${theme.colors.accent[400]})`,
+                height: '3px',
+                background: `linear-gradient(90deg, ${theme.colors.accent[600]}, ${theme.colors.accent[400]}, ${theme.colors.accent[600]})`,
+                backgroundSize: '200% 100%',
+                animation: 'shimmer 3s linear infinite',
+                boxShadow: `0 0 12px ${theme.colors.accent.glow}`,
               }} />
 
               <div style={{ marginBottom: theme.spacing.lg }}>
@@ -204,8 +260,8 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
               </div>
 
               <div style={{
-                paddingTop: theme.spacing.lg,
-                borderTop: `1px solid ${theme.colors.secondary[700]}`,
+                paddingTop: theme.spacing.xl,
+                borderTop: `1px solid ${theme.colors.border.light}`,
               }}>
                 <div style={{
                   fontSize: theme.typography.fontSize.sm,
@@ -217,10 +273,13 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
                   {t('dca.results.pnl')}
                 </div>
                 <div style={{
-                  fontSize: theme.typography.fontSize['2xl'],
-                  fontWeight: theme.typography.fontWeight.bold,
+                  fontSize: theme.typography.fontSize['3xl'],
+                  fontWeight: theme.typography.fontWeight.extrabold,
                   color: dcaResult.currentPnLPercent >= 0 ? theme.colors.status.success : theme.colors.status.error,
                   fontFamily: theme.typography.fontFamily.mono,
+                  textShadow: dcaResult.currentPnLPercent >= 0
+                    ? `0 0 20px ${theme.colors.status.successDark}`
+                    : `0 0 20px ${theme.colors.status.errorDark}`,
                 }}>
                   {dcaResult.currentPnLPercent >= 0 ? '+' : ''}{dcaResult.currentPnLPercent.toFixed(2)}%
                 </div>
@@ -228,7 +287,7 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
                   fontSize: theme.typography.fontSize.lg,
                   fontWeight: theme.typography.fontWeight.semibold,
                   color: dcaResult.currentPnLPercent >= 0 ? theme.colors.status.success : theme.colors.status.error,
-                  marginTop: theme.spacing.xs,
+                  marginTop: theme.spacing.sm,
                   fontFamily: theme.typography.fontFamily.mono,
                 }}>
                   {dcaResult.currentPnL >= 0 ? '+' : ''}{formatCurrency(dcaResult.currentPnL, currency)}
@@ -238,16 +297,57 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
               {/* Additional metrics */}
               <div style={{
                 marginTop: theme.spacing.xl,
-                paddingTop: theme.spacing.lg,
-                borderTop: `1px solid ${theme.colors.secondary[700]}`,
-                fontSize: theme.typography.fontSize.sm,
-                color: theme.colors.text.secondary,
+                paddingTop: theme.spacing.xl,
+                borderTop: `1px solid ${theme.colors.border.light}`,
+                display: 'grid',
+                gridTemplateColumns: '1fr',
+                gap: theme.spacing.md,
               }}>
-                <div style={{ marginBottom: theme.spacing.sm }}>
-                  {t('dca.results.totalBTC')}: <strong style={{ color: theme.colors.text.primary }}>{dcaResult.totalBTC.toFixed(8)} BTC</strong>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: theme.spacing.md,
+                  backgroundColor: theme.colors.background.tertiary,
+                  borderRadius: theme.borderRadius.md,
+                  border: `1px solid ${theme.colors.border.subtle}`,
+                }}>
+                  <span style={{
+                    fontSize: theme.typography.fontSize.sm,
+                    color: theme.colors.text.secondary,
+                  }}>
+                    {t('dca.results.totalBTC')}
+                  </span>
+                  <strong style={{
+                    color: theme.colors.text.primary,
+                    fontFamily: theme.typography.fontFamily.mono,
+                    fontSize: theme.typography.fontSize.base,
+                  }}>
+                    {dcaResult.totalBTC.toFixed(8)} BTC
+                  </strong>
                 </div>
-                <div>
-                  {t('dca.results.daysInDrawdown')}: <strong style={{ color: theme.colors.text.primary }}>{dcaResult.daysInDrawdown} {t('common.days')}</strong>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: theme.spacing.md,
+                  backgroundColor: theme.colors.background.tertiary,
+                  borderRadius: theme.borderRadius.md,
+                  border: `1px solid ${theme.colors.border.subtle}`,
+                }}>
+                  <span style={{
+                    fontSize: theme.typography.fontSize.sm,
+                    color: theme.colors.text.secondary,
+                  }}>
+                    {t('dca.results.daysInDrawdown')}
+                  </span>
+                  <strong style={{
+                    color: theme.colors.text.primary,
+                    fontFamily: theme.typography.fontFamily.mono,
+                    fontSize: theme.typography.fontSize.base,
+                  }}>
+                    {dcaResult.daysInDrawdown} {t('common.days')}
+                  </strong>
                 </div>
               </div>
             </div>
@@ -255,5 +355,6 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
         </section>
       </div>
     </div>
+    </>
   );
 }

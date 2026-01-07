@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { theme } from '../styles/theme';
 
 interface DonutChartProps {
@@ -11,6 +12,7 @@ interface DonutChartProps {
 }
 
 export function DonutChart({ data, size = 200, thickness = 20 }: DonutChartProps) {
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     const total = data.reduce((acc, curr) => acc + curr.value, 0);
     let startAngle = 0;
 
@@ -23,9 +25,9 @@ export function DonutChart({ data, size = 200, thickness = 20 }: DonutChartProps
                     const radius = (size - thickness) / 2;
                     const cx = size / 2;
                     const cy = size / 2;
+                    const isHovered = hoveredIndex === index;
 
                     // Calculate path
-                    // SVG arcs are tricky. We need large-arc-flag and sweep-flag.
                     const x1 = cx + radius * Math.cos((startAngle - 90) * (Math.PI / 180));
                     const y1 = cy + radius * Math.sin((startAngle - 90) * (Math.PI / 180));
 
@@ -36,9 +38,8 @@ export function DonutChart({ data, size = 200, thickness = 20 }: DonutChartProps
                     const largeArcFlag = angle > 180 ? 1 : 0;
 
                     const pathData = [
-                        `M ${x1} ${y1}`, // Move to start point
-                        `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${x2} ${y2}`, // Arc to end point
-                        // For donut, we stroke the path, no fill.
+                        `M ${x1} ${y1}`,
+                        `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${x2} ${y2}`,
                     ].join(' ');
 
                     const segment = (
@@ -47,13 +48,16 @@ export function DonutChart({ data, size = 200, thickness = 20 }: DonutChartProps
                             d={pathData}
                             fill="none"
                             stroke={item.color}
-                            strokeWidth={thickness}
-                            strokeLinecap="round" // Optional: makes ends round, might look detached
+                            strokeWidth={isHovered ? thickness + 4 : thickness}
+                            strokeLinecap="round"
                             style={{
-                                transition: 'all 0.5s ease-out',
+                                transition: 'all 0.2s ease-out',
                                 transformOrigin: 'center',
                                 cursor: 'pointer',
+                                filter: isHovered ? `drop-shadow(0 0 8px ${item.color})` : 'none',
                             }}
+                            onMouseEnter={() => setHoveredIndex(index)}
+                            onMouseLeave={() => setHoveredIndex(null)}
                         />
                     );
 
@@ -67,7 +71,14 @@ export function DonutChart({ data, size = 200, thickness = 20 }: DonutChartProps
                                 r={radius}
                                 fill="none"
                                 stroke={item.color}
-                                strokeWidth={thickness}
+                                strokeWidth={isHovered ? thickness + 4 : thickness}
+                                style={{
+                                    transition: 'all 0.2s ease-out',
+                                    cursor: 'pointer',
+                                    filter: isHovered ? `drop-shadow(0 0 8px ${item.color})` : 'none',
+                                }}
+                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseLeave={() => setHoveredIndex(null)}
                             />
                         )
                     }
@@ -85,13 +96,37 @@ export function DonutChart({ data, size = 200, thickness = 20 }: DonutChartProps
                     style={{
                         fill: theme.colors.text.primary,
                         fontSize: theme.typography.fontSize['2xl'],
-                        fontWeight: theme.typography.fontWeight.bold,
+                        fontWeight: theme.typography.fontWeight.extrabold,
                         fontFamily: theme.typography.fontFamily.mono,
+                        filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))',
                     }}
                 >
                     {total}d
                 </text>
             </svg>
+
+            {/* Tooltip on hover */}
+            {hoveredIndex !== null && (
+                <div style={{
+                    position: 'absolute',
+                    bottom: '-45px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    backgroundColor: theme.colors.background.overlay,
+                    padding: `${theme.spacing.sm} ${theme.spacing.md}`,
+                    borderRadius: theme.borderRadius.md,
+                    fontSize: theme.typography.fontSize.sm,
+                    color: theme.colors.text.primary,
+                    whiteSpace: 'nowrap',
+                    backdropFilter: 'blur(8px)',
+                    border: `1px solid ${theme.colors.border.light}`,
+                    animation: 'fadeIn 0.15s ease-out',
+                    pointerEvents: 'none',
+                    boxShadow: theme.shadows.lg,
+                }}>
+                    <strong>{data[hoveredIndex].label}</strong>: {data[hoveredIndex].value} days
+                </div>
+            )}
         </div>
     );
 }

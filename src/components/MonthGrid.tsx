@@ -64,54 +64,74 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
       style={{
         backgroundColor: data.backgroundColor,
         color: data.textColor,
-        border: `1px solid ${isHovered ? theme.colors.primary[400] : 'rgba(255,255,255,0.05)'}`,
-        borderRadius: theme.borderRadius.md,
-        padding: theme.spacing.xs,
+        border: `1px solid ${isHovered ? theme.colors.border.strong : theme.colors.border.subtle}`,
+        borderRadius: theme.borderRadius.lg,
+        padding: theme.spacing.md,
         cursor: 'pointer',
-        transition: theme.transitions.base,
-        transform: isHovered ? 'scale(1.05)' : 'scale(1)',
-        boxShadow: isHovered ? theme.shadows.lg : theme.shadows.md,
+        transition: theme.transitions.smooth,
+        transform: isHovered ? 'translateY(-4px) scale(1.02)' : 'translateY(0) scale(1)',
+        boxShadow: isHovered ? theme.shadows.xl : theme.shadows.sm,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        minHeight: '110px',
+        minHeight: '120px',
         position: 'relative',
+        overflow: 'hidden',
       }}
     >
+      {/* Subtle gradient overlay on hover */}
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        background: isHovered
+          ? 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%)'
+          : 'transparent',
+        transition: theme.transitions.smooth,
+        pointerEvents: 'none',
+      }} />
+
       {/* Month/Year Label */}
       <div style={{
         fontSize: theme.typography.fontSize.xs,
         fontWeight: theme.typography.fontWeight.bold,
-        marginBottom: '4px',
+        marginBottom: theme.spacing.xs,
         fontFamily: theme.typography.fontFamily.mono,
         textTransform: 'uppercase',
-        letterSpacing: '0.05em',
-        opacity: 0.9,
+        letterSpacing: '0.08em',
+        opacity: 0.85,
+        position: 'relative',
+        zIndex: 1,
       }}>
         {monthLabel}/{year.slice(2)}
       </div>
 
       {/* Delta % */}
       <div style={{
-        fontSize: theme.typography.fontSize.lg,
+        fontSize: theme.typography.fontSize.xl,
         fontWeight: theme.typography.fontWeight.extrabold,
         letterSpacing: '-0.02em',
+        position: 'relative',
+        zIndex: 1,
       }}>
         {changeLabel}
       </div>
 
-      {/* Within-month price change indicator (small dot) */}
+      {/* Within-month price change indicator (refined dot) */}
       <div style={{
         position: 'absolute',
-        top: '8px',
-        right: '8px',
-        width: '6px',
-        height: '6px',
+        top: theme.spacing.sm,
+        right: theme.spacing.sm,
+        width: '8px',
+        height: '8px',
         borderRadius: '50%',
         backgroundColor: pctChange > 0 ? theme.colors.status.success :
           pctChange < 0 ? theme.colors.status.error : theme.colors.secondary[500],
-        boxShadow: '0 0 5px rgba(0,0,0,0.5)',
+        boxShadow: pctChange !== 0
+          ? `0 0 8px ${pctChange > 0 ? theme.colors.status.success : theme.colors.status.error}`
+          : 'none',
+        transition: theme.transitions.fast,
+        transform: isHovered ? 'scale(1.2)' : 'scale(1)',
       }} />
     </button>
   );
@@ -147,13 +167,14 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
       style={{
         position: 'fixed',
         inset: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.85)',
+        backgroundColor: theme.colors.background.overlay,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         zIndex: 1000,
         padding: theme.spacing.xl,
-        backdropFilter: 'blur(4px)',
+        backdropFilter: 'blur(12px)',
+        animation: 'fadeIn 0.2s ease-out',
       }}
     >
       <div
@@ -187,13 +208,13 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
             backgroundColor: colorData.backgroundColor,
             color: colorData.textColor,
             borderRadius: theme.borderRadius.xl,
-            padding: theme.spacing['2xl'],
+            padding: theme.spacing['3xl'],
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            boxShadow: theme.shadows.xl,
-            border: `1px solid rgba(255,255,255,0.1)`,
+            boxShadow: theme.shadows['2xl'],
+            border: `1px solid ${theme.colors.border.light}`,
           }}>
             {/* Close button - FRONT */}
             <button
@@ -203,29 +224,30 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               }}
               style={{
                 position: 'absolute',
-                top: theme.spacing.md,
-                right: theme.spacing.md,
-                background: 'rgba(0, 0, 0, 0.3)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                top: theme.spacing.lg,
+                right: theme.spacing.lg,
+                background: theme.colors.background.overlayLight,
+                border: `1px solid ${theme.colors.border.medium}`,
                 borderRadius: '50%',
-                width: '36px',
-                height: '36px',
+                width: '40px',
+                height: '40px',
                 fontSize: '24px',
                 cursor: 'pointer',
                 color: colorData.textColor,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                transition: theme.transitions.base,
+                transition: theme.transitions.fast,
                 zIndex: 10,
+                backdropFilter: 'blur(8px)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)';
-                e.currentTarget.style.transform = 'scale(1.1)';
+                e.currentTarget.style.background = theme.colors.background.overlay;
+                e.currentTarget.style.transform = 'scale(1.1) rotate(90deg)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)';
-                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.background = theme.colors.background.overlayLight;
+                e.currentTarget.style.transform = 'scale(1) rotate(0deg)';
               }}
             >
               ×
@@ -288,9 +310,9 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
             transform: 'rotateY(180deg)',
             backgroundColor: theme.colors.background.secondary,
             borderRadius: theme.borderRadius.xl,
-            border: `1px solid ${theme.colors.secondary[700]}`,
-            boxShadow: theme.shadows.glow,
-            padding: theme.spacing.lg,
+            border: `1px solid ${theme.colors.border.medium}`,
+            boxShadow: theme.shadows.elevatedCard,
+            padding: theme.spacing['2xl'],
             display: 'flex',
             flexDirection: 'column',
             overflow: 'hidden',
@@ -303,29 +325,29 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               }}
               style={{
                 position: 'absolute',
-                top: theme.spacing.md,
-                right: theme.spacing.md,
-                background: 'rgba(0, 0, 0, 0.3)',
-                border: `1px solid ${theme.colors.secondary[600]}`,
+                top: theme.spacing.lg,
+                right: theme.spacing.lg,
+                background: theme.colors.background.tertiary,
+                border: `1px solid ${theme.colors.border.medium}`,
                 borderRadius: '50%',
-                width: '36px',
-                height: '36px',
+                width: '40px',
+                height: '40px',
                 fontSize: '24px',
                 cursor: 'pointer',
                 color: theme.colors.text.primary,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                transition: theme.transitions.base,
+                transition: theme.transitions.fast,
                 zIndex: 10,
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)';
-                e.currentTarget.style.transform = 'scale(1.1)';
+                e.currentTarget.style.background = theme.colors.background.elevated;
+                e.currentTarget.style.transform = 'scale(1.1) rotate(90deg)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)';
-                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.background = theme.colors.background.tertiary;
+                e.currentTarget.style.transform = 'scale(1) rotate(0deg)';
               }}
             >
               ×
@@ -525,23 +547,61 @@ export function MonthGrid({ monthlyData }: MonthGridProps) {
     : null;
 
   return (
-    <div>
-      <h2 style={{
-        fontSize: theme.typography.fontSize.xl,
-        fontWeight: theme.typography.fontWeight.bold,
-        color: theme.colors.text.primary,
-        marginBottom: theme.spacing.lg,
-        fontFamily: theme.typography.fontFamily.display,
-      }}>
-        {t('main.monthlyProgression')}
-      </h2>
+    <>
+      <style>{`
+        .month-grid-container h2 {
+          font-size: ${theme.typography.fontSize.xl};
+          font-weight: ${theme.typography.fontWeight.bold};
+          color: ${theme.colors.text.primary};
+          margin-bottom: ${theme.spacing.lg};
+          font-family: ${theme.typography.fontFamily.display};
+        }
 
-      {/* Grid: 6 columns */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(6, 1fr)',
-        gap: theme.spacing.md,
-      }}>
+        .month-grid {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: ${theme.spacing.md};
+        }
+
+        @media (max-width: 1279px) {
+          .month-grid {
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+
+        @media (max-width: 1023px) {
+          .month-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: ${theme.spacing.sm};
+          }
+        }
+
+        @media (max-width: 767px) {
+          .month-grid-container h2 {
+            font-size: ${theme.typography.fontSize.lg};
+            margin-bottom: ${theme.spacing.md};
+          }
+
+          .month-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: ${theme.spacing.sm};
+          }
+        }
+
+        @media (max-width: 479px) {
+          .month-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
+
+      <div className="month-grid-container">
+        <h2>
+          {t('main.monthlyProgression')}
+        </h2>
+
+        {/* Responsive Grid: 6 cols on desktop, 4 on large tablets, 3 on tablets, 2 on mobile, 1 on small mobile */}
+        <div className="month-grid">
         {cellsData.map((cellData) => (
           <MonthCell
             key={cellData.month.month}
@@ -551,14 +611,15 @@ export function MonthGrid({ monthlyData }: MonthGridProps) {
         ))}
       </div>
 
-      {/* Modal for month details with flip animation */}
-      {selectedMonth && selectedColorData && (
-        <MonthDetailModal
-          month={selectedMonth}
-          colorData={selectedColorData}
-          onClose={() => setSelectedMonth(null)}
-        />
-      )}
-    </div>
+        {/* Modal for month details with flip animation */}
+        {selectedMonth && selectedColorData && (
+          <MonthDetailModal
+            month={selectedMonth}
+            colorData={selectedColorData}
+            onClose={() => setSelectedMonth(null)}
+          />
+        )}
+      </div>
+    </>
   );
 }

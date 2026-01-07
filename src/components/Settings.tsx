@@ -61,23 +61,25 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           style={{
             padding: `${theme.spacing.sm} ${theme.spacing.md}`,
             fontSize: theme.typography.fontSize.sm,
-            border: `1px solid ${theme.colors.secondary[700]}`,
-            borderRadius: theme.borderRadius.md,
+            border: `1px solid ${theme.colors.border.medium}`,
+            borderRadius: theme.borderRadius.lg,
             backgroundColor: theme.colors.background.tertiary,
             color: theme.colors.text.primary,
-            fontWeight: theme.typography.fontWeight.medium,
+            fontWeight: theme.typography.fontWeight.semibold,
             cursor: 'pointer',
             outline: 'none',
-            transition: theme.transitions.default,
-            fontFamily: theme.typography.fontFamily.mono,
+            transition: theme.transitions.smooth,
+            fontFamily: theme.typography.fontFamily.sans,
           }}
           onFocus={(e) => {
             e.currentTarget.style.borderColor = theme.colors.accent[500];
-            e.currentTarget.style.boxShadow = `0 0 0 2px ${theme.colors.accent.glow}`;
+            e.currentTarget.style.boxShadow = theme.shadows.glow;
+            e.currentTarget.style.transform = 'scale(1.02)';
           }}
           onBlur={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.secondary[700];
+            e.currentTarget.style.borderColor = theme.colors.border.medium;
             e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.transform = 'scale(1)';
           }}
         >
           {AVAILABLE_LANGUAGES.map((lang) => (
@@ -107,23 +109,25 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           style={{
             padding: `${theme.spacing.sm} ${theme.spacing.md}`,
             fontSize: theme.typography.fontSize.sm,
-            border: `1px solid ${theme.colors.secondary[700]}`,
-            borderRadius: theme.borderRadius.md,
+            border: `1px solid ${theme.colors.border.medium}`,
+            borderRadius: theme.borderRadius.lg,
             backgroundColor: theme.colors.background.tertiary,
             color: theme.colors.text.primary,
-            fontWeight: theme.typography.fontWeight.medium,
+            fontWeight: theme.typography.fontWeight.semibold,
             cursor: 'pointer',
             outline: 'none',
-            transition: theme.transitions.default,
+            transition: theme.transitions.smooth,
             fontFamily: theme.typography.fontFamily.mono,
           }}
           onFocus={(e) => {
             e.currentTarget.style.borderColor = theme.colors.accent[500];
-            e.currentTarget.style.boxShadow = `0 0 0 2px ${theme.colors.accent.glow}`;
+            e.currentTarget.style.boxShadow = theme.shadows.glow;
+            e.currentTarget.style.transform = 'scale(1.02)';
           }}
           onBlur={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.secondary[700];
+            e.currentTarget.style.borderColor = theme.colors.border.medium;
             e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.transform = 'scale(1)';
           }}
         >
           {AVAILABLE_CURRENCIES.map((curr) => (
