@@ -169,6 +169,7 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
               step="10"
               style={{
                 width: '100%',
+                boxSizing: 'border-box',
                 padding: theme.spacing.lg,
                 fontSize: theme.typography.fontSize.xl,
                 fontWeight: theme.typography.fontWeight.bold,
