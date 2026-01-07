@@ -9,9 +9,10 @@ interface MainViewProps {
   monthlyData: Map<string, MonthlyData>;
   currency: Currency;
   startMonth: string;
+  onNavigateToDetails?: (monthlyAmount: number) => void;
 }
 
-export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
+export function MainView({ monthlyData, currency, startMonth, onNavigateToDetails }: MainViewProps) {
   const { t, formatCurrency } = useI18n();
   const [monthlyAmount, setMonthlyAmount] = useState(100);
 
@@ -351,6 +352,43 @@ export function MainView({ monthlyData, currency, startMonth }: MainViewProps) {
                   </strong>
                 </div>
               </div>
+
+              {/* Details button */}
+              {onNavigateToDetails && (
+                <button
+                  onClick={() => onNavigateToDetails(monthlyAmount)}
+                  style={{
+                    marginTop: theme.spacing.xl,
+                    width: '100%',
+                    padding: theme.spacing.lg,
+                    backgroundColor: theme.colors.accent[500],
+                    border: 'none',
+                    borderRadius: theme.borderRadius.lg,
+                    color: theme.colors.text.inverse,
+                    fontSize: theme.typography.fontSize.base,
+                    fontWeight: theme.typography.fontWeight.bold,
+                    cursor: 'pointer',
+                    transition: theme.transitions.smooth,
+                    boxShadow: theme.shadows.md,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: theme.spacing.sm,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = theme.colors.accent[600];
+                    e.currentTarget.style.boxShadow = theme.shadows.glowStrong;
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = theme.colors.accent[500];
+                    e.currentTarget.style.boxShadow = theme.shadows.md;
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
+                  📊 {t('dca.viewDetails') || 'View Details'}
+                </button>
+              )}
             </div>
           )}
         </section>

@@ -3,6 +3,7 @@ import { I18nProvider } from './contexts/I18nContext';
 import { Settings } from './components/Settings';
 import { HeroIllustration } from './components/HeroIllustration';
 import { MainView } from './components/MainView';
+import { DCADetails } from './components/DCADetails';
 import { LoadingState } from './components/LoadingState';
 import { useData } from './hooks/useData';
 import { theme } from './styles/theme';
@@ -10,6 +11,8 @@ import type { Currency } from './types';
 
 function AppContent() {
   const [currency, setCurrency] = useState<Currency>('USD');
+  const [currentView, setCurrentView] = useState<'main' | 'dca-details'>('main');
+  const [dcaDetailsAmount, setDcaDetailsAmount] = useState(100);
 
   // Calculate default start date: 48 months ago (excluding current month)
   const now = new Date();
@@ -138,7 +141,25 @@ function AppContent() {
 
       {/* Main content */}
       <main style={{ flex: 1, position: 'relative' }}>
-        <MainView monthlyData={monthlyData} currency={currency} startMonth={startMonth} />
+        {currentView === 'main' ? (
+          <MainView
+            monthlyData={monthlyData}
+            currency={currency}
+            startMonth={startMonth}
+            onNavigateToDetails={(amount) => {
+              setDcaDetailsAmount(amount);
+              setCurrentView('dca-details');
+            }}
+          />
+        ) : (
+          <DCADetails
+            monthlyData={monthlyData}
+            currency={currency}
+            startMonth={startMonth}
+            monthlyAmount={dcaDetailsAmount}
+            onBack={() => setCurrentView('main')}
+          />
+        )}
       </main>
 
       {/* Illustration moved to bottom */}
