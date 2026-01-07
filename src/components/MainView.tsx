@@ -386,7 +386,7 @@ export function MainView({ monthlyData, currency, startMonth, onNavigateToDetail
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
                 >
-                  📊 {t('dca.viewDetails') || 'View Details'}
+                  📊 {t('dca.viewDetails')}
                 </button>
               )}
             </div>

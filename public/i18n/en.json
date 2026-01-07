@@ -55,6 +55,7 @@
     "startDate": "Start Date",
     "monthlyAmount": "Monthly Amount",
     "simulate": "Simulate",
+    "viewDetails": "View Details",
     "errors": {
       "selectDate": "Please select a start date",
       "invalidAmount": "Please enter a valid monthly amount"
@@ -72,6 +73,18 @@
       "drawdownText": "You spent {days} days below your cost basis. This is normal.",
       "disciplineTitle": "Discipline Over Timing",
       "disciplineText": "Your longest negative streak was {days} days. Patience is the game."
+    },
+    "details": {
+      "title": "DCA Details",
+      "month": "Month",
+      "invested": "Invested",
+      "btcBought": "BTC Bought",
+      "currentValue": "Current Value",
+      "totalGain": "Total Gain %",
+      "monthlyGain": "Monthly Gain %",
+      "avgMonthlyGain": "Avg Monthly Gain",
+      "noteTitle": "About the Calculations",
+      "noteText": "The \"Monthly Gain %\" represents the compound monthly return needed to achieve the total gain over the investment period. The \"Avg Monthly Gain\" is a weighted average where each investment's weight equals the number of months it has been active, giving more importance to longer-term investments."
     }
   },
   "keyDays": {
@@ -99,6 +112,7 @@
     "loading": "Loading...",
     "error": "Error",
     "retry": "Retry",
+    "back": "Back",
     "month": "Month",
     "year": "Year",
     "day": "Day",

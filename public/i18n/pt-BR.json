@@ -55,6 +55,7 @@
     "startDate": "Data de Início",
     "monthlyAmount": "Valor Mensal",
     "simulate": "Simular",
+    "viewDetails": "Ver Detalhes",
     "errors": {
       "selectDate": "Por favor selecione uma data de início",
       "invalidAmount": "Por favor insira um valor mensal válido"
@@ -72,6 +73,18 @@
       "drawdownText": "Você passou {days} dias abaixo do seu preço médio. Isso é normal.",
       "disciplineTitle": "Disciplina Acima de Timing",
       "disciplineText": "Sua maior sequência negativa foi de {days} dias. Paciência é o jogo."
+    },
+    "details": {
+      "title": "Detalhes do DCA",
+      "month": "Mês",
+      "invested": "Investido",
+      "btcBought": "BTC Comprado",
+      "currentValue": "Valor Atual",
+      "totalGain": "Ganho Total %",
+      "monthlyGain": "Ganho Mensal %",
+      "avgMonthlyGain": "Ganho Mensal Médio",
+      "noteTitle": "Sobre os Cálculos",
+      "noteText": "O \"Ganho Mensal %\" representa o retorno mensal composto necessário para alcançar o ganho total durante o período de investimento. O \"Ganho Mensal Médio\" é uma média ponderada onde o peso de cada investimento é igual ao número de meses que ele está ativo, dando mais importância aos investimentos de longo prazo."
     }
   },
   "keyDays": {
@@ -99,6 +112,7 @@
     "loading": "Carregando...",
     "error": "Erro",
     "retry": "Tentar Novamente",
+    "back": "Voltar",
     "month": "Mês",
     "year": "Ano",
     "day": "Dia",

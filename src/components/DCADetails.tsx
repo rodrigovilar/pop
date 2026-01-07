@@ -60,18 +60,32 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
     return entries;
   }, [monthlyData, startMonth, monthlyAmount]);
 
-  // Calculate totals
+  // Calculate totals and weighted average monthly gain
   const totals = useMemo(() => {
     const totalInvested = dcaEntries.reduce((sum, entry) => sum + entry.amountInvested, 0);
     const totalBTC = dcaEntries.reduce((sum, entry) => sum + entry.btcBought, 0);
     const totalCurrentValue = dcaEntries.reduce((sum, entry) => sum + entry.currentValue, 0);
     const totalGainPercent = totalInvested > 0 ? ((totalCurrentValue - totalInvested) / totalInvested) * 100 : 0;
 
+    // Calculate weighted average monthly gain
+    // Weight = number of months elapsed for each entry
+    let weightedSum = 0;
+    let totalWeight = 0;
+
+    dcaEntries.forEach(entry => {
+      const weight = entry.monthsElapsed;
+      weightedSum += entry.monthlyGainPercent * weight;
+      totalWeight += weight;
+    });
+
+    const avgMonthlyGainPercent = totalWeight > 0 ? weightedSum / totalWeight : 0;
+
     return {
       totalInvested,
       totalBTC,
       totalCurrentValue,
       totalGainPercent,
+      avgMonthlyGainPercent,
     };
   }, [dcaEntries]);
 
@@ -99,21 +113,22 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
         }
 
         .dca-details-table thead {
-          background-color: ${theme.colors.background.tertiary};
+          background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
           position: sticky;
           top: 0;
           z-index: 10;
+          border-bottom: 2px solid rgba(59, 130, 246, 0.3);
         }
 
         .dca-details-table th {
           padding: ${theme.spacing.md} ${theme.spacing.lg};
           text-align: left;
           font-weight: ${theme.typography.fontWeight.bold};
-          color: ${theme.colors.text.secondary};
+          color: rgb(147, 197, 253);
           text-transform: uppercase;
           letter-spacing: 0.05em;
           font-size: ${theme.typography.fontSize.xs};
-          border-bottom: 2px solid ${theme.colors.border.medium};
+          border-bottom: 1px solid rgba(59, 130, 246, 0.2);
         }
 
         .dca-details-table th:nth-child(n+2) {
@@ -121,12 +136,18 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
         }
 
         .dca-details-table tbody tr {
-          border-bottom: 1px solid ${theme.colors.border.subtle};
+          border-bottom: 1px solid rgba(59, 130, 246, 0.08);
+          background: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.02) 50%, transparent 100%);
           transition: ${theme.transitions.fast};
         }
 
+        .dca-details-table tbody tr:nth-child(even) {
+          background: linear-gradient(90deg, transparent 0%, rgba(16, 185, 129, 0.02) 50%, transparent 100%);
+        }
+
         .dca-details-table tbody tr:hover {
-          background-color: ${theme.colors.background.elevated};
+          background: linear-gradient(90deg, rgba(59, 130, 246, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
+          border-bottom-color: rgba(59, 130, 246, 0.2);
         }
 
         .dca-details-table tbody tr:last-child {
@@ -149,14 +170,15 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
         }
 
         .dca-details-table tfoot {
-          background-color: ${theme.colors.background.tertiary};
+          background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
           font-weight: ${theme.typography.fontWeight.bold};
-          border-top: 2px solid ${theme.colors.border.strong};
+          border-top: 2px solid rgba(59, 130, 246, 0.4);
         }
 
         .dca-details-table tfoot td {
           padding: ${theme.spacing.lg};
           font-size: ${theme.typography.fontSize.base};
+          color: rgb(147, 197, 253);
         }
 
         .positive-gain {
@@ -216,7 +238,7 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
               e.currentTarget.style.transform = 'translateX(0)';
             }}
           >
-            ← {t('common.back') || 'Back'}
+            ← {t('common.back')}
           </button>
 
           <h1 style={{
@@ -226,7 +248,7 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
             color: theme.colors.text.primary,
             margin: 0,
           }}>
-            {t('dca.details.title') || 'DCA Details'}
+            {t('dca.details.title')}
           </h1>
         </div>
 
@@ -251,7 +273,7 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
               letterSpacing: '0.05em',
               marginBottom: theme.spacing.xs,
             }}>
-              Total Invested
+              {t('dca.results.totalInvested')}
             </div>
             <div style={{
               fontSize: theme.typography.fontSize.xl,
@@ -277,7 +299,7 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
               letterSpacing: '0.05em',
               marginBottom: theme.spacing.xs,
             }}>
-              Total BTC
+              {t('dca.results.totalBTC')}
             </div>
             <div style={{
               fontSize: theme.typography.fontSize.xl,
@@ -303,7 +325,7 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
               letterSpacing: '0.05em',
               marginBottom: theme.spacing.xs,
             }}>
-              Current Value
+              {t('dca.results.currentValue')}
             </div>
             <div style={{
               fontSize: theme.typography.fontSize.xl,
@@ -329,7 +351,7 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
               letterSpacing: '0.05em',
               marginBottom: theme.spacing.xs,
             }}>
-              Total Gain
+              {t('dca.details.totalGain')}
             </div>
             <div style={{
               fontSize: theme.typography.fontSize.xl,
@@ -340,6 +362,32 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
               {totals.totalGainPercent >= 0 ? '+' : ''}{totals.totalGainPercent.toFixed(2)}%
             </div>
           </div>
+
+          <div style={{
+            padding: theme.spacing.lg,
+            backgroundColor: theme.colors.background.secondary,
+            borderRadius: theme.borderRadius.lg,
+            border: `1px solid ${theme.colors.border.light}`,
+            boxShadow: theme.shadows.md,
+          }}>
+            <div style={{
+              fontSize: theme.typography.fontSize.xs,
+              color: theme.colors.text.tertiary,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+              marginBottom: theme.spacing.xs,
+            }}>
+              {t('dca.details.avgMonthlyGain')}
+            </div>
+            <div style={{
+              fontSize: theme.typography.fontSize.xl,
+              fontWeight: theme.typography.fontWeight.bold,
+              color: totals.avgMonthlyGainPercent >= 0 ? 'rgb(147, 197, 253)' : theme.colors.status.error,
+              fontFamily: theme.typography.fontFamily.mono,
+            }}>
+              {totals.avgMonthlyGainPercent >= 0 ? '+' : ''}{totals.avgMonthlyGainPercent.toFixed(2)}%
+            </div>
+          </div>
         </div>
 
         {/* Table */}
@@ -347,12 +395,12 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
           <table className="dca-details-table">
             <thead>
               <tr>
-                <th>{t('dca.details.month') || 'Month'}</th>
-                <th>{t('dca.details.invested') || 'Invested'}</th>
-                <th>{t('dca.details.btcBought') || 'BTC Bought'}</th>
-                <th>{t('dca.details.currentValue') || 'Current Value'}</th>
-                <th>{t('dca.details.totalGain') || 'Total Gain %'}</th>
-                <th>{t('dca.details.monthlyGain') || 'Monthly Gain %'}</th>
+                <th>{t('dca.details.month')}</th>
+                <th>{t('dca.details.invested')}</th>
+                <th>{t('dca.details.btcBought')}</th>
+                <th>{t('dca.details.currentValue')}</th>
+                <th>{t('dca.details.totalGain')}</th>
+                <th>{t('dca.details.monthlyGain')}</th>
               </tr>
             </thead>
             <tbody>
@@ -380,7 +428,9 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
                 <td className={totals.totalGainPercent >= 0 ? 'positive-gain' : 'negative-gain'}>
                   {totals.totalGainPercent >= 0 ? '+' : ''}{totals.totalGainPercent.toFixed(2)}%
                 </td>
-                <td>—</td>
+                <td className={totals.avgMonthlyGainPercent >= 0 ? 'positive-gain' : 'negative-gain'}>
+                  {totals.avgMonthlyGainPercent >= 0 ? '+' : ''}{totals.avgMonthlyGainPercent.toFixed(2)}%
+                </td>
               </tr>
             </tfoot>
           </table>
@@ -393,7 +443,7 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
           backgroundColor: theme.colors.background.secondary,
           borderRadius: theme.borderRadius.lg,
           border: `1px solid ${theme.colors.border.light}`,
-          borderLeft: `4px solid ${theme.colors.accent[500]}`,
+          borderLeft: `4px solid rgb(59, 130, 246)`,
         }}>
           <h3 style={{
             fontSize: theme.typography.fontSize.lg,
@@ -402,16 +452,15 @@ export function DCADetails({ monthlyData, currency, startMonth, monthlyAmount, o
             marginTop: 0,
             marginBottom: theme.spacing.sm,
           }}>
-            📊 {t('dca.details.noteTitle') || 'About the Calculations'}
+            📊 {t('dca.details.noteTitle')}
           </h3>
-          <p style={{
+          <div style={{
             fontSize: theme.typography.fontSize.sm,
             color: theme.colors.text.secondary,
             lineHeight: theme.typography.lineHeight.relaxed,
-            margin: 0,
           }}>
-            {t('dca.details.noteText') || 'The "Monthly Gain %" represents the compound monthly return needed to achieve the total gain over the investment period. It\'s calculated using the formula: ((Current Value / Amount Invested)^(1/Months Elapsed) - 1) × 100. This helps you understand the average monthly performance of each investment.'}
-          </p>
+            {t('dca.details.noteText')}
+          </div>
         </div>
       </div>
     </>
