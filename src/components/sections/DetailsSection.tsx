@@ -296,22 +296,50 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
       <div style={{
         width: '100%',
         maxWidth: '1400px',
-        overflowX: 'auto',
         marginBottom: theme.spacing['2xl'],
+        position: 'relative',
       }}>
-        <table style={{
-          width: '100%',
-          borderCollapse: 'collapse',
+        {/* Scroll indicator */}
+        <div style={{
+          position: 'absolute',
+          bottom: theme.spacing.md,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          fontSize: theme.typography.fontSize.xs,
+          color: theme.colors.text.tertiary,
+          backgroundColor: theme.colors.background.overlay,
+          padding: `${theme.spacing.xs} ${theme.spacing.md}`,
+          borderRadius: theme.borderRadius.full,
+          backdropFilter: 'blur(8px)',
+          zIndex: 5,
+          pointerEvents: 'none',
+          opacity: 0.8,
+        }}>
+          👇 Scroll to see all months
+        </div>
+
+        <div style={{
           backgroundColor: theme.colors.background.elevated,
           borderRadius: theme.borderRadius.lg,
-          overflow: 'hidden',
           boxShadow: theme.shadows.elevatedCard,
+          border: `1px solid ${theme.colors.border.light}`,
+          overflow: 'hidden',
         }}>
-          <thead style={{
-            position: 'sticky',
-            top: '80px',
-            zIndex: 10,
+          {/* Scrollable Table Container */}
+          <div style={{
+            maxHeight: '70vh',
+            overflowY: 'auto',
+            overflowX: 'auto',
           }}>
+          <table style={{
+            width: '100%',
+            borderCollapse: 'collapse',
+          }}>
+            <thead style={{
+              position: 'sticky',
+              top: 0,
+              zIndex: 10,
+            }}>
             <tr style={{
               backgroundColor: theme.colors.background.tertiary,
               borderBottom: `2px solid ${theme.colors.border.medium}`,
@@ -388,9 +416,9 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
               }}>
                 {t('dca.details.avgMonthlyGain')} %
               </th>
-            </tr>
-          </thead>
-          <tbody>
+              </tr>
+            </thead>
+            <tbody>
             {dcaEntries.map((entry) => (
               <tr
                 key={entry.month}
@@ -463,9 +491,11 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
                   {entry.monthlyGainPercent >= 0 ? '+' : ''}{entry.monthlyGainPercent.toFixed(2)}%
                 </td>
               </tr>
-            ))}
-          </tbody>
-        </table>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        </div>
       </div>
 
       {/* Note */}
