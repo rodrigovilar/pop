@@ -381,7 +381,7 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
             </tr>
           </thead>
           <tbody>
-            {dcaEntries.map((entry, index) => (
+            {dcaEntries.map((entry) => (
               <tr
                 key={entry.month}
                 style={{
