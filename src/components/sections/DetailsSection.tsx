@@ -493,6 +493,83 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
               </tr>
               ))}
             </tbody>
+            <tfoot style={{
+              position: 'sticky',
+              bottom: 0,
+              zIndex: 10,
+            }}>
+              <tr style={{
+                backgroundColor: theme.colors.background.tertiary,
+                borderTop: `3px solid ${theme.colors.border.medium}`,
+              }}>
+                <td style={{
+                  padding: theme.spacing.md,
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: theme.colors.text.primary,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  backgroundColor: theme.colors.background.tertiary,
+                }}>
+                  {t('dca.results.total') || 'TOTAL'}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: theme.colors.text.primary,
+                  fontFamily: theme.typography.fontFamily.mono,
+                  backgroundColor: theme.colors.background.tertiary,
+                }}>
+                  {formatCurrency(totals.totalInvested, currency)}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: theme.colors.text.primary,
+                  fontFamily: theme.typography.fontFamily.mono,
+                  backgroundColor: theme.colors.background.tertiary,
+                }}>
+                  {formatNumber(totals.totalBTC, { minimumFractionDigits: 8, maximumFractionDigits: 8 })}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: theme.colors.primary[600],
+                  fontFamily: theme.typography.fontFamily.mono,
+                  backgroundColor: theme.colors.background.tertiary,
+                }}>
+                  {formatCurrency(totals.totalCurrentValue, currency)}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.extrabold,
+                  color: totals.totalGainPercent >= 0 ? theme.colors.status.success : theme.colors.status.error,
+                  fontFamily: theme.typography.fontFamily.mono,
+                  backgroundColor: theme.colors.background.tertiary,
+                }}>
+                  {totals.totalGainPercent >= 0 ? '+' : ''}{totals.totalGainPercent.toFixed(2)}%
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.extrabold,
+                  color: totals.avgMonthlyGainPercent >= 0 ? theme.colors.status.success : theme.colors.status.error,
+                  fontFamily: theme.typography.fontFamily.mono,
+                  backgroundColor: theme.colors.background.tertiary,
+                }}>
+                  {totals.avgMonthlyGainPercent >= 0 ? '+' : ''}{totals.avgMonthlyGainPercent.toFixed(2)}%
+                </td>
+              </tr>
+            </tfoot>
           </table>
         </div>
         </div>

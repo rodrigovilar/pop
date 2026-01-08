@@ -44,8 +44,52 @@ export function BreezeBackground({ currentSection = 0 }: BreezeBackgroundProps) 
     ];
 
     const targetColors = colorSchemes[currentSection] || colorSchemes[0];
-    setSectionColors(targetColors);
-  }, [currentSection]);
+
+    // Smooth color interpolation to prevent flickering
+    const startColors = { ...sectionColors };
+    const duration = 800; // ms
+    const startTime = performance.now();
+    let animationFrameId: number;
+
+    const animate = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Easing function for smooth transition
+      const easeProgress = progress < 0.5
+        ? 2 * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+      const interpolate = (start: number, end: number) =>
+        Math.round(start + (end - start) * easeProgress);
+
+      setSectionColors({
+        blue: {
+          r: interpolate(startColors.blue.r, targetColors.blue.r),
+          g: interpolate(startColors.blue.g, targetColors.blue.g),
+          b: interpolate(startColors.blue.b, targetColors.blue.b),
+        },
+        green: {
+          r: interpolate(startColors.green.r, targetColors.green.r),
+          g: interpolate(startColors.green.g, targetColors.green.g),
+          b: interpolate(startColors.green.b, targetColors.green.b),
+        },
+      });
+
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrameId = requestAnimationFrame(animate);
+
+    // Cleanup: cancel animation if section changes before completion
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, [currentSection, sectionColors]);
   return (
     <>
       <style>{`
@@ -102,7 +146,6 @@ export function BreezeBackground({ currentSection = 0 }: BreezeBackgroundProps) 
           width: 200%;
           height: 350px;
           will-change: transform;
-          transition: background 1.5s ease-in-out;
         }
 
         /* Wave 1 - Primary color at top */
@@ -186,7 +229,6 @@ export function BreezeBackground({ currentSection = 0 }: BreezeBackgroundProps) 
           width: 150%;
           height: 250px;
           will-change: transform;
-          transition: background 1.5s ease-in-out;
         }
 
         .cloud-1 {
