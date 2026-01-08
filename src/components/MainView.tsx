@@ -328,29 +328,6 @@ export function MainView({ monthlyData, currency, startMonth, onNavigateToDetail
                     {dcaResult.totalBTC.toFixed(8)} BTC
                   </strong>
                 </div>
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  padding: theme.spacing.md,
-                  backgroundColor: theme.colors.background.tertiary,
-                  borderRadius: theme.borderRadius.md,
-                  border: `1px solid ${theme.colors.border.subtle}`,
-                }}>
-                  <span style={{
-                    fontSize: theme.typography.fontSize.sm,
-                    color: theme.colors.text.secondary,
-                  }}>
-                    {t('dca.results.daysInDrawdown')}
-                  </span>
-                  <strong style={{
-                    color: theme.colors.text.primary,
-                    fontFamily: theme.typography.fontFamily.mono,
-                    fontSize: theme.typography.fontSize.base,
-                  }}>
-                    {dcaResult.daysInDrawdown} {t('common.days')}
-                  </strong>
-                </div>
               </div>
 
               {/* Details button */}

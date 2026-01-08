@@ -62,9 +62,8 @@ export function BreezeBackground() {
         .wave {
           position: absolute;
           width: 200%;
-          height: 300px;
+          height: 350px;
           will-change: transform;
-          opacity: 0.6;
         }
 
         /* Wave 1 - Blue at top */
@@ -73,13 +72,13 @@ export function BreezeBackground() {
           left: -50%;
           background: linear-gradient(
             to bottom,
-            rgba(59, 130, 246, 0.15) 0%,
-            rgba(59, 130, 246, 0.08) 30%,
+            rgba(59, 130, 246, 0.35) 0%,
+            rgba(59, 130, 246, 0.15) 40%,
             rgba(255, 255, 255, 0) 100%
           );
           border-radius: 45% 55% 60% 40% / 30% 40% 60% 70%;
           animation: waveSlide1 40s ease-in-out infinite;
-          filter: blur(40px);
+          filter: blur(60px);
         }
 
         /* Wave 2 - Green at middle-top */
@@ -88,13 +87,13 @@ export function BreezeBackground() {
           right: -50%;
           background: linear-gradient(
             to bottom,
-            rgba(16, 185, 129, 0.12) 0%,
-            rgba(16, 185, 129, 0.06) 30%,
+            rgba(16, 185, 129, 0.3) 0%,
+            rgba(16, 185, 129, 0.12) 40%,
             rgba(255, 255, 255, 0) 100%
           );
           border-radius: 40% 60% 55% 45% / 35% 45% 55% 65%;
           animation: waveSlide2 50s ease-in-out infinite;
-          filter: blur(45px);
+          filter: blur(65px);
         }
 
         /* Wave 3 - Blue at middle */
@@ -103,13 +102,13 @@ export function BreezeBackground() {
           left: -50%;
           background: linear-gradient(
             to bottom,
-            rgba(59, 130, 246, 0.18) 0%,
-            rgba(59, 130, 246, 0.09) 30%,
+            rgba(59, 130, 246, 0.4) 0%,
+            rgba(59, 130, 246, 0.18) 40%,
             rgba(255, 255, 255, 0) 100%
           );
           border-radius: 50% 50% 45% 55% / 40% 50% 50% 60%;
           animation: waveSlide3 45s ease-in-out infinite;
-          filter: blur(50px);
+          filter: blur(70px);
         }
 
         /* Wave 4 - Green at middle-bottom */
@@ -118,13 +117,13 @@ export function BreezeBackground() {
           right: -50%;
           background: linear-gradient(
             to bottom,
-            rgba(16, 185, 129, 0.15) 0%,
-            rgba(16, 185, 129, 0.07) 30%,
+            rgba(16, 185, 129, 0.38) 0%,
+            rgba(16, 185, 129, 0.15) 40%,
             rgba(255, 255, 255, 0) 100%
           );
           border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%;
           animation: waveSlide4 55s ease-in-out infinite;
-          filter: blur(55px);
+          filter: blur(75px);
         }
 
         /* Wave 5 - Blue at bottom */
@@ -133,22 +132,21 @@ export function BreezeBackground() {
           left: -50%;
           background: linear-gradient(
             to bottom,
-            rgba(59, 130, 246, 0.2) 0%,
-            rgba(59, 130, 246, 0.1) 25%,
+            rgba(59, 130, 246, 0.45) 0%,
+            rgba(59, 130, 246, 0.2) 30%,
             rgba(255, 255, 255, 0) 100%
           );
           border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
           animation: waveSlide1 60s ease-in-out infinite reverse;
-          filter: blur(60px);
+          filter: blur(80px);
         }
 
         /* Additional cloud-like shapes */
         .cloud {
           position: absolute;
           width: 150%;
-          height: 200px;
+          height: 250px;
           will-change: transform;
-          opacity: 0.4;
         }
 
         .cloud-1 {
@@ -156,13 +154,13 @@ export function BreezeBackground() {
           left: -30%;
           background: linear-gradient(
             to bottom,
-            rgba(59, 130, 246, 0.1) 0%,
-            rgba(16, 185, 129, 0.08) 20%,
+            rgba(59, 130, 246, 0.25) 0%,
+            rgba(16, 185, 129, 0.18) 30%,
             rgba(255, 255, 255, 0) 100%
           );
           border-radius: 48% 52% 58% 42% / 35% 55% 45% 65%;
           animation: waveSlide2 70s ease-in-out infinite;
-          filter: blur(70px);
+          filter: blur(85px);
         }
 
         .cloud-2 {
@@ -170,13 +168,13 @@ export function BreezeBackground() {
           right: -30%;
           background: linear-gradient(
             to bottom,
-            rgba(16, 185, 129, 0.12) 0%,
-            rgba(59, 130, 246, 0.08) 20%,
+            rgba(16, 185, 129, 0.28) 0%,
+            rgba(59, 130, 246, 0.2) 30%,
             rgba(255, 255, 255, 0) 100%
           );
           border-radius: 42% 58% 52% 48% / 40% 60% 40% 60%;
           animation: waveSlide3 65s ease-in-out infinite reverse;
-          filter: blur(65px);
+          filter: blur(90px);
         }
 
         @media (max-width: 768px) {

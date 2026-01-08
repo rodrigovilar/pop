@@ -43,13 +43,23 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
       alignItems: 'center',
     }}>
       {/* Language Selector */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: theme.spacing.xs,
+        padding: `${theme.spacing.xs} ${theme.spacing.md}`,
+        backgroundColor: theme.colors.background.elevated,
+        borderRadius: theme.borderRadius.lg,
+        border: `1px solid ${theme.colors.border.light}`,
+        boxShadow: theme.shadows.sm,
+        transition: theme.transitions.smooth,
+      }}>
         <label
           htmlFor="language-select"
           style={{
-            fontSize: theme.typography.fontSize.sm,
-            color: theme.colors.text.secondary,
-            fontWeight: theme.typography.fontWeight.medium,
+            fontSize: theme.typography.fontSize.lg,
+            display: 'flex',
+            alignItems: 'center',
           }}
         >
           🌐
@@ -59,27 +69,31 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           value={language}
           onChange={(e) => setLanguage(e.target.value as Language)}
           style={{
-            padding: `${theme.spacing.sm} ${theme.spacing.md}`,
+            padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
             fontSize: theme.typography.fontSize.sm,
-            border: `1px solid ${theme.colors.border.medium}`,
-            borderRadius: theme.borderRadius.lg,
-            backgroundColor: theme.colors.background.tertiary,
+            border: 'none',
+            borderRadius: theme.borderRadius.md,
+            backgroundColor: 'transparent',
             color: theme.colors.text.primary,
             fontWeight: theme.typography.fontWeight.semibold,
             cursor: 'pointer',
             outline: 'none',
-            transition: theme.transitions.smooth,
+            transition: theme.transitions.fast,
             fontFamily: theme.typography.fontFamily.sans,
           }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = theme.colors.background.tertiary;
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+          }}
           onFocus={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.primary[500];
-            e.currentTarget.style.boxShadow = theme.shadows.glow;
-            e.currentTarget.style.transform = 'scale(1.02)';
+            e.currentTarget.parentElement!.style.borderColor = theme.colors.primary[500];
+            e.currentTarget.parentElement!.style.boxShadow = theme.shadows.glow;
           }}
           onBlur={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.border.medium;
-            e.currentTarget.style.boxShadow = 'none';
-            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.parentElement!.style.borderColor = theme.colors.border.light;
+            e.currentTarget.parentElement!.style.boxShadow = theme.shadows.sm;
           }}
         >
           {AVAILABLE_LANGUAGES.map((lang) => (
@@ -91,13 +105,23 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
       </div>
 
       {/* Currency Selector */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: theme.spacing.xs,
+        padding: `${theme.spacing.xs} ${theme.spacing.md}`,
+        backgroundColor: theme.colors.background.elevated,
+        borderRadius: theme.borderRadius.lg,
+        border: `1px solid ${theme.colors.border.light}`,
+        boxShadow: theme.shadows.sm,
+        transition: theme.transitions.smooth,
+      }}>
         <label
           htmlFor="currency-select"
           style={{
-            fontSize: theme.typography.fontSize.sm,
-            color: theme.colors.text.secondary,
-            fontWeight: theme.typography.fontWeight.medium,
+            fontSize: theme.typography.fontSize.lg,
+            display: 'flex',
+            alignItems: 'center',
           }}
         >
           💱
@@ -107,27 +131,31 @@ export function Settings({ currency, onCurrencyChange }: SettingsProps) {
           value={currency}
           onChange={(e) => onCurrencyChange(e.target.value as Currency)}
           style={{
-            padding: `${theme.spacing.sm} ${theme.spacing.md}`,
+            padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
             fontSize: theme.typography.fontSize.sm,
-            border: `1px solid ${theme.colors.border.medium}`,
-            borderRadius: theme.borderRadius.lg,
-            backgroundColor: theme.colors.background.tertiary,
+            border: 'none',
+            borderRadius: theme.borderRadius.md,
+            backgroundColor: 'transparent',
             color: theme.colors.text.primary,
             fontWeight: theme.typography.fontWeight.semibold,
             cursor: 'pointer',
             outline: 'none',
-            transition: theme.transitions.smooth,
+            transition: theme.transitions.fast,
             fontFamily: theme.typography.fontFamily.mono,
           }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = theme.colors.background.tertiary;
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+          }}
           onFocus={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.primary[500];
-            e.currentTarget.style.boxShadow = theme.shadows.glow;
-            e.currentTarget.style.transform = 'scale(1.02)';
+            e.currentTarget.parentElement!.style.borderColor = theme.colors.primary[500];
+            e.currentTarget.parentElement!.style.boxShadow = theme.shadows.glow;
           }}
           onBlur={(e) => {
-            e.currentTarget.style.borderColor = theme.colors.border.medium;
-            e.currentTarget.style.boxShadow = 'none';
-            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.parentElement!.style.borderColor = theme.colors.border.light;
+            e.currentTarget.parentElement!.style.boxShadow = theme.shadows.sm;
           }}
         >
           {AVAILABLE_CURRENCIES.map((curr) => (

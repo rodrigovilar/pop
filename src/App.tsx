@@ -106,13 +106,22 @@ function AppContent() {
             alignItems: 'center',
           }}>
             {/* Month/Year Selector */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: theme.spacing.xs,
+              padding: `${theme.spacing.xs} ${theme.spacing.md}`,
+              backgroundColor: theme.colors.background.elevated,
+              borderRadius: theme.borderRadius.lg,
+              border: `1px solid ${theme.colors.border.light}`,
+              boxShadow: theme.shadows.sm,
+            }}>
               <label
                 htmlFor="start-month"
                 style={{
-                  fontSize: theme.typography.fontSize.sm,
-                  color: theme.colors.text.secondary,
-                  fontWeight: theme.typography.fontWeight.medium,
+                  fontSize: theme.typography.fontSize.lg,
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
                 📅
@@ -125,18 +134,23 @@ function AppContent() {
                 max={lastCompleteMonthStr}
                 min="2010-07"
                 style={{
-                  padding: `${theme.spacing.sm} ${theme.spacing.md}`,
+                  padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
                   fontSize: theme.typography.fontSize.sm,
-                  border: `1px solid ${theme.colors.border.medium}`,
+                  border: 'none',
                   borderRadius: theme.borderRadius.md,
-                  backgroundColor: theme.colors.background.elevated,
+                  backgroundColor: 'transparent',
                   color: theme.colors.text.primary,
-                  fontWeight: theme.typography.fontWeight.medium,
+                  fontWeight: theme.typography.fontWeight.semibold,
                   cursor: 'pointer',
                   outline: 'none',
-                  transition: theme.transitions.default,
+                  transition: theme.transitions.fast,
                   fontFamily: theme.typography.fontFamily.mono,
-                  boxShadow: theme.shadows.sm,
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = theme.colors.background.tertiary;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
                 }}
               />
             </div>

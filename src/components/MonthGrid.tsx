@@ -158,7 +158,7 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
   const chartData = [
     { label: t('overview.regimes.BULL'), value: month.daysPositive, color: theme.colors.status.success },
     { label: t('overview.regimes.BEAR'), value: month.daysNegative, color: theme.colors.status.error },
-    { label: t('overview.regimes.LATERAL'), value: month.daysTotal - month.daysPositive - month.daysNegative, color: theme.colors.secondary[500] },
+    { label: t('overview.regimes.LATERAL'), value: month.daysTotal - month.daysPositive - month.daysNegative, color: theme.colors.text.quaternary },
   ].filter(d => d.value > 0);
 
   return (
@@ -284,9 +284,10 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               fontSize: theme.typography.fontSize.xl,
               fontWeight: theme.typography.fontWeight.semibold,
               padding: `${theme.spacing.sm} ${theme.spacing.lg}`,
-              backgroundColor: 'rgba(0,0,0,0.3)',
+              backgroundColor: 'rgba(255,255,255,0.25)',
               borderRadius: theme.borderRadius.full,
               marginBottom: theme.spacing.xl,
+              border: `1px solid rgba(255,255,255,0.4)`,
             }}>
               {t(`overview.regimes.${month.regime}`)}
             </div>
@@ -385,7 +386,8 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
               gap: theme.spacing.md,
               marginBottom: theme.spacing.md,
               padding: theme.spacing.md,
-              backgroundColor: 'rgba(0,0,0,0.2)',
+              backgroundColor: theme.colors.background.elevated,
+              border: `1px solid ${theme.colors.border.light}`,
               borderRadius: theme.borderRadius.md,
             }}>
               <div>
