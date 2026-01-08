@@ -561,19 +561,25 @@ export function MonthGrid({ monthlyData }: MonthGridProps) {
 
         .month-grid {
           display: grid;
-          grid-template-columns: repeat(6, 1fr);
+          grid-template-columns: repeat(12, 1fr);
           gap: ${theme.spacing.md};
+        }
+
+        @media (max-width: 1439px) {
+          .month-grid {
+            grid-template-columns: repeat(10, 1fr);
+          }
         }
 
         @media (max-width: 1279px) {
           .month-grid {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(8, 1fr);
           }
         }
 
         @media (max-width: 1023px) {
           .month-grid {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             gap: ${theme.spacing.sm};
           }
         }
@@ -585,8 +591,8 @@ export function MonthGrid({ monthlyData }: MonthGridProps) {
           }
 
           .month-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: ${theme.spacing.sm};
+            grid-template-columns: repeat(6, 1fr);
+            gap: ${theme.spacing.xs};
           }
         }
 
