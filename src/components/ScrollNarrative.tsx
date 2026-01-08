@@ -16,36 +16,57 @@ export function ScrollNarrative({ monthlyData, currency, startMonth, onSectionCh
   const [scrollProgress, setScrollProgress] = useState(0);
   const [currentSection, setCurrentSection] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
+  const shortTermRef = useRef<HTMLDivElement>(null);
+  const longTermRef = useRef<HTMLDivElement>(null);
+  const detailsRef = useRef<HTMLDivElement>(null);
 
+  // Intersection Observer for accurate section detection
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px', // Trigger when section is in middle-upper part of viewport
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute('data-section-id');
+          if (sectionId) {
+            const newSection = parseInt(sectionId);
+            if (newSection !== currentSection) {
+              setCurrentSection(newSection);
+              onSectionChange(newSection);
+            }
+          }
+        }
+      });
+    }, options);
+
+    // Observe all sections
+    if (heroRef.current) observer.observe(heroRef.current);
+    if (shortTermRef.current) observer.observe(shortTermRef.current);
+    if (longTermRef.current) observer.observe(longTermRef.current);
+    if (detailsRef.current) observer.observe(detailsRef.current);
+
+    return () => observer.disconnect();
+  }, [currentSection, onSectionChange]);
+
+  // Track scroll progress for other purposes
   useEffect(() => {
     const handleScroll = () => {
-      if (!containerRef.current) return;
-
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const progress = Math.min(Math.max(scrollTop / docHeight, 0), 1);
-
       setScrollProgress(progress);
-
-      // Determine current section (0-3)
-      // Section 0: 0-25%, Section 1: 25-50%, Section 2: 50-75%, Section 3: 75-100%
-      let newSection = 0;
-      if (progress < 0.25) newSection = 0;
-      else if (progress < 0.5) newSection = 1;
-      else if (progress < 0.75) newSection = 2;
-      else newSection = 3;
-
-      if (newSection !== currentSection) {
-        setCurrentSection(newSection);
-        onSectionChange(newSection);
-      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Initial call
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [currentSection, onSectionChange]);
+  }, []);
 
   return (
     <div ref={containerRef} style={{ position: 'relative' }}>
@@ -56,29 +77,37 @@ export function ScrollNarrative({ monthlyData, currency, startMonth, onSectionCh
         style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, pointerEvents: 'none' }}
       />
 
-      {/* Section 1: Hero - Proof of Patience Concept */}
-      <HeroSection />
+      {/* Section 0: Hero - Proof of Patience Concept */}
+      <div ref={heroRef} data-section-id="0">
+        <HeroSection />
+      </div>
 
-      {/* Section 2: Short Term Vision - Month Grid */}
-      <ShortTermSection
-        monthlyData={monthlyData}
-        currency={currency}
-        startMonth={startMonth}
-      />
+      {/* Section 1: Short Term Vision - Month Grid */}
+      <div ref={shortTermRef} data-section-id="1">
+        <ShortTermSection
+          monthlyData={monthlyData}
+          currency={currency}
+          startMonth={startMonth}
+        />
+      </div>
 
-      {/* Section 3: Long Term Vision - DCA Simulator */}
-      <LongTermSection
-        monthlyData={monthlyData}
-        currency={currency}
-        startMonth={startMonth}
-      />
+      {/* Section 2: Long Term Vision - DCA Simulator */}
+      <div ref={longTermRef} data-section-id="2">
+        <LongTermSection
+          monthlyData={monthlyData}
+          currency={currency}
+          startMonth={startMonth}
+        />
+      </div>
 
-      {/* Section 4: Final Details - Monthly Breakdown Table */}
-      <DetailsSection
-        monthlyData={monthlyData}
-        currency={currency}
-        startMonth={startMonth}
-      />
+      {/* Section 3: Final Details - Monthly Breakdown Table */}
+      <div ref={detailsRef} data-section-id="3">
+        <DetailsSection
+          monthlyData={monthlyData}
+          currency={currency}
+          startMonth={startMonth}
+        />
+      </div>
     </div>
   );
 }
