@@ -263,14 +263,14 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
         </div>
       </div>
 
-      {/* Final Message */}
+      {/* Key Insight */}
       <div style={{
         maxWidth: '900px',
         padding: theme.spacing.xl,
         backgroundColor: 'rgba(16, 185, 129, 0.05)',
         border: `2px solid ${theme.colors.status.success}20`,
         borderRadius: theme.borderRadius.xl,
-        marginBottom: theme.spacing.xl,
+        marginBottom: theme.spacing['2xl'],
         textAlign: 'center',
       }}>
         <p style={{
@@ -289,6 +289,200 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
           margin: 0,
         }}>
           {t('details.finalMessage') || 'This is the metric that should guide your investment decision - not daily volatility or short-term swings. Bitcoin rewards patience and consistency.'}
+        </p>
+      </div>
+
+      {/* Month-by-Month Table */}
+      <div style={{
+        width: '100%',
+        maxWidth: '1400px',
+        overflowX: 'auto',
+        marginBottom: theme.spacing['2xl'],
+      }}>
+        <table style={{
+          width: '100%',
+          borderCollapse: 'collapse',
+          backgroundColor: theme.colors.background.elevated,
+          borderRadius: theme.borderRadius.lg,
+          overflow: 'hidden',
+          boxShadow: theme.shadows.elevatedCard,
+        }}>
+          <thead>
+            <tr style={{
+              backgroundColor: theme.colors.background.tertiary,
+              borderBottom: `2px solid ${theme.colors.border.medium}`,
+            }}>
+              <th style={{
+                padding: theme.spacing.md,
+                textAlign: 'left',
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.text.secondary,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}>
+                {t('common.month')}
+              </th>
+              <th style={{
+                padding: theme.spacing.md,
+                textAlign: 'right',
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.text.secondary,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}>
+                {t('dca.results.totalInvested')}
+              </th>
+              <th style={{
+                padding: theme.spacing.md,
+                textAlign: 'right',
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.text.secondary,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}>
+                BTC
+              </th>
+              <th style={{
+                padding: theme.spacing.md,
+                textAlign: 'right',
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.text.secondary,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}>
+                {t('dca.results.currentValue')}
+              </th>
+              <th style={{
+                padding: theme.spacing.md,
+                textAlign: 'right',
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.text.secondary,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}>
+                {t('dca.details.totalGain')} %
+              </th>
+              <th style={{
+                padding: theme.spacing.md,
+                textAlign: 'right',
+                fontSize: theme.typography.fontSize.sm,
+                fontWeight: theme.typography.fontWeight.semibold,
+                color: theme.colors.text.secondary,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}>
+                {t('dca.details.avgMonthlyGain')} %
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {dcaEntries.map((entry, index) => (
+              <tr
+                key={entry.month}
+                style={{
+                  borderBottom: `1px solid ${theme.colors.border.light}`,
+                  transition: theme.transitions.fast,
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = theme.colors.background.secondary;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                }}
+              >
+                <td style={{
+                  padding: theme.spacing.md,
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.medium,
+                  color: theme.colors.text.primary,
+                  fontFamily: theme.typography.fontFamily.mono,
+                }}>
+                  {entry.month}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  fontFamily: theme.typography.fontFamily.mono,
+                }}>
+                  {formatCurrency(entry.amountInvested, currency)}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  fontFamily: theme.typography.fontFamily.mono,
+                }}>
+                  {formatNumber(entry.btcBought, { minimumFractionDigits: 8, maximumFractionDigits: 8 })}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.semibold,
+                  color: theme.colors.primary[600],
+                  fontFamily: theme.typography.fontFamily.mono,
+                }}>
+                  {formatCurrency(entry.currentValue, currency)}
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: entry.totalGainPercent >= 0 ? theme.colors.status.success : theme.colors.status.error,
+                  fontFamily: theme.typography.fontFamily.mono,
+                }}>
+                  {entry.totalGainPercent >= 0 ? '+' : ''}{entry.totalGainPercent.toFixed(2)}%
+                </td>
+                <td style={{
+                  padding: theme.spacing.md,
+                  textAlign: 'right',
+                  fontSize: theme.typography.fontSize.sm,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: entry.monthlyGainPercent >= 0 ? theme.colors.status.success : theme.colors.status.error,
+                  fontFamily: theme.typography.fontFamily.mono,
+                }}>
+                  {entry.monthlyGainPercent >= 0 ? '+' : ''}{entry.monthlyGainPercent.toFixed(2)}%
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Note */}
+      <div style={{
+        maxWidth: '900px',
+        padding: theme.spacing.lg,
+        backgroundColor: theme.colors.background.secondary,
+        borderRadius: theme.borderRadius.lg,
+        border: `1px solid ${theme.colors.border.light}`,
+      }}>
+        <h4 style={{
+          fontSize: theme.typography.fontSize.sm,
+          fontWeight: theme.typography.fontWeight.bold,
+          color: theme.colors.text.primary,
+          marginBottom: theme.spacing.sm,
+          textTransform: 'uppercase',
+          letterSpacing: '0.05em',
+        }}>
+          {t('details.noteTitle') || 'Understanding the Data'}
+        </h4>
+        <p style={{
+          fontSize: theme.typography.fontSize.sm,
+          color: theme.colors.text.secondary,
+          lineHeight: theme.typography.lineHeight.relaxed,
+          margin: 0,
+        }}>
+          {t('details.noteText') || 'Each row shows a monthly investment. The weighted average monthly gain reflects the true long-term performance of your Bitcoin strategy.'}
         </p>
       </div>
     </section>

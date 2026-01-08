@@ -72,6 +72,10 @@
       "drawdownText": "Você passou {days} dias abaixo do seu preço médio. Isso é normal.",
       "disciplineTitle": "Disciplina Acima de Timing",
       "disciplineText": "Sua maior sequência negativa foi de {days} dias. Paciência é o jogo."
+    },
+    "details": {
+      "totalGain": "Ganho Total",
+      "avgMonthlyGain": "Ganho Médio Mensal"
     }
   },
   "keyDays": {
@@ -106,6 +110,72 @@
     "price": "Preço",
     "change": "Mudança",
     "from": "de",
-    "to": "para"
+    "to": "para",
+    "back": "Voltar",
+    "monthsShort": {
+      "jan": "Jan",
+      "feb": "Fev",
+      "mar": "Mar",
+      "apr": "Abr",
+      "may": "Mai",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Ago",
+      "sep": "Set",
+      "oct": "Out",
+      "nov": "Nov",
+      "dec": "Dez"
+    },
+    "monthsLong": {
+      "jan": "Janeiro",
+      "feb": "Fevereiro",
+      "mar": "Março",
+      "apr": "Abril",
+      "may": "Maio",
+      "jun": "Junho",
+      "jul": "Julho",
+      "aug": "Agosto",
+      "sep": "Setembro",
+      "oct": "Outubro",
+      "nov": "Novembro",
+      "dec": "Dezembro"
+    }
+  },
+  "hero": {
+    "subtitle": "Bitcoin recompensa paciência, não timing",
+    "problem1": {
+      "title": "Venda por Pânico",
+      "text": "Muitos investidores vendem durante quedas de preço, cristalizando perdas em vez de esperar pela recuperação."
+    },
+    "problem2": {
+      "title": "Realizando Lucros Pequenos",
+      "text": "Sair cedo demais após ganhos modestos impede a participação no crescimento exponencial de longo prazo."
+    },
+    "problem3": {
+      "title": "Tentando Acertar o Momento",
+      "text": "Tentar prever pontos perfeitos de entrada e saída frequentemente leva a oportunidades perdidas."
+    },
+    "keyMessage": "Bitcoin não é sobre encontrar o momento perfeito. É sobre ter a paciência para permanecer investido através da volatilidade.",
+    "scrollDown": "Role para explorar"
+  },
+  "shortTerm": {
+    "title": "A Armadilha do Curto Prazo",
+    "intro": "Observar movimentos de preço diários ou mensais cria ansiedade desnecessária e leva a decisões ruins.",
+    "warning": "Cada card abaixo mostra o desempenho de um mês. As cores indicam se houve mais dias positivos (verde), negativos (vermelho) ou laterais (branco). Esta visão de curto prazo não reflete os fundamentos do Bitcoin e causa venda por pânico durante quedas ou realização prematura de lucros durante altas.",
+    "conclusion": "Volatilidade dia-a-dia é ruído. O que importa é exposição de longo prazo."
+  },
+  "longTerm": {
+    "title": "A Solução de Longo Prazo: DCA",
+    "what": "Dollar Cost Averaging (DCA) significa comprar um valor fixo regularmente, independentemente do preço.",
+    "why": "Em vez de tentar acertar o momento do mercado (comprar na baixa, vender na alta), DCA foca em tempo no mercado. O que importa é quanto tempo você está exposto ao ativo, não quando você entra ou sai.",
+    "conclusion": "Consistência vence timing. Tempo no mercado importa mais que acertar o momento do mercado."
+  },
+  "details": {
+    "title": "Os Números Reais",
+    "intro": "Aqui está o detalhamento mês a mês. Note o ganho médio mensal - pode não parecer impressionante, mas é o verdadeiro indicador do crescimento do Bitcoin.",
+    "keyInsight": "O ganho médio mensal pode parecer modesto, mas é isso que o Bitcoin realmente oferece.",
+    "finalMessage": "Esta é a métrica que deve guiar sua decisão de investimento - não a volatilidade diária ou oscilações de curto prazo. Bitcoin recompensa paciência e consistência.",
+    "noteTitle": "Entendendo os Dados",
+    "noteText": "Cada linha mostra um investimento mensal. O ganho médio mensal ponderado reflete o verdadeiro desempenho de longo prazo da sua estratégia com Bitcoin."
   }
 }

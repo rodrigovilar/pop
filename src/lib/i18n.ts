@@ -65,14 +65,16 @@ export class I18n {
   /**
    * Load translations for a language
    */
-  async loadLanguage(language: Language): Promise<void> {
-    if (this.loadedTranslations.has(language)) {
+  async loadLanguage(language: Language, forceReload = false): Promise<void> {
+    if (this.loadedTranslations.has(language) && !forceReload) {
       return; // Already loaded
     }
 
     try {
       const base = import.meta.env.BASE_URL || '/';
-      const response = await fetch(`${base}i18n/${language}.json`);
+      // Add timestamp to prevent caching during development
+      const cacheBuster = import.meta.env.DEV ? `?t=${Date.now()}` : '';
+      const response = await fetch(`${base}i18n/${language}.json${cacheBuster}`);
       if (!response.ok) {
         throw new Error(`Failed to load ${language}`);
       }

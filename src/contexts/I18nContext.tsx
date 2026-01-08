@@ -22,7 +22,8 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const loadInitialLanguage = async () => {
       setIsLoading(true);
-      await i18n.loadLanguage(language);
+      // Force reload in development to pick up changes
+      await i18n.loadLanguage(language, import.meta.env.DEV);
       setIsLoading(false);
     };
 
@@ -31,7 +32,8 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
 
   const setLanguage = useCallback(async (lang: Language) => {
     setIsLoading(true);
-    await i18n.loadLanguage(lang);
+    // Force reload in development to pick up changes
+    await i18n.loadLanguage(lang, import.meta.env.DEV);
     i18n.setLanguage(lang);
     setLanguageState(lang);
     setIsLoading(false);

@@ -13,6 +13,11 @@
     "line7": "Não há atalhos.",
     "line8": "Apenas disciplina, tempo e convicção."
   },
+  "main": {
+    "ifYouHadInvested": "Se você tivesse investido em Bitcoin em",
+    "monthlyProgression": "Progressão Mensal",
+    "dcaSimulation": "Acumulação DCA"
+  },
   "navigation": {
     "overview": "Visão Geral",
     "dca": "Simulação DCA",
@@ -30,11 +35,13 @@
     "daysNegative": "Dias Negativos",
     "daysLateral": "Dias Laterais",
     "currentMonth": "Mês Atual",
+    "recentMonths": "Meses Recentes",
+    "loadMore": "Carregar Mais",
+    "showAll": "Mostrar Tudo",
+    "showing": "Mostrando",
+    "of": "de",
+    "months": "meses",
     "regime": "Regime",
-    "entryPrice": "Preço de Entrada",
-    "exitPrice": "Preço de Saída",
-    "monthChange": "Variação do Mês",
-    "totalDays": "Total de Dias",
     "regimes": {
       "BULL": "Alta",
       "BEAR": "Baixa",
@@ -42,20 +49,12 @@
       "N/A": "N/D"
     }
   },
-  "main": {
-    "ifYouHadInvested": "Se você tivesse investido em BTC em",
-    "monthlyProgression": "Progressão Mensal",
-    "dcaSimulation": "Simulação DCA",
-    "clickToFlip": "Clique para ver detalhes →",
-    "clickToFlipBack": "← Clique para voltar"
-  },
   "dca": {
     "title": "Simulação DCA",
     "subtitle": "Simule sua jornada de disciplina com Bitcoin",
     "startDate": "Data de Início",
     "monthlyAmount": "Valor Mensal",
     "simulate": "Simular",
-    "viewDetails": "Ver Detalhes",
     "errors": {
       "selectDate": "Por favor selecione uma data de início",
       "invalidAmount": "Por favor insira um valor mensal válido"
@@ -75,16 +74,8 @@
       "disciplineText": "Sua maior sequência negativa foi de {days} dias. Paciência é o jogo."
     },
     "details": {
-      "title": "Detalhes do DCA",
-      "month": "Mês",
-      "invested": "Investido",
-      "btcBought": "BTC Comprado",
-      "currentValue": "Valor Atual",
-      "totalGain": "Ganho Total %",
-      "monthlyGain": "Ganho Mensal %",
-      "avgMonthlyGain": "Ganho Mensal Médio",
-      "noteTitle": "Sobre os Cálculos",
-      "noteText": "O \"Ganho Mensal %\" representa o retorno mensal composto necessário para alcançar o ganho total durante o período de investimento. O \"Ganho Mensal Médio\" é uma média ponderada onde o peso de cada investimento é igual ao número de meses que ele está ativo, dando mais importância aos investimentos de longo prazo."
+      "totalGain": "Ganho Total",
+      "avgMonthlyGain": "Ganho Médio Mensal"
     }
   },
   "keyDays": {
@@ -112,7 +103,6 @@
     "loading": "Carregando...",
     "error": "Erro",
     "retry": "Tentar Novamente",
-    "back": "Voltar",
     "month": "Mês",
     "year": "Ano",
     "day": "Dia",
@@ -121,6 +111,7 @@
     "change": "Mudança",
     "from": "de",
     "to": "para",
+    "back": "Voltar",
     "monthsShort": {
       "jan": "Jan",
       "feb": "Fev",
@@ -149,5 +140,42 @@
       "nov": "Novembro",
       "dec": "Dezembro"
     }
+  },
+  "hero": {
+    "subtitle": "Bitcoin recompensa paciência, não timing",
+    "problem1": {
+      "title": "Venda por Pânico",
+      "text": "Muitos investidores vendem durante quedas de preço, cristalizando perdas em vez de esperar pela recuperação."
+    },
+    "problem2": {
+      "title": "Realizando Lucros Pequenos",
+      "text": "Sair cedo demais após ganhos modestos impede a participação no crescimento exponencial de longo prazo."
+    },
+    "problem3": {
+      "title": "Tentando Acertar o Momento",
+      "text": "Tentar prever pontos perfeitos de entrada e saída frequentemente leva a oportunidades perdidas."
+    },
+    "keyMessage": "Bitcoin não é sobre encontrar o momento perfeito. É sobre ter a paciência para permanecer investido através da volatilidade.",
+    "scrollDown": "Role para explorar"
+  },
+  "shortTerm": {
+    "title": "A Armadilha do Curto Prazo",
+    "intro": "Observar movimentos de preço diários ou mensais cria ansiedade desnecessária e leva a decisões ruins.",
+    "warning": "Cada card abaixo mostra o desempenho de um mês. As cores indicam se houve mais dias positivos (verde), negativos (vermelho) ou laterais (branco). Esta visão de curto prazo não reflete os fundamentos do Bitcoin e causa venda por pânico durante quedas ou realização prematura de lucros durante altas.",
+    "conclusion": "Volatilidade dia-a-dia é ruído. O que importa é exposição de longo prazo."
+  },
+  "longTerm": {
+    "title": "A Solução de Longo Prazo: DCA",
+    "what": "Dollar Cost Averaging (DCA) significa comprar um valor fixo regularmente, independentemente do preço.",
+    "why": "Em vez de tentar acertar o momento do mercado (comprar na baixa, vender na alta), DCA foca em tempo no mercado. O que importa é quanto tempo você está exposto ao ativo, não quando você entra ou sai.",
+    "conclusion": "Consistência vence timing. Tempo no mercado importa mais que acertar o momento do mercado."
+  },
+  "details": {
+    "title": "Os Números Reais",
+    "intro": "Aqui está o detalhamento mês a mês. Note o ganho médio mensal - pode não parecer impressionante, mas é o verdadeiro indicador do crescimento do Bitcoin.",
+    "keyInsight": "O ganho médio mensal pode parecer modesto, mas é isso que o Bitcoin realmente oferece.",
+    "finalMessage": "Esta é a métrica que deve guiar sua decisão de investimento - não a volatilidade diária ou oscilações de curto prazo. Bitcoin recompensa paciência e consistência.",
+    "noteTitle": "Entendendo os Dados",
+    "noteText": "Cada linha mostra um investimento mensal. O ganho médio mensal ponderado reflete o verdadeiro desempenho de longo prazo da sua estratégia com Bitcoin."
   }
 }

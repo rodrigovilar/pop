@@ -13,6 +13,11 @@
     "line7": "There are no shortcuts.",
     "line8": "Only discipline, time, and conviction."
   },
+  "main": {
+    "ifYouHadInvested": "If you had invested in Bitcoin on",
+    "monthlyProgression": "Monthly Progression",
+    "dcaSimulation": "DCA Accumulation"
+  },
   "navigation": {
     "overview": "Overview",
     "dca": "DCA Simulation",
@@ -30,11 +35,13 @@
     "daysNegative": "Days Negative",
     "daysLateral": "Days Lateral",
     "currentMonth": "Current Month",
+    "recentMonths": "Recent Months",
+    "loadMore": "Load More",
+    "showAll": "Show All",
+    "showing": "Showing",
+    "of": "of",
+    "months": "months",
     "regime": "Regime",
-    "entryPrice": "Entry Price",
-    "exitPrice": "Exit Price",
-    "monthChange": "Month Change",
-    "totalDays": "Total Days",
     "regimes": {
       "BULL": "Bull",
       "BEAR": "Bear",
@@ -42,20 +49,12 @@
       "N/A": "N/A"
     }
   },
-  "main": {
-    "ifYouHadInvested": "If you had invested in BTC on",
-    "monthlyProgression": "Monthly Progression",
-    "dcaSimulation": "DCA Simulation",
-    "clickToFlip": "Click to see details →",
-    "clickToFlipBack": "← Click to flip back"
-  },
   "dca": {
     "title": "DCA Simulation",
     "subtitle": "Simulate your Bitcoin discipline journey",
     "startDate": "Start Date",
     "monthlyAmount": "Monthly Amount",
     "simulate": "Simulate",
-    "viewDetails": "View Details",
     "errors": {
       "selectDate": "Please select a start date",
       "invalidAmount": "Please enter a valid monthly amount"
@@ -75,16 +74,8 @@
       "disciplineText": "Your longest negative streak was {days} days. Patience is the game."
     },
     "details": {
-      "title": "DCA Details",
-      "month": "Month",
-      "invested": "Invested",
-      "btcBought": "BTC Bought",
-      "currentValue": "Current Value",
-      "totalGain": "Total Gain %",
-      "monthlyGain": "Monthly Gain %",
-      "avgMonthlyGain": "Avg Monthly Gain",
-      "noteTitle": "About the Calculations",
-      "noteText": "The \"Monthly Gain %\" represents the compound monthly return needed to achieve the total gain over the investment period. The \"Avg Monthly Gain\" is a weighted average where each investment's weight equals the number of months it has been active, giving more importance to longer-term investments."
+      "totalGain": "Total Gain",
+      "avgMonthlyGain": "Avg Monthly Gain"
     }
   },
   "keyDays": {
@@ -112,7 +103,6 @@
     "loading": "Loading...",
     "error": "Error",
     "retry": "Retry",
-    "back": "Back",
     "month": "Month",
     "year": "Year",
     "day": "Day",
@@ -121,6 +111,7 @@
     "change": "Change",
     "from": "from",
     "to": "to",
+    "back": "Back",
     "monthsShort": {
       "jan": "Jan",
       "feb": "Feb",
@@ -149,5 +140,42 @@
       "nov": "November",
       "dec": "December"
     }
+  },
+  "hero": {
+    "subtitle": "Bitcoin rewards patience, not timing",
+    "problem1": {
+      "title": "Panic Selling",
+      "text": "Many investors sell during price drops, locking in losses instead of waiting for recovery."
+    },
+    "problem2": {
+      "title": "Taking Small Profits",
+      "text": "Exiting too early after modest gains prevents participation in long-term exponential growth."
+    },
+    "problem3": {
+      "title": "Timing the Market",
+      "text": "Trying to predict perfect entry and exit points often leads to missed opportunities."
+    },
+    "keyMessage": "Bitcoin is not about finding the perfect moment. It's about having the patience to stay invested through volatility.",
+    "scrollDown": "Scroll to explore"
+  },
+  "shortTerm": {
+    "title": "The Short-Term Trap",
+    "intro": "Looking at daily or monthly price movements creates unnecessary anxiety and leads to poor decisions.",
+    "warning": "Each card below shows a month's performance. The colors indicate whether there were more positive (green), negative (red), or lateral (white) days. This short-term view doesn't reflect Bitcoin's fundamentals and causes panic selling during drops or premature profit-taking during rises.",
+    "conclusion": "Day-to-day volatility is noise. What matters is long-term exposure."
+  },
+  "longTerm": {
+    "title": "The Long-Term Solution: DCA",
+    "what": "Dollar Cost Averaging (DCA) means buying a fixed amount regularly, regardless of price.",
+    "why": "Instead of trying to time the market (buying low, selling high), DCA focuses on time in the market. What matters is how long you're exposed to the asset, not when you enter or exit.",
+    "conclusion": "Consistency beats timing. Time in the market matters more than timing the market."
+  },
+  "details": {
+    "title": "The Real Numbers",
+    "intro": "Here's the month-by-month breakdown. Notice the average monthly gain - it may not look impressive, but it's the true indicator of Bitcoin's growth.",
+    "keyInsight": "The average monthly gain might seem modest, but this is what Bitcoin truly offers.",
+    "finalMessage": "This is the metric that should guide your investment decision - not daily volatility or short-term swings. Bitcoin rewards patience and consistency.",
+    "noteTitle": "Understanding the Data",
+    "noteText": "Each row shows a monthly investment. The weighted average monthly gain reflects the true long-term performance of your Bitcoin strategy."
   }
 }
