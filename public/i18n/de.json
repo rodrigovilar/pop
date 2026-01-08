@@ -1,0 +1,55 @@
+{
+  "app": {"title": "PoP - Beweis der Geduld", "tagline": "Bitcoin belohnt wenige Tage — aber verlangt Präsenz an allen."},
+  "settings": {"language": "Sprache", "currency": "Währung"},
+  "common": {
+    "loading": "Laden...",
+    "loadingPhases": {
+      "manifest": "Manifest wird geladen...",
+      "current": "Aktueller Monat wird geladen...",
+      "previous": "Vorheriger Monat wird geladen...",
+      "recent": "Aktuelle Monate werden geladen...",
+      "remaining": "Historische Daten werden geladen..."
+    },
+    "error": "Fehler",
+    "retry": "Wiederholen",
+    "month": "Monat",
+    "year": "Jahr",
+    "day": "Tag",
+    "days": "Tage",
+    "price": "Preis",
+    "change": "Änderung",
+    "from": "von",
+    "to": "bis",
+    "back": "Zurück",
+    "monthsShort": {"jan": "Jan", "feb": "Feb", "mar": "Mär", "apr": "Apr", "may": "Mai", "jun": "Jun", "jul": "Jul", "aug": "Aug", "sep": "Sep", "oct": "Okt", "nov": "Nov", "dec": "Dez"},
+    "monthsLong": {"jan": "Januar", "feb": "Februar", "mar": "März", "apr": "April", "may": "Mai", "jun": "Juni", "jul": "Juli", "aug": "August", "sep": "September", "oct": "Oktober", "nov": "November", "dec": "Dezember"}
+  },
+  "hero": {
+    "subtitle": "Bitcoin belohnt Geduld, nicht Timing",
+    "problem1": {"title": "Panikverkauf", "text": "Viele Investoren verkaufen bei Preisrückgängen und realisieren Verluste, anstatt auf Erholung zu warten."},
+    "problem2": {"title": "Kleine Gewinne Mitnehmen", "text": "Zu früh nach bescheidenen Gewinnen auszusteigen verhindert die Teilnahme am langfristigen exponentiellen Wachstum."},
+    "problem3": {"title": "Market Timing", "text": "Der Versuch, perfekte Ein- und Ausstiegspunkte vorherzusagen, führt oft zu verpassten Gelegenheiten."},
+    "keyMessage": "Bei Bitcoin geht es nicht darum, den perfekten Moment zu finden. Es geht darum, die Geduld zu haben, trotz Volatilität investiert zu bleiben.",
+    "scrollDown": "Scrollen zum Erkunden"
+  },
+  "shortTerm": {
+    "title": "Die Kurzfristfalle",
+    "intro": "Die Beobachtung täglicher oder monatlicher Preisbewegungen erzeugt unnötige Angst und führt zu schlechten Entscheidungen.",
+    "warning": "Jede Karte zeigt die Leistung eines Monats. Die Farben zeigen an, ob es mehr positive (grün), negative (rot) oder seitliche (weiß) Tage gab.",
+    "conclusion": "Tägliche Volatilität ist Rauschen. Was zählt, ist langfristiges Engagement."
+  },
+  "longTerm": {
+    "title": "Die Langfristlösung: DCA",
+    "what": "Dollar Cost Averaging (DCA) bedeutet, regelmäßig einen festen Betrag zu kaufen, unabhängig vom Preis.",
+    "why": "Anstatt zu versuchen, den Markt zu timen (günstig kaufen, teuer verkaufen), konzentriert sich DCA auf die Zeit im Markt.",
+    "conclusion": "Beständigkeit schlägt Timing. Zeit im Markt zählt mehr als Market Timing."
+  },
+  "details": {
+    "title": "Die Echten Zahlen",
+    "intro": "Hier ist die monatliche Aufschlüsselung. Beachten Sie den durchschnittlichen monatlichen Gewinn.",
+    "keyInsight": "Der durchschnittliche monatliche Gewinn mag bescheiden erscheinen, aber das ist es, was Bitcoin wirklich bietet.",
+    "finalMessage": "Dies ist die Metrik, die Ihre Investitionsentscheidung leiten sollte.",
+    "noteTitle": "Die Daten Verstehen",
+    "noteText": "Jede Zeile zeigt eine monatliche Investition."
+  }
+}

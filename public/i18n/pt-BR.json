@@ -101,6 +101,13 @@
   },
   "common": {
     "loading": "Carregando...",
+    "loadingPhases": {
+      "manifest": "Carregando manifesto...",
+      "current": "Carregando mês atual...",
+      "previous": "Carregando mês anterior...",
+      "recent": "Carregando meses recentes...",
+      "remaining": "Carregando dados históricos..."
+    },
     "error": "Erro",
     "retry": "Tentar Novamente",
     "month": "Mês",

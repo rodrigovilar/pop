@@ -102,22 +102,32 @@ function AppContent() {
               alignItems: 'center',
             }}>
               {/* Month/Year Selector */}
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: theme.spacing.xs,
-                padding: `${theme.spacing.xs} ${theme.spacing.md}`,
-                backgroundColor: theme.colors.background.elevated,
-                borderRadius: theme.borderRadius.lg,
-                border: `1px solid ${theme.colors.border.light}`,
-                boxShadow: theme.shadows.sm,
-              }}>
+              <div
+                onClick={() => {
+                  const input = document.getElementById('start-month') as HTMLInputElement;
+                  if (input) {
+                    input.showPicker?.();
+                  }
+                }}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: theme.spacing.xs,
+                  padding: `${theme.spacing.xs} ${theme.spacing.md}`,
+                  backgroundColor: theme.colors.background.elevated,
+                  borderRadius: theme.borderRadius.lg,
+                  border: `1px solid ${theme.colors.border.light}`,
+                  boxShadow: theme.shadows.sm,
+                  cursor: 'pointer',
+                }}
+              >
                 <label
                   htmlFor="start-month"
                   style={{
                     fontSize: theme.typography.fontSize.lg,
                     display: 'flex',
                     alignItems: 'center',
+                    cursor: 'pointer',
                   }}
                 >
                   📅

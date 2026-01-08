@@ -11,12 +11,12 @@ export function LoadingState({ progress }: LoadingStateProps) {
 
   const getPhaseText = (phase: string) => {
     switch (phase) {
-      case 'manifest': return 'Loading manifest...';
-      case 'current': return 'Loading current month...';
-      case 'previous': return 'Loading previous month...';
-      case 'recent': return 'Loading recent months...';
-      case 'remaining': return 'Loading historical data...';
-      default: return 'Loading...';
+      case 'manifest': return t('common.loadingPhases.manifest');
+      case 'current': return t('common.loadingPhases.current');
+      case 'previous': return t('common.loadingPhases.previous');
+      case 'recent': return t('common.loadingPhases.recent');
+      case 'remaining': return t('common.loadingPhases.remaining');
+      default: return t('common.loading');
     }
   };
 

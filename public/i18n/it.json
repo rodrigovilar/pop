@@ -1,0 +1,55 @@
+{
+  "app": {"title": "PoP - Prova di Pazienza", "tagline": "Bitcoin premia pochi giorni — ma richiede presenza in tutti."},
+  "settings": {"language": "Lingua", "currency": "Valuta"},
+  "common": {
+    "loading": "Caricamento...",
+    "loadingPhases": {
+      "manifest": "Caricamento manifesto...",
+      "current": "Caricamento mese corrente...",
+      "previous": "Caricamento mese precedente...",
+      "recent": "Caricamento mesi recenti...",
+      "remaining": "Caricamento dati storici..."
+    },
+    "error": "Errore",
+    "retry": "Riprova",
+    "month": "Mese",
+    "year": "Anno",
+    "day": "Giorno",
+    "days": "giorni",
+    "price": "Prezzo",
+    "change": "Variazione",
+    "from": "da",
+    "to": "a",
+    "back": "Indietro",
+    "monthsShort": {"jan": "Gen", "feb": "Feb", "mar": "Mar", "apr": "Apr", "may": "Mag", "jun": "Giu", "jul": "Lug", "aug": "Ago", "sep": "Set", "oct": "Ott", "nov": "Nov", "dec": "Dic"},
+    "monthsLong": {"jan": "Gennaio", "feb": "Febbraio", "mar": "Marzo", "apr": "Aprile", "may": "Maggio", "jun": "Giugno", "jul": "Luglio", "aug": "Agosto", "sep": "Settembre", "oct": "Ottobre", "nov": "Novembre", "dec": "Dicembre"}
+  },
+  "hero": {
+    "subtitle": "Bitcoin premia la pazienza, non il timing",
+    "problem1": {"title": "Vendita in Panico", "text": "Molti investitori vendono durante i cali di prezzo, cristallizzando le perdite invece di attendere il recupero."},
+    "problem2": {"title": "Prendere Piccoli Profitti", "text": "Uscire troppo presto dopo guadagni modesti impedisce la partecipazione alla crescita esponenziale a lungo termine."},
+    "problem3": {"title": "Timing del Mercato", "text": "Cercare di prevedere punti di entrata e uscita perfetti porta spesso a opportunità perse."},
+    "keyMessage": "Bitcoin non riguarda trovare il momento perfetto. Riguarda avere la pazienza di rimanere investiti attraverso la volatilità.",
+    "scrollDown": "Scorri per esplorare"
+  },
+  "shortTerm": {
+    "title": "La Trappola del Breve Termine",
+    "intro": "Osservare i movimenti di prezzo giornalieri o mensili crea ansia inutile e porta a cattive decisioni.",
+    "warning": "Ogni carta mostra le prestazioni di un mese. I colori indicano se ci sono stati più giorni positivi (verde), negativi (rosso) o laterali (bianco).",
+    "conclusion": "La volatilità quotidiana è rumore. Ciò che conta è l'esposizione a lungo termine."
+  },
+  "longTerm": {
+    "title": "La Soluzione a Lungo Termine: DCA",
+    "what": "Il Dollar Cost Averaging (DCA) significa acquistare un importo fisso regolarmente, indipendentemente dal prezzo.",
+    "why": "Invece di cercare di cronometrare il mercato (comprare basso, vendere alto), il DCA si concentra sul tempo nel mercato.",
+    "conclusion": "La coerenza batte il timing. Il tempo nel mercato conta più del timing del mercato."
+  },
+  "details": {
+    "title": "I Numeri Reali",
+    "intro": "Ecco la ripartizione mensile. Nota il guadagno mensile medio.",
+    "keyInsight": "Il guadagno mensile medio può sembrare modesto, ma questo è ciò che Bitcoin offre veramente.",
+    "finalMessage": "Questa è la metrica che dovrebbe guidare la tua decisione di investimento.",
+    "noteTitle": "Comprendere i Dati",
+    "noteText": "Ogni riga mostra un investimento mensile."
+  }
+}
