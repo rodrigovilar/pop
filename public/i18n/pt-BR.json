@@ -65,7 +65,8 @@
       "currentValue": "Valor Atual",
       "pnl": "L&P",
       "daysInDrawdown": "Dias em Perda",
-      "longestStreak": "Maior Sequência Negativa"
+      "longestStreak": "Maior Sequência Negativa",
+      "total": "TOTAL"
     },
     "insights": {
       "drawdownTitle": "Tempo de Desconforto",

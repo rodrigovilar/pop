@@ -65,7 +65,8 @@
       "currentValue": "Valor Actual",
       "pnl": "PyG",
       "daysInDrawdown": "Días en Pérdida",
-      "longestStreak": "Mayor Racha Negativa"
+      "longestStreak": "Mayor Racha Negativa",
+      "total": "TOTAL"
     },
     "insights": {
       "drawdownTitle": "Tiempo de Incomodidad",

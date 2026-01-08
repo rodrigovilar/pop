@@ -65,7 +65,8 @@
       "currentValue": "Current Value",
       "pnl": "P&L",
       "daysInDrawdown": "Days in Drawdown",
-      "longestStreak": "Longest Negative Streak"
+      "longestStreak": "Longest Negative Streak",
+      "total": "TOTAL"
     },
     "insights": {
       "drawdownTitle": "Time in Discomfort",

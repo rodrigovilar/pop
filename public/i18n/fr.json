@@ -65,7 +65,8 @@
       "currentValue": "Valeur Actuelle",
       "pnl": "P&P",
       "daysInDrawdown": "Jours en Perte",
-      "longestStreak": "Plus Longue Série Négative"
+      "longestStreak": "Plus Longue Série Négative",
+      "total": "TOTAL"
     },
     "insights": {
       "drawdownTitle": "Temps d'Inconfort",
