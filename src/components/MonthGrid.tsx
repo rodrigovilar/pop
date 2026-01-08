@@ -91,6 +91,26 @@ function MonthCell({ data, onClick }: { data: MonthCellData; onClick: () => void
         pointerEvents: 'none',
       }} />
 
+      {/* Click indicator on hover */}
+      {isHovered && (
+        <div style={{
+          position: 'absolute',
+          bottom: theme.spacing.xs,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          fontSize: theme.typography.fontSize.xs,
+          opacity: 0.7,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '4px',
+          fontWeight: theme.typography.fontWeight.medium,
+          animation: 'fadeIn 0.2s ease-out',
+          zIndex: 2,
+        }}>
+          👆 Click for details
+        </div>
+      )}
+
       {/* Month/Year Label */}
       <div style={{
         fontSize: theme.typography.fontSize.xs,
@@ -167,7 +187,7 @@ function MonthDetailModal({ month, colorData, onClose }: { month: MonthlyData; c
       style={{
         position: 'fixed',
         inset: 0,
-        backgroundColor: theme.colors.background.overlay,
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

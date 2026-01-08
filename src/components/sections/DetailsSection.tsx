@@ -307,7 +307,11 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
           overflow: 'hidden',
           boxShadow: theme.shadows.elevatedCard,
         }}>
-          <thead>
+          <thead style={{
+            position: 'sticky',
+            top: '80px',
+            zIndex: 10,
+          }}>
             <tr style={{
               backgroundColor: theme.colors.background.tertiary,
               borderBottom: `2px solid ${theme.colors.border.medium}`,
@@ -320,6 +324,7 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
                 color: theme.colors.text.secondary,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
+                backgroundColor: theme.colors.background.tertiary,
               }}>
                 {t('common.month')}
               </th>
@@ -331,6 +336,7 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
                 color: theme.colors.text.secondary,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
+                backgroundColor: theme.colors.background.tertiary,
               }}>
                 {t('dca.results.totalInvested')}
               </th>
@@ -342,6 +348,7 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
                 color: theme.colors.text.secondary,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
+                backgroundColor: theme.colors.background.tertiary,
               }}>
                 BTC
               </th>
@@ -353,6 +360,7 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
                 color: theme.colors.text.secondary,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
+                backgroundColor: theme.colors.background.tertiary,
               }}>
                 {t('dca.results.currentValue')}
               </th>
@@ -364,6 +372,7 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
                 color: theme.colors.text.secondary,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
+                backgroundColor: theme.colors.background.tertiary,
               }}>
                 {t('dca.details.totalGain')} %
               </th>
@@ -375,6 +384,7 @@ export function DetailsSection({ monthlyData, currency, startMonth }: DetailsSec
                 color: theme.colors.text.secondary,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
+                backgroundColor: theme.colors.background.tertiary,
               }}>
                 {t('dca.details.avgMonthlyGain')} %
               </th>

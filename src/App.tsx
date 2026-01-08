@@ -179,29 +179,237 @@ function AppContent() {
 
         {/* Footer */}
         <footer style={{
-          paddingTop: theme.spacing.xl,
-          paddingBottom: theme.spacing.xl,
-          borderTop: `1px solid ${theme.colors.border.light}`,
-          textAlign: 'center',
-          color: theme.colors.text.tertiary,
-          fontSize: theme.typography.fontSize.sm,
-          backgroundColor: theme.colors.background.primary,
+          paddingTop: theme.spacing['4xl'],
+          paddingBottom: theme.spacing['3xl'],
+          borderTop: `2px solid ${theme.colors.border.medium}`,
+          backgroundColor: theme.colors.background.secondary,
         }}>
-          <p style={{
-            margin: `0 0 ${theme.spacing.xs} 0`,
-            color: theme.colors.text.secondary,
-            fontWeight: theme.typography.fontWeight.medium,
+          <div style={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: `0 ${theme.spacing.xl}`,
           }}>
-            PoP is an educational tool. Not financial advice.
-          </p>
-          <p style={{
-            margin: 0,
-            fontStyle: 'italic',
-            color: theme.colors.text.tertiary,
-            fontFamily: theme.typography.fontFamily.sans,
-          }}>
-            Bitcoin teaches behavior, not profit.
-          </p>
+            {/* Main Footer Content */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: theme.spacing['2xl'],
+              marginBottom: theme.spacing['2xl'],
+            }}>
+              {/* About Project */}
+              <div>
+                <h3 style={{
+                  fontSize: theme.typography.fontSize.xl,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  fontFamily: theme.typography.fontFamily.display,
+                  marginBottom: theme.spacing.md,
+                  background: theme.colors.gradients.blueGreen,
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                }}>
+                  Proof of Patience
+                </h3>
+                <p style={{
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  lineHeight: theme.typography.lineHeight.relaxed,
+                  marginBottom: theme.spacing.md,
+                }}>
+                  Uma ferramenta educacional para demonstrar que investir em Bitcoin requer sacrifício, disciplina e baixa preferência temporal.
+                </p>
+                <a
+                  href="https://github.com/rodrigovilar/pop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: theme.spacing.xs,
+                    fontSize: theme.typography.fontSize.sm,
+                    color: theme.colors.primary[600],
+                    textDecoration: 'none',
+                    fontWeight: theme.typography.fontWeight.semibold,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.textDecoration = 'underline';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.textDecoration = 'none';
+                  }}
+                >
+                  ⭐ Star on GitHub
+                </a>
+              </div>
+
+              {/* About Author */}
+              <div>
+                <h3 style={{
+                  fontSize: theme.typography.fontSize.lg,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: theme.colors.text.primary,
+                  marginBottom: theme.spacing.md,
+                  fontFamily: theme.typography.fontFamily.display,
+                }}>
+                  Criado por Rodrigo Vilar
+                </h3>
+                <p style={{
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  lineHeight: theme.typography.lineHeight.relaxed,
+                  marginBottom: theme.spacing.md,
+                }}>
+                  Desenvolvedor dedicado a criar ferramentas educacionais para a comunidade Bitcoin.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: theme.spacing.xs,
+                }}>
+                  <a
+                    href="https://www.linkedin.com/in/rodrigo-vilar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      fontSize: theme.typography.fontSize.sm,
+                      color: theme.colors.text.secondary,
+                      textDecoration: 'none',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = theme.colors.primary[600];
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = theme.colors.text.secondary;
+                    }}
+                  >
+                    💼 LinkedIn
+                  </a>
+                  <a
+                    href="https://twitter.com/vilar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      fontSize: theme.typography.fontSize.sm,
+                      color: theme.colors.text.secondary,
+                      textDecoration: 'none',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = theme.colors.primary[600];
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = theme.colors.text.secondary;
+                    }}
+                  >
+                    🐦 Twitter @vilar
+                  </a>
+                </div>
+              </div>
+
+              {/* Donations */}
+              <div>
+                <h3 style={{
+                  fontSize: theme.typography.fontSize.lg,
+                  fontWeight: theme.typography.fontWeight.bold,
+                  color: theme.colors.text.primary,
+                  marginBottom: theme.spacing.md,
+                  fontFamily: theme.typography.fontFamily.display,
+                }}>
+                  ⚡ Apoie o Projeto
+                </h3>
+                <p style={{
+                  fontSize: theme.typography.fontSize.sm,
+                  color: theme.colors.text.secondary,
+                  lineHeight: theme.typography.lineHeight.relaxed,
+                  marginBottom: theme.spacing.md,
+                }}>
+                  Doe para me ajudar a dedicar mais tempo criando ferramentas para a comunidade Bitcoin.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: theme.spacing.sm,
+                }}>
+                  {/* Lightning */}
+                  <div style={{
+                    padding: theme.spacing.sm,
+                    backgroundColor: theme.colors.background.elevated,
+                    borderRadius: theme.borderRadius.md,
+                    border: `1px solid ${theme.colors.border.light}`,
+                  }}>
+                    <div style={{
+                      fontSize: theme.typography.fontSize.xs,
+                      color: theme.colors.text.tertiary,
+                      marginBottom: theme.spacing.xs,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                    }}>
+                      Lightning Network
+                    </div>
+                    <code style={{
+                      fontSize: theme.typography.fontSize.xs,
+                      color: theme.colors.primary[600],
+                      fontFamily: theme.typography.fontFamily.mono,
+                      wordBreak: 'break-all',
+                    }}>
+                      rodrigo@coinos.io
+                    </code>
+                  </div>
+
+                  {/* On-chain */}
+                  <div style={{
+                    padding: theme.spacing.sm,
+                    backgroundColor: theme.colors.background.elevated,
+                    borderRadius: theme.borderRadius.md,
+                    border: `1px solid ${theme.colors.border.light}`,
+                  }}>
+                    <div style={{
+                      fontSize: theme.typography.fontSize.xs,
+                      color: theme.colors.text.tertiary,
+                      marginBottom: theme.spacing.xs,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                    }}>
+                      Bitcoin On-Chain
+                    </div>
+                    <code style={{
+                      fontSize: theme.typography.fontSize.xs,
+                      color: theme.colors.primary[600],
+                      fontFamily: theme.typography.fontFamily.mono,
+                      wordBreak: 'break-all',
+                    }}>
+                      bc1qvsj78deg5xfyu3rx0zm54dfs3wpqf545hy4syh
+                    </code>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Footer */}
+            <div style={{
+              borderTop: `1px solid ${theme.colors.border.light}`,
+              paddingTop: theme.spacing.lg,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: theme.spacing.sm,
+            }}>
+              <p style={{
+                fontSize: theme.typography.fontSize.sm,
+                color: theme.colors.text.secondary,
+                fontWeight: theme.typography.fontWeight.medium,
+                margin: 0,
+              }}>
+                PoP is an educational tool. Not financial advice.
+              </p>
+              <p style={{
+                fontSize: theme.typography.fontSize.sm,
+                color: theme.colors.text.tertiary,
+                fontStyle: 'italic',
+                margin: 0,
+              }}>
+                Bitcoin teaches behavior, not profit.
+              </p>
+            </div>
+          </div>
         </footer>
       </div>
     </>
