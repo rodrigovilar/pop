@@ -23,10 +23,10 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
   const bearRatio = data.daysNegative / totalDays;
   const lateralRatio = daysLateral / totalDays;
 
-  // Define RGB colors for each type
+  // Define RGB colors for each type (lateral is transparent/white)
   const bullColor = { r: 16, g: 185, b: 129 };    // Green
   const bearColor = { r: 239, g: 68, b: 68 };     // Red
-  const lateralColor = { r: 75, g: 85, b: 99 };   // Gray (secondary[600])
+  const lateralColor = { r: 255, g: 255, b: 255 }; // White (transparent effect)
 
   // Mix colors based on proportions
   const r = Math.round(bullColor.r * bullRatio + bearColor.r * bearRatio + lateralColor.r * lateralRatio);
@@ -35,7 +35,7 @@ function calculateCellColor(data: MonthlyData): { backgroundColor: string; textC
 
   // Determine dominant type for text color
   const maxRatio = Math.max(bullRatio, bearRatio, lateralRatio);
-  const textColor = maxRatio === lateralRatio ? theme.colors.text.secondary : '#ffffff';
+  const textColor = maxRatio === lateralRatio ? theme.colors.text.primary : '#ffffff';
 
   return {
     backgroundColor: `rgb(${r}, ${g}, ${b})`,
