@@ -10,6 +10,7 @@ import type { Currency } from './types';
 
 function AppContent() {
   const [currency, setCurrency] = useState<Currency>('USD');
+  const [currentSection, setCurrentSection] = useState(0);
 
   // Calculate default start date: 48 months ago (excluding current month)
   const now = new Date();
@@ -49,8 +50,8 @@ function AppContent() {
 
   return (
     <>
-      {/* Animated Background */}
-      <BreezeBackground />
+      {/* Animated Background with dynamic colors */}
+      <BreezeBackground currentSection={currentSection} />
 
       <div style={{
         position: 'relative',
@@ -162,6 +163,7 @@ function AppContent() {
             monthlyData={monthlyData}
             currency={currency}
             startMonth={startMonth}
+            onSectionChange={setCurrentSection}
           />
         </div>
 

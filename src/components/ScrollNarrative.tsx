@@ -9,9 +9,10 @@ interface ScrollNarrativeProps {
   monthlyData: Map<string, MonthlyData>;
   currency: Currency;
   startMonth: string;
+  onSectionChange: (section: number) => void;
 }
 
-export function ScrollNarrative({ monthlyData, currency, startMonth }: ScrollNarrativeProps) {
+export function ScrollNarrative({ monthlyData, currency, startMonth, onSectionChange }: ScrollNarrativeProps) {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [currentSection, setCurrentSection] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -28,17 +29,23 @@ export function ScrollNarrative({ monthlyData, currency, startMonth }: ScrollNar
 
       // Determine current section (0-3)
       // Section 0: 0-25%, Section 1: 25-50%, Section 2: 50-75%, Section 3: 75-100%
-      if (progress < 0.25) setCurrentSection(0);
-      else if (progress < 0.5) setCurrentSection(1);
-      else if (progress < 0.75) setCurrentSection(2);
-      else setCurrentSection(3);
+      let newSection = 0;
+      if (progress < 0.25) newSection = 0;
+      else if (progress < 0.5) newSection = 1;
+      else if (progress < 0.75) newSection = 2;
+      else newSection = 3;
+
+      if (newSection !== currentSection) {
+        setCurrentSection(newSection);
+        onSectionChange(newSection);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Initial call
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [currentSection, onSectionChange]);
 
   return (
     <div ref={containerRef} style={{ position: 'relative' }}>
