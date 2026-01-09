@@ -185,5 +185,21 @@
     "finalMessage": "Esta é a métrica que deve guiar sua decisão de investimento - não a volatilidade diária ou oscilações de curto prazo. Bitcoin recompensa paciência e consistência.",
     "noteTitle": "Entendendo os Dados",
     "noteText": "Cada linha mostra um investimento mensal. O ganho médio mensal ponderado reflete o verdadeiro desempenho de longo prazo da sua estratégia com Bitcoin."
+  },
+  "footer": {
+    "errorLoading": "Erro ao Carregar Dados",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "Uma ferramenta educacional para demonstrar que investir em Bitcoin requer sacrifício, disciplina e baixa preferência temporal.",
+    "starOnGitHub": "⭐ Favoritar no GitHub",
+    "createdBy": "Criado por Rodrigo Vilar",
+    "creatorDescription": "Desenvolvedor dedicado a criar ferramentas educacionais para a comunidade Bitcoin.",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ Apoiar o Projeto",
+    "donationMessage": "Doe para me ajudar a dedicar mais tempo criando ferramentas para a comunidade Bitcoin.",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoP é uma ferramenta educacional. Não é aconselhamento financeiro.",
+    "tagline": "Bitcoin ensina comportamento, não lucro."
   }
 }

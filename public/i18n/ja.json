@@ -1,1 +1,205 @@
-{"app":{"title":"PoP - 忍耐の証明","tagline":"ビットコインは少数の日を報酬として与えますが、すべての日に存在することを要求します。"},"settings":{"language":"言語","currency":"通貨"},"common":{"loading":"読み込み中...","loadingPhases":{"manifest":"マニフェストを読み込んでいます...","current":"今月を読み込んでいます...","previous":"先月を読み込んでいます...","recent":"最近の月を読み込んでいます...","remaining":"過去のデータを読み込んでいます..."},"error":"エラー","retry":"再試行","month":"月","year":"年","day":"日","days":"日","price":"価格","change":"変化","from":"から","to":"まで","back":"戻る","monthsShort":{"jan":"1月","feb":"2月","mar":"3月","apr":"4月","may":"5月","jun":"6月","jul":"7月","aug":"8月","sep":"9月","oct":"10月","nov":"11月","dec":"12月"},"monthsLong":{"jan":"1月","feb":"2月","mar":"3月","apr":"4月","may":"5月","jun":"6月","jul":"7月","aug":"8月","sep":"9月","oct":"10月","nov":"11月","dec":"12月"}},"hero":{"subtitle":"ビットコインはタイミングではなく、忍耐を報います","scrollDown":"スクロールして探索"},"shortTerm":{"title":"短期的な罠","conclusion":"日々のボラティリティはノイズです。重要なのは長期的なエクスポージャーです。"},"longTerm":{"title":"長期的な解決策：DCA","conclusion":"一貫性はタイミングに勝ります。市場にいる時間は、市場のタイミングよりも重要です。"},"details":{"title":"実際の数字","noteTitle":"データの理解","noteText":"各行は月次投資を示しています。"}}
+{
+  "app": {
+    "title": "PoP - 忍耐の証明",
+    "tagline": "ビットコインは少数の日を報酬として与えますが、すべての日に存在することを要求します。"
+  },
+  "manifesto": {
+    "line1": "ビットコインは少数の日を報酬として与えます —",
+    "line2": "しかし、すべての日に存在することを要求します。",
+    "line3": "",
+    "line4": "ほとんどの時間は不快感があります。",
+    "line5": "わずかな瞬間が犠牲を正当化します。",
+    "line6": "",
+    "line7": "近道はありません。",
+    "line8": "規律、時間、そして信念のみです。"
+  },
+  "main": {
+    "ifYouHadInvested": "ビットコインに投資していたら",
+    "monthlyProgression": "月次進捗",
+    "dcaSimulation": "DCA積立"
+  },
+  "navigation": {
+    "overview": "概要",
+    "dca": "DCAシミュレーション",
+    "keyDays": "重要な日",
+    "about": "アプリについて"
+  },
+  "settings": {
+    "language": "言語",
+    "currency": "通貨"
+  },
+  "overview": {
+    "title": "ビットコインの現実",
+    "subtitle": "時間、規律、忍耐を理解する",
+    "daysPositive": "プラスの日",
+    "daysNegative": "マイナスの日",
+    "daysLateral": "横ばいの日",
+    "currentMonth": "今月",
+    "recentMonths": "最近の月",
+    "loadMore": "もっと読み込む",
+    "showAll": "すべて表示",
+    "showing": "表示中",
+    "of": "/",
+    "months": "か月",
+    "regime": "レジーム",
+    "regimes": {
+      "BULL": "強気",
+      "BEAR": "弱気",
+      "LATERAL": "横ばい",
+      "N/A": "N/A"
+    }
+  },
+  "dca": {
+    "title": "DCAシミュレーション",
+    "subtitle": "ビットコイン規律の旅をシミュレート",
+    "startDate": "開始日",
+    "monthlyAmount": "月次金額",
+    "simulate": "シミュレート",
+    "errors": {
+      "selectDate": "開始日を選択してください",
+      "invalidAmount": "有効な月次金額を入力してください"
+    },
+    "results": {
+      "totalInvested": "総投資額",
+      "totalBTC": "総BTC",
+      "currentValue": "現在価値",
+      "pnl": "損益",
+      "daysInDrawdown": "ドローダウン日数",
+      "longestStreak": "最長マイナス連続",
+      "total": "合計"
+    },
+    "insights": {
+      "drawdownTitle": "不快感の時間",
+      "drawdownText": "コストベースを下回る{days}日を過ごしました。これは正常です。",
+      "disciplineTitle": "タイミングよりも規律",
+      "disciplineText": "最長マイナス連続は{days}日でした。忍耐がゲームです。"
+    },
+    "details": {
+      "totalGain": "総利益",
+      "avgMonthlyGain": "平均月次利益"
+    }
+  },
+  "keyDays": {
+    "title": "わずかな日が重要",
+    "subtitle": "少数の日がほとんどの価値上昇を説明します",
+    "top10": "トップ10日",
+    "top50": "トップ50日",
+    "top100": "トップ100日",
+    "contribution": "総価値上昇の{percent}%",
+    "insight": "これらのわずかな日を逃すと、何年もの待機が無効になります。"
+  },
+  "about": {
+    "title": "PoPについて",
+    "purpose": "目的",
+    "purposeText": "これは、ビットコイン投資が犠牲、規律、低時間選好を必要とすることを示す教育ツールです。これは取引ツール、価格予測者、または利益最適化ツールではありません。",
+    "principles": "原則",
+    "principle1": "価格予測なし",
+    "principle2": "取引シグナルなし",
+    "principle3": "利益の約束なし",
+    "principle4": "教育のみ",
+    "philosophy": "哲学",
+    "philosophyText": "ビットコインは利益ではなく行動を教えます。経験のほとんどはドローダウン、横ばい、不快感です。少数の日がほとんどの価値上昇を説明し、これらの日は予測不可能です。"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "loadingPhases": {
+      "manifest": "マニフェストを読み込んでいます...",
+      "current": "今月を読み込んでいます...",
+      "previous": "先月を読み込んでいます...",
+      "recent": "最近の月を読み込んでいます...",
+      "remaining": "過去のデータを読み込んでいます..."
+    },
+    "error": "エラー",
+    "retry": "再試行",
+    "month": "月",
+    "year": "年",
+    "day": "日",
+    "days": "日",
+    "price": "価格",
+    "change": "変化",
+    "from": "から",
+    "to": "まで",
+    "back": "戻る",
+    "monthsShort": {
+      "jan": "1月",
+      "feb": "2月",
+      "mar": "3月",
+      "apr": "4月",
+      "may": "5月",
+      "jun": "6月",
+      "jul": "7月",
+      "aug": "8月",
+      "sep": "9月",
+      "oct": "10月",
+      "nov": "11月",
+      "dec": "12月"
+    },
+    "monthsLong": {
+      "jan": "1月",
+      "feb": "2月",
+      "mar": "3月",
+      "apr": "4月",
+      "may": "5月",
+      "jun": "6月",
+      "jul": "7月",
+      "aug": "8月",
+      "sep": "9月",
+      "oct": "10月",
+      "nov": "11月",
+      "dec": "12月"
+    }
+  },
+  "hero": {
+    "subtitle": "ビットコインはタイミングではなく、忍耐を報います",
+    "problem1": {
+      "title": "パニック売り",
+      "text": "多くの投資家は価格下落時に売却し、回復を待つ代わりに損失を確定させます。"
+    },
+    "problem2": {
+      "title": "小さな利益の確定",
+      "text": "控えめな利益の後に早期に退出すると、長期的な指数的成長への参加が妨げられます。"
+    },
+    "problem3": {
+      "title": "市場のタイミング",
+      "text": "完璧なエントリーとエグジットポイントを予測しようとすると、しばしば機会を逃します。"
+    },
+    "keyMessage": "ビットコインは完璧な瞬間を見つけることではありません。ボラティリティを通じて投資し続ける忍耐を持つことです。",
+    "scrollDown": "スクロールして探索"
+  },
+  "shortTerm": {
+    "title": "短期的な罠",
+    "intro": "日次または月次の価格変動を見ると、不必要な不安が生まれ、悪い決定につながります。",
+    "warning": "下の各カードは月のパフォーマンスを示しています。色は、プラス(緑)、マイナス(赤)、または横ばい(白)の日が多かったかを示します。この短期的な見方はビットコインのファンダメンタルズを反映しておらず、下落時のパニック売りや上昇時の早期利益確定を引き起こします。",
+    "conclusion": "日々のボラティリティはノイズです。重要なのは長期的なエクスポージャーです。"
+  },
+  "longTerm": {
+    "title": "長期的な解決策:DCA",
+    "what": "ドルコスト平均法(DCA)とは、価格に関係なく定期的に一定額を購入することを意味します。",
+    "why": "市場のタイミングを計る(安く買い、高く売る)代わりに、DCAは市場にいる時間に焦点を当てます。重要なのは、資産にどれだけの期間さらされているかであり、いつ参入または退出するかではありません。",
+    "conclusion": "一貫性はタイミングに勝ります。市場にいる時間は、市場のタイミングよりも重要です。"
+  },
+  "details": {
+    "title": "実際の数字",
+    "intro": "月ごとの内訳は次のとおりです。平均月次利益に注目してください - 印象的に見えないかもしれませんが、これがビットコインの成長の真の指標です。",
+    "keyInsight": "平均月次利益は控えめに見えるかもしれませんが、これがビットコインが本当に提供するものです。",
+    "finalMessage": "これは、日々のボラティリティや短期的な変動ではなく、投資判断を導くべき指標です。ビットコインは忍耐と一貫性を報います。",
+    "noteTitle": "データの理解",
+    "noteText": "各行は月次投資を示しています。加重平均月次利益は、ビットコイン戦略の真の長期的パフォーマンスを反映しています。"
+  },
+  "footer": {
+    "errorLoading": "データ読み込みエラー",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "ビットコイン投資が犠牲、規律、低時間選好を必要とすることを示す教育ツール。",
+    "starOnGitHub": "⭐ GitHubでスター",
+    "createdBy": "Rodrigo Vilarによって作成",
+    "creatorDescription": "ビットコインコミュニティのための教育ツールの作成に専念する開発者。",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ プロジェクトをサポート",
+    "donationMessage": "ビットコインコミュニティのためのツール作成により多くの時間を費やすために寄付してください。",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoPは教育ツールです。財務アドバイスではありません。",
+    "tagline": "ビットコインは利益ではなく行動を教えます。"
+  }
+}

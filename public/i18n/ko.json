@@ -1,1 +1,205 @@
-{"app":{"title":"PoP - 인내의 증명","tagline":"비트코인은 소수의 날을 보상하지만, 모든 날에 존재할 것을 요구합니다."},"settings":{"language":"언어","currency":"통화"},"common":{"loading":"로딩 중...","loadingPhases":{"manifest":"매니페스트 로딩 중...","current":"현재 월 로딩 중...","previous":"이전 월 로딩 중...","recent":"최근 월들 로딩 중...","remaining":"과거 데이터 로딩 중..."},"error":"오류","retry":"재시도","month":"월","year":"년","day":"일","days":"일","price":"가격","change":"변화","from":"부터","to":"까지","back":"뒤로","monthsShort":{"jan":"1월","feb":"2월","mar":"3월","apr":"4월","may":"5월","jun":"6월","jul":"7월","aug":"8월","sep":"9월","oct":"10월","nov":"11월","dec":"12월"},"monthsLong":{"jan":"1월","feb":"2월","mar":"3월","apr":"4월","may":"5월","jun":"6월","jul":"7월","aug":"8월","sep":"9월","oct":"10월","nov":"11월","dec":"12월"}},"hero":{"subtitle":"비트코인은 타이밍이 아닌 인내를 보상합니다","scrollDown":"스크롤하여 탐색"},"shortTerm":{"title":"단기 함정","conclusion":"일일 변동성은 소음입니다. 중요한 것은 장기 노출입니다."},"longTerm":{"title":"장기 솔루션: DCA","conclusion":"일관성이 타이밍을 이깁니다. 시장에 있는 시간이 시장 타이밍보다 중요합니다."},"details":{"title":"실제 숫자","noteTitle":"데이터 이해","noteText":"각 행은 월별 투자를 보여줍니다."}}
+{
+  "app": {
+    "title": "PoP - 인내의 증명",
+    "tagline": "비트코인은 소수의 날을 보상하지만, 모든 날에 존재할 것을 요구합니다."
+  },
+  "manifesto": {
+    "line1": "비트코인은 소수의 날을 보상합니다 —",
+    "line2": "하지만 모든 날에 존재할 것을 요구합니다.",
+    "line3": "",
+    "line4": "대부분의 시간은 불편함이 있습니다.",
+    "line5": "소수의 순간이 희생을 정당화합니다.",
+    "line6": "",
+    "line7": "지름길은 없습니다.",
+    "line8": "오직 규율, 시간, 그리고 확신만이 있습니다."
+  },
+  "main": {
+    "ifYouHadInvested": "비트코인에 투자했다면",
+    "monthlyProgression": "월별 진행",
+    "dcaSimulation": "DCA 축적"
+  },
+  "navigation": {
+    "overview": "개요",
+    "dca": "DCA 시뮬레이션",
+    "keyDays": "주요 날짜",
+    "about": "정보"
+  },
+  "settings": {
+    "language": "언어",
+    "currency": "통화"
+  },
+  "overview": {
+    "title": "비트코인의 현실",
+    "subtitle": "시간, 규율, 인내를 이해하기",
+    "daysPositive": "양수 일",
+    "daysNegative": "음수 일",
+    "daysLateral": "횡보 일",
+    "currentMonth": "현재 월",
+    "recentMonths": "최근 월",
+    "loadMore": "더 불러오기",
+    "showAll": "모두 보기",
+    "showing": "표시 중",
+    "of": "/",
+    "months": "개월",
+    "regime": "체제",
+    "regimes": {
+      "BULL": "상승장",
+      "BEAR": "하락장",
+      "LATERAL": "횡보장",
+      "N/A": "N/A"
+    }
+  },
+  "dca": {
+    "title": "DCA 시뮬레이션",
+    "subtitle": "비트코인 규율 여정 시뮬레이션",
+    "startDate": "시작 날짜",
+    "monthlyAmount": "월 금액",
+    "simulate": "시뮬레이션",
+    "errors": {
+      "selectDate": "시작 날짜를 선택하세요",
+      "invalidAmount": "유효한 월 금액을 입력하세요"
+    },
+    "results": {
+      "totalInvested": "총 투자액",
+      "totalBTC": "총 BTC",
+      "currentValue": "현재 가치",
+      "pnl": "손익",
+      "daysInDrawdown": "손실 일수",
+      "longestStreak": "최장 마이너스 연속",
+      "total": "합계"
+    },
+    "insights": {
+      "drawdownTitle": "불편함의 시간",
+      "drawdownText": "비용 기준 아래에서 {days}일을 보냈습니다. 이것은 정상입니다.",
+      "disciplineTitle": "타이밍보다 규율",
+      "disciplineText": "가장 긴 마이너스 연속은 {days}일이었습니다. 인내가 게임입니다."
+    },
+    "details": {
+      "totalGain": "총 이익",
+      "avgMonthlyGain": "평균 월 이익"
+    }
+  },
+  "keyDays": {
+    "title": "소수의 날이 중요합니다",
+    "subtitle": "소수의 날이 대부분의 가치 상승을 설명합니다",
+    "top10": "상위 10일",
+    "top50": "상위 50일",
+    "top100": "상위 100일",
+    "contribution": "총 가치 상승의 {percent}%",
+    "insight": "이 소수의 날을 놓치면 수년간의 대기가 무효화됩니다."
+  },
+  "about": {
+    "title": "PoP 정보",
+    "purpose": "목적",
+    "purposeText": "이것은 비트코인 투자가 희생, 규율, 낮은 시간 선호도를 요구한다는 것을 보여주는 교육 도구입니다. 이것은 거래 도구, 가격 예측기 또는 수익 최적화 도구가 아닙니다.",
+    "principles": "원칙",
+    "principle1": "가격 예측 없음",
+    "principle2": "거래 신호 없음",
+    "principle3": "수익 약속 없음",
+    "principle4": "교육만",
+    "philosophy": "철학",
+    "philosophyText": "비트코인은 수익이 아닌 행동을 가르칩니다. 경험의 대부분은 하락, 횡보, 불편함입니다. 소수의 날이 대부분의 가치 상승을 설명하며, 이러한 날은 예측할 수 없습니다."
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "loadingPhases": {
+      "manifest": "매니페스트 로딩 중...",
+      "current": "현재 월 로딩 중...",
+      "previous": "이전 월 로딩 중...",
+      "recent": "최근 월들 로딩 중...",
+      "remaining": "과거 데이터 로딩 중..."
+    },
+    "error": "오류",
+    "retry": "재시도",
+    "month": "월",
+    "year": "년",
+    "day": "일",
+    "days": "일",
+    "price": "가격",
+    "change": "변화",
+    "from": "부터",
+    "to": "까지",
+    "back": "뒤로",
+    "monthsShort": {
+      "jan": "1월",
+      "feb": "2월",
+      "mar": "3월",
+      "apr": "4월",
+      "may": "5월",
+      "jun": "6월",
+      "jul": "7월",
+      "aug": "8월",
+      "sep": "9월",
+      "oct": "10월",
+      "nov": "11월",
+      "dec": "12월"
+    },
+    "monthsLong": {
+      "jan": "1월",
+      "feb": "2월",
+      "mar": "3월",
+      "apr": "4월",
+      "may": "5월",
+      "jun": "6월",
+      "jul": "7월",
+      "aug": "8월",
+      "sep": "9월",
+      "oct": "10월",
+      "nov": "11월",
+      "dec": "12월"
+    }
+  },
+  "hero": {
+    "subtitle": "비트코인은 타이밍이 아닌 인내를 보상합니다",
+    "problem1": {
+      "title": "패닉 매도",
+      "text": "많은 투자자들이 가격 하락 시 매도하여 회복을 기다리는 대신 손실을 확정합니다."
+    },
+    "problem2": {
+      "title": "작은 이익 실현",
+      "text": "적당한 이익 후 너무 일찍 퇴장하면 장기적인 지수 성장 참여가 방해됩니다."
+    },
+    "problem3": {
+      "title": "시장 타이밍",
+      "text": "완벽한 진입 및 퇴장 지점을 예측하려고 하면 종종 기회를 놓치게 됩니다."
+    },
+    "keyMessage": "비트코인은 완벽한 순간을 찾는 것이 아닙니다. 변동성을 통해 투자를 유지할 수 있는 인내를 갖는 것입니다.",
+    "scrollDown": "스크롤하여 탐색"
+  },
+  "shortTerm": {
+    "title": "단기 함정",
+    "intro": "일일 또는 월별 가격 변동을 보면 불필요한 불안을 만들고 잘못된 결정으로 이어집니다.",
+    "warning": "아래의 각 카드는 월별 성과를 보여줍니다. 색상은 양수(녹색), 음수(빨간색) 또는 횡보(흰색) 일수가 더 많은지를 나타냅니다. 이러한 단기 관점은 비트코인의 펀더멘털을 반영하지 않으며 하락 시 패닉 매도 또는 상승 시 조기 이익 실현을 유발합니다.",
+    "conclusion": "일일 변동성은 소음입니다. 중요한 것은 장기 노출입니다."
+  },
+  "longTerm": {
+    "title": "장기 솔루션: DCA",
+    "what": "달러 비용 평균법(DCA)은 가격에 관계없이 정기적으로 고정 금액을 구매하는 것을 의미합니다.",
+    "why": "시장 타이밍을 잡으려고 하는 대신(낮게 사고 높게 팔기), DCA는 시장에 있는 시간에 초점을 맞춥니다. 중요한 것은 자산에 얼마나 오래 노출되어 있는지이며, 언제 진입하거나 퇴장하는지가 아닙니다.",
+    "conclusion": "일관성이 타이밍을 이깁니다. 시장에 있는 시간이 시장 타이밍보다 중요합니다."
+  },
+  "details": {
+    "title": "실제 숫자",
+    "intro": "다음은 월별 분석입니다. 평균 월별 이익에 주목하세요 - 인상적으로 보이지 않을 수 있지만 비트코인 성장의 진정한 지표입니다.",
+    "keyInsight": "평균 월별 이익은 적당해 보일 수 있지만, 이것이 비트코인이 진정으로 제공하는 것입니다.",
+    "finalMessage": "이것이 투자 결정을 안내해야 하는 지표입니다 - 일일 변동성이나 단기 변동이 아닙니다. 비트코인은 인내와 일관성을 보상합니다.",
+    "noteTitle": "데이터 이해",
+    "noteText": "각 행은 월별 투자를 보여줍니다. 가중 평균 월별 이익은 비트코인 전략의 진정한 장기 성과를 반영합니다."
+  },
+  "footer": {
+    "errorLoading": "데이터 로딩 오류",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "비트코인 투자가 희생, 규율, 낮은 시간 선호도를 요구한다는 것을 보여주는 교육 도구입니다.",
+    "starOnGitHub": "⭐ GitHub에서 스타",
+    "createdBy": "Rodrigo Vilar가 제작",
+    "creatorDescription": "비트코인 커뮤니티를 위한 교육 도구 제작에 전념하는 개발자.",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ 프로젝트 지원",
+    "donationMessage": "비트코인 커뮤니티를 위한 도구를 만드는 데 더 많은 시간을 할애할 수 있도록 기부해 주세요.",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoP는 교육 도구입니다. 재정 조언이 아닙니다.",
+    "tagline": "비트코인은 수익이 아닌 행동을 가르칩니다."
+  }
+}

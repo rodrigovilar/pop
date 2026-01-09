@@ -1,6 +1,105 @@
 {
-  "app": {"title": "PoP - Prova di Pazienza", "tagline": "Bitcoin premia pochi giorni — ma richiede presenza in tutti."},
-  "settings": {"language": "Lingua", "currency": "Valuta"},
+  "app": {
+    "title": "PoP - Prova di Pazienza",
+    "tagline": "Bitcoin premia pochi giorni — ma richiede presenza in tutti."
+  },
+  "manifesto": {
+    "line1": "Bitcoin premia pochi giorni —",
+    "line2": "ma richiede presenza in tutti.",
+    "line3": "",
+    "line4": "La maggior parte del tempo c'è disagio.",
+    "line5": "Pochi momenti giustificano il sacrificio.",
+    "line6": "",
+    "line7": "Non ci sono scorciatoie.",
+    "line8": "Solo disciplina, tempo e convinzione."
+  },
+  "main": {
+    "ifYouHadInvested": "Se avessi investito in Bitcoin il",
+    "monthlyProgression": "Progressione Mensile",
+    "dcaSimulation": "Accumulo DCA"
+  },
+  "navigation": {
+    "overview": "Panoramica",
+    "dca": "Simulazione DCA",
+    "keyDays": "Giorni Chiave",
+    "about": "Informazioni"
+  },
+  "settings": {
+    "language": "Lingua",
+    "currency": "Valuta"
+  },
+  "overview": {
+    "title": "La Realtà di Bitcoin",
+    "subtitle": "Comprendere tempo, disciplina e pazienza",
+    "daysPositive": "Giorni Positivi",
+    "daysNegative": "Giorni Negativi",
+    "daysLateral": "Giorni Laterali",
+    "currentMonth": "Mese Corrente",
+    "recentMonths": "Mesi Recenti",
+    "loadMore": "Carica Altri",
+    "showAll": "Mostra Tutti",
+    "showing": "Mostra",
+    "of": "di",
+    "months": "mesi",
+    "regime": "Regime",
+    "regimes": {
+      "BULL": "Rialzo",
+      "BEAR": "Ribasso",
+      "LATERAL": "Laterale",
+      "N/A": "N/D"
+    }
+  },
+  "dca": {
+    "title": "Simulazione DCA",
+    "subtitle": "Simula il tuo percorso di disciplina Bitcoin",
+    "startDate": "Data di Inizio",
+    "monthlyAmount": "Importo Mensile",
+    "simulate": "Simula",
+    "errors": {
+      "selectDate": "Seleziona una data di inizio",
+      "invalidAmount": "Inserisci un importo mensile valido"
+    },
+    "results": {
+      "totalInvested": "Totale Investito",
+      "totalBTC": "Totale BTC",
+      "currentValue": "Valore Attuale",
+      "pnl": "P&P",
+      "daysInDrawdown": "Giorni in Perdita",
+      "longestStreak": "Serie Negativa Più Lunga",
+      "total": "TOTALE"
+    },
+    "insights": {
+      "drawdownTitle": "Tempo di Disagio",
+      "drawdownText": "Hai trascorso {days} giorni sotto la tua base di costo. Questo è normale.",
+      "disciplineTitle": "Disciplina Prima del Timing",
+      "disciplineText": "La tua serie negativa più lunga è stata di {days} giorni. La pazienza è il gioco."
+    },
+    "details": {
+      "totalGain": "Guadagno Totale",
+      "avgMonthlyGain": "Guadagno Mensile Medio"
+    }
+  },
+  "keyDays": {
+    "title": "Pochi Giorni Contano",
+    "subtitle": "Un piccolo numero di giorni spiega la maggior parte dell'apprezzamento",
+    "top10": "Top 10 Giorni",
+    "top50": "Top 50 Giorni",
+    "top100": "Top 100 Giorni",
+    "contribution": "{percent}% dell'apprezzamento totale",
+    "insight": "Perdere questi pochi giorni invaliderebbe anni di attesa."
+  },
+  "about": {
+    "title": "Informazioni su PoP",
+    "purpose": "Scopo",
+    "purposeText": "Questo è uno strumento educativo per dimostrare che investire in Bitcoin richiede sacrificio, disciplina e bassa preferenza temporale. NON è uno strumento di trading, previsione dei prezzi o ottimizzazione dei profitti.",
+    "principles": "Principi",
+    "principle1": "Nessuna previsione dei prezzi",
+    "principle2": "Nessun segnale di trading",
+    "principle3": "Nessuna promessa di profitto",
+    "principle4": "Solo educazione",
+    "philosophy": "Filosofia",
+    "philosophyText": "Bitcoin insegna il comportamento, non il profitto. La maggior parte dell'esperienza è ribasso, lateralizzazione e disagio. Un piccolo numero di giorni spiega la maggior parte dell'apprezzamento, e questi giorni sono imprevedibili."
+  },
   "common": {
     "loading": "Caricamento...",
     "loadingPhases": {
@@ -51,5 +150,21 @@
     "finalMessage": "Questa è la metrica che dovrebbe guidare la tua decisione di investimento.",
     "noteTitle": "Comprendere i Dati",
     "noteText": "Ogni riga mostra un investimento mensile."
+  },
+  "footer": {
+    "errorLoading": "Errore nel Caricamento dei Dati",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "Uno strumento educativo per dimostrare che investire in Bitcoin richiede sacrificio, disciplina e bassa preferenza temporale.",
+    "starOnGitHub": "⭐ Metti una stella su GitHub",
+    "createdBy": "Creato da Rodrigo Vilar",
+    "creatorDescription": "Sviluppatore dedicato alla creazione di strumenti educativi per la comunità Bitcoin.",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ Sostieni il Progetto",
+    "donationMessage": "Dona per aiutarmi a dedicare più tempo alla creazione di strumenti per la comunità Bitcoin.",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoP è uno strumento educativo. Non è una consulenza finanziaria.",
+    "tagline": "Bitcoin insegna il comportamento, non il profitto."
   }
 }

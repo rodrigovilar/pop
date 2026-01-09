@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { I18nProvider } from './contexts/I18nContext';
+import { I18nProvider, useI18n } from './contexts/I18nContext';
 import { Settings } from './components/Settings';
 import { LoadingState } from './components/LoadingState';
 import { BreezeBackground } from './components/BreezeBackground';
@@ -9,6 +9,7 @@ import { theme } from './styles/theme';
 import type { Currency } from './types';
 
 function AppContent() {
+  const { t } = useI18n();
   const [currency, setCurrency] = useState<Currency>('USD');
   const [currentSection, setCurrentSection] = useState(0);
 
@@ -38,7 +39,7 @@ function AppContent() {
         justifyContent: 'center',
         flexDirection: 'column',
       }}>
-        <h2 style={{ fontFamily: theme.typography.fontFamily.display }}>Error Loading Data</h2>
+        <h2 style={{ fontFamily: theme.typography.fontFamily.display }}>{t('footer.errorLoading')}</h2>
         <p style={{ color: theme.colors.text.secondary }}>{error.message}</p>
       </div>
     );
@@ -91,7 +92,7 @@ function AppContent() {
                 WebkitTextFillColor: 'transparent',
                 filter: 'drop-shadow(0 2px 8px rgba(59, 130, 246, 0.3))',
               }}>
-                Proof of Patience
+                {t('footer.projectTitle')}
               </h1>
             </div>
 
@@ -207,7 +208,7 @@ function AppContent() {
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                 }}>
-                  Proof of Patience
+                  {t('footer.projectTitle')}
                 </h3>
                 <p style={{
                   fontSize: theme.typography.fontSize.sm,
@@ -215,7 +216,7 @@ function AppContent() {
                   lineHeight: theme.typography.lineHeight.relaxed,
                   marginBottom: theme.spacing.md,
                 }}>
-                  Uma ferramenta educacional para demonstrar que investir em Bitcoin requer sacrifício, disciplina e baixa preferência temporal.
+                  {t('footer.projectDescription')}
                 </p>
                 <a
                   href="https://github.com/rodrigovilar/pop"
@@ -237,7 +238,7 @@ function AppContent() {
                     e.currentTarget.style.textDecoration = 'none';
                   }}
                 >
-                  ⭐ Star on GitHub
+                  {t('footer.starOnGitHub')}
                 </a>
               </div>
 
@@ -250,7 +251,7 @@ function AppContent() {
                   marginBottom: theme.spacing.md,
                   fontFamily: theme.typography.fontFamily.display,
                 }}>
-                  Criado por Rodrigo Vilar
+                  {t('footer.createdBy')}
                 </h3>
                 <p style={{
                   fontSize: theme.typography.fontSize.sm,
@@ -258,7 +259,7 @@ function AppContent() {
                   lineHeight: theme.typography.lineHeight.relaxed,
                   marginBottom: theme.spacing.md,
                 }}>
-                  Desenvolvedor dedicado a criar ferramentas educacionais para a comunidade Bitcoin.
+                  {t('footer.creatorDescription')}
                 </p>
                 <div style={{
                   display: 'flex',
@@ -281,7 +282,7 @@ function AppContent() {
                       e.currentTarget.style.color = theme.colors.text.secondary;
                     }}
                   >
-                    💼 LinkedIn
+                    {t('footer.linkedin')}
                   </a>
                   <a
                     href="https://twitter.com/vilar"
@@ -299,7 +300,7 @@ function AppContent() {
                       e.currentTarget.style.color = theme.colors.text.secondary;
                     }}
                   >
-                    🐦 Twitter @vilar
+                    {t('footer.twitter')}
                   </a>
                 </div>
               </div>
@@ -313,7 +314,7 @@ function AppContent() {
                   marginBottom: theme.spacing.md,
                   fontFamily: theme.typography.fontFamily.display,
                 }}>
-                  ⚡ Apoie o Projeto
+                  {t('footer.supportProject')}
                 </h3>
                 <p style={{
                   fontSize: theme.typography.fontSize.sm,
@@ -321,7 +322,7 @@ function AppContent() {
                   lineHeight: theme.typography.lineHeight.relaxed,
                   marginBottom: theme.spacing.md,
                 }}>
-                  Doe para me ajudar a dedicar mais tempo criando ferramentas para a comunidade Bitcoin.
+                  {t('footer.donationMessage')}
                 </p>
                 <div style={{
                   display: 'flex',
@@ -342,7 +343,7 @@ function AppContent() {
                       textTransform: 'uppercase',
                       letterSpacing: '0.05em',
                     }}>
-                      Lightning Network
+                      {t('footer.lightningNetwork')}
                     </div>
                     <code style={{
                       fontSize: theme.typography.fontSize.xs,
@@ -368,7 +369,7 @@ function AppContent() {
                       textTransform: 'uppercase',
                       letterSpacing: '0.05em',
                     }}>
-                      Bitcoin On-Chain
+                      {t('footer.bitcoinOnChain')}
                     </div>
                     <code style={{
                       fontSize: theme.typography.fontSize.xs,
@@ -398,7 +399,7 @@ function AppContent() {
                 fontWeight: theme.typography.fontWeight.medium,
                 margin: 0,
               }}>
-                PoP is an educational tool. Not financial advice.
+                {t('footer.disclaimer')}
               </p>
               <p style={{
                 fontSize: theme.typography.fontSize.sm,
@@ -406,7 +407,7 @@ function AppContent() {
                 fontStyle: 'italic',
                 margin: 0,
               }}>
-                Bitcoin teaches behavior, not profit.
+                {t('footer.tagline')}
               </p>
             </div>
           </div>

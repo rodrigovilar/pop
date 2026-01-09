@@ -1,1 +1,205 @@
-{"app":{"title":"PoP - Dowód Cierpliwości","tagline":"Bitcoin nagradza nieliczne dni — ale wymaga obecności we wszystkich."},"settings":{"language":"Język","currency":"Waluta"},"common":{"loading":"Ładowanie...","loadingPhases":{"manifest":"Ładowanie manifestu...","current":"Ładowanie bieżącego miesiąca...","previous":"Ładowanie poprzedniego miesiąca...","recent":"Ładowanie ostatnich miesięcy...","remaining":"Ładowanie danych historycznych..."},"error":"Błąd","retry":"Spróbuj ponownie","month":"Miesiąc","year":"Rok","day":"Dzień","days":"dni","price":"Cena","change":"Zmiana","from":"od","to":"do","back":"Wstecz","monthsShort":{"jan":"Sty","feb":"Lut","mar":"Mar","apr":"Kwi","may":"Maj","jun":"Cze","jul":"Lip","aug":"Sie","sep":"Wrz","oct":"Paź","nov":"Lis","dec":"Gru"},"monthsLong":{"jan":"Styczeń","feb":"Luty","mar":"Marzec","apr":"Kwiecień","may":"Maj","jun":"Czerwiec","jul":"Lipiec","aug":"Sierpień","sep":"Wrzesień","oct":"Październik","nov":"Listopad","dec":"Grudzień"}},"hero":{"subtitle":"Bitcoin nagradza cierpliwość, nie timing","scrollDown":"Przewiń, aby eksplorować"},"shortTerm":{"title":"Pułapka Krótkiego Terminu","conclusion":"Codzienna zmienność to szum. Liczy się długoterminowa ekspozycja."},"longTerm":{"title":"Rozwiązanie Długoterminowe: DCA","conclusion":"Konsystencja pokonuje timing. Czas na rynku ma większe znaczenie niż timing rynku."},"details":{"title":"Prawdziwe Liczby","noteTitle":"Zrozumienie Danych","noteText":"Każdy wiersz pokazuje miesięczną inwestycję."}}
+{
+  "app": {
+    "title": "PoP - Dowód Cierpliwości",
+    "tagline": "Bitcoin nagradza nieliczne dni — ale wymaga obecności we wszystkich."
+  },
+  "manifesto": {
+    "line1": "Bitcoin nagradza nieliczne dni —",
+    "line2": "ale wymaga obecności we wszystkich.",
+    "line3": "",
+    "line4": "Przez większość czasu jest dyskomfort.",
+    "line5": "Nieliczne momenty usprawiedliwiają poświęcenie.",
+    "line6": "",
+    "line7": "Nie ma skrótów.",
+    "line8": "Tylko dyscyplina, czas i przekonanie."
+  },
+  "main": {
+    "ifYouHadInvested": "Gdybyś zainwestował w Bitcoin",
+    "monthlyProgression": "Progresja Miesięczna",
+    "dcaSimulation": "Akumulacja DCA"
+  },
+  "navigation": {
+    "overview": "Przegląd",
+    "dca": "Symulacja DCA",
+    "keyDays": "Kluczowe Dni",
+    "about": "O Aplikacji"
+  },
+  "settings": {
+    "language": "Język",
+    "currency": "Waluta"
+  },
+  "overview": {
+    "title": "Rzeczywistość Bitcoina",
+    "subtitle": "Zrozumienie czasu, dyscypliny i cierpliwości",
+    "daysPositive": "Dni Pozytywne",
+    "daysNegative": "Dni Negatywne",
+    "daysLateral": "Dni Boczne",
+    "currentMonth": "Bieżący Miesiąc",
+    "recentMonths": "Ostatnie Miesiące",
+    "loadMore": "Załaduj Więcej",
+    "showAll": "Pokaż Wszystkie",
+    "showing": "Wyświetlanie",
+    "of": "z",
+    "months": "miesięcy",
+    "regime": "Reżim",
+    "regimes": {
+      "BULL": "Byk",
+      "BEAR": "Niedźwiedź",
+      "LATERAL": "Boczny",
+      "N/A": "N/D"
+    }
+  },
+  "dca": {
+    "title": "Symulacja DCA",
+    "subtitle": "Symuluj swoją podróż dyscypliny Bitcoinowej",
+    "startDate": "Data Rozpoczęcia",
+    "monthlyAmount": "Kwota Miesięczna",
+    "simulate": "Symuluj",
+    "errors": {
+      "selectDate": "Proszę wybrać datę rozpoczęcia",
+      "invalidAmount": "Proszę wprowadzić prawidłową kwotę miesięczną"
+    },
+    "results": {
+      "totalInvested": "Łączna Inwestycja",
+      "totalBTC": "Łączne BTC",
+      "currentValue": "Obecna Wartość",
+      "pnl": "Zysk/Strata",
+      "daysInDrawdown": "Dni w Obsunięciu",
+      "longestStreak": "Najdłuższa Seria Negatywna",
+      "total": "SUMA"
+    },
+    "insights": {
+      "drawdownTitle": "Czas w Dyskomforcie",
+      "drawdownText": "Spędziłeś {days} dni poniżej swojego kosztu bazowego. To normalne.",
+      "disciplineTitle": "Dyscyplina Zamiast Timingu",
+      "disciplineText": "Twoja najdłuższa seria negatywna wynosiła {days} dni. Cierpliwość to gra."
+    },
+    "details": {
+      "totalGain": "Całkowity Zysk",
+      "avgMonthlyGain": "Średni Zysk Miesięczny"
+    }
+  },
+  "keyDays": {
+    "title": "Nieliczne Dni Mają Znaczenie",
+    "subtitle": "Niewielka liczba dni wyjaśnia większość wzrostu wartości",
+    "top10": "Top 10 Dni",
+    "top50": "Top 50 Dni",
+    "top100": "Top 100 Dni",
+    "contribution": "{percent}% całkowitego wzrostu wartości",
+    "insight": "Pominięcie tych nielicznych dni unieważniłoby lata oczekiwania."
+  },
+  "about": {
+    "title": "O PoP",
+    "purpose": "Cel",
+    "purposeText": "To narzędzie edukacyjne, które pokazuje, że inwestowanie w Bitcoin wymaga poświęcenia, dyscypliny i niskiej preferencji czasowej. NIE jest to narzędzie handlowe, prognostyk cen czy optymalizator zysków.",
+    "principles": "Zasady",
+    "principle1": "Brak prognoz cenowych",
+    "principle2": "Brak sygnałów handlowych",
+    "principle3": "Brak obietnic zysku",
+    "principle4": "Tylko edukacja",
+    "philosophy": "Filozofia",
+    "philosophyText": "Bitcoin uczy zachowania, nie zysku. Większość doświadczenia to obsunięcie, lateralizacja i dyskomfort. Niewielka liczba dni wyjaśnia większość wzrostu wartości, a te dni są nieprzewidywalne."
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "loadingPhases": {
+      "manifest": "Ładowanie manifestu...",
+      "current": "Ładowanie bieżącego miesiąca...",
+      "previous": "Ładowanie poprzedniego miesiąca...",
+      "recent": "Ładowanie ostatnich miesięcy...",
+      "remaining": "Ładowanie danych historycznych..."
+    },
+    "error": "Błąd",
+    "retry": "Spróbuj ponownie",
+    "month": "Miesiąc",
+    "year": "Rok",
+    "day": "Dzień",
+    "days": "dni",
+    "price": "Cena",
+    "change": "Zmiana",
+    "from": "od",
+    "to": "do",
+    "back": "Wstecz",
+    "monthsShort": {
+      "jan": "Sty",
+      "feb": "Lut",
+      "mar": "Mar",
+      "apr": "Kwi",
+      "may": "Maj",
+      "jun": "Cze",
+      "jul": "Lip",
+      "aug": "Sie",
+      "sep": "Wrz",
+      "oct": "Paź",
+      "nov": "Lis",
+      "dec": "Gru"
+    },
+    "monthsLong": {
+      "jan": "Styczeń",
+      "feb": "Luty",
+      "mar": "Marzec",
+      "apr": "Kwiecień",
+      "may": "Maj",
+      "jun": "Czerwiec",
+      "jul": "Lipiec",
+      "aug": "Sierpień",
+      "sep": "Wrzesień",
+      "oct": "Październik",
+      "nov": "Listopad",
+      "dec": "Grudzień"
+    }
+  },
+  "hero": {
+    "subtitle": "Bitcoin nagradza cierpliwość, nie timing",
+    "problem1": {
+      "title": "Paniczna Sprzedaż",
+      "text": "Wielu inwestorów sprzedaje podczas spadków cen, blokując straty zamiast czekać na odbicie."
+    },
+    "problem2": {
+      "title": "Realizowanie Małych Zysków",
+      "text": "Zbyt wczesne wyjście po skromnych zyskach uniemożliwia udział w długoterminowym wykładniczym wzroście."
+    },
+    "problem3": {
+      "title": "Wybieranie Momentu Rynkowego",
+      "text": "Próba przewidzenia idealnych punktów wejścia i wyjścia często prowadzi do utraconych okazji."
+    },
+    "keyMessage": "Bitcoin nie polega na znalezieniu idealnego momentu. Chodzi o cierpliwość, by pozostać zainwestowanym przez zmienność.",
+    "scrollDown": "Przewiń, aby eksplorować"
+  },
+  "shortTerm": {
+    "title": "Pułapka Krótkiego Terminu",
+    "intro": "Patrzenie na dzienne lub miesięczne ruchy cenowe tworzy niepotrzebny niepokój i prowadzi do złych decyzji.",
+    "warning": "Każda karta poniżej pokazuje wyniki miesiąca. Kolory wskazują, czy było więcej dni pozytywnych (zielony), negatywnych (czerwony) czy bocznych (biały). Ten krótkoterminowy widok nie odzwierciedla fundamentów Bitcoina i powoduje paniczną sprzedaż podczas spadków lub przedwczesne branie zysków podczas wzrostów.",
+    "conclusion": "Codzienna zmienność to szum. Liczy się długoterminowa ekspozycja."
+  },
+  "longTerm": {
+    "title": "Rozwiązanie Długoterminowe: DCA",
+    "what": "Dollar Cost Averaging (DCA) oznacza kupowanie stałej kwoty regularnie, niezależnie od ceny.",
+    "why": "Zamiast próbować wybrać moment rynkowy (kupuj tanio, sprzedaj drogo), DCA koncentruje się na czasie w rynku. Liczy się, jak długo jesteś narażony na aktywo, a nie kiedy wchodzisz lub wychodzisz.",
+    "conclusion": "Konsystencja pokonuje timing. Czas na rynku ma większe znaczenie niż timing rynku."
+  },
+  "details": {
+    "title": "Prawdziwe Liczby",
+    "intro": "Oto miesięczne zestawienie. Zwróć uwagę na średni miesięczny zysk - może nie wyglądać imponująco, ale to prawdziwy wskaźnik wzrostu Bitcoina.",
+    "keyInsight": "Średni miesięczny zysk może wydawać się skromny, ale to właśnie to oferuje Bitcoin.",
+    "finalMessage": "To jest metryka, która powinna kierować Twoją decyzją inwestycyjną - nie dzienna zmienność czy krótkoterminowe wahania. Bitcoin nagradza cierpliwość i konsystencję.",
+    "noteTitle": "Zrozumienie Danych",
+    "noteText": "Każdy wiersz pokazuje miesięczną inwestycję. Ważona średnia miesięcznego zysku odzwierciedla prawdziwą długoterminową wydajność Twojej strategii Bitcoinowej."
+  },
+  "footer": {
+    "errorLoading": "Błąd Ładowania Danych",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "Narzędzie edukacyjne pokazujące, że inwestowanie w Bitcoin wymaga poświęcenia, dyscypliny i niskiej preferencji czasowej.",
+    "starOnGitHub": "⭐ Gwiazdka na GitHub",
+    "createdBy": "Stworzony przez Rodrigo Vilar",
+    "creatorDescription": "Programista poświęcony tworzeniu narzędzi edukacyjnych dla społeczności Bitcoin.",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ Wesprzyj Projekt",
+    "donationMessage": "Przekaż darowiznę, aby pomóc mi poświęcić więcej czasu na tworzenie narzędzi dla społeczności Bitcoin.",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoP to narzędzie edukacyjne. To nie jest porada finansowa.",
+    "tagline": "Bitcoin uczy zachowania, nie zysku."
+  }
+}

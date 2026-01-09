@@ -1,1 +1,205 @@
-{"app":{"title":"PoP - Sabır Kanıtı","tagline":"Bitcoin az günü ödüllendirir — ama hepsinde bulunmayı talep eder."},"settings":{"language":"Dil","currency":"Para Birimi"},"common":{"loading":"Yükleniyor...","loadingPhases":{"manifest":"Manifest yükleniyor...","current":"Mevcut ay yükleniyor...","previous":"Önceki ay yükleniyor...","recent":"Son aylar yükleniyor...","remaining":"Geçmiş veriler yükleniyor..."},"error":"Hata","retry":"Tekrar Dene","month":"Ay","year":"Yıl","day":"Gün","days":"gün","price":"Fiyat","change":"Değişim","from":"başlangıç","to":"bitiş","back":"Geri","monthsShort":{"jan":"Oca","feb":"Şub","mar":"Mar","apr":"Nis","may":"May","jun":"Haz","jul":"Tem","aug":"Ağu","sep":"Eyl","oct":"Eki","nov":"Kas","dec":"Ara"},"monthsLong":{"jan":"Ocak","feb":"Şubat","mar":"Mart","apr":"Nisan","may":"Mayıs","jun":"Haziran","jul":"Temmuz","aug":"Ağustos","sep":"Eylül","oct":"Ekim","nov":"Kasım","dec":"Aralık"}},"hero":{"subtitle":"Bitcoin sabrı ödüllendirir, zamanlamayı değil","scrollDown":"Keşfetmek için kaydırın"},"shortTerm":{"title":"Kısa Vadeli Tuzak","conclusion":"Günlük oynaklık gürültüdür. Önemli olan uzun vadeli maruziyettir."},"longTerm":{"title":"Uzun Vadeli Çözüm: DCA","conclusion":"Tutarlılık zamanlamayı yener. Piyasada geçirilen zaman, piyasa zamanlamasından daha önemlidir."},"details":{"title":"Gerçek Sayılar","noteTitle":"Verileri Anlama","noteText":"Her satır aylık bir yatırımı gösterir."}}
+{
+  "app": {
+    "title": "PoP - Sabır Kanıtı",
+    "tagline": "Bitcoin az günü ödüllendirir — ama hepsinde bulunmayı talep eder."
+  },
+  "manifesto": {
+    "line1": "Bitcoin az günü ödüllendirir —",
+    "line2": "ama hepsinde bulunmayı talep eder.",
+    "line3": "",
+    "line4": "Çoğu zaman rahatsızlık vardır.",
+    "line5": "Az anlar fedakarlığı haklı çıkarır.",
+    "line6": "",
+    "line7": "Kısayol yoktur.",
+    "line8": "Sadece disiplin, zaman ve inanç."
+  },
+  "main": {
+    "ifYouHadInvested": "Bitcoin'e yatırım yapsaydınız",
+    "monthlyProgression": "Aylık İlerleme",
+    "dcaSimulation": "DCA Birikimi"
+  },
+  "navigation": {
+    "overview": "Genel Bakış",
+    "dca": "DCA Simülasyonu",
+    "keyDays": "Anahtar Günler",
+    "about": "Hakkında"
+  },
+  "settings": {
+    "language": "Dil",
+    "currency": "Para Birimi"
+  },
+  "overview": {
+    "title": "Bitcoin'in Gerçekliği",
+    "subtitle": "Zaman, disiplin ve sabrı anlamak",
+    "daysPositive": "Pozitif Günler",
+    "daysNegative": "Negatif Günler",
+    "daysLateral": "Yatay Günler",
+    "currentMonth": "Mevcut Ay",
+    "recentMonths": "Son Aylar",
+    "loadMore": "Daha Fazla Yükle",
+    "showAll": "Tümünü Göster",
+    "showing": "Gösterilen",
+    "of": "/",
+    "months": "ay",
+    "regime": "Rejim",
+    "regimes": {
+      "BULL": "Boğa",
+      "BEAR": "Ayı",
+      "LATERAL": "Yatay",
+      "N/A": "Yok"
+    }
+  },
+  "dca": {
+    "title": "DCA Simülasyonu",
+    "subtitle": "Bitcoin disiplin yolculuğunuzu simüle edin",
+    "startDate": "Başlangıç Tarihi",
+    "monthlyAmount": "Aylık Tutar",
+    "simulate": "Simüle Et",
+    "errors": {
+      "selectDate": "Lütfen bir başlangıç tarihi seçin",
+      "invalidAmount": "Lütfen geçerli bir aylık tutar girin"
+    },
+    "results": {
+      "totalInvested": "Toplam Yatırım",
+      "totalBTC": "Toplam BTC",
+      "currentValue": "Mevcut Değer",
+      "pnl": "Kar/Zarar",
+      "daysInDrawdown": "Düşüşteki Günler",
+      "longestStreak": "En Uzun Negatif Seri",
+      "total": "TOPLAM"
+    },
+    "insights": {
+      "drawdownTitle": "Rahatsızlık Zamanı",
+      "drawdownText": "Maliyet bazınızın altında {days} gün geçirdiniz. Bu normaldir.",
+      "disciplineTitle": "Zamanlamadan Çok Disiplin",
+      "disciplineText": "En uzun negatif seriniz {days} gündü. Sabır oyundur."
+    },
+    "details": {
+      "totalGain": "Toplam Kazanç",
+      "avgMonthlyGain": "Ort. Aylık Kazanç"
+    }
+  },
+  "keyDays": {
+    "title": "Az Gün Önemlidir",
+    "subtitle": "Az sayıda gün çoğu değer artışını açıklar",
+    "top10": "İlk 10 Gün",
+    "top50": "İlk 50 Gün",
+    "top100": "İlk 100 Gün",
+    "contribution": "toplam değer artışının {percent}%'si",
+    "insight": "Bu az günü kaçırmak yıllarca beklemeyi geçersiz kılardı."
+  },
+  "about": {
+    "title": "PoP Hakkında",
+    "purpose": "Amaç",
+    "purposeText": "Bu, Bitcoin yatırımının fedakarlık, disiplin ve düşük zaman tercihi gerektirdiğini göstermek için eğitici bir araçtır. Bu bir ticaret aracı, fiyat tahmincisi veya kar optimize edici DEĞİLDİR.",
+    "principles": "İlkeler",
+    "principle1": "Fiyat tahmini yok",
+    "principle2": "Ticaret sinyali yok",
+    "principle3": "Kar vaadi yok",
+    "principle4": "Sadece eğitim",
+    "philosophy": "Felsefe",
+    "philosophyText": "Bitcoin davranış öğretir, kar değil. Deneyimin çoğu düşüş, yataylık ve rahatsızlıktır. Az sayıda gün çoğu değer artışını açıklar ve bu günler öngörülemezdir."
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "loadingPhases": {
+      "manifest": "Manifest yükleniyor...",
+      "current": "Mevcut ay yükleniyor...",
+      "previous": "Önceki ay yükleniyor...",
+      "recent": "Son aylar yükleniyor...",
+      "remaining": "Geçmiş veriler yükleniyor..."
+    },
+    "error": "Hata",
+    "retry": "Tekrar Dene",
+    "month": "Ay",
+    "year": "Yıl",
+    "day": "Gün",
+    "days": "gün",
+    "price": "Fiyat",
+    "change": "Değişim",
+    "from": "başlangıç",
+    "to": "bitiş",
+    "back": "Geri",
+    "monthsShort": {
+      "jan": "Oca",
+      "feb": "Şub",
+      "mar": "Mar",
+      "apr": "Nis",
+      "may": "May",
+      "jun": "Haz",
+      "jul": "Tem",
+      "aug": "Ağu",
+      "sep": "Eyl",
+      "oct": "Eki",
+      "nov": "Kas",
+      "dec": "Ara"
+    },
+    "monthsLong": {
+      "jan": "Ocak",
+      "feb": "Şubat",
+      "mar": "Mart",
+      "apr": "Nisan",
+      "may": "Mayıs",
+      "jun": "Haziran",
+      "jul": "Temmuz",
+      "aug": "Ağustos",
+      "sep": "Eylül",
+      "oct": "Ekim",
+      "nov": "Kasım",
+      "dec": "Aralık"
+    }
+  },
+  "hero": {
+    "subtitle": "Bitcoin sabrı ödüllendirir, zamanlamayı değil",
+    "problem1": {
+      "title": "Panik Satış",
+      "text": "Birçok yatırımcı fiyat düşüşleri sırasında satış yaparak toparlanmayı beklemek yerine zararı kilitler."
+    },
+    "problem2": {
+      "title": "Küçük Karları Almak",
+      "text": "Mütevazı kazançlardan sonra çok erken çıkış, uzun vadeli üstel büyümeye katılımı engeller."
+    },
+    "problem3": {
+      "title": "Piyasa Zamanlaması",
+      "text": "Mükemmel giriş ve çıkış noktalarını tahmin etmeye çalışmak genellikle kaçırılan fırsatlara yol açar."
+    },
+    "keyMessage": "Bitcoin mükemmel anı bulmakla ilgili değildir. Volatilite boyunca yatırımlı kalma sabrına sahip olmakla ilgilidir.",
+    "scrollDown": "Keşfetmek için kaydırın"
+  },
+  "shortTerm": {
+    "title": "Kısa Vadeli Tuzak",
+    "intro": "Günlük veya aylık fiyat hareketlerine bakmak gereksiz endişe yaratır ve kötü kararlara yol açar.",
+    "warning": "Aşağıdaki her kart bir ayın performansını gösterir. Renkler daha fazla pozitif (yeşil), negatif (kırmızı) veya yatay (beyaz) gün olup olmadığını gösterir. Bu kısa vadeli görünüm Bitcoin'in temellerini yansıtmaz ve düşüşler sırasında panik satışa veya yükselişler sırasında erken kar almaya neden olur.",
+    "conclusion": "Günlük oynaklık gürültüdür. Önemli olan uzun vadeli maruziyettir."
+  },
+  "longTerm": {
+    "title": "Uzun Vadeli Çözüm: DCA",
+    "what": "Dollar Cost Averaging (DCA), fiyattan bağımsız olarak düzenli olarak sabit bir miktar satın almak anlamına gelir.",
+    "why": "Piyasayı zamanlamaya (düşükten al, yüksekten sat) çalışmak yerine, DCA piyasadaki zamana odaklanır. Önemli olan varlığa ne kadar süre maruz kaldığınızdır, ne zaman girdiğiniz veya çıktığınız değil.",
+    "conclusion": "Tutarlılık zamanlamayı yener. Piyasada geçirilen zaman, piyasa zamanlamasından daha önemlidir."
+  },
+  "details": {
+    "title": "Gerçek Sayılar",
+    "intro": "İşte aylık döküm. Ortalama aylık kazanca dikkat edin - etkileyici görünmeyebilir, ancak Bitcoin'in büyümesinin gerçek göstergesidir.",
+    "keyInsight": "Ortalama aylık kazanç mütevazı görünebilir, ancak Bitcoin'in gerçekten sunduğu budur.",
+    "finalMessage": "Yatırım kararınıza rehberlik etmesi gereken metrik budur - günlük oynaklık veya kısa vadeli dalgalanmalar değil. Bitcoin sabrı ve tutarlılığı ödüllendirir.",
+    "noteTitle": "Verileri Anlama",
+    "noteText": "Her satır aylık bir yatırımı gösterir. Ağırlıklı ortalama aylık kazanç, Bitcoin stratejinizin gerçek uzun vadeli performansını yansıtır."
+  },
+  "footer": {
+    "errorLoading": "Veri Yükleme Hatası",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "Bitcoin yatırımının fedakarlık, disiplin ve düşük zaman tercihi gerektirdiğini göstermek için eğitici bir araç.",
+    "starOnGitHub": "⭐ GitHub'da Yıldızla",
+    "createdBy": "Rodrigo Vilar tarafından oluşturuldu",
+    "creatorDescription": "Bitcoin topluluğu için eğitim araçları oluşturmaya adanmış geliştirici.",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ Projeyi Destekle",
+    "donationMessage": "Bitcoin topluluğu için araçlar oluşturmaya daha fazla zaman ayırmama yardımcı olmak için bağış yapın.",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoP eğitici bir araçtır. Finansal tavsiye değildir.",
+    "tagline": "Bitcoin davranış öğretir, kar değil."
+  }
+}

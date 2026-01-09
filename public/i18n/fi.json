@@ -1,1 +1,205 @@
-{"app":{"title":"PoP - Todiste Kärsivällisyydestä","tagline":"Bitcoin palkitsee harvat päivät — mutta vaatii läsnäoloa kaikissa."},"settings":{"language":"Kieli","currency":"Valuutta"},"common":{"loading":"Ladataan...","loadingPhases":{"manifest":"Ladataan manifestia...","current":"Ladataan nykyistä kuukautta...","previous":"Ladataan edellistä kuukautta...","recent":"Ladataan viimeaikaisia kuukausia...","remaining":"Ladataan historiallista dataa..."},"error":"Virhe","retry":"Yritä uudelleen","month":"Kuukausi","year":"Vuosi","day":"Päivä","days":"päivää","price":"Hinta","change":"Muutos","from":"alkaen","to":"asti","back":"Takaisin","monthsShort":{"jan":"Tam","feb":"Hel","mar":"Maa","apr":"Huh","may":"Tou","jun":"Kes","jul":"Hei","aug":"Elo","sep":"Syy","oct":"Lok","nov":"Mar","dec":"Jou"},"monthsLong":{"jan":"Tammikuu","feb":"Helmikuu","mar":"Maaliskuu","apr":"Huhtikuu","may":"Toukokuu","jun":"Kesäkuu","jul":"Heinäkuu","aug":"Elokuu","sep":"Syyskuu","oct":"Lokakuu","nov":"Marraskuu","dec":"Joulukuu"}},"hero":{"subtitle":"Bitcoin palkitsee kärsivällisyyden, ei ajoituksen","scrollDown":"Vieritä tutkiaksesi"},"shortTerm":{"title":"Lyhyen Aikavälin Ansa","conclusion":"Päivittäinen volatiliteetti on kohinaa. Tärkeää on pitkäaikainen altistuminen."},"longTerm":{"title":"Pitkän Aikavälin Ratkaisu: DCA","conclusion":"Johdonmukaisuus voittaa ajoituksen. Aika markkinoilla on tärkeämpää kuin markkinoiden ajoitus."},"details":{"title":"Todelliset Numerot","noteTitle":"Datan Ymmärtäminen","noteText":"Jokainen rivi näyttää kuukausittaisen sijoituksen."}}
+{
+  "app": {
+    "title": "PoP - Todiste Kärsivällisyydestä",
+    "tagline": "Bitcoin palkitsee harvat päivät — mutta vaatii läsnäoloa kaikissa."
+  },
+  "manifesto": {
+    "line1": "Bitcoin palkitsee harvat päivät —",
+    "line2": "mutta vaatii läsnäoloa kaikissa.",
+    "line3": "",
+    "line4": "Suurimman osan ajasta on epämukavuutta.",
+    "line5": "Harvat hetket oikeuttavat uhrin.",
+    "line6": "",
+    "line7": "Ei ole oikoteitä.",
+    "line8": "Vain kurinalaisuutta, aikaa ja vakaumusta."
+  },
+  "main": {
+    "ifYouHadInvested": "Jos olisit sijoittanut Bitcoiniin",
+    "monthlyProgression": "Kuukausittainen Eteneminen",
+    "dcaSimulation": "DCA-Ker​tymä"
+  },
+  "navigation": {
+    "overview": "Yleiskatsaus",
+    "dca": "DCA-Simulaatio",
+    "keyDays": "Avainpäivät",
+    "about": "Tietoja"
+  },
+  "settings": {
+    "language": "Kieli",
+    "currency": "Valuutta"
+  },
+  "overview": {
+    "title": "Bitcoinin Todellisuus",
+    "subtitle": "Ajan, kurinalaisuuden ja kärsivällisyyden ymmärtäminen",
+    "daysPositive": "Positiiviset Päivät",
+    "daysNegative": "Negatiiviset Päivät",
+    "daysLateral": "Sivuttaiset Päivät",
+    "currentMonth": "Nykyinen Kuukausi",
+    "recentMonths": "Viimeaikaiset Kuukaudet",
+    "loadMore": "Lataa Lisää",
+    "showAll": "Näytä Kaikki",
+    "showing": "Näytetään",
+    "of": "/",
+    "months": "kuukautta",
+    "regime": "Tilanne",
+    "regimes": {
+      "BULL": "Nouseva",
+      "BEAR": "Laskeva",
+      "LATERAL": "Sivuttainen",
+      "N/A": "Ei saatavilla"
+    }
+  },
+  "dca": {
+    "title": "DCA-Simulaatio",
+    "subtitle": "Simuloi Bitcoin-kurinalaisuusmatkaasi",
+    "startDate": "Aloituspäivä",
+    "monthlyAmount": "Kuukausittainen Summa",
+    "simulate": "Simuloi",
+    "errors": {
+      "selectDate": "Valitse aloituspäivä",
+      "invalidAmount": "Anna kelvollinen kuukausittainen summa"
+    },
+    "results": {
+      "totalInvested": "Sijoitettu Yhteensä",
+      "totalBTC": "BTC Yhteensä",
+      "currentValue": "Nykyarvo",
+      "pnl": "Tulos",
+      "daysInDrawdown": "Päiviä Tappiolla",
+      "longestStreak": "Pisin Negatiivinen Jakso",
+      "total": "YHTEENSÄ"
+    },
+    "insights": {
+      "drawdownTitle": "Epämukavuuden Aika",
+      "drawdownText": "Vietit {days} päivää kustannusperusteesi alapuolella. Tämä on normaalia.",
+      "disciplineTitle": "Kurinalaisuus Ennen Ajoitusta",
+      "disciplineText": "Pisin negatiivinen jaksosi oli {days} päivää. Kärsivällisyys on peli."
+    },
+    "details": {
+      "totalGain": "Kokonaisvoitto",
+      "avgMonthlyGain": "Keskim. Kuukausittainen Voitto"
+    }
+  },
+  "keyDays": {
+    "title": "Harvat Päivät Merkitsevät",
+    "subtitle": "Pieni määrä päiviä selittää suurimman osan arvonnoususta",
+    "top10": "Top 10 Päivää",
+    "top50": "Top 50 Päivää",
+    "top100": "Top 100 Päivää",
+    "contribution": "{percent}% kokonaisarvonnoususta",
+    "insight": "Näiden harvojen päivien menettäminen mitätöisi vuosien odotuksen."
+  },
+  "about": {
+    "title": "Tietoja PoP:sta",
+    "purpose": "Tarkoitus",
+    "purposeText": "Tämä on koulutustyökalu osoittamaan, että Bitcoin-sijoittaminen vaatii uhrausta, kurinalaisuutta ja alhaista aikapreferenssiä. Se EI ole kaupankäyntityökalu, hintaennuste tai voiton optimoija.",
+    "principles": "Periaatteet",
+    "principle1": "Ei hintaennusteita",
+    "principle2": "Ei kaupankäyntisignaaleja",
+    "principle3": "Ei voittolupauksia",
+    "principle4": "Vain koulutusta",
+    "philosophy": "Filosofia",
+    "philosophyText": "Bitcoin opettaa käyttäytymistä, ei voittoa. Suurin osa kokemuksesta on laskua, sivuttaisliikettä ja epämukavuutta. Pieni määrä päiviä selittää suurimman osan arvonnoususta, ja nämä päivät ovat arvaamattomia."
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "loadingPhases": {
+      "manifest": "Ladataan manifestia...",
+      "current": "Ladataan nykyistä kuukautta...",
+      "previous": "Ladataan edellistä kuukautta...",
+      "recent": "Ladataan viimeaikaisia kuukausia...",
+      "remaining": "Ladataan historiallista dataa..."
+    },
+    "error": "Virhe",
+    "retry": "Yritä uudelleen",
+    "month": "Kuukausi",
+    "year": "Vuosi",
+    "day": "Päivä",
+    "days": "päivää",
+    "price": "Hinta",
+    "change": "Muutos",
+    "from": "alkaen",
+    "to": "asti",
+    "back": "Takaisin",
+    "monthsShort": {
+      "jan": "Tam",
+      "feb": "Hel",
+      "mar": "Maa",
+      "apr": "Huh",
+      "may": "Tou",
+      "jun": "Kes",
+      "jul": "Hei",
+      "aug": "Elo",
+      "sep": "Syy",
+      "oct": "Lok",
+      "nov": "Mar",
+      "dec": "Jou"
+    },
+    "monthsLong": {
+      "jan": "Tammikuu",
+      "feb": "Helmikuu",
+      "mar": "Maaliskuu",
+      "apr": "Huhtikuu",
+      "may": "Toukokuu",
+      "jun": "Kesäkuu",
+      "jul": "Heinäkuu",
+      "aug": "Elokuu",
+      "sep": "Syyskuu",
+      "oct": "Lokakuu",
+      "nov": "Marraskuu",
+      "dec": "Joulukuu"
+    }
+  },
+  "hero": {
+    "subtitle": "Bitcoin palkitsee kärsivällisyyden, ei ajoituksen",
+    "problem1": {
+      "title": "Paniikkimyynti",
+      "text": "Monet sijoittajat myyvät hinnan laskun aikana ja lukitsevat tappiot sen sijaan, että odottaisivat elpymistä."
+    },
+    "problem2": {
+      "title": "Pienten Voittojen Ottaminen",
+      "text": "Liian varhainen poistuminen vaatimattomien voittojen jälkeen estää osallistumisen pitkän aikavälin eksponentiaaliseen kasvuun."
+    },
+    "problem3": {
+      "title": "Markkinoiden Ajoittaminen",
+      "text": "Yrittäessään ennustaa täydellisiä sisään- ja ulostulopistiä usein johtaa menetettyihin mahdollisuuksiin."
+    },
+    "keyMessage": "Bitcoin ei tarkoita täydellisen hetken löytämistä. Kyse on kärsivällisyydestä pysyä sijoitettuna volatiliteetin läpi.",
+    "scrollDown": "Vieritä tutkiaksesi"
+  },
+  "shortTerm": {
+    "title": "Lyhyen Aikavälin Ansa",
+    "intro": "Päivittäisten tai kuukausittaisten hintaliikkeiden tarkkailu luo tarpeetonta ahdistusta ja johtaa huonoihin päätöksiin.",
+    "warning": "Jokainen kortti näyttää kuukauden suorituskyvyn. Värit osoittavat, oliko enemmän positiivisia (vihreä), negatiivisia (punainen) vai sivuttaisia (valkoinen) päiviä. Tämä lyhyen aikavälin näkymä ei heijasta Bitcoinin perusteita ja aiheuttaa paniikkimyyntiä laskujen aikana tai ennenaikaista voitonottoa nousujen aikana.",
+    "conclusion": "Päivittäinen volatiliteetti on kohinaa. Tärkeää on pitkäaikainen altistuminen."
+  },
+  "longTerm": {
+    "title": "Pitkän Aikavälin Ratkaisu: DCA",
+    "what": "Dollar Cost Averaging (DCA) tarkoittaa kiinteän summan ostamista säännöllisesti hinnasta riippumatta.",
+    "why": "Sen sijaan, että yrittäisi ajoittaa markkinoita (ostaa halvalla, myydä kalliilla), DCA keskittyy aikaan markkinoilla. Tärkeää on, kuinka kauan olet altistunut omaisuuserällehän ja missä vaiheessa poistut tai sisään tapat.",
+    "conclusion": "Johdonmukaisuus voittaa ajoituksen. Aika markkinoilla on tärkeämpää kuin markkinoiden ajoitus."
+  },
+  "details": {
+    "title": "Todelliset Numerot",
+    "intro": "Tässä on kuukausittainen erittely. Huomaa keskimääräinen kuukausittainen voitto - se ei ehkä näytä vaikuttavalta, mutta se on todellinen Bitcoinin kasvun indikaattori.",
+    "keyInsight": "Keskimääräinen kuukausittainen voitto saattaa vaikuttaa vaatimattomalta, mutta tämä on se mitä Bitcoin todella tarjoaa.",
+    "finalMessage": "Tämä on mittari, jonka pitäisi ohjata sijoituspäätöstäsi - ei päivittäinen volatiliteetti tai lyhyen aikavälin heilahtelut. Bitcoin palkitsee kärsivällisyyden ja johdonmukaisuuden.",
+    "noteTitle": "Datan Ymmärtäminen",
+    "noteText": "Jokainen rivi näyttää kuukausittaisen sijoituksen. Painotettu keskimääräinen kuukausittainen voitto heijastaa Bitcoin-strategiasi todellista pitkän aikavälin suorituskykyä."
+  },
+  "footer": {
+    "errorLoading": "Virhe Tietojen Lataamisessa",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "Koulutustyökalu osoittamaan, että Bitcoin-sijoittaminen vaatii uhrausta, kurinalaisuutta ja alhaista aikapreferenssiä.",
+    "starOnGitHub": "⭐ Tähti GitHubissa",
+    "createdBy": "Luonut Rodrigo Vilar",
+    "creatorDescription": "Kehittäjä, joka on omistautunut luomaan koulutustyökaluja Bitcoin-yhteisölle.",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ Tue Projektia",
+    "donationMessage": "Lahjoita auttaaksesi minua omistamaan enemmän aikaa työkalujen luomiseen Bitcoin-yhteisölle.",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoP on koulutustyökalu. Ei taloudellista neuvontaa.",
+    "tagline": "Bitcoin opettaa käyttäytymistä, ei voittoa."
+  }
+}

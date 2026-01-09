@@ -1,1 +1,205 @@
-{"app":{"title":"PoP - Důkaz Trpělivosti","tagline":"Bitcoin odměňuje málo dní — ale vyžaduje přítomnost ve všech."},"settings":{"language":"Jazyk","currency":"Měna"},"common":{"loading":"Načítání...","loadingPhases":{"manifest":"Načítání manifestu...","current":"Načítání aktuálního měsíce...","previous":"Načítání předchozího měsíce...","recent":"Načítání posledních měsíců...","remaining":"Načítání historických dat..."},"error":"Chyba","retry":"Zkusit znovu","month":"Měsíc","year":"Rok","day":"Den","days":"dny","price":"Cena","change":"Změna","from":"od","to":"do","back":"Zpět","monthsShort":{"jan":"Led","feb":"Úno","mar":"Bře","apr":"Dub","may":"Kvě","jun":"Čvn","jul":"Čvc","aug":"Srp","sep":"Zář","oct":"Říj","nov":"Lis","dec":"Pro"},"monthsLong":{"jan":"Leden","feb":"Únor","mar":"Březen","apr":"Duben","may":"Květen","jun":"Červen","jul":"Červenec","aug":"Srpen","sep":"Září","oct":"Říjen","nov":"Listopad","dec":"Prosinec"}},"hero":{"subtitle":"Bitcoin odměňuje trpělivost, ne timing","scrollDown":"Posuňte se dolů a prozkoumejte"},"shortTerm":{"title":"Past Krátkého Období","conclusion":"Denní volatilita je šum. Důležitá je dlouhodobá expozice."},"longTerm":{"title":"Dlouhodobé Řešení: DCA","conclusion":"Konzistence poráží timing. Čas na trhu má větší význam než timing trhu."},"details":{"title":"Skutečná Čísla","noteTitle":"Pochopení Dat","noteText":"Každý řádek ukazuje měsíční investici."}}
+{
+  "app": {
+    "title": "PoP - Důkaz Trpělivosti",
+    "tagline": "Bitcoin odměňuje málo dní — ale vyžaduje přítomnost ve všech."
+  },
+  "manifesto": {
+    "line1": "Bitcoin odměňuje málo dní —",
+    "line2": "ale vyžaduje přítomnost ve všech.",
+    "line3": "",
+    "line4": "Většinu času je zde nepohodlí.",
+    "line5": "Málo okamžiků ospravedlňuje oběť.",
+    "line6": "",
+    "line7": "Neexistují zkratky.",
+    "line8": "Pouze disciplína, čas a přesvědčení."
+  },
+  "main": {
+    "ifYouHadInvested": "Kdybyste investovali do Bitcoinu",
+    "monthlyProgression": "Měsíční Progrese",
+    "dcaSimulation": "DCA Akumulace"
+  },
+  "navigation": {
+    "overview": "Přehled",
+    "dca": "DCA Simulace",
+    "keyDays": "Klíčové Dny",
+    "about": "O Aplikaci"
+  },
+  "settings": {
+    "language": "Jazyk",
+    "currency": "Měna"
+  },
+  "overview": {
+    "title": "Realita Bitcoinu",
+    "subtitle": "Pochopení času, disciplíny a trpělivosti",
+    "daysPositive": "Pozitivní Dny",
+    "daysNegative": "Negativní Dny",
+    "daysLateral": "Boční Dny",
+    "currentMonth": "Aktuální Měsíc",
+    "recentMonths": "Poslední Měsíce",
+    "loadMore": "Načíst Více",
+    "showAll": "Zobrazit Vše",
+    "showing": "Zobrazeno",
+    "of": "z",
+    "months": "měsíců",
+    "regime": "Režim",
+    "regimes": {
+      "BULL": "Býk",
+      "BEAR": "Medvěd",
+      "LATERAL": "Boční",
+      "N/A": "N/A"
+    }
+  },
+  "dca": {
+    "title": "DCA Simulace",
+    "subtitle": "Simulujte svou cestu disciplíny Bitcoinu",
+    "startDate": "Datum Začátku",
+    "monthlyAmount": "Měsíční Částka",
+    "simulate": "Simulovat",
+    "errors": {
+      "selectDate": "Prosím vyberte datum začátku",
+      "invalidAmount": "Prosím zadejte platnou měsíční částku"
+    },
+    "results": {
+      "totalInvested": "Celková Investice",
+      "totalBTC": "Celkové BTC",
+      "currentValue": "Aktuální Hodnota",
+      "pnl": "Zisk/Ztráta",
+      "daysInDrawdown": "Dny v Propadu",
+      "longestStreak": "Nejdelší Negativní Série",
+      "total": "CELKEM"
+    },
+    "insights": {
+      "drawdownTitle": "Čas v Nepohodlí",
+      "drawdownText": "Strávili jste {days} dní pod svým nákladovým základem. To je normální.",
+      "disciplineTitle": "Disciplína Nad Časování",
+      "disciplineText": "Vaše nejdelší negativní série byla {days} dní. Trpělivost je hra."
+    },
+    "details": {
+      "totalGain": "Celkový Zisk",
+      "avgMonthlyGain": "Průměrný Měsíční Zisk"
+    }
+  },
+  "keyDays": {
+    "title": "Málo Dní Má Význam",
+    "subtitle": "Malý počet dní vysvětluje většinu zhodnocení",
+    "top10": "Top 10 Dní",
+    "top50": "Top 50 Dní",
+    "top100": "Top 100 Dní",
+    "contribution": "{percent}% celkového zhodnocení",
+    "insight": "Vynechání těchto málo dní by zneplatnilo roky čekání."
+  },
+  "about": {
+    "title": "O PoP",
+    "purpose": "Účel",
+    "purposeText": "Toto je vzdělávací nástroj k demonstraci, že investování do Bitcoinu vyžaduje oběť, disciplínu a nízkou časovou preferenci. NENÍ to obchodní nástroj, předpovídač cen nebo optimalizátor zisků.",
+    "principles": "Principy",
+    "principle1": "Žádné předpovědi cen",
+    "principle2": "Žádné obchodní signály",
+    "principle3": "Žádné sliby zisku",
+    "principle4": "Pouze vzdělávání",
+    "philosophy": "Filozofie",
+    "philosophyText": "Bitcoin učí chování, ne zisk. Většina zkušenosti je propad, lateralizace a nepohodlí. Malý počet dní vysvětluje většinu zhodnocení a tyto dny jsou nepředvídatelné."
+  },
+  "common": {
+    "loading": "Načítání...",
+    "loadingPhases": {
+      "manifest": "Načítání manifestu...",
+      "current": "Načítání aktuálního měsíce...",
+      "previous": "Načítání předchozího měsíce...",
+      "recent": "Načítání posledních měsíců...",
+      "remaining": "Načítání historických dat..."
+    },
+    "error": "Chyba",
+    "retry": "Zkusit znovu",
+    "month": "Měsíc",
+    "year": "Rok",
+    "day": "Den",
+    "days": "dny",
+    "price": "Cena",
+    "change": "Změna",
+    "from": "od",
+    "to": "do",
+    "back": "Zpět",
+    "monthsShort": {
+      "jan": "Led",
+      "feb": "Úno",
+      "mar": "Bře",
+      "apr": "Dub",
+      "may": "Kvě",
+      "jun": "Čvn",
+      "jul": "Čvc",
+      "aug": "Srp",
+      "sep": "Zář",
+      "oct": "Říj",
+      "nov": "Lis",
+      "dec": "Pro"
+    },
+    "monthsLong": {
+      "jan": "Leden",
+      "feb": "Únor",
+      "mar": "Březen",
+      "apr": "Duben",
+      "may": "Květen",
+      "jun": "Červen",
+      "jul": "Červenec",
+      "aug": "Srpen",
+      "sep": "Září",
+      "oct": "Říjen",
+      "nov": "Listopad",
+      "dec": "Prosinec"
+    }
+  },
+  "hero": {
+    "subtitle": "Bitcoin odměňuje trpělivost, ne timing",
+    "problem1": {
+      "title": "Panikový Prodej",
+      "text": "Mnoho investorů prodává během poklesu cen, čímž uzamkne ztráty namísto čekání na zotavení."
+    },
+    "problem2": {
+      "title": "Brání Malých Zisků",
+      "text": "Příliš brzký odchod po skromných ziscích zabraňuje účasti na dlouhodobém exponenciálním růstu."
+    },
+    "problem3": {
+      "title": "Načasování Trhu",
+      "text": "Snaha předpovědět perfektní vstupní a výstupní body často vede k promeškání příležitostí."
+    },
+    "keyMessage": "Bitcoin není o nalezení perfektního okamžiku. Jde o trpělivost zůstat investován přes volatilitu.",
+    "scrollDown": "Posuňte se dolů a prozkoumejte"
+  },
+  "shortTerm": {
+    "title": "Past Krátkého Období",
+    "intro": "Dívání se na denní nebo měsíční cenové pohyby vytváří zbytečnou úzkost a vede ke špatným rozhodnutím.",
+    "warning": "Každá karta níže ukazuje výkon měsíce. Barvy indikují, zda bylo více pozitivních (zelená), negativních (červená) nebo bočních (bílá) dní. Tento krátkodobý pohled nereflektuje fundamenty Bitcoinu a způsobuje panikový prodej během poklesů nebo předčasné brání zisků během vzestupů.",
+    "conclusion": "Denní volatilita je šum. Důležitá je dlouhodobá expozice."
+  },
+  "longTerm": {
+    "title": "Dlouhodobé Řešení: DCA",
+    "what": "Dollar Cost Averaging (DCA) znamená nákup pevné částky pravidelně, bez ohledu na cenu.",
+    "why": "Místo pokusu načasovat trh (koupit nízko, prodat vysoko), DCA se zaměřuje na čas v trhu. Záleží na tom, jak dlouho jste vystaveni aktivu, ne kdy vstoupíte nebo vystoupíte.",
+    "conclusion": "Konzistence poráží timing. Čas na trhu má větší význam než timing trhu."
+  },
+  "details": {
+    "title": "Skutečná Čísla",
+    "intro": "Zde je měsíční rozdělení. Všimněte si průměrného měsíčního zisku - nemusí vypadat působivě, ale je to skutečný indikátor růstu Bitcoinu.",
+    "keyInsight": "Průměrný měsíční zisk může vypadat skromně, ale to je to, co Bitcoin skutečně nabízí.",
+    "finalMessage": "To je metrika, která by měla vést vaše investiční rozhodnutí - ne denní volatilita nebo krátkodobé výkyvy. Bitcoin odměňuje trpělivost a konzistenci.",
+    "noteTitle": "Pochopení Dat",
+    "noteText": "Každý řádek ukazuje měsíční investici. Vážený průměrný měsíční zisk odráží skutečnou dlouhodobou výkonnost vaší Bitcoin strategie."
+  },
+  "footer": {
+    "errorLoading": "Chyba při Načítání Dat",
+    "projectTitle": "Proof of Patience",
+    "projectDescription": "Vzdělávací nástroj k demonstraci, že investování do Bitcoinu vyžaduje oběť, disciplínu a nízkou časovou preferenci.",
+    "starOnGitHub": "⭐ Hvězdička na GitHubu",
+    "createdBy": "Vytvořil Rodrigo Vilar",
+    "creatorDescription": "Vývojář věnující se tvorbě vzdělávacích nástrojů pro Bitcoin komunitu.",
+    "linkedin": "💼 LinkedIn",
+    "twitter": "🐦 Twitter @vilar",
+    "supportProject": "⚡ Podpořit Projekt",
+    "donationMessage": "Přispějte, abyste mi pomohli věnovat více času tvorbě nástrojů pro Bitcoin komunitu.",
+    "lightningNetwork": "Lightning Network",
+    "bitcoinOnChain": "Bitcoin On-Chain",
+    "disclaimer": "PoP je vzdělávací nástroj. Není to finanční poradenství.",
+    "tagline": "Bitcoin učí chování, ne zisk."
+  }
+}
