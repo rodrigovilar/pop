@@ -16,7 +16,9 @@
   "main": {
     "ifYouHadInvested": "Bitcoin'e yatırım yapsaydınız",
     "monthlyProgression": "Aylık İlerleme",
-    "dcaSimulation": "DCA Birikimi"
+    "dcaSimulation": "DCA Birikimi",
+    "clickToFlip": "Detayları görmek için tıklayın →",
+    "clickToFlipBack": "← Geri dönmek için tıklayın"
   },
   "navigation": {
     "overview": "Genel Bakış",
@@ -47,7 +49,10 @@
       "BEAR": "Ayı",
       "LATERAL": "Yatay",
       "N/A": "Yok"
-    }
+    },
+    "entryPrice": "Giriş Fiyatı",
+    "exitPrice": "Çıkış Fiyatı",
+    "monthChange": "Ay Değişimi"
   },
   "dca": {
     "title": "DCA Simülasyonu",

@@ -16,7 +16,9 @@
   "main": {
     "ifYouHadInvested": "비트코인에 투자했다면",
     "monthlyProgression": "월별 진행",
-    "dcaSimulation": "DCA 축적"
+    "dcaSimulation": "DCA 축적",
+    "clickToFlip": "세부 정보를 보려면 클릭 →",
+    "clickToFlipBack": "← 돌아가려면 클릭"
   },
   "navigation": {
     "overview": "개요",
@@ -47,7 +49,10 @@
       "BEAR": "하락장",
       "LATERAL": "횡보장",
       "N/A": "N/A"
-    }
+    },
+    "entryPrice": "진입 가격",
+    "exitPrice": "퇴장 가격",
+    "monthChange": "월별 변화"
   },
   "dca": {
     "title": "DCA 시뮬레이션",

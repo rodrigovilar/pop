@@ -16,7 +16,9 @@
   "main": {
     "ifYouHadInvested": "Jos olisit sijoittanut Bitcoiniin",
     "monthlyProgression": "Kuukausittainen Eteneminen",
-    "dcaSimulation": "DCA-Ker​tymä"
+    "dcaSimulation": "DCA-Ker​tymä",
+    "clickToFlip": "Napsauta nähdäksesi tiedot →",
+    "clickToFlipBack": "← Napsauta palataksesi"
   },
   "navigation": {
     "overview": "Yleiskatsaus",
@@ -47,7 +49,10 @@
       "BEAR": "Laskeva",
       "LATERAL": "Sivuttainen",
       "N/A": "Ei saatavilla"
-    }
+    },
+    "entryPrice": "Aloitushinta",
+    "exitPrice": "Lopetushinta",
+    "monthChange": "Kuukauden Muutos"
   },
   "dca": {
     "title": "DCA-Simulaatio",

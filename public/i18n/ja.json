@@ -16,7 +16,9 @@
   "main": {
     "ifYouHadInvested": "ビットコインに投資していたら",
     "monthlyProgression": "月次進捗",
-    "dcaSimulation": "DCA積立"
+    "dcaSimulation": "DCA積立",
+    "clickToFlip": "詳細を見るにはクリック →",
+    "clickToFlipBack": "← 戻るにはクリック"
   },
   "navigation": {
     "overview": "概要",
@@ -47,7 +49,10 @@
       "BEAR": "弱気",
       "LATERAL": "横ばい",
       "N/A": "N/A"
-    }
+    },
+    "entryPrice": "エントリー価格",
+    "exitPrice": "エグジット価格",
+    "monthChange": "月次変化"
   },
   "dca": {
     "title": "DCAシミュレーション",

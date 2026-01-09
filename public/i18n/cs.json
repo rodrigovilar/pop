@@ -16,7 +16,9 @@
   "main": {
     "ifYouHadInvested": "Kdybyste investovali do Bitcoinu",
     "monthlyProgression": "Měsíční Progrese",
-    "dcaSimulation": "DCA Akumulace"
+    "dcaSimulation": "DCA Akumulace",
+    "clickToFlip": "Klikněte pro zobrazení detailů →",
+    "clickToFlipBack": "← Klikněte pro návrat"
   },
   "navigation": {
     "overview": "Přehled",
@@ -47,7 +49,10 @@
       "BEAR": "Medvěd",
       "LATERAL": "Boční",
       "N/A": "N/A"
-    }
+    },
+    "entryPrice": "Vstupní Cena",
+    "exitPrice": "Výstupní Cena",
+    "monthChange": "Měsíční Změna"
   },
   "dca": {
     "title": "DCA Simulace",

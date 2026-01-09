@@ -16,7 +16,9 @@
   "main": {
     "ifYouHadInvested": "Si vous aviez investi dans Bitcoin le",
     "monthlyProgression": "Progression Mensuelle",
-    "dcaSimulation": "Accumulation DCA"
+    "dcaSimulation": "Accumulation DCA",
+    "clickToFlip": "Cliquez pour voir les détails →",
+    "clickToFlipBack": "← Cliquez pour revenir"
   },
   "navigation": {
     "overview": "Aperçu",
@@ -47,7 +49,10 @@
       "BEAR": "Baissier",
       "LATERAL": "Latéral",
       "N/A": "N/D"
-    }
+    },
+    "entryPrice": "Prix d'Entrée",
+    "exitPrice": "Prix de Sortie",
+    "monthChange": "Variation du Mois"
   },
   "dca": {
     "title": "Simulation DCA",

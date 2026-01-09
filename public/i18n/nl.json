@@ -16,7 +16,9 @@
   "main": {
     "ifYouHadInvested": "Als je had geïnvesteerd in Bitcoin op",
     "monthlyProgression": "Maandelijkse Voortgang",
-    "dcaSimulation": "DCA-Accumulatie"
+    "dcaSimulation": "DCA-Accumulatie",
+    "clickToFlip": "Klik om details te zien →",
+    "clickToFlipBack": "← Klik om terug te keren"
   },
   "navigation": {
     "overview": "Overzicht",
@@ -47,7 +49,10 @@
       "BEAR": "Dalend",
       "LATERAL": "Zijwaarts",
       "N/A": "N/B"
-    }
+    },
+    "entryPrice": "Instapprijs",
+    "exitPrice": "Uitstapprijs",
+    "monthChange": "Maandverandering"
   },
   "dca": {
     "title": "DCA-Simulatie",
