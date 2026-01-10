@@ -18,7 +18,7 @@
     "monthlyProgression": "월별 진행",
     "dcaSimulation": "DCA 축적",
     "clickToFlip": "세부 정보를 보려면 클릭 →",
-    "clickToFlipBack": "← 돌아가려면 클릭"
+    "clickToFlipBack": "← 뒤집기를 되돌리려면 클릭"
   },
   "navigation": {
     "overview": "개요",
@@ -51,8 +51,8 @@
       "N/A": "N/A"
     },
     "entryPrice": "진입 가격",
-    "exitPrice": "퇴장 가격",
-    "monthChange": "월별 변화"
+    "exitPrice": "퇴출 가격",
+    "monthChange": "월간 변동"
   },
   "dca": {
     "title": "DCA 시뮬레이션",
@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "비트코인은 타이밍이 아닌 인내를 보상합니다",
+    "subtitle": "비트코인에 투자할 때, 인내심이 있음을 증명해야 합니다. 그렇지 않으면 성급한 결정으로 돈을 잃게 됩니다:",
     "problem1": {
       "title": "패닉 매도",
       "text": "많은 투자자들이 가격 하락 시 매도하여 회복을 기다리는 대신 손실을 확정합니다."
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "데이터 로딩 오류",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "인내의 증명",
     "projectDescription": "비트코인 투자가 희생, 규율, 낮은 시간 선호도를 요구한다는 것을 보여주는 교육 도구입니다.",
     "starOnGitHub": "⭐ GitHub에서 스타",
     "createdBy": "Rodrigo Vilar가 제작",

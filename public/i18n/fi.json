@@ -50,9 +50,9 @@
       "LATERAL": "Sivuttainen",
       "N/A": "Ei saatavilla"
     },
-    "entryPrice": "Aloitushinta",
-    "exitPrice": "Lopetushinta",
-    "monthChange": "Kuukauden Muutos"
+    "entryPrice": "Sisääntulosiinta",
+    "exitPrice": "Poistumishinta",
+    "monthChange": "Kuukausimuutos"
   },
   "dca": {
     "title": "DCA-Simulaatio",
@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "Bitcoin palkitsee kärsivällisyyden, ei ajoituksen",
+    "subtitle": "Bitcoiniin sijoittaessasi sinun on Todistettava, että sinulla on kärsivällisyyttä. Muuten menetät rahaa hätäisillä päätöksillä:",
     "problem1": {
       "title": "Paniikkimyynti",
       "text": "Monet sijoittajat myyvät hinnan laskun aikana ja lukitsevat tappiot sen sijaan, että odottaisivat elpymistä."
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Virhe Tietojen Lataamisessa",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Kärsivällisyyden Todiste",
     "projectDescription": "Koulutustyökalu osoittamaan, että Bitcoin-sijoittaminen vaatii uhrausta, kurinalaisuutta ja alhaista aikapreferenssiä.",
     "starOnGitHub": "⭐ Tähti GitHubissa",
     "createdBy": "Luonut Rodrigo Vilar",

@@ -3,7 +3,7 @@ import { I18nProvider, useI18n } from './contexts/I18nContext';
 import { Settings } from './components/Settings';
 import { LoadingState } from './components/LoadingState';
 import { BreezeBackground } from './components/BreezeBackground';
-import { ScrollNarrative } from './components/ScrollNarrative';
+import { NarrativeFlow } from './components/NarrativeFlow';
 import { useData } from './hooks/useData';
 import { theme } from './styles/theme';
 import type { Currency } from './types';
@@ -11,7 +11,6 @@ import type { Currency } from './types';
 function AppContent() {
   const { t } = useI18n();
   const [currency, setCurrency] = useState<Currency>('USD');
-  const [currentSection, setCurrentSection] = useState(0);
 
   // Calculate default start date: 48 months ago (excluding current month)
   const now = new Date();
@@ -52,7 +51,7 @@ function AppContent() {
   return (
     <>
       {/* Animated Background with dynamic colors */}
-      <BreezeBackground currentSection={currentSection} />
+      <BreezeBackground currentSection={0} />
 
       <div style={{
         position: 'relative',
@@ -169,12 +168,11 @@ function AppContent() {
 
         {/* Add padding to account for fixed header */}
         <div style={{ paddingTop: '80px' }}>
-          {/* Scroll Narrative */}
-          <ScrollNarrative
-            monthlyData={monthlyData}
+          {/* Narrative Flow */}
+          <NarrativeFlow
+            months={Array.from(monthlyData.values()).sort((a, b) => a.month.localeCompare(b.month))}
             currency={currency}
             startMonth={startMonth}
-            onSectionChange={setCurrentSection}
           />
         </div>
 

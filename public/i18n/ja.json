@@ -52,7 +52,7 @@
     },
     "entryPrice": "エントリー価格",
     "exitPrice": "エグジット価格",
-    "monthChange": "月次変化"
+    "monthChange": "月次変動"
   },
   "dca": {
     "title": "DCAシミュレーション",
@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "ビットコインはタイミングではなく、忍耐を報います",
+    "subtitle": "ビットコインに投資する際、忍耐力があることを証明する必要があります。そうしないと、性急な決断でお金を失います：",
     "problem1": {
       "title": "パニック売り",
       "text": "多くの投資家は価格下落時に売却し、回復を待つ代わりに損失を確定させます。"
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "データ読み込みエラー",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "忍耐の証明",
     "projectDescription": "ビットコイン投資が犠牲、規律、低時間選好を必要とすることを示す教育ツール。",
     "starOnGitHub": "⭐ GitHubでスター",
     "createdBy": "Rodrigo Vilarによって作成",

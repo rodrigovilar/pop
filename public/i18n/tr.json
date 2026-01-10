@@ -52,7 +52,7 @@
     },
     "entryPrice": "Giriş Fiyatı",
     "exitPrice": "Çıkış Fiyatı",
-    "monthChange": "Ay Değişimi"
+    "monthChange": "Aylık Değişim"
   },
   "dca": {
     "title": "DCA Simülasyonu",
@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "Bitcoin sabrı ödüllendirir, zamanlamayı değil",
+    "subtitle": "Bitcoin'e yatırım yaparken sabrınızı Kanıtlamanız gerekir. Aksi takdirde aceleci kararlarla para kaybedersiniz:",
     "problem1": {
       "title": "Panik Satış",
       "text": "Birçok yatırımcı fiyat düşüşleri sırasında satış yaparak toparlanmayı beklemek yerine zararı kilitler."
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Veri Yükleme Hatası",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Sabır Kanıtı",
     "projectDescription": "Bitcoin yatırımının fedakarlık, disiplin ve düşük zaman tercihi gerektirdiğini göstermek için eğitici bir araç.",
     "starOnGitHub": "⭐ GitHub'da Yıldızla",
     "createdBy": "Rodrigo Vilar tarafından oluşturuldu",

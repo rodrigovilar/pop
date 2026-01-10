@@ -52,7 +52,7 @@
     },
     "entryPrice": "Prix d'Entrée",
     "exitPrice": "Prix de Sortie",
-    "monthChange": "Variation du Mois"
+    "monthChange": "Variation Mensuelle"
   },
   "dca": {
     "title": "Simulation DCA",
@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "Bitcoin récompense la patience, pas le timing",
+    "subtitle": "En investissant dans Bitcoin, vous devez Prouver que vous avez de la patience. Sinon, vous perdrez de l'argent avec des décisions précipitées :",
     "problem1": {
       "title": "Vente de Panique",
       "text": "De nombreux investisseurs vendent pendant les baisses de prix, cristallisant les pertes au lieu d'attendre la reprise."
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Erreur de Chargement des Données",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Preuve de Patience",
     "projectDescription": "Un outil éducatif pour démontrer qu'investir dans Bitcoin nécessite sacrifice, discipline et faible préférence temporelle.",
     "starOnGitHub": "⭐ Mettre une étoile sur GitHub",
     "createdBy": "Créé par Rodrigo Vilar",

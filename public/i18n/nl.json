@@ -17,8 +17,8 @@
     "ifYouHadInvested": "Als je had geïnvesteerd in Bitcoin op",
     "monthlyProgression": "Maandelijkse Voortgang",
     "dcaSimulation": "DCA-Accumulatie",
-    "clickToFlip": "Klik om details te zien →",
-    "clickToFlipBack": "← Klik om terug te keren"
+    "clickToFlip": "Klik voor details →",
+    "clickToFlipBack": "← Klik om terug te draaien"
   },
   "navigation": {
     "overview": "Overzicht",
@@ -52,7 +52,7 @@
     },
     "entryPrice": "Instapprijs",
     "exitPrice": "Uitstapprijs",
-    "monthChange": "Maandverandering"
+    "monthChange": "Maandelijkse Wijziging"
   },
   "dca": {
     "title": "DCA-Simulatie",
@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "Bitcoin beloont geduld, niet timing",
+    "subtitle": "Bij het investeren in Bitcoin moet je Bewijzen dat je geduld hebt. Anders verlies je geld door overhaaste beslissingen:",
     "problem1": {
       "title": "Paniekverkoop",
       "text": "Veel beleggers verkopen tijdens prijsdalingen en realiseren verliezen in plaats van te wachten op herstel."
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Fout bij Laden van Gegevens",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Bewijs van Geduld",
     "projectDescription": "Een educatieve tool om te demonstreren dat investeren in Bitcoin offer, disciplina en lage tijdsvoorkeur vereist.",
     "starOnGitHub": "⭐ Ster op GitHub",
     "createdBy": "Gemaakt door Rodrigo Vilar",

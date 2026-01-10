@@ -18,7 +18,7 @@
     "monthlyProgression": "Monatliche Entwicklung",
     "dcaSimulation": "DCA-Akkumulation",
     "clickToFlip": "Klicken Sie für Details →",
-    "clickToFlipBack": "← Klicken Sie zum Zurückkehren"
+    "clickToFlipBack": "← Klicken Sie zum Zurückdrehen"
   },
   "navigation": {
     "overview": "Übersicht",
@@ -52,7 +52,7 @@
     },
     "entryPrice": "Einstiegspreis",
     "exitPrice": "Ausstiegspreis",
-    "monthChange": "Monatsänderung"
+    "monthChange": "Monatliche Änderung"
   },
   "dca": {
     "title": "DCA-Simulation",
@@ -125,14 +125,49 @@
     "from": "von",
     "to": "bis",
     "back": "Zurück",
-    "monthsShort": {"jan": "Jan", "feb": "Feb", "mar": "Mär", "apr": "Apr", "may": "Mai", "jun": "Jun", "jul": "Jul", "aug": "Aug", "sep": "Sep", "oct": "Okt", "nov": "Nov", "dec": "Dez"},
-    "monthsLong": {"jan": "Januar", "feb": "Februar", "mar": "März", "apr": "April", "may": "Mai", "jun": "Juni", "jul": "Juli", "aug": "August", "sep": "September", "oct": "Oktober", "nov": "November", "dec": "Dezember"}
+    "monthsShort": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mär",
+      "apr": "Apr",
+      "may": "Mai",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Okt",
+      "nov": "Nov",
+      "dec": "Dez"
+    },
+    "monthsLong": {
+      "jan": "Januar",
+      "feb": "Februar",
+      "mar": "März",
+      "apr": "April",
+      "may": "Mai",
+      "jun": "Juni",
+      "jul": "Juli",
+      "aug": "August",
+      "sep": "September",
+      "oct": "Oktober",
+      "nov": "November",
+      "dec": "Dezember"
+    }
   },
   "hero": {
-    "subtitle": "Bitcoin belohnt Geduld, nicht Timing",
-    "problem1": {"title": "Panikverkauf", "text": "Viele Investoren verkaufen bei Preisrückgängen und realisieren Verluste, anstatt auf Erholung zu warten."},
-    "problem2": {"title": "Kleine Gewinne Mitnehmen", "text": "Zu früh nach bescheidenen Gewinnen auszusteigen verhindert die Teilnahme am langfristigen exponentiellen Wachstum."},
-    "problem3": {"title": "Market Timing", "text": "Der Versuch, perfekte Ein- und Ausstiegspunkte vorherzusagen, führt oft zu verpassten Gelegenheiten."},
+    "subtitle": "Beim Investieren in Bitcoin müssen Sie Beweisen, dass Sie Geduld haben. Andernfalls verlieren Sie Geld durch übereilte Entscheidungen:",
+    "problem1": {
+      "title": "Panikverkauf",
+      "text": "Viele Investoren verkaufen bei Preisrückgängen und realisieren Verluste, anstatt auf Erholung zu warten."
+    },
+    "problem2": {
+      "title": "Kleine Gewinne Mitnehmen",
+      "text": "Zu früh nach bescheidenen Gewinnen auszusteigen verhindert die Teilnahme am langfristigen exponentiellen Wachstum."
+    },
+    "problem3": {
+      "title": "Market Timing",
+      "text": "Der Versuch, perfekte Ein- und Ausstiegspunkte vorherzusagen, führt oft zu verpassten Gelegenheiten."
+    },
     "keyMessage": "Bei Bitcoin geht es nicht darum, den perfekten Moment zu finden. Es geht darum, die Geduld zu haben, trotz Volatilität investiert zu bleiben.",
     "scrollDown": "Scrollen zum Erkunden"
   },
@@ -158,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Fehler beim Laden der Daten",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Beweis der Geduld",
     "projectDescription": "Ein Bildungswerkzeug, um zu zeigen, dass Bitcoin-Investitionen Opfer, Disziplin und niedrige Zeitpräferenz erfordern.",
     "starOnGitHub": "⭐ Auf GitHub markieren",
     "createdBy": "Erstellt von Rodrigo Vilar",

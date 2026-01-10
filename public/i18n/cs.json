@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "Bitcoin odměňuje trpělivost, ne timing",
+    "subtitle": "Při investování do Bitcoinu musíte Prokázat, že máte trpělivost. Jinak přijdete o peníze kvůli unáhleným rozhodnutím:",
     "problem1": {
       "title": "Panikový Prodej",
       "text": "Mnoho investorů prodává během poklesu cen, čímž uzamkne ztráty namísto čekání na zotavení."
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Chyba při Načítání Dat",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Důkaz Trpělivosti",
     "projectDescription": "Vzdělávací nástroj k demonstraci, že investování do Bitcoinu vyžaduje oběť, disciplínu a nízkou časovou preferenci.",
     "starOnGitHub": "⭐ Hvězdička na GitHubu",
     "createdBy": "Vytvořil Rodrigo Vilar",

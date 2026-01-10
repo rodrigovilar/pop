@@ -65,13 +65,41 @@
       "invalidAmount": "Please enter a valid monthly amount"
     },
     "results": {
+      "title": "Your DCA Results",
+      "subtitle": "Here's what would have happened with your monthly investments",
       "totalInvested": "Total Invested",
-      "totalBTC": "Total BTC",
+      "totalBTC": "Total BTC Accumulated",
       "currentValue": "Current Value",
       "pnl": "P&L",
+      "totalProfit": "Total Profit",
+      "currentLoss": "Current Loss",
       "daysInDrawdown": "Days in Drawdown",
       "longestStreak": "Longest Negative Streak",
-      "total": "TOTAL"
+      "total": "TOTAL",
+      "monthlyBreakdown": {
+        "title": "Month by Month Breakdown",
+        "subtitle": "Every single month of your DCA journey",
+        "headers": {
+          "month": "Month",
+          "invested": "Invested",
+          "btcPrice": "BTC Price",
+          "btcBought": "BTC Bought",
+          "totalBTC": "Total BTC",
+          "value": "Value",
+          "pnl": "P&L"
+        },
+        "legend": {
+          "title": "Legend:",
+          "drawdown": "In drawdown (bought cheaper, building position)",
+          "profit": "In profit"
+        }
+      },
+      "avgGain": {
+        "title": "The Most Important Number",
+        "subtitle": "Average Monthly Gain",
+        "explanation1": "This is what Bitcoin truly offers. Not daily excitement, not weekly stress.",
+        "explanation2": "Just steady, disciplined growth over time."
+      }
     },
     "insights": {
       "drawdownTitle": "Time in Discomfort",
@@ -206,5 +234,68 @@
     "bitcoinOnChain": "Bitcoin On-Chain",
     "disclaimer": "PoP is an educational tool. Not financial advice.",
     "tagline": "Bitcoin teaches behavior, not profit."
+  },
+  "narrative": {
+    "invitation": {
+      "title": "Let's use a real example",
+      "subtitle": "What if you had bought Bitcoin back then?",
+      "referToHeader": "Refer to the header selectors to customize the reference month, currency and language."
+    },
+    "shortTerm": {
+      "title": "Short-Term View: The Emotional Rollercoaster",
+      "subtitle": "Checking the price daily creates unnecessary anxiety.",
+      "scenario": "You invested {amount} in Bitcoin on the first day of {month}.",
+      "scenarioSubtitle": "Now you check the price every single day of the month...",
+      "message1": "Checking the price daily creates unnecessary anxiety.",
+      "message2": "The temptation is to quit or sell at a loss.",
+      "question": "But what if you zoomed out?"
+    },
+    "zoomOut": {
+      "title": "Zoom Out: Still Suffering Month by Month",
+      "subtitle": "The same story, from another perspective",
+      "transition": "What if instead of focusing on one month, you looked at ALL months since {month}?",
+      "warning": "You might think: \"Ah, if I zoom out, I'll feel better!\"",
+      "warningStrong": "But you won't. You'll just suffer for LONGER."
+    },
+    "revelation": {
+      "title": "What we learned so far:",
+      "point1": "YES, long-term you made money",
+      "point2": "YES, patience eventually paid off",
+      "but": "BUT...",
+      "problem1": "You still CHECKED every month",
+      "problem2": "You SUFFERED through the bear months",
+      "problem3": "You felt PANIC during the crashes",
+      "problem4": "You felt DESPAIR during the drawdowns",
+      "insight1": "The problem isn't TIMING.",
+      "insight2": "The problem is CHECKING.",
+      "insight3": "You bought everything at once (lump sum) and then tortured yourself month by month.",
+      "shift": "What if the solution isn't:",
+      "wrongApproach1": "Find the perfect entry",
+      "wrongApproach2": "Zoom out and check monthly",
+      "rightApproach": "What if the solution is:",
+      "solution1": "STOP trying to time anything",
+      "solution2": "AUTOMATE your investment",
+      "solution3": "BUY a little every month, no matter what",
+      "conclusion": "This changes EVERYTHING. This is called DCA.",
+      "cta": "Discover DCA Strategy"
+    },
+    "visualization": {
+      "chartView": "Chart View",
+      "tableView": "Table View",
+      "chartTitle": "Evolution of Daily Performance (Stacked %)",
+      "clickHint": "Click on any month to see details",
+      "referenceLabel": "You started here",
+      "message": {
+        "title": "Look at all this RED.",
+        "point1": "January 2022: Bad (-19.4%)",
+        "point2": "It got WORSE (dropped to -66%)",
+        "point3": "You stayed underwater for 16 MONTHS",
+        "suffering": "Even with \"zoom out\", you're SUFFERING every single month.",
+        "emotion1": "June 2022: \"Should I sell?\" 😰",
+        "emotion2": "September 2022: \"This is painful\" 😫",
+        "emotion3": "November 2022: \"I lost 66%!\" 😱",
+        "conclusion": "⚠️ Checking month by month = TORTURE"
+      }
+    }
   }
 }

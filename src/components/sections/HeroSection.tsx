@@ -27,7 +27,7 @@ export function HeroSection() {
         lineHeight: theme.typography.lineHeight.tight,
         letterSpacing: '-0.02em',
       }}>
-        Proof of Patience
+        {t('footer.projectTitle') || 'Proof of Patience'}
       </h1>
 
       {/* Subtitle */}

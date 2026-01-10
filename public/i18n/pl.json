@@ -52,7 +52,7 @@
     },
     "entryPrice": "Cena Wejścia",
     "exitPrice": "Cena Wyjścia",
-    "monthChange": "Zmiana Miesiąca"
+    "monthChange": "Zmiana Miesięczna"
   },
   "dca": {
     "title": "Symulacja DCA",
@@ -155,7 +155,7 @@
     }
   },
   "hero": {
-    "subtitle": "Bitcoin nagradza cierpliwość, nie timing",
+    "subtitle": "Inwestując w Bitcoin, musisz Udowodnić, że masz cierpliwość. W przeciwnym razie stracisz pieniądze na pochopnych decyzjach:",
     "problem1": {
       "title": "Paniczna Sprzedaż",
       "text": "Wielu inwestorów sprzedaje podczas spadków cen, blokując straty zamiast czekać na odbicie."
@@ -193,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Błąd Ładowania Danych",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Dowód Cierpliwości",
     "projectDescription": "Narzędzie edukacyjne pokazujące, że inwestowanie w Bitcoin wymaga poświęcenia, dyscypliny i niskiej preferencji czasowej.",
     "starOnGitHub": "⭐ Gwiazdka na GitHub",
     "createdBy": "Stworzony przez Rodrigo Vilar",

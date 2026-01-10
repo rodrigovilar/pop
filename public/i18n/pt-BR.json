@@ -52,7 +52,7 @@
     },
     "entryPrice": "Preço de Entrada",
     "exitPrice": "Preço de Saída",
-    "monthChange": "Mudança do Mês"
+    "monthChange": "Variação Mensal"
   },
   "dca": {
     "title": "Simulação DCA",
@@ -65,13 +65,41 @@
       "invalidAmount": "Por favor insira um valor mensal válido"
     },
     "results": {
+      "title": "Seus Resultados DCA",
+      "subtitle": "Veja o que teria acontecido com seus investimentos mensais",
       "totalInvested": "Total Investido",
-      "totalBTC": "Total BTC",
+      "totalBTC": "Total BTC Acumulado",
       "currentValue": "Valor Atual",
       "pnl": "L&P",
+      "totalProfit": "Lucro Total",
+      "currentLoss": "Perda Atual",
       "daysInDrawdown": "Dias em Perda",
       "longestStreak": "Maior Sequência Negativa",
-      "total": "TOTAL"
+      "total": "TOTAL",
+      "monthlyBreakdown": {
+        "title": "Detalhamento Mês a Mês",
+        "subtitle": "Cada mês da sua jornada DCA",
+        "headers": {
+          "month": "Mês",
+          "invested": "Investido",
+          "btcPrice": "Preço BTC",
+          "btcBought": "BTC Comprado",
+          "totalBTC": "Total BTC",
+          "value": "Valor",
+          "pnl": "L&P"
+        },
+        "legend": {
+          "title": "Legenda:",
+          "drawdown": "Em queda (comprou mais barato, construindo posição)",
+          "profit": "Em lucro"
+        }
+      },
+      "avgGain": {
+        "title": "O Número Mais Importante",
+        "subtitle": "Ganho Médio Mensal",
+        "explanation1": "Isso é o que o Bitcoin realmente oferece. Não empolgação diária, não estresse semanal.",
+        "explanation2": "Apenas crescimento constante e disciplinado ao longo do tempo."
+      }
     },
     "insights": {
       "drawdownTitle": "Tempo de Desconforto",
@@ -155,7 +183,7 @@
     }
   },
   "hero": {
-    "subtitle": "Bitcoin recompensa paciência, não timing",
+    "subtitle": "Ao investir em Bitcoin, você precisa Provar que tem paciência. Caso contrário, perderá dinheiro com decisões precipitadas:",
     "problem1": {
       "title": "Venda por Pânico",
       "text": "Muitos investidores vendem durante quedas de preço, cristalizando perdas em vez de esperar pela recuperação."
@@ -193,7 +221,7 @@
   },
   "footer": {
     "errorLoading": "Erro ao Carregar Dados",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Prova de Paciência",
     "projectDescription": "Uma ferramenta educacional para demonstrar que investir em Bitcoin requer sacrifício, disciplina e baixa preferência temporal.",
     "starOnGitHub": "⭐ Favoritar no GitHub",
     "createdBy": "Criado por Rodrigo Vilar",
@@ -206,5 +234,68 @@
     "bitcoinOnChain": "Bitcoin On-Chain",
     "disclaimer": "PoP é uma ferramenta educacional. Não é aconselhamento financeiro.",
     "tagline": "Bitcoin ensina comportamento, não lucro."
+  },
+  "narrative": {
+    "invitation": {
+      "title": "Vamos usar um exemplo real",
+      "subtitle": "E se você tivesse comprado Bitcoin naquela época?",
+      "referToHeader": "Use os seletores do cabeçalho para personalizar o mês de referência, moeda e idioma."
+    },
+    "shortTerm": {
+      "title": "Visão de Curto Prazo: A Montanha-Russa Emocional",
+      "subtitle": "Verificar o preço diariamente cria ansiedade desnecessária.",
+      "scenario": "Você investiu {amount} em Bitcoin no primeiro dia de {month}.",
+      "scenarioSubtitle": "Agora você verifica o preço todos os dias do mês...",
+      "message1": "Verificar o preço diariamente cria ansiedade desnecessária.",
+      "message2": "A tentação é desistir ou vender no prejuízo.",
+      "question": "Mas e se você ampliasse a visão?"
+    },
+    "zoomOut": {
+      "title": "Ampliando: Ainda Sofrendo Mês a Mês",
+      "subtitle": "A mesma história, de outra perspectiva",
+      "transition": "E se ao invés de focar em um mês, você olhasse para TODOS os meses desde {month}?",
+      "warning": "Você pode pensar: \"Ah, se eu ampliar a visão, vou me sentir melhor!\"",
+      "warningStrong": "Mas não vai. Você vai apenas sofrer por MAIS TEMPO."
+    },
+    "revelation": {
+      "title": "O que aprendemos até agora:",
+      "point1": "SIM, no longo prazo você ganhou dinheiro",
+      "point2": "SIM, a paciência eventualmente compensou",
+      "but": "MAS...",
+      "problem1": "Você ainda VERIFICOU todo mês",
+      "problem2": "Você SOFREU durante os meses de baixa",
+      "problem3": "Você sentiu PÂNICO durante as quedas",
+      "problem4": "Você sentiu DESESPERO durante as perdas",
+      "insight1": "O problema não é o TIMING.",
+      "insight2": "O problema é VERIFICAR.",
+      "insight3": "Você comprou tudo de uma vez (lump sum) e depois se torturou mês a mês.",
+      "shift": "E se a solução não for:",
+      "wrongApproach1": "Encontrar a entrada perfeita",
+      "wrongApproach2": "Ampliar e verificar mensalmente",
+      "rightApproach": "E se a solução for:",
+      "solution1": "PARAR de tentar acertar o tempo",
+      "solution2": "AUTOMATIZAR seu investimento",
+      "solution3": "COMPRAR um pouco todo mês, não importa o que aconteça",
+      "conclusion": "Isso muda TUDO. Isso se chama DCA.",
+      "cta": "Descobrir a Estratégia DCA"
+    },
+    "visualization": {
+      "chartView": "Visão Gráfico",
+      "tableView": "Visão Tabela",
+      "chartTitle": "Evolução do Desempenho Diário (% Empilhado)",
+      "clickHint": "Clique em qualquer mês para ver detalhes",
+      "referenceLabel": "Você começou aqui",
+      "message": {
+        "title": "Olhe todo esse VERMELHO.",
+        "point1": "Janeiro de 2022: Ruim (-19.4%)",
+        "point2": "Ficou PIOR (caiu para -66%)",
+        "point3": "Você ficou no prejuízo por 16 MESES",
+        "suffering": "Mesmo com \"ampliar a visão\", você está SOFRENDO todo mês.",
+        "emotion1": "Junho de 2022: \"Devo vender?\" 😰",
+        "emotion2": "Setembro de 2022: \"Isso é doloroso\" 😫",
+        "emotion3": "Novembro de 2022: \"Perdi 66%!\" 😱",
+        "conclusion": "⚠️ Verificar mês a mês = TORTURA"
+      }
+    }
   }
 }

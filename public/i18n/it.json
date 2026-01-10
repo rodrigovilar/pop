@@ -50,9 +50,9 @@
       "LATERAL": "Laterale",
       "N/A": "N/D"
     },
-    "entryPrice": "Prezzo di Ingresso",
+    "entryPrice": "Prezzo di Entrata",
     "exitPrice": "Prezzo di Uscita",
-    "monthChange": "Variazione del Mese"
+    "monthChange": "Variazione Mensile"
   },
   "dca": {
     "title": "Simulazione DCA",
@@ -125,14 +125,49 @@
     "from": "da",
     "to": "a",
     "back": "Indietro",
-    "monthsShort": {"jan": "Gen", "feb": "Feb", "mar": "Mar", "apr": "Apr", "may": "Mag", "jun": "Giu", "jul": "Lug", "aug": "Ago", "sep": "Set", "oct": "Ott", "nov": "Nov", "dec": "Dic"},
-    "monthsLong": {"jan": "Gennaio", "feb": "Febbraio", "mar": "Marzo", "apr": "Aprile", "may": "Maggio", "jun": "Giugno", "jul": "Luglio", "aug": "Agosto", "sep": "Settembre", "oct": "Ottobre", "nov": "Novembre", "dec": "Dicembre"}
+    "monthsShort": {
+      "jan": "Gen",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "Mag",
+      "jun": "Giu",
+      "jul": "Lug",
+      "aug": "Ago",
+      "sep": "Set",
+      "oct": "Ott",
+      "nov": "Nov",
+      "dec": "Dic"
+    },
+    "monthsLong": {
+      "jan": "Gennaio",
+      "feb": "Febbraio",
+      "mar": "Marzo",
+      "apr": "Aprile",
+      "may": "Maggio",
+      "jun": "Giugno",
+      "jul": "Luglio",
+      "aug": "Agosto",
+      "sep": "Settembre",
+      "oct": "Ottobre",
+      "nov": "Novembre",
+      "dec": "Dicembre"
+    }
   },
   "hero": {
-    "subtitle": "Bitcoin premia la pazienza, non il timing",
-    "problem1": {"title": "Vendita in Panico", "text": "Molti investitori vendono durante i cali di prezzo, cristallizzando le perdite invece di attendere il recupero."},
-    "problem2": {"title": "Prendere Piccoli Profitti", "text": "Uscire troppo presto dopo guadagni modesti impedisce la partecipazione alla crescita esponenziale a lungo termine."},
-    "problem3": {"title": "Timing del Mercato", "text": "Cercare di prevedere punti di entrata e uscita perfetti porta spesso a opportunità perse."},
+    "subtitle": "Investendo in Bitcoin, devi Dimostrare di avere pazienza. Altrimenti, perderai denaro con decisioni affrettate:",
+    "problem1": {
+      "title": "Vendita in Panico",
+      "text": "Molti investitori vendono durante i cali di prezzo, cristallizzando le perdite invece di attendere il recupero."
+    },
+    "problem2": {
+      "title": "Prendere Piccoli Profitti",
+      "text": "Uscire troppo presto dopo guadagni modesti impedisce la partecipazione alla crescita esponenziale a lungo termine."
+    },
+    "problem3": {
+      "title": "Timing del Mercato",
+      "text": "Cercare di prevedere punti di entrata e uscita perfetti porta spesso a opportunità perse."
+    },
     "keyMessage": "Bitcoin non riguarda trovare il momento perfetto. Riguarda avere la pazienza di rimanere investiti attraverso la volatilità.",
     "scrollDown": "Scorri per esplorare"
   },
@@ -158,7 +193,7 @@
   },
   "footer": {
     "errorLoading": "Errore nel Caricamento dei Dati",
-    "projectTitle": "Proof of Patience",
+    "projectTitle": "Prova di Pazienza",
     "projectDescription": "Uno strumento educativo per dimostrare che investire in Bitcoin richiede sacrificio, disciplina e bassa preferenza temporale.",
     "starOnGitHub": "⭐ Metti una stella su GitHub",
     "createdBy": "Creato da Rodrigo Vilar",
